@@ -203,7 +203,7 @@
 
 		makeDraggable(win, ".window-titlebar");
 
-		setTimeout(refreshCountdowns, 0);
+		setTimeout(updateCountdown, 0);
 
 		return win;
 	}
