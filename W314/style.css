@@ -37,7 +37,7 @@ body {
 }
 
 /* =========================
-   FAKE XP STYLE DIALOG
+   STYLE DIALOG
 ========================= */
 
 .fake-dialog {
@@ -232,7 +232,6 @@ body {
 	user-select: none;
 }
 
-/* icon before text */
 .start-button::before {
 	content: "";
 	width: 16px;
@@ -423,7 +422,6 @@ body {
 	pointer-events: none;
 }
 
-/* FIXED WINDOW LAYOUT */
 .fake-window,
 .fake-dialog {
 	position: absolute;
