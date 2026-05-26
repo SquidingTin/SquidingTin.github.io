@@ -14,7 +14,7 @@
 	}
 
 	/* =========================
-	   DRAG SYSTEM (WINDOWS + DIALOGS)
+	   DRAG SYSTEM
 	========================= */
 
 	let dragTarget = null;
@@ -358,7 +358,7 @@
 	}
 
 	/* =========================
-	   FILE ROUTER (IMPORTANT)
+	   FILE ROUTER
 	========================= */
 
 	window.openFile = function (file) {
@@ -416,10 +416,6 @@
 			return `${m}:${s}`;
 		}
 
-		/* =========================
-		   LOAD DEBUG
-		========================= */
-
 		audio.addEventListener("loadstart", () => {
 			console.log("[AudioPlayer] loadstart");
 		});
@@ -444,16 +440,8 @@
 			console.error("[AudioPlayer] failed src:", audio.src);
 		});
 
-		/* =========================
-		   FORCE LOAD
-		========================= */
-
 		console.log("[AudioPlayer] calling audio.load()");
 		audio.load();
-
-		/* =========================
-		   PLAY BUTTON DEBUG
-		========================= */
 
 		playBtn.onclick = async () => {
 
@@ -463,25 +451,15 @@
 			try {
 				if (audio.paused) {
 
-					console.log("[AudioPlayer] attempting play()");
-
 					const playPromise = audio.play();
 
 					if (playPromise !== undefined) {
 						await playPromise
-							.then(() => {
-								console.log("[AudioPlayer] play() resolved successfully");
-							})
-							.catch(err => {
-								console.warn("[AudioPlayer] play() blocked or failed:", err);
-							});
 					}
 
 					playBtn.textContent = "Pause";
 
 				} else {
-
-					console.log("[AudioPlayer] pausing audio");
 
 					audio.pause();
 					playBtn.textContent = "Play";
@@ -491,10 +469,6 @@
 				console.error("[AudioPlayer] play button exception:", e);
 			}
 		};
-
-		/* =========================
-		   TIMELINE DEBUG
-		========================= */
 
 		timeline.addEventListener("input", () => {
 			console.log("[AudioPlayer] seeking to:", timeline.value);
@@ -518,7 +492,7 @@
 	}
 
 	/* =========================
-	   START MENU (UNCHANGED)
+	   START MENU
 	========================= */
 
 	const startMenuData = [
