@@ -529,8 +529,15 @@
 		{ name: "Find", icon: "icons/find.png" },
 		{ name: "Help", icon: "icons/help.png" },
 		{ name: "Run...", icon: "icons/run.png" },
-		{ name: "Shut Down...", icon: "icons/shutdown.png" }
+		{ 
+			name: "Shut Down...", 
+			icon: "icons/shutdown.png",
+			onClick: shutdown
+		}
 	];
+	function shutdown() {
+		window.close();
+	}
 
 	function createMenu(items) {
 
