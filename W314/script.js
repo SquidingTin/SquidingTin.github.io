@@ -4,8 +4,7 @@
 	   WINDOW LAYER SYSTEM
 	========================= */
 
-	const windowLayer =
-		document.getElementById("windowLayer");
+	const windowLayer = document.getElementById("windowLayer");
 
 	let topZ = 1000;
 
@@ -416,6 +415,10 @@
 			return `${m}:${s}`;
 		}
 
+		/* =========================
+		   LOAD DEBUG
+		========================= */
+
 		audio.addEventListener("loadstart", () => {
 			console.log("[AudioPlayer] loadstart");
 		});
@@ -440,8 +443,16 @@
 			console.error("[AudioPlayer] failed src:", audio.src);
 		});
 
+		/* =========================
+		   FORCE LOAD
+		========================= */
+
 		console.log("[AudioPlayer] calling audio.load()");
 		audio.load();
+
+		/* =========================
+		   PLAY BUTTON DEBUG
+		========================= */
 
 		playBtn.onclick = async () => {
 
@@ -451,15 +462,25 @@
 			try {
 				if (audio.paused) {
 
+					console.log("[AudioPlayer] attempting play()");
+
 					const playPromise = audio.play();
 
 					if (playPromise !== undefined) {
 						await playPromise
+							.then(() => {
+								console.log("[AudioPlayer] play() resolved successfully");
+							})
+							.catch(err => {
+								console.warn("[AudioPlayer] play() blocked or failed:", err);
+							});
 					}
 
 					playBtn.textContent = "Pause";
 
 				} else {
+
+					console.log("[AudioPlayer] pausing audio");
 
 					audio.pause();
 					playBtn.textContent = "Play";
@@ -469,6 +490,10 @@
 				console.error("[AudioPlayer] play button exception:", e);
 			}
 		};
+
+		/* =========================
+		   TIMELINE DEBUG
+		========================= */
 
 		timeline.addEventListener("input", () => {
 			console.log("[AudioPlayer] seeking to:", timeline.value);
@@ -504,18 +529,18 @@
 					name: "Accessories",
 					icon: "icons/folder.png",
 					children: [
-						{ name: "Paint", icon: "icons/missing.png" },
-						{ name: "Notepad", icon: "icons/notepad.png" },
-						{ name: "Calculator", icon: "icons/missing.png" }
+						{ name: "Paint", icon: "icons/missing.png", onClick: () => log("Paint")},
+						{ name: "Notepad", icon: "icons/notepad.png", onClick: () => log("Notepad")},
+						{ name: "Calculator", icon: "icons/missing.png", onClick: () => log("Calculator")}
 					]
 				},
 				{
 					name: "Games",
 					icon: "icons/games.png",
 					children: [
-						{ name: "Minecraft", icon: "icons/minecraft.png" },
-						{ name: "Kogama", icon: "icons/kogama.png" },
-						{ name: "Polybius", icon: "icons/w2k_wmp_54.png" }
+						{ name: "Minecraft", icon: "icons/minecraft.png", onClick: () => log("Minecraft")},
+						{ name: "Kogama", icon: "icons/kogama.png", onClick: () => log("Kogama")},
+						{ name: "Polybius", icon: "icons/w2k_wmp_54.png", onClick: () => log("Polybius")}
 					]
 				}
 			]
@@ -523,18 +548,151 @@
 		{
 			name: "Documents",
 			icon: "icons/documents.png",
-			onClick: openDocuments
+			onClick: () => openDocuments()
 		},
-		{ name: "Settings", icon: "icons/settings.png" },
-		{ name: "Find", icon: "icons/find.png" },
-		{ name: "Help", icon: "icons/help.png" },
-		{ name: "Run...", icon: "icons/run.png" },
+		{ 
+			name: "Settings", 
+			icon: "icons/settings.png",
+			onClick: () => settings()
+		},
+		{ 
+			name: "Find", 
+			icon: "icons/find.png",
+			onClick: () => log("Find")
+		},
+		{ 
+			name: "Help", 
+			icon: "icons/help.png",
+			onClick: () => log("Help")
+		},
+		{ 
+			name: "Run...", 
+			icon: "icons/run.png",
+			onClick: () => log("Run")
+		},
 		{ 
 			name: "Shut Down...", 
 			icon: "icons/shutdown.png",
-			onClick: shutdown
+			onClick: () => shutdown()
 		}
 	];
+
+	
+	const backgrounds = [
+		{ name: "None", value: "" },
+		{ name: "New Spawn City", value: "images/newspawncity.png" },
+		{ name: "Mesa", value: "images/mesa.png" },
+		{ name: "Forest", value: "images/forest.png" },
+		{ name: "Mountains", value: "images/mountains.png" },
+		{ name: "Dark Forest", value: "images/darkforest.png" },
+		{ name: "Plains", value: "images/plains.png" },
+		{ name: "Cherry Grove", value: "images/cherrygrove.png" }
+	];
+	
+	function settings() {
+
+		const optionsHTML = backgrounds.map(bg =>
+			`<option value="${bg.value}">${bg.name}</option>`
+		).join("");
+
+		const content = `
+			<div style="display:flex; flex-direction:column; gap:10px;">
+				<label><b>Background</b></label>
+
+				<select id="bgSelect" style="padding:4px;">
+					${optionsHTML}
+				</select>
+			</div>
+		`;
+
+		const win = createWindow("Settings", content, 300, 150, 300);
+
+		const select = win.querySelector("#bgSelect");
+
+		// load saved value
+		const saved = localStorage.getItem("desktop_bg") || "";
+		select.value = saved;
+
+		applyBackground(saved);
+
+		// instant apply + save
+		select.addEventListener("change", () => {
+			const value = select.value;
+
+			localStorage.setItem("desktop_bg", value);
+			applyBackground(value);
+		});
+	}
+
+	function applyBackground(value) {
+		const desktop = document.querySelector(".desktop");
+
+		if (!desktop) return;
+
+		if (!value) {
+			desktop.style.backgroundImage = "none";
+			desktop.style.backgroundColor = "#008282";
+		} else {
+			desktop.style.backgroundImage = `url("${value}")`;
+			desktop.style.backgroundColor = ""; // optional cleanup
+		}
+	}
+
+
+
+	function log(input) {
+		//console.log("[Action] Attempted to open:", input);
+
+		const dialog = document.createElement("div");
+
+		dialog.style.position = "absolute";
+		dialog.style.left = "200px";
+		dialog.style.top = "200px";
+		dialog.style.zIndex = 99999;
+
+		dialog.innerHTML = `
+			<div class="fake-window" style=" width: 390px; background: #c0c0c0; border: 2px solid #000; box-shadow: 4px 4px 0px #000; font-family: sans-serif; ">
+
+				<div class="window-titlebar" style=" cursor: grab; background: #000080; color: white; display: flex; align-items: center; justify-content: space-between; padding: 4px; ">
+
+					<div style="display:flex;align-items:center;gap:6px;">
+						<img src="icons/restrict.png" style="width:16px;height:16px;image-rendering:pixelated;">
+						<span>Error</span>
+					</div>
+
+					<div class="window-controls">
+						<button type="button" class="win-btn close">×</button>
+					</div>
+				</div>
+
+				<div style="padding:12px;">
+					Cannot open file:<br><br>
+					'C:\\WIN314\\${input}.exe'
+				</div>
+
+				<div style="text-align:right;padding:10px;">
+					<button id="closeBtn">OK</button>
+				</div>
+			</div>
+		`;
+
+		document.body.appendChild(dialog);
+
+		dialog.getBoundingClientRect();
+
+		const win = dialog.querySelector(".fake-window");
+		const titleBar = dialog.querySelector(".window-titlebar");
+
+		function closeWindow() {
+			dialog.remove();
+		}
+
+		dialog.querySelector("#closeBtn").onclick = closeWindow;
+		dialog.querySelector(".win-btn.close").onclick = closeWindow;
+
+		//makeDraggable(win, ".window-titlebar");
+	}
+	
 	function shutdown() {
 		window.close();
 	}
@@ -599,18 +757,113 @@
 		return container;
 	}
 
+
+
+	const desktop = [
+		{ 
+			name: "My Computer", 
+			icon: "icons/computer.png",
+			onClick: () => settings()
+		},
+		{ 
+			name: "Kogama", 
+			icon: "icons/kogama.png",
+			onClick: () => log("Kogama")
+		},
+		{ 
+			name: "Minecraft", 
+			icon: "icons/minecraft.png",
+			onClick: () => log("Minecraft")
+		},
+		{ 
+			name: "Discord", 
+			icon: "icons/discord.png",
+			onClick: () => openLink("https://discord.gg/EYcBYPXhq5")
+		},
+		{ 
+			name: "Trash Can", 
+			icon: "icons/trash.png",
+			onClick: () => openTrash()
+		},
+	];
+	function openLink(input) {
+		window.open(input, "_blank");
+	}
+	
+	function createDesktopIcons() {
+		const desktopEl = document.querySelector(".desktop");
+		if (!desktopEl) return;
+
+		// container so windows stay separate from icons
+		const iconLayer = document.createElement("div");
+		iconLayer.className = "desktop-icons";
+
+		desktop.forEach(item => {
+
+			const icon = document.createElement("div");
+			icon.className = "desktop-icon";
+
+			icon.innerHTML = `
+				<div class="desktop-icon-img"
+					style="background-image:url('${item.icon}')"></div>
+				<div class="desktop-icon-label">${item.name}</div>
+			`;
+
+			icon.onclick = (e) => {
+				e.stopPropagation();
+				if (item.onClick) item.onClick();
+			};
+
+			iconLayer.appendChild(icon);
+		});
+
+		desktopEl.appendChild(iconLayer);
+	}
+
+
+	const trashFiles = [
+		{ name: "2026-05-09 18.33.42.png", path: "images/2026-05-09_18.33.42.png" },
+		{ name: "2026-05-23 06.49.02.png", path: "images/2026-05-23_06.49.02.png" },
+		//{ name: "Anthem of Rakau.mp3", path: "audio/forest.mp3", type: "audio" }
+	];
+
+	function openTrash() {
+
+		let filesHTML = "";
+
+		for (const file of trashFiles) {
+
+			filesHTML += `
+				<div class="file" onclick="window.openFile(${JSON.stringify(file).replace(/"/g, '&quot;')})">
+					<img src="icons/image.png">
+					<div>${file.name}</div>
+				</div>
+			`;
+		}
+
+		createWindow(
+			"Trash",
+			`
+			<div class="file-grid">
+				${filesHTML}
+			</div>
+			`,
+			300
+		);
+	}
+
+
+
+	window.addEventListener("DOMContentLoaded", createDesktopIcons);
+
 	const startMenuContent =
 		document.getElementById("startMenuContent");
 
-	startMenuContent.appendChild(
-		createMenu(startMenuData)
-	);
+	startMenuContent.appendChild( createMenu(startMenuData) );
 
-	const startButton =
-		document.getElementById("startButton");
+	const startButton = document.getElementById("startButton");
 
-	const startMenu =
-		document.getElementById("startMenu");
+	const startMenu = document.getElementById("startMenu");
 
 	startButton.addEventListener("click", () => {
 		startMenu.classList.toggle("active");
