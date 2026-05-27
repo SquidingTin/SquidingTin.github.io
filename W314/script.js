@@ -681,7 +681,7 @@
 	function openAudioPlayer(file) {
 
 		const content = `
-			<div style="display:flex; flex-direction:column; gap:10px; width:100%;">
+			<div class="audio-player">
 
 				<div style="font-weight:bold;">${file.name}</div>
 
@@ -694,7 +694,7 @@
 					align-items:center;
 					justify-content:center;
 				">
-					<img class="playIcon" src="icons/play.png" style="width:35px; height:35px;">
+					<img class="playIcon" src="icons/play.png">
 				</button>
 
 				<input class="timeline" type="range" min="0" value="0" step="0.1" style="width:100%;">
@@ -820,11 +820,6 @@
 
 		if (!desktop) return;
 
-		// shared settings for proper scaling
-		desktop.style.backgroundRepeat = "no-repeat";
-		desktop.style.backgroundPosition = "center";
-		desktop.style.backgroundSize = "cover";
-
 		if (!value) {
 			desktop.style.backgroundImage = "none";
 			desktop.style.backgroundColor = "#008282";
@@ -834,10 +829,14 @@
 		}
 	}
 
-
-
-	function log(input) {
-		//console.log("[Action] Attempted to open:", input);
+	function dialogBox(options) {
+		const {
+			icon = "icons/restrict.png",
+			title = "Error",
+			path = "UNKNOWN",
+			message = "An unknown error occurred"
+		} = options;
+		
 
 		const dialog = document.createElement("div");
 
@@ -847,37 +846,29 @@
 		dialog.style.zIndex = 99999;
 
 		dialog.innerHTML = `
-			<div class="fake-window" style=" width: 390px; background: #c0c0c0; border: 2px solid #000; box-shadow: 4px 4px 0px #000; font-family: sans-serif; ">
+			<div class="fake-window" >
 
-				<div class="window-titlebar" style=" cursor: grab; background: #000080; color: white; display: flex; align-items: center; justify-content: space-between; padding: 4px; ">
+				<div class="window-titlebar"
+					style="cursor:grab;background:#000080;color:white;display:flex;align-items:center;justify-content:space-between;padding:4px;">
 
 					<div style="display:flex;align-items:center;gap:6px;">
-						<img src="icons/restrict.png" style="width:16px;height:16px;image-rendering:pixelated;">
-						<span>Error</span>
+						<img src="${icon}" style="width:16px;height:16px;image-rendering:pixelated;">
+						<span>${title}</span>
 					</div>
-
+					
 					<div class="window-controls">
+						<button type="button" class="win-btn minimize">_</button>
+						<button type="button" class="win-btn maximize">□</button>
 						<button type="button" class="win-btn close">×</button>
 					</div>
 				</div>
-
-				<div style="padding:12px;">
-					Cannot open file:<br><br>
-					'C:\\WIN314\\${input}.exe'
-				</div>
-
-				<div style="text-align:right;padding:10px;">
-					<button id="closeBtn">OK</button>
-				</div>
+				
+				${html}
+				
 			</div>
 		`;
 
 		document.body.appendChild(dialog);
-
-		dialog.getBoundingClientRect();
-
-		const win = dialog.querySelector(".fake-window");
-		const titleBar = dialog.querySelector(".window-titlebar");
 
 		function closeWindow() {
 			dialog.remove();
@@ -885,8 +876,45 @@
 
 		dialog.querySelector("#closeBtn").onclick = closeWindow;
 		dialog.querySelector(".win-btn.close").onclick = closeWindow;
+	}
+	
 
-		//makeDraggable(win, ".window-titlebar");
+	function log(input) {
+
+		const content = `
+			Cannot open file:<br><br>
+			'C:\\WIN314\\${input}.exe'
+		`;
+
+		const win = createWindow("Error", content);
+
+		// find title text container (adjust selector to your structure)
+		const titleBar = win.querySelector(".fake-dialog-titlebar, .fake-window-titlebar");
+		const titleText = titleBar?.querySelector(".title-text");
+
+		if (titleText) {
+			const icon = document.createElement("img");
+			icon.src = "icons/restrict.png";
+			icon.style.width = "16px";
+			icon.style.height = "16px";
+			icon.style.imageRendering = "pixelated";
+			icon.style.marginRight = "6px";
+
+			titleText.prepend(icon);
+		}
+
+		const body = win.querySelector(".fake-dialog-body, .fake-window-body");
+
+		const okBtn = document.createElement("div");
+		okBtn.style.textAlign = "right";
+		okBtn.style.marginTop = "10px";
+
+		okBtn.innerHTML = `<button type="button">OK</button>`;
+		okBtn.querySelector("button").onclick = () => win.remove();
+
+		body.appendChild(okBtn);
+
+		return win;
 	}
 	
 	function shutdown() {
