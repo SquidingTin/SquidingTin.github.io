@@ -1,5 +1,149 @@
 (function () {
 
+
+	/* =========================
+	   Data
+	========================= */
+	
+	const imageFiles = [
+		{
+			name: "News",
+			type: "folder",
+			children: [
+				{
+					name: "The International",
+					type: "folder",
+					children: [
+						{
+							name: "5/26/26",
+							type: "folder",
+							children: [
+								{ name: "The International Page 1.png", path: "images/The_International/5_26_26_1.png", type: "image" },
+								{ name: "The International Page 2.png", path: "images/The_International/5_26_26_2.png", type: "image" },
+								{ name: "The International Page 3.png", path: "images/The_International/5_26_26_3.png", type: "image" }
+							]
+						}
+					]
+				},
+				{
+					name: "Weekly Sylven",
+					type: "folder",
+					children: [
+						{ name: "Weekly Sylven W0.png", path: "images/Sylven/Weekly_Sylven_W0.png", type: "image" }
+					]
+				}
+			]
+		},
+		{ name: "World Map.png", path: "images/map.png", type: "image" },
+		{ name: "New Spawn City.png", path: "images/newspawncity.png", type: "image" },
+		{ name: "New Spawn City 2.png", path: "images/newspawncity2.png", type: "image" },
+		{ name: "Mesa.png", path: "images/mesa.png", type: "image" },
+		{ name: "Forest.png", path: "images/forest.png", type: "image" },
+		{ name: "Mountains.png", path: "images/mountains.png", type: "image" },
+		{ name: "Dark Forest.png", path: "images/darkforest.png", type: "image" },
+		{ name: "Plains.png", path: "images/plains.png", type: "image" },
+		{ name: "Cherry Grove.png", path: "images/cherrygrove.png", type: "image" },
+
+		{ name: "Anthem of Rakau.mp3", path: "audio/forest.mp3", type: "audio" }
+	];
+
+	const desktop = [
+		{ 
+			name: "My Computer", 
+			icon: "icons/computer.png",
+			onClick: () => settings()
+		},
+		{ 
+			name: "Minecraft", 
+			icon: "icons/minecraft.png",
+			onClick: () => log("Minecraft")
+		},
+		{ 
+			name: "Discord", 
+			icon: "icons/discord.png",
+			onClick: () => openLink("https://discord.gg/EYcBYPXhq5")
+		},
+		{
+			name: "News", 
+			icon: "icons/documents.png",
+			onClick: () => openDocuments("News")
+		},
+		{ 
+			name: "Trash Can", 
+			icon: "icons/trash.png",
+			onClick: () => openTrash()
+		},
+	];
+	
+	const startMenuData = [
+		{
+			name: "Programs",
+			icon: "icons/programs.png",
+			children: [
+				{
+					name: "Accessories",
+					icon: "icons/folder.png",
+					children: [
+						{ name: "Paint", icon: "icons/missing.png", onClick: () => log("Paint")},
+						{ name: "Notepad", icon: "icons/notepad.png", onClick: () => log("Notepad")},
+						{ name: "Calculator", icon: "icons/missing.png", onClick: () => log("Calculator")}
+					]
+				},
+				{
+					name: "Games",
+					icon: "icons/games.png",
+					children: [
+						{ name: "Minecraft", icon: "icons/minecraft.png", onClick: () => log("Minecraft")},
+						{ name: "Kogama", icon: "icons/kogama.png", onClick: () => log("Kogama")},
+						{ name: "Polybius", icon: "icons/w2k_wmp_54.png", onClick: () => log("Polybius")}
+					]
+				}
+			]
+		},
+		{
+			name: "Documents",
+			icon: "icons/documents.png",
+			onClick: () => openDocuments()
+		},
+		{ 
+			name: "Settings", 
+			icon: "icons/settings.png",
+			onClick: () => settings()
+		},
+		{ 
+			name: "Find", 
+			icon: "icons/find.png",
+			onClick: () => log("Find")
+		},
+		{ 
+			name: "Help", 
+			icon: "icons/help.png",
+			onClick: () => log("Help")
+		},
+		{ 
+			name: "Run...", 
+			icon: "icons/run.png",
+			onClick: () => log("Run")
+		},
+		{ 
+			name: "Shut Down...", 
+			icon: "icons/shutdown.png",
+			onClick: () => shutdown()
+		}
+	];
+
+	const backgrounds = [
+		{ name: "None", value: "" },
+		{ name: "New Spawn City", value: "images/newspawncity.png" },
+		{ name: "Mesa", value: "images/mesa.png" },
+		{ name: "Forest", value: "images/forest.png" },
+		{ name: "Mountains", value: "images/mountains.png" },
+		{ name: "Dark Forest", value: "images/darkforest.png" },
+		{ name: "Plains", value: "images/plains.png" },
+		{ name: "Cherry Grove", value: "images/cherrygrove.png" }
+	];
+
+
 	/* =========================
 	   WINDOW LAYER SYSTEM
 	========================= */
@@ -323,48 +467,6 @@
 	   FILE SYSTEM
 	========================= */
 
-	const imageFiles = [
-		{
-			name: "News",
-			type: "folder",
-			children: [
-				{
-					name: "The International",
-					type: "folder",
-					children: [
-						{
-							name: "5/26/26",
-							type: "folder",
-							children: [
-								{ name: "The International Page 1.png", path: "images/The_International/5_26_26_1.png", type: "image" },
-								{ name: "The International Page 2.png", path: "images/The_International/5_26_26_2.png", type: "image" },
-								{ name: "The International Page 3.png", path: "images/The_International/5_26_26_3.png", type: "image" }
-							]
-						}
-					]
-				},
-				{
-					name: "Weekly Sylven",
-					type: "folder",
-					children: [
-						{ name: "Weekly Sylven W0.png", path: "images/Sylven/Weekly_Sylven_W0.png", type: "image" }
-					]
-				}
-			]
-		},
-		{ name: "World Map.png", path: "images/map.png", type: "image" },
-		{ name: "New Spawn City.png", path: "images/newspawncity.png", type: "image" },
-		{ name: "New Spawn City 2.png", path: "images/newspawncity2.png", type: "image" },
-		{ name: "Mesa.png", path: "images/mesa.png", type: "image" },
-		{ name: "Forest.png", path: "images/forest.png", type: "image" },
-		{ name: "Mountains.png", path: "images/mountains.png", type: "image" },
-		{ name: "Dark Forest.png", path: "images/darkforest.png", type: "image" },
-		{ name: "Plains.png", path: "images/plains.png", type: "image" },
-		{ name: "Cherry Grove.png", path: "images/cherrygrove.png", type: "image" },
-
-		{ name: "Anthem of Rakau.mp3", path: "audio/forest.mp3", type: "audio" }
-	];
-
 	let documentsWindow = null;
 	let currentFolder = null;
 
@@ -613,74 +715,6 @@
 	   START MENU
 	========================= */
 
-	const startMenuData = [
-		{
-			name: "Programs",
-			icon: "icons/programs.png",
-			children: [
-				{
-					name: "Accessories",
-					icon: "icons/folder.png",
-					children: [
-						{ name: "Paint", icon: "icons/missing.png", onClick: () => log("Paint")},
-						{ name: "Notepad", icon: "icons/notepad.png", onClick: () => log("Notepad")},
-						{ name: "Calculator", icon: "icons/missing.png", onClick: () => log("Calculator")}
-					]
-				},
-				{
-					name: "Games",
-					icon: "icons/games.png",
-					children: [
-						{ name: "Minecraft", icon: "icons/minecraft.png", onClick: () => log("Minecraft")},
-						{ name: "Kogama", icon: "icons/kogama.png", onClick: () => log("Kogama")},
-						{ name: "Polybius", icon: "icons/w2k_wmp_54.png", onClick: () => log("Polybius")}
-					]
-				}
-			]
-		},
-		{
-			name: "Documents",
-			icon: "icons/documents.png",
-			onClick: () => openDocuments()
-		},
-		{ 
-			name: "Settings", 
-			icon: "icons/settings.png",
-			onClick: () => settings()
-		},
-		{ 
-			name: "Find", 
-			icon: "icons/find.png",
-			onClick: () => log("Find")
-		},
-		{ 
-			name: "Help", 
-			icon: "icons/help.png",
-			onClick: () => log("Help")
-		},
-		{ 
-			name: "Run...", 
-			icon: "icons/run.png",
-			onClick: () => log("Run")
-		},
-		{ 
-			name: "Shut Down...", 
-			icon: "icons/shutdown.png",
-			onClick: () => shutdown()
-		}
-	];
-
-	
-	const backgrounds = [
-		{ name: "None", value: "" },
-		{ name: "New Spawn City", value: "images/newspawncity.png" },
-		{ name: "Mesa", value: "images/mesa.png" },
-		{ name: "Forest", value: "images/forest.png" },
-		{ name: "Mountains", value: "images/mountains.png" },
-		{ name: "Dark Forest", value: "images/darkforest.png" },
-		{ name: "Plains", value: "images/plains.png" },
-		{ name: "Cherry Grove", value: "images/cherrygrove.png" }
-	];
 	
 	function settings() {
 
@@ -854,34 +888,6 @@
 	}
 
 
-
-	const desktop = [
-		{ 
-			name: "My Computer", 
-			icon: "icons/computer.png",
-			onClick: () => settings()
-		},
-		{ 
-			name: "Minecraft", 
-			icon: "icons/minecraft.png",
-			onClick: () => log("Minecraft")
-		},
-		{ 
-			name: "Discord", 
-			icon: "icons/discord.png",
-			onClick: () => openLink("https://discord.gg/EYcBYPXhq5")
-		},
-		{
-			name: "News", 
-			icon: "icons/documents.png",
-			onClick: () => openDocuments("News")
-		},
-		{ 
-			name: "Trash Can", 
-			icon: "icons/trash.png",
-			onClick: () => openTrash()
-		},
-	];
 	function openLink(input) {
 		window.open(input, "_blank");
 	}
