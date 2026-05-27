@@ -580,13 +580,11 @@
 
 		const select = win.querySelector("#bgSelect");
 
-		// load saved value
 		const saved = localStorage.getItem("desktop_bg") || "";
 		select.value = saved;
 
 		applyBackground(saved);
 
-		// instant apply + save
 		select.addEventListener("change", () => {
 			const value = select.value;
 
@@ -600,12 +598,17 @@
 
 		if (!desktop) return;
 
+		// shared settings for proper scaling
+		desktop.style.backgroundRepeat = "no-repeat";
+		desktop.style.backgroundPosition = "center";
+		desktop.style.backgroundSize = "cover";
+
 		if (!value) {
 			desktop.style.backgroundImage = "none";
 			desktop.style.backgroundColor = "#008282";
 		} else {
 			desktop.style.backgroundImage = `url("${value}")`;
-			desktop.style.backgroundColor = ""; // optional cleanup
+			desktop.style.backgroundColor = "";
 		}
 	}
 
@@ -765,7 +768,6 @@
 		const desktopEl = document.querySelector(".desktop");
 		if (!desktopEl) return;
 
-		// container so windows stay separate from icons
 		const iconLayer = document.createElement("div");
 		iconLayer.className = "desktop-icons";
 
