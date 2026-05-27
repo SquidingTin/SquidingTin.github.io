@@ -56,7 +56,7 @@
 		{ 
 			name: "Minecraft", 
 			icon: "icons/minecraft.png",
-			onClick: () => log("Minecraft")
+			onClick: () => openMinecraft()
 		},
 		{ 
 			name: "Discord", 
@@ -93,8 +93,8 @@
 					name: "Games",
 					icon: "icons/games.png",
 					children: [
-						{ name: "Minecraft", icon: "icons/minecraft.png", onClick: () => log("Minecraft")},
-						{ name: "Kogama", icon: "icons/kogama.png", onClick: () => log("Kogama")},
+						{ name: "Minecraft", icon: "icons/minecraft.png", onClick: () => openMinecraft()},
+						{ name: "Kogama", icon: "icons/kogama.png", onClick: () => openMinecraft()},
 						{ name: "Polybius", icon: "icons/w2k_wmp_54.png", onClick: () => log("Polybius")}
 					]
 				}
@@ -143,7 +143,54 @@
 		{ name: "Cherry Grove", value: "images/cherrygrove.png" }
 	];
 
+	const minecraftNews = [
+		{
+			title: "Compatibility with Windows 3.14",
+			content: `
+				<p>
+					Windows 3.14 has officially been updated for the new world. 
+				</p>
 
+				<p>
+					Though our homes may be gone, survivors can safely reconnect, rebuild, and stay informed 
+					through the restored network.
+				</p>
+			`
+		},
+		{
+			title: "Our homes may be gone, but we survived.",
+			content: `
+				<ul>
+					<li>Community farms now under construction</li>
+					<li>Memorial wall created for lost towns and builds</li>
+					<li>First diamonds discovered since the evacuation</li>
+					<li>Officials confirm no signs of Wither Storm corruption</li>
+					<li>Trade market expected to reopen later this week</li>
+					<li>Builders wanted for reconstruction projects</li>
+					<li>Mining expeditions heading deeper underground each day</li>
+					<li>Hope returns as rebuilding officially begins</li>
+				</ul>
+				
+			`
+		}
+	];
+	//<img src="images/mountains.png" class="mc-banner">
+
+	const minecraftSidebar = [
+		{
+			title: "Official links:",
+			links: [
+				{ name: "Minecraft.net", url: "https://www.minecraft.net/en-us" },
+				{ name: "Merchandise", url: "https://thedailyemerald.dashery.com/" },
+				{ name: "Patreon", url: "https://www.patreon.com/cw/DailyEmerald" },
+				{ name: "Reddit", url: "https://www.reddit.com/r/TheDailyEmerald/" },
+				{ name: "Youtube", url: "https://www.youtube.com/@thedailyemeraldmc" },
+			]
+		}
+	];
+
+	const taskButtonsContainer = document.querySelector(".task-buttons-container");
+	const windowTaskMap = new WeakMap();
 	/* =========================
 	   WINDOW LAYER SYSTEM
 	========================= */
@@ -292,24 +339,17 @@
 		win.querySelector(".close").onclick = () => {
 			win.remove();
 
+			const taskBtn = windowTaskMap.get(win);
+			if (taskBtn) taskBtn.remove();
+
 			if (documentsWindow === win) {
 				documentsWindow = null;
 			}
 		};
 
 		win.querySelector(".minimize").onclick = () => {
-			const body = win.querySelector(".fake-window-body, .fake-dialog-body");
-			if (!body) return;
-
-			const isHidden = body.style.display === "none";
-
-			if (isHidden) {
-				body.style.display = "";
-				win.dataset.minimized = "0";
-			} else {
-				body.style.display = "none";
-				win.dataset.minimized = "1";
-			}
+			win.style.display = "none";
+			win.dataset.minimized = "1";
 		};
 
 		win.querySelector(".maximize").onclick = () => {
@@ -349,6 +389,7 @@
 		});
 
 		windowLayer.appendChild(win);
+		createTaskButton(win, title);
 
 		makeDraggable(win, ".window-titlebar");
 
@@ -358,6 +399,33 @@
 	}
 
 	window.createWindow = createWindow;
+
+	function createTaskButton(win, title) {
+		if (!taskButtonsContainer) return;
+
+		const wrapper = document.createElement("div");
+		wrapper.className = "task-buttons";
+
+		const btn = document.createElement("div");
+		btn.className = "task-button";
+		btn.textContent = title;
+
+		btn.onclick = () => {
+			if (win.style.display === "none") {
+				win.style.display = "";
+				win.dataset.minimized = "0";
+				bringToFront(win);
+			} else {
+				win.style.display = "none";
+				win.dataset.minimized = "1";
+			}
+		};
+
+		wrapper.appendChild(btn);
+		taskButtonsContainer.appendChild(wrapper);
+
+		windowTaskMap.set(win, wrapper);
+	}
 
 	/* =========================
 	   COUNTDOWN SYSTEM
@@ -647,8 +715,6 @@
 		const playSrc = "icons/play.png";
 		const pauseSrc = "icons/pause.png";
 
-		console.log("[AudioPlayer] Audio element created:", audio);
-
 		function format(t) {
 			if (!isFinite(t)) return "0:00";
 			const m = Math.floor(t / 60);
@@ -887,6 +953,171 @@
 		return container;
 	}
 
+
+	/* =========================
+	   Launcher
+	========================= */
+	function openMinecraft() {
+
+		const username = "Player";
+
+		let newsHTML = "";
+
+		for (const post of minecraftNews) {
+
+			newsHTML += `
+				<div class="mc-news-post">
+
+					<h2>
+						<a>
+							${post.title}
+						</a>
+					</h2>
+
+					${post.content}
+
+				</div>
+			`;
+		}
+
+		let sidebarHTML = "";
+
+		for (const section of minecraftSidebar) {
+
+			sidebarHTML += `
+				<div class="mc-sidebar-section">
+
+					<h3>${section.title}</h3>
+			`;
+
+			if (section.links) {
+
+				for (const link of section.links) {
+
+					sidebarHTML += `
+						<a href="${link.url}" target="_blank">
+							${link.name}
+						</a>
+					`;
+				}
+			}
+
+			if (section.custom) {
+				sidebarHTML += section.custom;
+			}
+
+			sidebarHTML += `</div>`;
+		}
+
+		const content = `
+			<div class="mc-launcher">
+
+				<div class="mc-tabs">
+					<div class="mc-tab active">
+						Update Notes
+					</div>
+
+					<div class="mc-tab">
+						Launcher Log
+					</div>
+
+					<div class="mc-tab">
+						Profile Editor
+					</div>
+				</div>
+
+				<div class="mc-main">
+
+					<div class="mc-news">
+
+						<div class="mc-news-content">
+
+							<h1>Minecraft News</h1>
+
+							${newsHTML}
+
+						</div>
+
+					</div>
+
+					<div class="mc-sidebar">
+
+						${sidebarHTML}
+
+					</div>
+
+				</div>
+
+				<div class="mc-bottom">
+
+					<div class="mc-profile">
+
+						<label>Profile:</label>
+
+						<select>
+							<option>1.21.11</option>
+							<option>Latest Release</option>
+							<option>1.12.4</option>
+						</select>
+
+						<div class="mc-profile-buttons">
+							<button>New Profile</button>
+							<button>Edit Profile</button>
+						</div>
+
+					</div>
+
+					<div class="mc-play-area">
+
+						<button class="mc-play-btn">
+							Play
+						</button>
+
+					</div>
+
+					<div class="mc-status">
+
+						<div>
+							Welcome, <b>${username}</b>
+						</div>
+
+						<div>
+							Ready to update & play Minecraft
+						</div>
+
+						<button class="mc-switch-user">
+							Switch User
+						</button>
+
+					</div>
+
+				</div>
+
+			</div>
+		`;
+
+		const win = createWindow(
+			"Minecraft Launcher",
+			content,
+			120,
+			40,
+			880
+		);
+
+		const playBtn =
+			win.querySelector(".mc-play-btn");
+
+		playBtn.onclick = () => {
+
+			playBtn.textContent = "Launching...";
+
+			setTimeout(() => {
+				playBtn.textContent = "Play";
+			}, 3000);
+
+			//console.log("[Minecraft] Launch requested");
+		};
+	}
 
 	function openLink(input) {
 		window.open(input, "_blank");
