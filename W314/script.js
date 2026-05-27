@@ -145,7 +145,13 @@
 			win.classList.add("image-viewer");
 		}
 
-		win.querySelector(".close").onclick = () => win.remove();
+		win.querySelector(".close").onclick = () => {
+			win.remove();
+
+			if (documentsWindow === win) {
+				documentsWindow = null;
+			}
+		};
 
 		win.querySelector(".minimize").onclick = () => {
 			const body = win.querySelector(".fake-window-body, .fake-dialog-body");
@@ -318,7 +324,34 @@
 	========================= */
 
 	const imageFiles = [
-		{ name: "Weekly Sylven.png", path: "images/Weekly_Sylven_W0.png", type: "image" },
+		{
+			name: "News",
+			type: "folder",
+			children: [
+				{
+					name: "The International",
+					type: "folder",
+					children: [
+						{
+							name: "5/26/26",
+							type: "folder",
+							children: [
+								{ name: "The International Page 1.png", path: "images/The_International/5_26_26_1.png", type: "image" },
+								{ name: "The International Page 2.png", path: "images/The_International/5_26_26_2.png", type: "image" },
+								{ name: "The International Page 3.png", path: "images/The_International/5_26_26_3.png", type: "image" }
+							]
+						}
+					]
+				},
+				{
+					name: "Weekly Sylven",
+					type: "folder",
+					children: [
+						{ name: "Weekly Sylven W0.png", path: "images/Sylven/Weekly_Sylven_W0.png", type: "image" }
+					]
+				}
+			]
+		},
 		{ name: "World Map.png", path: "images/map.png", type: "image" },
 		{ name: "New Spawn City.png", path: "images/newspawncity.png", type: "image" },
 		{ name: "New Spawn City 2.png", path: "images/newspawncity2.png", type: "image" },
@@ -332,56 +365,145 @@
 		{ name: "Anthem of Rakau.mp3", path: "audio/forest.mp3", type: "audio" }
 	];
 
-	function openDocuments() {
+	let documentsWindow = null;
+	let currentFolder = null;
+
+	function getIcon(file) {
+		if (file.type === "audio") return "icons/audio.png";
+		if (file.type === "folder") return "icons/folder.png";
+		return "icons/image.png";
+	}
+
+	function renderFolder(folder) {
+
+		currentFolder = folder;
 
 		let filesHTML = "";
 
-		for (const file of imageFiles) {
+		for (const file of folder.children) {
 
-			const safeFile = JSON.stringify(file).replace(/"/g, '&quot;');
+			const safeFile = JSON.stringify({
+				...file,
+				type: file.type || "image"
+			}).replace(/"/g, '&quot;');
 
-			let icon = "icons/image.png";
-
-			if (file.type === "audio") {
-				icon = "icons/audio.png";
-			}
+			const icon = getIcon(file);
 
 			filesHTML += `
-				<div class="file ${file.type}" onclick="window.openFile(${safeFile})">
+				<div class="file ${file.type || ""}" onclick='window.openFile(${safeFile})'>
 					<img src="${icon}">
 					<div>${file.name}</div>
 				</div>
 			`;
 		}
 
-		createWindow(
-			"Documents",
-			`
-			<div class="file-grid">
-				${filesHTML}
-			</div>
-			`,
+		return `<div class="file-grid">${filesHTML}</div>`;
+	}
+
+	function openDocuments(folderName = null, list = imageFiles) {
+
+		let targetFolder = null;
+
+		function search(name, items) {
+
+			for (const item of items) {
+
+				if (item.type === "folder") {
+
+					if (item.name === name) {
+						return item;
+					}
+
+					if (item.children) {
+						const found = search(name, item.children);
+						if (found) return found;
+					}
+				}
+			}
+
+			return null;
+		}
+
+		if (folderName) {
+			targetFolder = search(folderName, list);
+		}
+
+		if (!targetFolder) {
+			targetFolder = {
+				name: "Documents",
+				children: imageFiles
+			};
+		}
+
+		currentFolder = targetFolder;
+
+		const content = renderFolder(targetFolder);
+
+		if (documentsWindow) {
+
+			const body =
+				documentsWindow.querySelector(".fake-window-body") ||
+				documentsWindow.querySelector(".fake-dialog-body");
+
+			if (body) body.innerHTML = content;
+
+			const title = documentsWindow.querySelector(".title-text");
+			if (title) title.textContent = targetFolder.name;
+
+			return;
+		}
+
+		documentsWindow = createWindow(
+			targetFolder.name,
+			content,
 			300
 		);
 	}
 
+	window.openFolder = function(folder) {
+
+		if (!folder.children) return;
+
+		currentFolder = folder;
+
+		const newContent = renderFolder(folder);
+
+		if (!documentsWindow) return;
+
+		const contentEl =
+			documentsWindow.querySelector(".fake-window-body") ||
+			documentsWindow.querySelector(".fake-dialog-body");
+
+		if (contentEl) {
+			contentEl.innerHTML = newContent;
+		}
+
+		const titleEl = documentsWindow.querySelector(".title-text");
+		if (titleEl) {
+			titleEl.textContent = folder.name;
+		}
+	};
+	
 	/* =========================
 	   FILE ROUTER
 	========================= */
 
 	window.openFile = function (file) {
 
-		if (file.type === "audio" || file.path.endsWith(".mp3")) {
-			return openAudioPlayer(file);
-		}
+			if (file.type === "folder") {
+				return window.openFolder(file);
+			}
 
-		createWindow(
-			"Image Viewer",
-			`<img src="${file.path}">`,
-			320
-		);
-	};
+			if (file.type === "audio" || file.path?.endsWith(".mp3")) {
+				return openAudioPlayer(file);
+			}
 
+			createWindow(
+				"Image Viewer",
+				`<img src="${file.path}" style="max-width:100%;">`,
+				320
+			);
+		};
 	/* =========================
 	   AUDIO PLAYER
 	========================= */
@@ -740,6 +862,11 @@
 			onClick: () => settings()
 		},
 		{ 
+			name: "Kogama", 
+			icon: "icons/kogama.png",
+			onClick: () => log("Kogama")
+		},
+		{ 
 			name: "Minecraft", 
 			icon: "icons/minecraft.png",
 			onClick: () => log("Minecraft")
@@ -748,6 +875,11 @@
 			name: "Discord", 
 			icon: "icons/discord.png",
 			onClick: () => openLink("https://discord.gg/EYcBYPXhq5")
+		},
+		{
+			name: "News", 
+			icon: "icons/documents.png",
+			onClick: () => openDocuments("News")
 		},
 		{ 
 			name: "Trash Can", 
