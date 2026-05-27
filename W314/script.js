@@ -318,16 +318,17 @@
 	========================= */
 
 	const imageFiles = [
-		{ name: "Weekly Sylven.png", path: "images/Weekly_Sylven_W0.png" },
-		{ name: "World Map.png", path: "images/map.png" },
-		{ name: "New Spawn City.png", path: "images/newspawncity.png" },
-		{ name: "New Spawn City 2.png", path: "images/newspawncity2.png" },
-		{ name: "Mesa.png", path: "images/mesa.png" },
-		{ name: "Forest.png", path: "images/forest.png" },
-		{ name: "Mountains.png", path: "images/mountains.png" },
-		{ name: "Dark Forest.png", path: "images/darkforest.png" },
-		{ name: "Plains.png", path: "images/plains.png" },
-		{ name: "Cherry Grove.png", path: "images/cherrygrove.png" },
+		{ name: "Weekly Sylven.png", path: "images/Weekly_Sylven_W0.png", type: "image" },
+		{ name: "World Map.png", path: "images/map.png", type: "image" },
+		{ name: "New Spawn City.png", path: "images/newspawncity.png", type: "image" },
+		{ name: "New Spawn City 2.png", path: "images/newspawncity2.png", type: "image" },
+		{ name: "Mesa.png", path: "images/mesa.png", type: "image" },
+		{ name: "Forest.png", path: "images/forest.png", type: "image" },
+		{ name: "Mountains.png", path: "images/mountains.png", type: "image" },
+		{ name: "Dark Forest.png", path: "images/darkforest.png", type: "image" },
+		{ name: "Plains.png", path: "images/plains.png", type: "image" },
+		{ name: "Cherry Grove.png", path: "images/cherrygrove.png", type: "image" },
+
 		{ name: "Anthem of Rakau.mp3", path: "audio/forest.mp3", type: "audio" }
 	];
 
@@ -337,9 +338,17 @@
 
 		for (const file of imageFiles) {
 
+			const safeFile = JSON.stringify(file).replace(/"/g, '&quot;');
+
+			let icon = "icons/image.png";
+
+			if (file.type === "audio") {
+				icon = "icons/audio.png";
+			}
+
 			filesHTML += `
-				<div class="file" onclick="window.openFile(${JSON.stringify(file).replace(/"/g, '&quot;')})">
-					<img src="icons/image.png">
+				<div class="file ${file.type}" onclick="window.openFile(${safeFile})">
+					<img src="${icon}">
 					<div>${file.name}</div>
 				</div>
 			`;
@@ -379,9 +388,6 @@
 
 	function openAudioPlayer(file) {
 
-		console.log("[AudioPlayer] Opened file:", file);
-		console.log("[AudioPlayer] Raw path:", file.path);
-
 		const content = `
 			<div style="display:flex; flex-direction:column; gap:10px; width:100%;">
 
@@ -389,11 +395,19 @@
 
 				<audio preload="auto" src="${file.path}"></audio>
 
-				<button class="win-btn playBtn">Play</button>
+				<button class="win-btn playBtn" style="
+					width:40px;
+					height:40px;
+					display:flex;
+					align-items:center;
+					justify-content:center;
+				">
+					<img class="playIcon" src="icons/play.png" style="width:35px; height:35px;">
+				</button>
 
 				<input class="timeline" type="range" min="0" value="0" step="0.1" style="width:100%;">
 
-				<div id="timeLabel">0:00 / 0:00</div>
+				<div class="timeLabel">0:00 / 0:00</div>
 
 			</div>
 		`;
@@ -404,9 +418,12 @@
 		const playBtn = win.querySelector(".playBtn");
 		const timeline = win.querySelector(".timeline");
 		const timeLabel = win.querySelector(".timeLabel");
+		const playIcon = win.querySelector(".playIcon");
+
+		const playSrc = "icons/play.png";
+		const pauseSrc = "icons/pause.png";
 
 		console.log("[AudioPlayer] Audio element created:", audio);
-		//console.log("[AudioPlayer] Initial src:", audio.src);
 
 		function format(t) {
 			if (!isFinite(t)) return "0:00";
@@ -415,22 +432,18 @@
 			return `${m}:${s}`;
 		}
 
-		/* =========================
-		   LOAD DEBUG
-		========================= */
-
 		audio.addEventListener("loadstart", () => {
-			console.log("[AudioPlayer] loadstart");
+			//console.log("[AudioPlayer] loadstart");
 		});
 
-		audio.addEventListener("loadedmetadata", () => {
-			console.log("[AudioPlayer] loadedmetadata");
-			console.log("[AudioPlayer] duration:", audio.duration);
-
-			timeline.max = audio.duration || 0;
+		audio.addEventListener("timeupdate", () => {
+			timeline.value = audio.currentTime;
 
 			timeLabel.textContent =
-				`0:00 / ${format(audio.duration)}`;
+				`${format(audio.currentTime)} / ${format(audio.duration)}`;
+		});
+		timeline.addEventListener("input", () => {
+			audio.currentTime = timeline.value;
 		});
 
 		audio.addEventListener("canplay", () => {
@@ -442,78 +455,36 @@
 			console.error("[AudioPlayer] audio.error object:", audio.error);
 			console.error("[AudioPlayer] failed src:", audio.src);
 		});
-
-		/* =========================
-		   FORCE LOAD
-		========================= */
-
-		console.log("[AudioPlayer] calling audio.load()");
 		audio.load();
 
 		/* =========================
-		   PLAY BUTTON DEBUG
+		   PLAY BUTTON
 		========================= */
 
 		playBtn.onclick = async () => {
 
-			console.log("[AudioPlayer] Play button clicked");
-			console.log("[AudioPlayer] paused state:", audio.paused);
-
 			try {
 				if (audio.paused) {
-
-					console.log("[AudioPlayer] attempting play()");
 
 					const playPromise = audio.play();
 
 					if (playPromise !== undefined) {
-						await playPromise
-							.then(() => {
-								console.log("[AudioPlayer] play() resolved successfully");
-							})
-							.catch(err => {
-								console.warn("[AudioPlayer] play() blocked or failed:", err);
-							});
+						await playPromise.catch(err => {
+							console.warn("[AudioPlayer] play() failed:", err);
+						});
 					}
 
-					playBtn.textContent = "Pause";
+					playIcon.src = pauseSrc;
 
 				} else {
-
-					console.log("[AudioPlayer] pausing audio");
-
 					audio.pause();
-					playBtn.textContent = "Play";
+					playIcon.src = playSrc;
 				}
 
 			} catch (e) {
 				console.error("[AudioPlayer] play button exception:", e);
 			}
 		};
-
-		/* =========================
-		   TIMELINE DEBUG
-		========================= */
-
-		timeline.addEventListener("input", () => {
-			console.log("[AudioPlayer] seeking to:", timeline.value);
-			audio.currentTime = Number(timeline.value);
-		});
-
-		audio.addEventListener("timeupdate", () => {
-
-			if (!isFinite(audio.duration)) return;
-
-			timeline.value = audio.currentTime;
-
-			timeLabel.textContent =
-				`${format(audio.currentTime)} / ${format(audio.duration)}`;
-		});
-
-		audio.addEventListener("ended", () => {
-			console.log("[AudioPlayer] audio ended");
-			playBtn.textContent = "Play";
-		});
 	}
 
 	/* =========================
