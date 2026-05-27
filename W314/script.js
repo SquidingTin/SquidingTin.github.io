@@ -862,11 +862,6 @@
 			onClick: () => settings()
 		},
 		{ 
-			name: "Kogama", 
-			icon: "icons/kogama.png",
-			onClick: () => log("Kogama")
-		},
-		{ 
 			name: "Minecraft", 
 			icon: "icons/minecraft.png",
 			onClick: () => log("Minecraft")
