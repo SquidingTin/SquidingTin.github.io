@@ -423,16 +423,17 @@
 				<head>
 					<style>
 						body {
-						font-family: Arial, sans-serif;
-						background-color: #0f0f12;
-						background-image:
-							linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
-							url("blocks/iron_block.png");
-						background-repeat: repeat;
-						background-size: 64px 64px;
-						color: #e6e6e6;
-						margin: 0;
-						padding: 0;
+							font-family: Arial, sans-serif;
+							background-color: #0f0f12;
+							background-image:
+								linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+								url("blocks/iron_block.png");
+							background-repeat: repeat;
+							background-size: 64px 64px;
+							color: #e6e6e6;
+							margin: 0;
+							padding: 0;
+							overflow-x: hidden;
 						}
 
 						header {
@@ -1273,7 +1274,6 @@
 			<html lang="en">
 				<head>
 					<style>
-
 						body{
 							margin:0;
 							background:#f3f0e8;
@@ -1284,10 +1284,11 @@
 							background-size: 64px 64px;
 							font-family:Arial, Helvetica, sans-serif;
 							line-height:1.6;
+							overflow-x: hidden;
 						}
 
 						header{
-							width:115%;
+							width:112%;
 							box-sizing:border-box;
 							background:
 							linear-gradient(rgba(90,20,35,0.75), rgba(90,20,35,0.85));
