@@ -651,7 +651,6 @@
 						}
 					</style>
 				</head>
-
 				<body>
 					<div class="panel">
 						
@@ -663,28 +662,28 @@
 						<div class="grid">
 
 							<div class="section">
-								<h2>Live Projects</h2>
+								<h2>System Overview</h2>
 								<div class="node">
-									<b>S.A.P.M Mk V</b> — Sound Activated Proximity Mines (Ambush)
+									<span class="tag">CORE</span> High efficiency redstone circuitry manufacturing
 								</div>
 								<div class="node">
-									<b>Project Skybreaker</b
+									<span class="tag">FIELD</span> Tactical wiring systems for client installations
 								</div>
 								<div class="node">
-									<b>M.A.B</b> — (Big Boi Class)
+									<span class="tag">AUTO</span> Self-triggered mechanical and trap systems
 								</div>
 							</div>
 
 							<div class="section">
 								<h2>Live Projects</h2>
 								<div class="node">
-									<b>S.A.P.M Mk V</b> — Sound Activated Proximity Mines (Codename: Ambush)
+									<b>S.A.P.M Mk V</b> — Sound Activated Proximity Mines (Ambush Protocol)
 								</div>
 								<div class="node">
-									<b>Project Skybreaker</b> —
+									<b>Project Skybreaker</b> — High altitude redstone deployment network
 								</div>
 								<div class="node">
-									<b>M.A.B</b> — Military Air Bomber (Codename: Big Boi Class)
+									<b>M.A.B</b> — Modular Assault Block system (Big Boi Class)
 								</div>
 							</div>
 
@@ -692,20 +691,20 @@
 								<h2>Wiring Network Status</h2>
 								<div class="node">Main Grid: <span style="color:#00ff99;">STABLE</span></div>
 								<div class="node">Defense Circuits: <span style="color:#00ff99;">ARMED</span></div>
-								<div class="node">Project Skybreaker: <span style="color:#ff5555;">CLASSIFIED</span></div>
+								<div class="node">Hidden Traces: <span style="color:#ff5555;">CLASSIFIED</span></div>
 								<div class="wire"></div>
 								<div class="node">Signal Integrity: 98.4%</div>
 							</div>
 
 							<div class="section">
 								<h2>Hierarchy Node Map</h2>
-								<div class="node">CEO → Root access</div>
-								<div class="node">Ten Heavenly → Network control</div>
-								<div class="node">Archangel → Classified systems</div>
+								<div class="node">Intern → Basic wiring access</div>
 								<div class="node">Grad 3 → Assembly circuits</div>
 								<div class="node">Grad 2 → System design</div>
 								<div class="node">Grad 1 → Core architecture</div>
-								<div class="node">Intern → Basic wiring access</div>
+								<div class="node">Archangel → Classified systems</div>
+								<div class="node">Ten Heavenly → Network control</div>
+								<div class="node">CEO → Root access</div>
 							</div>
 
 							<div class="section" style="grid-column: span 2;">
@@ -717,7 +716,6 @@
 							</div>
 
 						</div>
-
 						<div class="footer">
 							ANGEL ELECTRONICS NETWORK // ALL CIRCUITS RUNNING NORMALLY // DO NOT TRACE CLASSIFIED LINES
 						</div>
