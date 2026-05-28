@@ -2,7 +2,7 @@
 
 
 	/* =========================
-	   Data
+		 Data
 	========================= */
 	
 	const imageFiles = [
@@ -68,6 +68,11 @@
 			icon: "icons/documents.png",
 			onClick: () => openDocuments("News")
 		},
+		{
+			name: "OverNet", 
+			icon: "icons/IE.png",
+			onClick: () => openInternet()
+		},
 		{ 
 			name: "Trash Can", 
 			icon: "icons/trash.png",
@@ -86,7 +91,12 @@
 					children: [
 						{ name: "Paint", icon: "icons/missing.png", onClick: () => log("Paint")},
 						{ name: "Notepad", icon: "icons/notepad.png", onClick: () => log("Notepad")},
-						{ name: "Calculator", icon: "icons/missing.png", onClick: () => log("Calculator")}
+						{ name: "Calculator", icon: "icons/missing.png", onClick: () => log("Calculator")},
+						{
+							name: "Overworld Network", 
+							icon: "icons/IE.png",
+							onClick: () => openInternet()
+						},
 					]
 				},
 				{
@@ -189,10 +199,391 @@
 		}
 	];
 
+	const pages = {
+		home: `
+			<!DOCTYPE html>
+			<html>
+				<head>
+					<style>
+						body {
+							font-family: Arial, sans-serif;
+							background: #0f1117;
+							color: #ffffff;
+							margin: 0;
+							padding: 40px;
+							display: flex;
+							justify-content: center;
+						}
+
+						.home-container {
+							width: 100%;
+							max-width: 1000px;
+						}
+
+						.home-title {
+							font-size: 42px;
+							font-weight: bold;
+							margin-bottom: 10px;
+						}
+
+						.home-subtitle {
+							color: #9ca3af;
+							margin-bottom: 40px;
+							font-size: 16px;
+						}
+
+						.page-grid {
+							display: grid;
+							grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+							gap: 18px;
+						}
+
+						.page-card {
+							background: #1a1d27;
+							border: 1px solid #2a2f3d;
+							border-radius: 14px;
+							padding: 20px;
+							cursor: pointer;
+							transition:
+								transform 0.15s ease,
+								background 0.15s ease,
+								border-color 0.15s ease;
+							text-align: center;
+						}
+
+						.page-card:hover {
+							background: #232838;
+							border-color: #4b5563;
+							transform: translateY(-2px);
+						}
+
+						.page-icon {
+							width: 58px;
+							height: 58px;
+							margin: 0 auto 14px auto;
+							border-radius: 12px;
+							background: linear-gradient(
+								135deg,
+								#3b82f6,
+								#1d4ed8
+							);
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							font-size: 28px;
+							font-weight: bold;
+							box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+						}
+
+						.page-name {
+							font-size: 17px;
+							font-weight: bold;
+							margin-bottom: 6px;
+						}
+
+						.page-url {
+							font-size: 13px;
+							color: #9ca3af;
+							word-break: break-word;
+						}
+					</style>
+				</head>
+
+				<body>
+					<script>
+						function openPage(page) {
+							location.hash = page;
+						}
+					</script>
+
+					<div class="home-container">
+
+						<div class="home-title">
+							New Tab
+						</div>
+
+						<div class="home-subtitle">
+							Frequently visited pages
+						</div>
+
+						<div class="page-grid">
+
+							<div class="page-card" onclick="parent.location.hash='ironco'">
+
+								<div class="page-icon">
+									I
+								</div>
+
+								<div class="page-name">
+									Iron Co
+								</div>
+
+								<div class="page-url">
+									www.ironco.net
+								</div>
+
+							</div>
+
+							<div class="page-card" onclick="parent.location.hash='404'">
+
+								<div class="page-icon">
+									TDE
+								</div>
+
+								<div class="page-name">
+									The Daily Emerald
+								</div>
+
+								<div class="page-url">
+									www.DailyEmerald.com
+								</div>
+
+							</div>
+
+							<div class="page-card" onclick="parent.location.hash='404'">
+
+								<div class="page-icon">
+									M
+								</div>
+
+								<div class="page-name">
+									Mine Mail
+								</div>
+
+								<div class="page-url">
+									www.m-mail.com
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</body>
+			</html>
+		`,
+
+		ironco: `
+			<!DOCTYPE html>
+			<html>
+				<head>
+					<style>
+						body {
+						font-family: Arial, sans-serif;
+						background-color: #0f0f12;
+						background-image:
+							linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+							url("blocks/iron_block.png");
+						background-repeat: repeat;
+						background-size: 64px 64px;
+						color: #e6e6e6;
+						margin: 0;
+						padding: 0;
+						}
+
+						header {
+							background: #1c1c22;
+							padding: 20px;
+							border-bottom: 2px solid #333;
+							text-align: center;
+						}
+
+						header h1 {
+						margin: 0;
+						font-size: 28px;
+						color: #f2b705;
+						}
+
+						header p {
+						margin: 5px 0 0;
+						color: #aaa;
+						}
+
+						.container {
+						padding: 20px;
+						max-width: 900px;
+						margin: auto;
+						}
+
+						.card {
+						background: #1a1a1f;
+						padding: 15px;
+						margin-bottom: 15px;
+						border-left: 4px solid #f2b705;
+						}
+
+						.card h2 {
+						margin-top: 0;
+						color: #fff;
+						}
+
+						.tag {
+						display: inline-block;
+						background: #333;
+						padding: 3px 8px;
+						font-size: 12px;
+						margin-right: 5px;
+						border-radius: 4px;
+						color: #bbb;
+						}
+
+						footer {
+						text-align: center;
+						padding: 20px;
+						color: #666;
+						border-top: 1px solid #222;
+						margin-top: 20px;
+						}
+					</style>
+				</head>
+
+				<body>
+				<header>
+					<h1>Iron Co News Network</h1>
+					<p>Minecraft Industry & Labor Updates</p>
+				</header>
+
+				<div class="container">
+
+					<div class="card">
+						<h2>Iron Co Reaffirms Long Standing Ban on Iron Farms</h2>
+						<span class="tag">Ethics</span>
+						<span class="tag">Policy</span>
+						<p>
+							Iron Co has once again confirmed that it has never constructed or operated iron farms in any capacity.
+							The company maintains that automated iron production systems are incompatible with its ethical mining standards,
+							citing concerns over the mass containment and repeated destruction of iron golems.
+						</p>
+					</div>
+
+					<div class="card">
+						<h2>Hiring Surge: “Respect for Life in the Overworld Required”</h2>
+						<span class="tag">Jobs</span>
+						<span class="tag">Recruitment</span>
+						<p>
+							Iron Co is expanding its workforce, seeking miners, transport runners, and forge assistants who align with its
+							“life-first resource extraction philosophy.” Applicants must agree to strict guidelines prohibiting automated
+							iron farming practices and demonstrating humane treatment of village iron golems.
+						</p>
+					</div>
+
+					<div class="card">
+						<h2>CEO Statement: “We Do Not Industrialize Sentient Constructs”</h2>
+						<span class="tag">Opinion</span>
+						<p>
+							“Iron golems are not machinery,” the CEO stated in a recent address.
+							“They are protective constructs formed through village care and intent.
+							We refuse to participate in systems that endlessly spawn and dismantle them for efficiency.”
+						</p>
+					</div>
+
+					<div class="card">
+						<h2>Internal Compliance Report: Zero Iron Farm Activity Recorded</h2>
+						<span class="tag">Report</span>
+						<p>
+							Annual audits confirm Iron Co facilities have never implemented iron farm infrastructure.
+							All iron supply chains are verified through manual mining, trading halls, and exploration-based recovery operations.
+							The company describes this as “sustainable, non-exploitative resource acquisition.”
+						</p>
+					</div>
+
+					<div class="card">
+						<h2>Upcoming Infrastructure Projects: Regional Mining Expansion</h2>
+						<span class="tag">Future</span>
+						<p>
+							Iron Co plans to expand its underground operations with newly mapped mining corridors,
+							improved rail logistics between villages, and centralized smelting hubs powered by renewable lava flow systems.
+						</p>
+					</div>
+
+				</div>
+
+				<footer>
+					© Iron Co Internal News Network - Not affiliated with Mojang
+				</footer>
+				</body>
+			</html>
+			`,
+
+		404: `
+			<!DOCTYPE html>
+			<html>
+			<head>
+				<style>
+					body {
+						margin: 0;
+						padding: 0;
+						background-color: #3b2f2f;
+						background-image:
+							linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+							url("blocks/dirt.png");
+						background-size: 64px 64px;
+						color: #ffffff;
+						font-family: "Courier New", monospace;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						height: 100vh;
+						text-align: center;
+					}
+
+					.container {
+						background: rgba(0, 0, 0, 0.6);
+						border: 4px solid #2e7d32;
+						padding: 30px 40px;
+						box-shadow: 0 0 0 4px #1b1b1b;
+						max-width: 500px;
+					}
+
+					h1 {
+						margin: 0 0 10px 0;
+						font-size: 28px;
+						color: #ff5555;
+						letter-spacing: 2px;
+						text-transform: uppercase;
+					}
+
+					p {
+						margin: 8px 0;
+						font-size: 16px;
+						color: #e0e0e0;
+					}
+
+					.block {
+						margin-top: 15px;
+						padding: 10px;
+						background: #2e7d32;
+						border: 3px solid #1b5e20;
+						font-weight: bold;
+					}
+
+					.mini {
+						font-size: 12px;
+						color: #bdbdbd;
+						margin-top: 10px;
+					}
+				</style>
+			</head>
+			<body>
+				<div class="container">
+					<h1>404</h1>
+					<p>Page Not Found</p>
+					<div class="block">You seem to be lost in the world...</div>
+					<p class="mini">Try going back or entering a valid block address.</p>
+				</div>
+			</body>
+			</html>
+			`
+	};
+
+
+
+
 	const taskButtonsContainer = document.querySelector(".task-buttons-container");
 	const windowTaskMap = new WeakMap();
 	/* =========================
-	   WINDOW LAYER SYSTEM
+		 WINDOW LAYER SYSTEM
 	========================= */
 
 	const windowLayer = document.getElementById("windowLayer");
@@ -204,7 +595,7 @@
 	}
 
 	/* =========================
-	   DRAG SYSTEM
+		 DRAG SYSTEM
 	========================= */
 
 	let dragTarget = null;
@@ -282,7 +673,7 @@
 	});
 
 	/* =========================
-	   INIT
+		 INIT
 	========================= */
 
 	window.addEventListener("DOMContentLoaded", () => {
@@ -294,7 +685,7 @@
 	});
 
 	/* =========================
-	   WINDOW CREATION
+		 WINDOW CREATION
 	========================= */
 
 	function createWindow(title, content, x = 120, y = 80, width = 390, type = "window") {
@@ -428,7 +819,7 @@
 	}
 
 	/* =========================
-	   COUNTDOWN SYSTEM
+		 COUNTDOWN SYSTEM
 	========================= */
 
 	function updateCountdown() {
@@ -506,7 +897,7 @@
 	}
 
 	/* =========================
-	   CLOCK
+		 CLOCK
 	========================= */
 
 	function updateClock() {
@@ -532,7 +923,7 @@
 	}
 
 	/* =========================
-	   FILE SYSTEM
+		 FILE SYSTEM
 	========================= */
 
 	let documentsWindow = null;
@@ -655,7 +1046,7 @@
 	};
 	
 	/* =========================
-	   FILE ROUTER
+		 FILE ROUTER
 	========================= */
 
 	window.openFile = function (file) {
@@ -675,7 +1066,7 @@
 			);
 		};
 	/* =========================
-	   AUDIO PLAYER
+		 AUDIO PLAYER
 	========================= */
 
 	function openAudioPlayer(file) {
@@ -748,7 +1139,7 @@
 		audio.load();
 
 		/* =========================
-		   PLAY BUTTON
+			 PLAY BUTTON
 		========================= */
 
 		playBtn.onclick = async () => {
@@ -778,7 +1169,7 @@
 	}
 
 	/* =========================
-	   START MENU
+		 START MENU
 	========================= */
 
 	
@@ -983,7 +1374,7 @@
 
 
 	/* =========================
-	   Launcher
+		 Launcher
 	========================= */
 	function openMinecraft() {
 
@@ -1212,6 +1603,145 @@
 		);
 	}
 
+	/* =========================
+		 Websites
+	========================= */
+	function openInternet() {
+
+		let history = ["home"];
+		let index = 0;
+
+		const content = `
+			<div class="browser">
+
+				<div class="browser-toolbar">
+					<button class="backBtn">←</button>
+					<button class="forwardBtn">→</button>
+					<button class="homeBtn">⌂</button>
+
+					<input class="addressBar" value="home" />
+
+					<button class="goBtn">Go</button>
+				</div>
+
+				<div class="browser-body"></div>
+
+			</div>
+		`;
+
+		// square window (width = height)
+		const size = 800;
+		const win = createWindow("OverNet", content, 200, 120, size, size);
+		win.style.height = "600px";
+		
+		const body = win.querySelector(".browser-body");
+
+		const backBtn = win.querySelector(".backBtn");
+		const forwardBtn = win.querySelector(".forwardBtn");
+		const homeBtn = win.querySelector(".homeBtn");
+		const goBtn = win.querySelector(".goBtn");
+		const addressBar = win.querySelector(".addressBar");
+
+		function render(pageKey) {
+
+			body.innerHTML = "";
+
+			const isMaximized = win.dataset.maximized === "1";
+			const scale = isMaximized ? 1 : 0.9;
+
+			const iframe = document.createElement("iframe");
+
+			iframe.style.width = "100%";
+			iframe.style.height = "100%";
+			iframe.style.border = "none";
+
+			iframe.srcdoc = `
+				<!DOCTYPE html>
+				<html>
+				<head>
+					<style>
+						html, body {
+							margin: 0;
+							padding: 0;
+							width: 100%;
+							height: 100%;
+						}
+
+						body {
+							transform-origin: top left;
+							transform: scale(${scale});
+						}
+					</style>
+				</head>
+				<body>
+					${pages[pageKey] || pages["404"]}
+				</body>
+				</html>
+			`;
+
+			body.appendChild(iframe);
+		}
+		
+		function load(page) {
+
+			if (!pages[page]) page = "404";
+
+			history = history.slice(0, index + 1);
+			history.push(page);
+			index++;
+
+			addressBar.value = page;
+			render(page);
+		}
+
+		backBtn.onclick = () => {
+			if (index > 0) {
+				index--;
+				addressBar.value = history[index];
+				render(history[index]);
+			}
+		};
+
+		forwardBtn.onclick = () => {
+			if (index < history.length - 1) {
+				index++;
+				addressBar.value = history[index];
+				render(history[index]);
+			}
+		};
+
+		homeBtn.onclick = () => load("home");
+
+		goBtn.onclick = () => load(addressBar.value.trim());
+
+		addressBar.addEventListener("keydown", (e) => {
+			if (e.key === "Enter") {
+				load(addressBar.value.trim());
+			}
+		});
+
+		function loadFromHash() {
+
+			const hash = window.location.hash.replace("#", "").trim();
+
+			if (hash && pages[hash]) {
+				history = [hash];
+				index = 0;
+				addressBar.value = hash;
+				render(hash);
+			} else {
+				history = ["home"];
+				index = 0;
+				addressBar.value = "home";
+				render("home");
+			}
+		}
+
+		window.addEventListener("hashchange", loadFromHash);
+
+		loadFromHash();
+	}
+
 
 
 	window.addEventListener("DOMContentLoaded", createDesktopIcons);
@@ -1239,7 +1769,7 @@
 	});
 
 	/* =========================
-	   TIMERS
+		 TIMERS
 	========================= */
 
 	setInterval(updateCountdown, 1000);
