@@ -138,6 +138,12 @@ body {
 	pointer-events: none;
 }
 
+.desktop {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /* windows themselves */
 .fake-window,
 .fake-dialog {
@@ -155,6 +161,21 @@ body {
 /* =========================
    XP DIALOG
 ========================= */
+
+.audio-player {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.playBtn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .fake-dialog {
 	width: 420px;
@@ -548,6 +569,20 @@ body {
    WINDOW SYSTEM
 ========================= */
 
+.window-titlebar {
+  cursor: grab;
+  background: #000080;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.window-titlebar:active {
+  cursor: grabbing;
+}
+
 #windowLayer {
 	position: absolute;
 	inset: 0;
@@ -888,6 +923,48 @@ ul {
 	font-size: 11px;
 }
 
+
+/* =========================
+   BROWSER
+========================= */
+
+.browser {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.browser-toolbar {
+	display: flex;
+	gap: 6px;
+	padding: 6px;
+	background: #ddd;
+	align-items: center;
+}
+
+.browser-toolbar button {
+	padding: 4px 8px;
+	cursor: pointer;
+}
+
+.addressBar {
+	flex: 1;
+	padding: 4px;
+}
+
+.browser-body {
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
 /* =========================
    RESPONSIVE
 ========================= */
