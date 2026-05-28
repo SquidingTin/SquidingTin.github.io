@@ -201,9 +201,6 @@
 
 	const pages = {
 		home: `
-			<!DOCTYPE html>
-			<html>
-				<head>
 					<style>
 						
 						body {
@@ -304,9 +301,7 @@
 							word-break: break-word;
 						}
 					</style>
-				</head>
 
-				<body>
 					<script>
 						function openPage(page) {
 							location.hash = page;
@@ -494,14 +489,9 @@
 
 					</div>
 
-				</body>
-			</html>
 		`,
 
 		ironco: `
-			<!DOCTYPE html>
-			<html>
-				<head>
 					<style>
 						body {
 							font-family: Arial, sans-serif;
@@ -575,9 +565,7 @@
 							margin-top: 20px;
 						}
 					</style>
-				</head>
 
-				<body>
 				<header>
 					<h1>Iron Co News Network</h1>
 					<p>Minecraft Industry & Labor Updates</p>
@@ -641,13 +629,8 @@
 				<footer>
 					© Iron Co Internal News Network - Not affiliated with Mojang
 				</footer>
-				</body>
-			</html>
 			`,
 		AngelElectronics: `
-			<!DOCTYPE html>
-			<html>
-				<head>
 					<style>
 						body {
 							margin: 0;
@@ -749,8 +732,6 @@
 							font-size: 12px;
 						}
 					</style>
-				</head>
-				<body>
 					<div class="panel">
 						
 						<div class="header">
@@ -820,14 +801,9 @@
 						</div>
 
 					</div>
-				</body>
-			</html>
 		`,
 
 		mail: `
-			<!DOCTYPE html>
-			<html>
-				<head>
 					<style>
 						body {
 							margin: 0;
@@ -995,12 +971,12 @@
 							color: #e0e0e0;
 						}
 					</style>
-				</head>
-				<body>
 
 				<div class="mailbox">
 
 					<input type="radio" name="mail" id="none" checked>
+					
+
 					<input type="radio" name="mail" id="m1">
 					<input type="radio" name="mail" id="m2">
 					<input type="radio" name="mail" id="m3">
@@ -1014,115 +990,68 @@
 					<input type="radio" name="mail" id="m11">
 					<input type="radio" name="mail" id="m12">
 					<input type="radio" name="mail" id="m13">
-					<input type="radio" name="mail" id="m14">
-					<input type="radio" name="mail" id="m15">
-					<input type="radio" name="mail" id="m16">
-					<input type="radio" name="mail" id="m17">
-					<input type="radio" name="mail" id="m18">
-					<input type="radio" name="mail" id="m19">
-					<input type="radio" name="mail" id="m20">
-					<input type="radio" name="mail" id="m21">
-					<input type="radio" name="mail" id="m22">
-					<input type="radio" name="mail" id="m23">
-					<input type="radio" name="mail" id="m24">
-					<input type="radio" name="mail" id="m25">
-					<input type="radio" name="mail" id="m26">
-					<input type="radio" name="mail" id="m27">
-					<input type="radio" name="mail" id="m28">
-					<input type="radio" name="mail" id="m29">
-					<input type="radio" name="mail" id="m30">
-					<input type="radio" name="mail" id="m40">
-					<input type="radio" name="mail" id="m41">
-					<input type="radio" name="mail" id="m42">
-					<input type="radio" name="mail" id="m43">
-					<input type="radio" name="mail" id="m44">
-					<input type="radio" name="mail" id="m45">
-					<input type="radio" name="mail" id="m46">
-					<input type="radio" name="mail" id="m47">
-					<input type="radio" name="mail" id="m48">
-					<input type="radio" name="mail" id="m49">
-					<input type="radio" name="mail" id="m50">
-					<input type="radio" name="mail" id="m51">
-					<input type="radio" name="mail" id="m52">
-					<input type="radio" name="mail" id="m53">
-					<input type="radio" name="mail" id="m54">
-					<input type="radio" name="mail" id="m55">
-					<input type="radio" name="mail" id="m56">
-					<input type="radio" name="mail" id="m57">
-					<input type="radio" name="mail" id="m58">
-					<input type="radio" name="mail" id="m59">
-					<input type="radio" name="mail" id="m60">
-					<input type="radio" name="mail" id="m61">
-					<input type="radio" name="mail" id="m62">
-					<input type="radio" name="mail" id="m63">
-					<input type="radio" name="mail" id="m64">
-					<input type="radio" name="mail" id="m65">
-					<input type="radio" name="mail" id="m66">
-					<input type="radio" name="mail" id="m67">
-					<input type="radio" name="mail" id="m68">
-					<input type="radio" name="mail" id="m69">
 
-					<div class="inbox">
-						<label class="mail" for="m1">
-							<div class="mail-title">Welcome to Mine Mail</div>
-							<div class="mail-sub">System Admin</div>
-						</label>
+						<div class="inbox">
 
 						<label class="mail" for="m2">
+							<div class="mail-title">The Bedrock Chronicles 5/28/26</div>
+							<div class="mail-sub">Bedrock Chronicle</div>
+						</label>
+
+						<label class="mail" for="m3">
 							<div class="mail-title">Iron Co Update</div>
 							<div class="mail-sub">Iron Co Company Email</div>
 						</label>
-						
-						<label class="mail" for="m3">
+
+						<label class="mail" for="m4">
 							<div class="mail-title">The International Volume 3</div>
 							<div class="mail-sub">The International</div>
 						</label>
-						
-						<label class="mail" for="m4">
-							<div class="mail-title">The Weekly Sylven W0</div>
-							<div class="mail-sub">Weekly Sylven</div>
-						</label>
-						
+
 						<label class="mail" for="m5">
 							<div class="mail-title">The International 5/24/26</div>
 							<div class="mail-sub">The International</div>
 						</label>
-						
-						<label class="mail" for="m53">
+
+						<label class="mail" for="m6">
+							<div class="mail-title">The Weekly Sylven W0</div>
+							<div class="mail-sub">Weekly Sylven</div>
+						</label>
+
+						<label class="mail" for="m7">
 							<div class="mail-title">The Daily Cherry Bomb No. 7</div>
 							<div class="mail-sub">Cherry Bomb</div>
 						</label>
-						
-						<label class="mail" for="m54">
+
+						<label class="mail" for="m8">
 							<div class="mail-title">The Daily Cherry Bomb No. 6</div>
 							<div class="mail-sub">Cherry Bomb</div>
 						</label>
-						
-						<label class="mail" for="m55">
+
+						<label class="mail" for="m9">
 							<div class="mail-title">The Daily Cherry Bomb No. 5</div>
 							<div class="mail-sub">Cherry Bomb</div>
 						</label>
-						
-						<label class="mail" for="m56">
+
+						<label class="mail" for="m10">
 							<div class="mail-title">The Daily Cherry Bomb No. 4</div>
 							<div class="mail-sub">Cherry Bomb</div>
 						</label>
-						
-						<label class="mail" for="m57">
+
+						<label class="mail" for="m11">
 							<div class="mail-title">The Daily Cherry Bomb No. 3</div>
 							<div class="mail-sub">Cherry Bomb</div>
 						</label>
-						
-						<label class="mail" for="m58">
+
+						<label class="mail" for="m12">
 							<div class="mail-title">The Daily Cherry Bomb No. 2</div>
 							<div class="mail-sub">Cherry Bomb</div>
 						</label>
-						
-						<label class="mail" for="m59">
+
+						<label class="mail" for="m13">
 							<div class="mail-title">The Daily Cherry Bomb No. 1</div>
 							<div class="mail-sub">Cherry Bomb</div>
 						</label>
-						
 					</div>
 
 					<div class="viewer">
@@ -1131,147 +1060,162 @@
 							<p>Select a message to view its contents.</p>
 						</div>
 
-
-						<div class="viewer-panel m1">
-							<h2>Welcome to Overnet Mail</h2>
-							<p>This is your first message. The system is now active across all chunks.</p>
-						</div>
-
-
 						<div class="viewer-panel m2">
-							<h2>Iron Co Update</h2>
-							
-							<p>New mining regulations were previously implemented, and automated extraction has been restricted in all controlled zones.</p>
-							<p>Only activities conducted within approved guidelines are recognized by official policy. Any operations outside these guidelines are not sanctioned and will not be considered part of authorized company activity.</p>
-						</div>
-						
+							<h2>The Bedrock Chronicles 5-28-26</h2>
 
-
-
-
-						
-						
-						<div class="viewer-panel m3">
-							<h2>The International 5/26/26</h2>
-
-							<div style="display: flex; gap: 10px; margin-top: 10px;">
-								<img src="images/The_International/5_26_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
-								<img src="images/The_International/5_26_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
-								<img src="images/The_International/5_26_26_3.png" style="width: 33%; height: auto; object-fit: cover;">
+							<div class="mail-images">
+								<img src="images/bedrock_chronicle/Bedrock_Chronicle_5-28-26.png" style="width: 33%; height: auto; object-fit: cover;">
 							</div>
 
-							<p>
-								The International newspaper edition for 5/26/26 covers Rakau Security Measures, Scam PSA, The Blue Cross, Bedrock Nation leaving the DLF deal, and more.
-							</p>
+							<div class="mail-content">
+										The Bedrock Chronicles newspaper for 5/28/26 covers them moving their headquarters to the Mesa biome.
+							</div>
 						</div>
-						
+
+						<div class="viewer-panel m3">
+							<h2>Iron Co Update</h2>
+
+							<div class="mail-images">
+								
+							</div>
+
+							<div class="mail-content">
+										<p>New mining regulations were previously implemented, and automated extraction has been restricted in all controlled zones.</p><p>Only activities conducted within approved guidelines are recognized by official policy. Any operations outside these guidelines are not sanctioned and will not be considered part of authorized company activity.</p>
+							</div>
+						</div>
+
+						<div class="viewer-panel m4">
+							<h2>The International 5/26/26</h2>
+
+							<div class="mail-images">
+								<img src="images/The_International/5_26_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
+						<img src="images/The_International/5_26_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
+						<img src="images/The_International/5_26_26_3.png" style="width: 33%; height: auto; object-fit: cover;">
+							</div>
+
+							<div class="mail-content">
+										The International newspaper for 5/26/26 covers Rakau Security Measures, Scam PSA, The Blue Cross, Bedrock Nation leaving the DLF deal, and more.
+							</div>
+						</div>
+
 						<div class="viewer-panel m5">
 							<h2>The International 5/24/26</h2>
 
-							<div style="display: flex; gap: 10px; margin-top: 10px;">
+							<div class="mail-images">
 								<img src="images/The_International/5_24_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
-								<img src="images/The_International/5_24_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
+						<img src="images/The_International/5_24_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
 							</div>
 
-							<p>
-								The International newspaper edition for 5/24/26 covers the Jungle War, Transportation Updates, Redstone Lab, and more.
-							</p>
+							<div class="mail-content">
+										The International newspaper edition for 5/24/26 covers the Jungle War, Transportation Updates, Redstone Lab, and more.
+							</div>
 						</div>
-						
-						
-						
-						
-						
-						
-						
-						<div class="viewer-panel m4">
+
+						<div class="viewer-panel m6">
 							<h2>The Weekly Sylven Week 0</h2>
 
-							<div style="display: flex; gap: 10px; margin-top: 10px;">
-								<img src="images/Sylven/Weekly_Sylven_W0.png" style="width: 80%; height: auto; object-fit: cover;">
-								The Weekly Sylven newspaper edition for week 0 covers the rumbling heard near the Emerald Basin.
+							<div class="mail-images">
+								<img src="images/Sylven/Weekly_Sylven_W0.png" style="width: 33%; height: auto; object-fit: cover;">
+							</div>
+
+							<div class="mail-content">
+										The Weekly Sylven newspaper edition for week 0 covers the rumbling heard near the Emerald Basin.
 							</div>
 						</div>
 
-
-
-
-
-						<div class="viewer-panel m53">
+						<div class="viewer-panel m7">
 							<h2>The Daily Cherry Bomb No. 7</h2>
 
-							<div style="display: flex; gap: 10px; margin-top: 10px;">
-								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_7.png" style="width: 80%; height: auto; object-fit: cover;">
-								The Daily Cherry Bomb newspaper edition number 7 covers: The Green Cross.
+							<div class="mail-images">
+								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_7.png" style="width: 33%; height: auto; object-fit: cover;">
+							</div>
+
+							<div class="mail-content">
+										The Daily Cherry Bomb newspaper edition number 7 covers: The Green Cross.
 							</div>
 						</div>
-						
-						<div class="viewer-panel m54">
+
+						<div class="viewer-panel m8">
 							<h2>The Daily Cherry Bomb No. 6</h2>
 
-							<div style="display: flex; gap: 10px; margin-top: 10px;">
-								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_6.png" style="width: 80%; height: auto; object-fit: cover;">
-								The Daily Cherry Bomb newspaper edition number 6 covers: The Blue Cross.
+							<div class="mail-images">
+								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_6.png" style="width: 33%; height: auto; object-fit: cover;">
+							</div>
+
+							<div class="mail-content">
+										The Daily Cherry Bomb newspaper edition number 6 covers: The Blue Cross.
 							</div>
 						</div>
-						
-						<div class="viewer-panel m55">
+
+						<div class="viewer-panel m9">
 							<h2>The Daily Cherry Bomb No. 5</h2>
 
-							<div style="display: flex; gap: 10px; margin-top: 10px;">
-								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_5.png" style="width: 80%; height: auto; object-fit: cover;">
-								The Daily Cherry Bomb newspaper edition number 5 covers: The alliance forged with the Taiga biome.
+							<div class="mail-images">
+								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_5.png" style="width: 33%; height: auto; object-fit: cover;">
+							</div>
+
+							<div class="mail-content">
+										The Daily Cherry Bomb newspaper edition number 5 covers: The alliance forged with the Taiga biome.
 							</div>
 						</div>
-						
-						<div class="viewer-panel m56">
+
+						<div class="viewer-panel m10">
 							<h2>The Daily Cherry Bomb No. 4</h2>
 
-							<div style="display: flex; gap: 10px; margin-top: 10px;">
-								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_4.png" style="width: 80%; height: auto; object-fit: cover;">
-								The Daily Cherry Bomb newspaper edition number 4 covers: the ownership transfer to The Daily Emeralds team.
+							<div class="mail-images">
+								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_4.png" style="width: 33%; height: auto; object-fit: cover;">
+							</div>
+
+							<div class="mail-content">
+										The Daily Cherry Bomb newspaper edition number 4 covers: the ownership transfer to The Daily Emeralds team.
 							</div>
 						</div>
-						
-						<div class="viewer-panel m57">
+
+						<div class="viewer-panel m11">
 							<h2>The Daily Cherry Bomb No. 3</h2>
 
-							<div style="display: flex; gap: 10px; margin-top: 10px;">
-								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_3.png" style="width: 80%; height: auto; object-fit: cover;">
-								The Daily Cherry Bomb newspaper edition number 3 covers: The upcoming elections.
+							<div class="mail-images">
+								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_3.png" style="width: 33%; height: auto; object-fit: cover;">
+							</div>
+
+							<div class="mail-content">
+										The Daily Cherry Bomb newspaper edition number 3 covers: The upcoming elections.
 							</div>
 						</div>
-						
-						<div class="viewer-panel m58">
+
+						<div class="viewer-panel m12">
 							<h2>The Daily Cherry Bomb No. 2</h2>
 
-							<div style="display: flex; gap: 10px; margin-top: 10px;">
-								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_2.png" style="width: 80%; height: auto; object-fit: cover;">
-								The Daily Cherry Bomb newspaper edition number 2 covers: The Constitution.
+							<div class="mail-images">
+								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_2.png" style="width: 33%; height: auto; object-fit: cover;">
+							</div>
+
+							<div class="mail-content">
+										The Daily Cherry Bomb newspaper edition number 2 covers: The Constitution.
 							</div>
 						</div>
-						
-						<div class="viewer-panel m59">
+
+						<div class="viewer-panel m13">
 							<h2>The Daily Cherry Bomb No. 1</h2>
 
-							<div style="display: flex; gap: 10px; margin-top: 10px;">
-								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_1.png" style="width: 80%; height: auto; object-fit: cover;">
-								The Daily Cherry Bomb newspaper edition number 1 covers: The Cherry Schism.
+							<div class="mail-images">
+								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_1.png" style="width: 33%; height: auto; object-fit: cover;">
+							</div>
+
+							<div class="mail-content">
+										The Daily Cherry Bomb newspaper edition number 1 covers: The Cherry Schism.
 							</div>
 						</div>
-						
+					</div>
+
+
 					</div>
 
 				</div>
 
-				</body>
-			</html>
 		`,
 
 		404: `
-			<!DOCTYPE html>
-			<html>
-				<head>
 					<style>
 						body {
 							margin: 0;
@@ -1326,22 +1270,15 @@
 							margin-top: 10px;
 						}
 					</style>
-				</head>
-				<body>
 					<div class="container">
 						<h1>404</h1>
 						<p>Page Not Found</p>
 						<div class="block">You seem to be lost in the world...</div>
 						<p class="mini">Try going back or entering a valid block address.</p>
 					</div>
-				</body>
-			</html>
 			`,
 			
 			cctc: `
-			<!DOCTYPE html>
-			<html lang="en">
-				<head>
 					<style>
 						body{
 							margin:0;
@@ -1584,9 +1521,7 @@
 						}
 
 					</style>
-					</head>
 
-					<body>
 
 						<header>
 							<h1>Cerasus Consolidated Traction Company</h1>
@@ -1882,14 +1817,9 @@
 							Connecting Cherry Biome Communities Through Rail & Iceway Infrastructure
 						</footer>
 
-					</body>
-				</html>
             `,
 			
 			mooshroom: `
-				<!DOCTYPE html>
-				<html lang="en">
-					<head>
 						<style>
 							body {
 								margin: 0;
@@ -2034,8 +1964,6 @@
 							}
 						</style>
 
-					</head>
-					<body>
 
 					<header>
 						<h1>The Mooshroom Nation</h1>
@@ -2183,31 +2111,19 @@
 						© Mooshroom Nation Government • Mushroom Isles National Constitution
 					</div>
 
-					</body>
-				</html>
             `,
 			
 			greencross: `
-				<!DOCTYPE html>
-				<html>
-				<head>
 					<style>
 					</style>
-				</head>
-				<body>
 					<div class="container">
 						<h1>404</h1>
 						<p>Page Not Finished</p>
 						<div class="block">You seem to be lost in the world...</div>
 					</div>
-				</body>
-				</html>
             `,
 			
 			herobrine: `
-			<!DOCTYPE html>
-			<html>
-				<head>
 					<style>
 						body {
 							margin: 0;
@@ -2356,9 +2272,7 @@
 								0 0 20px #aa0000;
 						}
 					</style>
-				</head>
 
-				<body>
 
 					<header>
 						<h1 class="glow">DISCIPLES OF HEROBRINE</h1>
@@ -2477,15 +2391,9 @@
 						DISCIPLES OF HEROBRINE • THE GARDENS AWAIT • VERSION 1.3.7
 					</div>
 
-				</body>
-			</html>
 			`,
 			
 			blossomgate: `
-			<!DOCTYPE html>
-			<html>
-				<head>
-					<title>Blossomgate Exchange</title>
 
 					<style>
 						body {
@@ -2493,8 +2401,7 @@
 							font-family: "Trebuchet MS", sans-serif;
 							background-color: #efe4d0;
 							background-image:
-								linear-gradient(rgba(255,255,255,0.75), rgba(240,230,210,0.88)),
-								url("blocks/sand.png");
+								linear-gradient(rgba(255,255,255,0.75), rgba(240,230,210,0.88))
 							background-size: 128px;
 							color: #2d2d2d;
 							overflow-x: hidden; 
@@ -2653,9 +2560,7 @@
 							opacity: 0.9;
 						}
 					</style>
-				</head>
 
-				<body>
 
 					<header>
 
@@ -2777,28 +2682,23 @@
 						BLOSSOMGATE EXCHANGE • FREE TRADE DISTRICT • ESTABLISHED ON THE COASTAL CROSSING
 					</div>
 
-				</body>
-			</html>
 			`,
 			
 			interbiome: `
-			<!DOCTYPE html>
-			<html>
-				<head>
 					<style>
 						body {
 							margin: 0;
 							font-family: "Trebuchet MS", sans-serif;
 							background-color: #d8d2bf;
 							background-image:
-								linear-gradient(rgba(255,255,255,0.82), rgba(220,220,220,0.92))
+								linear-gradient(rgba(255,255,255,0.75), rgba(240,230,210,0.88))
 							background-size: 128px;
 							color: #222;
 							overflow-x: hidden;
 						}
 
 						header {
-							background-color: rgba(128, 128, 128, 0.5);
+							background-color: rgba(128, 128, 128, 0.25);
 							background:
 								linear-gradient(rgba(255,255,255,0.75), rgba(240,230,210,0.88))
 							color: white;
@@ -2936,9 +2836,7 @@
 							opacity: 0.9;
 						}
 					</style>
-				</head>
 
-				<body>
 
 					<header>
 						<div class="seal">✦</div>
@@ -3063,8 +2961,6 @@
 						INTER-BIOME DEMOCRATIC ALLIANCE • CENTRAL ADMINISTRATIVE NETWORK • EST. 2026
 					</div>
 
-				</body>
-			</html>
 			`,
 	};
 
