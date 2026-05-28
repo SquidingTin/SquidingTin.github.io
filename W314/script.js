@@ -663,15 +663,15 @@
 						<div class="grid">
 
 							<div class="section">
-								<h2>System Overview</h2>
+								<h2>Live Projects</h2>
 								<div class="node">
-									<span class="tag">CORE</span> High efficiency redstone circuitry manufacturing
+									<b>S.A.P.M Mk V</b> — Sound Activated Proximity Mines (Ambush)
 								</div>
 								<div class="node">
-									<span class="tag">FIELD</span> Tactical wiring systems for client installations
+									<b>Project Skybreaker</b
 								</div>
 								<div class="node">
-									<span class="tag">AUTO</span> Self-triggered mechanical and trap systems
+									<b>M.A.B</b> — (Big Boi Class)
 								</div>
 							</div>
 
@@ -692,20 +692,20 @@
 								<h2>Wiring Network Status</h2>
 								<div class="node">Main Grid: <span style="color:#00ff99;">STABLE</span></div>
 								<div class="node">Defense Circuits: <span style="color:#00ff99;">ARMED</span></div>
-								<div class="node">Hidden Traces: <span style="color:#ff5555;">CLASSIFIED</span></div>
+								<div class="node"><span style="color:#ff5555;">CLASSIFIED</span></div>
 								<div class="wire"></div>
 								<div class="node">Signal Integrity: 98.4%</div>
 							</div>
 
 							<div class="section">
 								<h2>Hierarchy Node Map</h2>
-								<div class="node">Intern → Basic wiring access</div>
+								<div class="node">CEO → Root access</div>
+								<div class="node">Ten Heavenly → Network control</div>
+								<div class="node">Archangel → Classified systems</div>
 								<div class="node">Grad 3 → Assembly circuits</div>
 								<div class="node">Grad 2 → System design</div>
 								<div class="node">Grad 1 → Core architecture</div>
-								<div class="node">Archangel → Classified systems</div>
-								<div class="node">Ten Heavenly → Network control</div>
-								<div class="node">CEO → Root access</div>
+								<div class="node">Intern → Basic wiring access</div>
 							</div>
 
 							<div class="section" style="grid-column: span 2;">
