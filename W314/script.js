@@ -64,9 +64,9 @@
 			onClick: () => openLink("https://discord.gg/EYcBYPXhq5")
 		},
 		{
-			name: "News", 
+			name: "Documents", 
 			icon: "icons/documents.png",
-			onClick: () => openDocuments("News")
+			onClick: () => openDocuments()
 		},
 		{
 			name: "OverNet", 
@@ -359,7 +359,7 @@
 
 							</div>
 
-							<div class="page-card" onclick="parent.location.hash='404'">
+							<div class="page-card" onclick="parent.location.hash='mail'">
 
 								<div class="page-icon">
 									M
@@ -721,6 +721,259 @@
 						</div>
 
 					</div>
+				</body>
+			</html>
+		`,
+
+		mail: `
+			<!DOCTYPE html>
+			<html>
+				<head>
+					<style>
+						body {
+							margin: 0;
+							font-family: "Courier New", monospace;
+							background-color: #3b2f2f;
+							background-image:
+								linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+								url("blocks/Ender_Chest_top_block.png");
+							background-size: 64px 64px;
+
+							color: #fff;
+
+							display: flex;
+							justify-content: center;
+							align-items: center;
+
+							min-height: 100vh;
+							overflow: hidden;
+						}
+
+						.mailbox {
+							width: 90vw;
+							max-width: 1200px;
+							height: 70vh;
+							max-height: 900px;
+
+							background: rgba(0,0,0,0.6);
+							border: 4px solid #2e7d32;
+							box-shadow: 0 0 0 4px #1b1b1b;
+
+							display: flex;
+							overflow: hidden;
+						}
+
+						.inbox {
+							width: 35%;
+							min-width: 180px;
+							max-width: 300px;
+
+							border-right: 3px solid #1b5e20;
+							overflow-y: auto;
+						}
+
+						.viewer {
+							flex: 1;
+							padding: 15px;
+							position: relative;
+							overflow-y: auto;
+}
+
+						.mail {
+							display: block;
+							padding: 10px;
+							border-bottom: 1px solid #2e7d32;
+							cursor: pointer;
+							background: rgba(0,0,0,0.2);
+						}
+
+						.mail:hover {
+							background: rgba(46,125,50,0.4);
+						}
+
+						.mail-title {
+							font-weight: bold;
+							font-size: 14px;
+						}
+
+						.mail-sub {
+							font-size: 12px;
+							color: #ccc;
+						}
+
+
+						.viewer-panel {
+							display: none;
+						}
+
+						input[type="radio"] {
+							display: none;
+						}
+
+						#none:checked ~ .viewer .default {
+							display: block;
+						}
+
+						/* message 1 */#m1:checked ~ .viewer .m1,
+						#m2:checked ~ .viewer .m2,
+						#m3:checked ~ .viewer .m3,
+						#m4:checked ~ .viewer .m4,
+						#m5:checked ~ .viewer .m5,
+						#m6:checked ~ .viewer .m6,
+						#m7:checked ~ .viewer .m7,
+						#m8:checked ~ .viewer .m8,
+						#m9:checked ~ .viewer .m9,
+						#m10:checked ~ .viewer .m10,
+						#m11:checked ~ .viewer .m11,
+						#m12:checked ~ .viewer .m12,
+						#m13:checked ~ .viewer .m13,
+						#m14:checked ~ .viewer .m14,
+						#m15:checked ~ .viewer .m15,
+						#m16:checked ~ .viewer .m16,
+						#m17:checked ~ .viewer .m17,
+						#m18:checked ~ .viewer .m18,
+						#m19:checked ~ .viewer .m19,
+						#m20:checked ~ .viewer .m20,
+						#m21:checked ~ .viewer .m21,
+						#m22:checked ~ .viewer .m22,
+						#m23:checked ~ .viewer .m23,
+						#m24:checked ~ .viewer .m24,
+						#m25:checked ~ .viewer .m25,
+						#m26:checked ~ .viewer .m26,
+						#m27:checked ~ .viewer .m27,
+						#m28:checked ~ .viewer .m28,
+						#m29:checked ~ .viewer .m29,
+						#m30:checked ~ .viewer .m30,
+						#m31:checked ~ .viewer .m31,
+						#m3:checked ~ .viewer .m32 {
+							display: block;
+						}
+
+						h2 {
+							margin-top: 0;
+							color: #ff5555;
+						}
+
+						p {
+							font-size: 14px;
+							color: #e0e0e0;
+						}
+					</style>
+				</head>
+				<body>
+
+				<div class="mailbox">
+
+					<input type="radio" name="mail" id="none" checked>
+					<input type="radio" name="mail" id="m1">
+					<input type="radio" name="mail" id="m2">
+					<input type="radio" name="mail" id="m3">
+					<input type="radio" name="mail" id="m4">
+					<input type="radio" name="mail" id="m5">
+					<input type="radio" name="mail" id="m6">
+					<input type="radio" name="mail" id="m7">
+					<input type="radio" name="mail" id="m8">
+					<input type="radio" name="mail" id="m9">
+					<input type="radio" name="mail" id="m10">
+					<input type="radio" name="mail" id="m11">
+					<input type="radio" name="mail" id="m12">
+					<input type="radio" name="mail" id="m13">
+					<input type="radio" name="mail" id="m14">
+					<input type="radio" name="mail" id="m15">
+					<input type="radio" name="mail" id="m16">
+					<input type="radio" name="mail" id="m17">
+					<input type="radio" name="mail" id="m18">
+					<input type="radio" name="mail" id="m19">
+					<input type="radio" name="mail" id="m20">
+					<input type="radio" name="mail" id="m21">
+					<input type="radio" name="mail" id="m22">
+					<input type="radio" name="mail" id="m23">
+					<input type="radio" name="mail" id="m24">
+					<input type="radio" name="mail" id="m25">
+					<input type="radio" name="mail" id="m26">
+					<input type="radio" name="mail" id="m27">
+					<input type="radio" name="mail" id="m28">
+					<input type="radio" name="mail" id="m29">
+					<input type="radio" name="mail" id="m30">
+					<input type="radio" name="mail" id="m31">
+					<input type="radio" name="mail" id="m32">
+
+					<div class="inbox">
+						<label class="mail" for="m1">
+							<div class="mail-title">Welcome to Mine Mail</div>
+							<div class="mail-sub">System Admin</div>
+						</label>
+
+						<label class="mail" for="m2">
+							<div class="mail-title">Iron Co Update</div>
+							<div class="mail-sub">Iron Co Company Email</div>
+						</label>
+						
+						<label class="mail" for="m3">
+							<div class="mail-title">The International Volume 3</div>
+							<div class="mail-sub">The International</div>
+						</label>
+						
+						<label class="mail" for="m4">
+							<div class="mail-title">The Weekly Sylven W0</div>
+							<div class="mail-sub">Weekly Sylven</div>
+						</label>
+						
+						<label class="mail" for="m30">
+							<div class="mail-title">Security Alert</div>
+							<div class="mail-sub">System</div>
+						</label>
+					</div>
+
+					<div class="viewer">
+						<div class="viewer-panel default">
+							<h2>Inbox</h2>
+							<p>Select a message to view its contents.</p>
+						</div>
+
+						<div class="viewer-panel m1">
+							<h2>Welcome to Overnet Mail</h2>
+							<p>This is your first message. The system is now active across all chunks.</p>
+						</div>
+
+						<div class="viewer-panel m2">
+							<h2>Iron Co Update</h2>
+							
+							<p>New mining regulations were previously implemented, and automated extraction has been restricted in all controlled zones.</p>
+							<p>Only activities conducted within approved guidelines are recognized by official policy. Any operations outside these guidelines are not sanctioned and will not be considered part of authorized company activity.</p>
+						</div>
+						
+						<div class="viewer-panel m3">
+							<h2>The International 5/26/26</h2>
+
+							<div style="display: flex; gap: 10px; margin-top: 10px;">
+								<img src="images/The_International/5_26_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
+								<img src="images/The_International/5_26_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
+								<img src="images/The_International/5_26_26_3.png" style="width: 33%; height: auto; object-fit: cover;">
+							</div>
+
+							<p>
+								The International newspaper edition for 5/26/26 covers Rakau Security Measures, Scam PSA, The Blue Cross, Bedrock Nation leaving the DLF deal, and more.
+							</p>
+						</div>
+						
+						<div class="viewer-panel m4">
+							<h2>The Weekly Sylven Week 0</h2>
+
+							<div style="display: flex; gap: 10px; margin-top: 10px;">
+								<img src="images/Sylven/Weekly_Sylven_W0.png" style="width: 80%; height: auto; object-fit: cover;">
+								The Weekly Sylven newspaper edition for week 0 covers the rumbling heard near the Emerald Basin.
+							</div>
+						</div>
+
+						<div class="viewer-panel m30">
+							<h2>Security Alert</h2>
+							<p>Unusual activity detected. All personnel are advised to remain alert.</p>
+						</div>
+					</div>
+
+				</div>
+
 				</body>
 			</html>
 		`,
