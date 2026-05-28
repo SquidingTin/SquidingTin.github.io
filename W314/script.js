@@ -678,13 +678,13 @@
 							<div class="section">
 								<h2>Live Projects</h2>
 								<div class="node">
-									<b>S.A.P.M Mk V</b> — Sound Activated Proximity Mines (Ambush Protocol)
+									<b>S.A.P.M Mk V</b> — Sound Activated Proximity Mines (Codename: Ambush)
 								</div>
 								<div class="node">
-									<b>Project Skybreaker</b> — High altitude redstone deployment network
+									<b>Project Skybreaker</b> —
 								</div>
 								<div class="node">
-									<b>M.A.B</b> — Modular Assault Block system (Big Boi Class)
+									<b>M.A.B</b> — Military Air Bomber (Codename: Big Boi Class)
 								</div>
 							</div>
 
@@ -692,7 +692,7 @@
 								<h2>Wiring Network Status</h2>
 								<div class="node">Main Grid: <span style="color:#00ff99;">STABLE</span></div>
 								<div class="node">Defense Circuits: <span style="color:#00ff99;">ARMED</span></div>
-								<div class="node"><span style="color:#ff5555;">CLASSIFIED</span></div>
+								<div class="node">Project Skybreaker: <span style="color:#ff5555;">CLASSIFIED</span></div>
 								<div class="wire"></div>
 								<div class="node">Signal Integrity: 98.4%</div>
 							</div>
