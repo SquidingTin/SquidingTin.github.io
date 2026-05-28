@@ -391,6 +391,23 @@
 								</div>
 
 							</div>
+								
+
+							<div class="page-card" onclick="parent.location.hash='cctc'">
+
+								<div class="page-icon">
+									TC
+								</div>
+								
+								<div class="page-name">
+									Cerasus Consolidated Traction Company
+								</div>
+
+								<div class="page-url">
+									www.CCTC.Gov
+								</div>
+
+							</div>
 
 						</div>
 
@@ -777,7 +794,7 @@
 							padding: 15px;
 							position: relative;
 							overflow-y: auto;
-}
+						}
 
 						.mail {
 							display: block;
@@ -984,6 +1001,11 @@
 							<div class="mail-sub">Weekly Sylven</div>
 						</label>
 						
+						<label class="mail" for="m5">
+							<div class="mail-title">The International 5/24/26</div>
+							<div class="mail-sub">The International</div>
+						</label>
+						
 						<label class="mail" for="m53">
 							<div class="mail-title">The Daily Cherry Bomb No. 7</div>
 							<div class="mail-sub">Cherry Bomb</div>
@@ -1019,10 +1041,6 @@
 							<div class="mail-sub">Cherry Bomb</div>
 						</label>
 						
-						<label class="mail" for="m60">
-							<div class="mail-title">Security Alert</div>
-							<div class="mail-sub">System</div>
-						</label>
 					</div>
 
 					<div class="viewer">
@@ -1062,6 +1080,19 @@
 
 							<p>
 								The International newspaper edition for 5/26/26 covers Rakau Security Measures, Scam PSA, The Blue Cross, Bedrock Nation leaving the DLF deal, and more.
+							</p>
+						</div>
+						
+						<div class="viewer-panel m5">
+							<h2>The International 5/24/26</h2>
+
+							<div style="display: flex; gap: 10px; margin-top: 10px;">
+								<img src="images/The_International/5_24_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
+								<img src="images/The_International/5_24_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
+							</div>
+
+							<p>
+								The International newspaper edition for 5/24/26 covers the Jungle War, Transportation Updates, Redstone Lab, and more.
 							</p>
 						</div>
 						
@@ -1147,10 +1178,6 @@
 							</div>
 						</div>
 						
-						<div class="viewer-panel m60">
-							<h2>Security Alert</h2>
-							<p>Unusual activity detected. All personnel are advised to remain alert.</p>
-						</div>
 					</div>
 
 				</div>
@@ -1162,72 +1189,632 @@
 		404: `
 			<!DOCTYPE html>
 			<html>
-			<head>
-				<style>
-					body {
-						margin: 0;
-						padding: 0;
-						background-color: #3b2f2f;
-						background-image:
-							linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-							url("blocks/dirt.png");
-						background-size: 64px 64px;
-						color: #ffffff;
-						font-family: "Courier New", monospace;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						height: 100vh;
-						text-align: center;
-					}
+				<head>
+					<style>
+						body {
+							margin: 0;
+							padding: 0;
+							background-color: #3b2f2f;
+							background-image:
+								linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+								url("blocks/dirt.png");
+							background-size: 64px 64px;
+							color: #ffffff;
+							font-family: "Courier New", monospace;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							height: 100vh;
+							text-align: center;
+						}
 
-					.container {
-						background: rgba(0, 0, 0, 0.6);
-						border: 4px solid #2e7d32;
-						padding: 30px 40px;
-						box-shadow: 0 0 0 4px #1b1b1b;
-						max-width: 500px;
-					}
+						.container {
+							background: rgba(0, 0, 0, 0.6);
+							border: 4px solid #2e7d32;
+							padding: 30px 40px;
+							box-shadow: 0 0 0 4px #1b1b1b;
+							max-width: 500px;
+						}
 
-					h1 {
-						margin: 0 0 10px 0;
-						font-size: 28px;
-						color: #ff5555;
-						letter-spacing: 2px;
-						text-transform: uppercase;
-					}
+						h1 {
+							margin: 0 0 10px 0;
+							font-size: 28px;
+							color: #ff5555;
+							letter-spacing: 2px;
+							text-transform: uppercase;
+						}
 
-					p {
-						margin: 8px 0;
-						font-size: 16px;
-						color: #e0e0e0;
-					}
+						p {
+							margin: 8px 0;
+							font-size: 16px;
+							color: #e0e0e0;
+						}
 
-					.block {
-						margin-top: 15px;
-						padding: 10px;
-						background: #2e7d32;
-						border: 3px solid #1b5e20;
-						font-weight: bold;
-					}
+						.block {
+							margin-top: 15px;
+							padding: 10px;
+							background: #2e7d32;
+							border: 3px solid #1b5e20;
+							font-weight: bold;
+						}
 
-					.mini {
-						font-size: 12px;
-						color: #bdbdbd;
-						margin-top: 10px;
-					}
-				</style>
-			</head>
-			<body>
-				<div class="container">
-					<h1>404</h1>
-					<p>Page Not Found</p>
-					<div class="block">You seem to be lost in the world...</div>
-					<p class="mini">Try going back or entering a valid block address.</p>
-				</div>
-			</body>
+						.mini {
+							font-size: 12px;
+							color: #bdbdbd;
+							margin-top: 10px;
+						}
+					</style>
+				</head>
+				<body>
+					<div class="container">
+						<h1>404</h1>
+						<p>Page Not Found</p>
+						<div class="block">You seem to be lost in the world...</div>
+						<p class="mini">Try going back or entering a valid block address.</p>
+					</div>
+				</body>
 			</html>
-			`
+			`,
+			
+			greencross: `
+				<!DOCTYPE html>
+				<html>
+				<head>
+					<style>
+					</style>
+				</head>
+				<body>
+				</body>
+				</html>
+            `,
+			
+			cctc: `
+			<!DOCTYPE html>
+			<html lang="en">
+				<head>
+					<style>
+
+						body{
+							margin:0;
+							background:#f3f0e8;
+							color:#1f1f1f;
+							background-image:
+								linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+								url("blocks/rail_round_block.png");
+							background-size: 64px 64px;
+							font-family:Arial, Helvetica, sans-serif;
+							line-height:1.6;
+						}
+
+						header{
+							width:115%;
+							box-sizing:border-box;
+							background:
+							linear-gradient(rgba(90,20,35,0.75), rgba(90,20,35,0.85));
+							background-size:cover;
+							background-position:center;
+							color:white;
+							padding:90px 40px;
+							text-align:center;
+							border-bottom:8px solid #741b2f;
+						}
+
+						header h1{
+							margin:0;
+							font-size:56px;
+							letter-spacing:2px;
+							text-transform:uppercase;
+						}
+
+						header p{
+							font-size:20px;
+							margin-top:10px;
+							opacity:0.9;
+						}
+
+						nav{
+							width:110%;
+							background:#202020;
+							padding:14px;
+							text-align:center;
+							position:sticky;
+							top:0;
+							z-index:10;
+						}
+
+						nav a{
+							color:white;
+							text-decoration:none;
+							margin:0 18px;
+							font-weight:bold;
+							font-size:15px;
+							transition:0.2s;
+						}
+
+						nav a:hover{
+							color:#ffb3c7;
+						}
+
+						.hero{
+							width:110%;
+							background:#ffffff;
+							padding:50px 30px;
+							text-align:center;
+							border-bottom:1px solid #d0d0d0;
+						}
+
+						.hero h2{
+							font-size:40px;
+							margin-bottom:10px;
+							color:#741b2f;
+						}
+
+						.hero p{
+							max-width:900px;
+							margin:auto;
+							font-size:18px;
+							color:#444;
+						}
+
+						.container{
+							width:95%;
+							max-width:1400px;
+							margin:auto;
+							padding:40px 0;
+						}
+
+						.section{
+							background:white;
+							padding:35px;
+							margin-bottom:35px;
+							border-radius:10px;
+							box-shadow:0 3px 10px rgba(0,0,0,0.1);
+							border-top:6px solid #741b2f;
+						}
+
+						.section h2{
+							margin-top:0;
+							font-size:34px;
+							color:#741b2f;
+							border-bottom:2px solid #ddd;
+							padding-bottom:10px;
+						}
+
+						.grid{
+							display:grid;
+							grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+							gap:20px;
+							margin-top:25px;
+						}
+
+						.card{
+							background:#fafafa;
+							border:1px solid #ddd;
+							border-radius:8px;
+							padding:25px;
+						}
+
+						.card h3{
+							margin-top:0;
+							font-size:24px;
+							color:#222;
+						}
+
+						.red{
+							border-left:8px solid #c62828;
+						}
+
+						.blue{
+							border-left:8px solid #1565c0;
+						}
+
+						.green{
+							border-left:8px solid #2e7d32;
+						}
+
+						table{
+							width:100%;
+							border-collapse:collapse;
+							margin-top:20px;
+						}
+
+						table th{
+							background:#741b2f;
+							color:white;
+							padding:14px;
+							text-align:left;
+						}
+
+						table td{
+							padding:14px;
+							border-bottom:1px solid #ddd;
+						}
+
+						.notice{
+							background:#fff3cd;
+							border-left:6px solid #ffb300;
+							padding:20px;
+							margin-top:20px;
+							border-radius:6px;
+						}
+
+						.rules{
+							background:#1f1f1f;
+							color:#f5f5f5;
+							padding:30px;
+							border-radius:8px;
+						}
+
+						.rules h3{
+							color:#ffb3c7;
+							margin-top:30px;
+						}
+
+						.rules ul{
+							padding-left:22px;
+						}
+
+						.quote-grid{
+							display:grid;
+							grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+							gap:20px;
+							margin-top:25px;
+						}
+
+						.quote{
+							background:#741b2f;
+							color:white;
+							padding:30px;
+							border-radius:10px;
+							font-size:22px;
+							font-weight:bold;
+							position:relative;
+							overflow:hidden;
+						}
+
+						.quote span{
+							display:block;
+							margin-top:14px;
+							font-size:14px;
+							letter-spacing:2px;
+							text-transform:uppercase;
+							opacity:0.7;
+						}
+
+						footer{
+							width:115%;
+							background:#111;
+							color:#aaa;
+							text-align:center;
+							padding:40px;
+							margin-top:40px;
+							font-size:14px;
+						}
+
+						.badge{
+							display:inline-block;
+							padding:6px 14px;
+							border-radius:999px;
+							font-size:13px;
+							font-weight:bold;
+							margin-bottom:12px;
+							color:white;
+						}
+
+						.badge.red{
+							background:#c62828;
+						}
+
+						.badge.blue{
+							background:#1565c0;
+						}
+
+						.badge.green{
+							background:#2e7d32;
+						}
+
+					</style>
+					</head>
+
+					<body>
+
+						<header>
+							<h1>Cerasus Consolidated Traction Company</h1>
+							<p>Regional Rail • Interurbans • Iceways • Cherry Biome Transit Infrastructure</p>
+						</header>
+
+						<nav>
+							<a>Services</a>
+							<a>Operations</a>
+							<a>Iceways</a>
+							<a>Construction</a>
+							<a>Campaigns</a>
+							<a>Rules</a>
+						</nav>
+
+						<section class="hero">
+							<h2>Rethink Travel</h2>
+							<p>
+								CCTC provides unified transportation throughout the Cherry Biome and beyond using high efficiency rail infrastructure,
+								interurban service, elevated express corridors, and future high speed iceway systems.
+							</p>
+						</section>
+
+						<div class="container">
+
+							<section class="section" id="services">
+								<h2>Current Services</h2>
+
+								<div class="grid">
+
+									<div class="card red">
+										<div class="badge red">Express</div>
+										<h3>Direct to Selia Sakura</h3>
+										<p>
+											Nonstop elevated rapid service connecting downtown corridors with future expansion capability for integrated iceway conversion.
+										</p>
+									</div>
+
+									<div class="card blue">
+										<div class="badge blue">Interurban</div>
+										<h3>Mob Farm / North Line</h3>
+										<p>
+											Regional trunk service providing integrated local and long distance transportation between settlements, farms, and infrastructure corridors.
+										</p>
+									</div>
+
+									<div class="card green">
+										<div class="badge green">Regional</div>
+										<h3>East Line to Oggsybile</h3>
+										<p>
+											Extended regional rail service operating via eastern corridors with future expansion planned toward NST and Tradesburg.
+										</p>
+									</div>
+
+								</div>
+
+								<table>
+									<tr>
+										<th>Route</th>
+										<th>Service Type</th>
+										<th>Status</th>
+									</tr>
+
+									<tr>
+										<td>Cherry Biome Railway</td>
+										<td>Mainline Passenger Service</td>
+										<td>Operational</td>
+									</tr>
+
+									<tr>
+										<td>Creeper Farm → Oggys Ville</td>
+										<td>Regional Connector</td>
+										<td>Operational</td>
+									</tr>
+
+									<tr>
+										<td>NST → Tradesburg</td>
+										<td>Future Expansion</td>
+										<td>Planning</td>
+									</tr>
+								</table>
+							</section>
+
+							<section class="section" id="operations">
+								<h2>Rail Operations</h2>
+
+								<div class="grid">
+
+									<div class="card">
+										<h3>Safety Systems</h3>
+										<p>
+											Crossings include auditory warnings, visual indicators, and physical barriers to prevent collisions and improve operational reliability.
+										</p>
+									</div>
+
+									<div class="card">
+										<h3>Speed & Efficiency</h3>
+										<p>
+											Rails utilize optimized 1-38 powered spacing grids to reduce environmental mining costs while maintaining consistent travel speeds up to 18 mph / 30 kmph.
+										</p>
+									</div>
+
+									<div class="card">
+										<h3>Station Design</h3>
+										<p>
+											Stations are standardized on fixed grid alignments and elevations for rapid construction, predictable navigation, and efficient service flow.
+										</p>
+									</div>
+
+									<div class="card">
+										<h3>Service Patterns</h3>
+										<p>
+											Express corridors prioritize nonstop operation while blue line interurban services provide local stopping patterns integrated with regional rail.
+										</p>
+									</div>
+
+								</div>
+
+								<div class="notice">
+									<strong>Infrastructure Priority:</strong>
+									All CCTC rail corridors prioritize straight and level alignments to minimize powered rail usage and reduce operational inefficiency.
+								</div>
+
+							</section>
+
+							<section class="section" id="iceways">
+								<h2>Iceway Operations</h2>
+
+								<div class="grid">
+
+									<div class="card">
+										<h3>High Speed Infrastructure</h3>
+										<p>
+											Iceways minimize packed ice usage through controlled corridors, anti-derail walls, and anti-spawn button placement.
+										</p>
+									</div>
+
+									<div class="card">
+										<h3>Station Navigation</h3>
+										<p>
+											Distance markers and unique station indicators assist riders with orientation and provide rapid exit access before platforms.
+										</p>
+									</div>
+
+									<div class="card">
+										<h3>Controlled Access</h3>
+										<p>
+											Lower access stations and launch platforms prevent unauthorized travel while maintaining uninterrupted traffic flow.
+										</p>
+									</div>
+
+									<div class="card">
+										<h3>Integrated Transfers</h3>
+										<p>
+											Iceway services connect directly with feeder rail stations to support regional movement across long distance corridors.
+										</p>
+									</div>
+
+								</div>
+
+							</section>
+
+							<section class="section" id="construction">
+								<h2>Construction Standards</h2>
+
+								<div class="grid">
+
+									<div class="card">
+										<h3>Urban Rail</h3>
+										<p>
+											Temporary street running tramways provide preliminary service before conversion into tunnel or elevated rapid transit corridors.
+										</p>
+									</div>
+
+									<div class="card">
+										<h3>Track Standards</h3>
+										<p>
+											Single track corridors are prioritized for rapid deployment with passing controlled manually until double tracking becomes mandatory.
+										</p>
+									</div>
+
+									<div class="card">
+										<h3>Viaducts</h3>
+										<p>
+											Elevated structures utilize cherry wood decking with reinforced stone supports sourced from local materials.
+										</p>
+									</div>
+
+									<div class="card">
+										<h3>Tunnel Systems</h3>
+										<p>
+											Tunnel entrances include emergency exits and efficient cobblestone construction standards to maximize resource efficiency.
+										</p>
+									</div>
+
+								</div>
+
+							</section>
+
+							<section class="section" id="branding">
+								<h2>Advertising Campaigns</h2>
+
+								<div class="quote-grid">
+
+									<div class="quote">
+										No horse? No saddle? No leads?
+										<span>Rethink Travel</span>
+									</div>
+
+									<div class="quote">
+										Maybe your next trip should be on an ice boat
+										<span>Rethink Travel</span>
+									</div>
+
+									<div class="quote">
+										Faster than a speeding arrow
+										<span>Rethink Travel</span>
+									</div>
+
+									<div class="quote">
+										No firework rockets needed
+										<span>Rethink Travel</span>
+									</div>
+
+									<div class="quote">
+										No apples? No problem.
+										<span>Rethink Travel</span>
+									</div>
+
+								</div>
+
+							</section>
+
+							<section class="section" id="rules">
+								<h2>System Rules & Right Of Way Regulations</h2>
+
+								<div class="rules">
+
+									<h3>Property & Airspace</h3>
+
+									<ul>
+										<li>CCTC retains exclusive rights to all vertical airspace from Y = 30 to the world height limit within unincorporated territories.</li>
+										<li>CCTC controls a protected corridor extending one block to either side of active rail infrastructure.</li>
+										<li>All crossings over rail infrastructure must maintain a minimum clearance of three blocks.</li>
+									</ul>
+
+									<h3>Infrastructure Protection</h3>
+
+									<ul>
+										<li>No player may damage, modify, obstruct, or interfere with CCTC infrastructure.</li>
+										<li>No external rail systems may connect to the network without formal approval.</li>
+										<li>Construction impacting CCTC property is subject to public review and authorization.</li>
+									</ul>
+
+									<h3>Station Conduct</h3>
+
+									<ul>
+										<li>Players may only interact with authorized controls and storage systems.</li>
+										<li>Signs, displays, item frames, and informational infrastructure may not be altered.</li>
+										<li>Unauthorized access points and hidden stations are prohibited.</li>
+									</ul>
+
+									<h3>Vehicle Rules</h3>
+
+									<ul>
+										<li>Minecarts and boats may not be deployed against designated travel directions.</li>
+										<li>Mobs and unauthorized entities are prohibited from the network.</li>
+										<li>Unoccupied carts, furnace carts, chest carts, hopper carts, and unauthorized boats are prohibited.</li>
+									</ul>
+
+									<h3>Passenger Safety</h3>
+
+									<ul>
+										<li>Passengers may not walk on active rail lines or iceways.</li>
+										<li>Use of the CCTC system is entirely at rider risk.</li>
+										<li>CCTC is not liable for item loss, injury, death, lag, glitches, or mob encounters.</li>
+									</ul>
+
+									<h3>Public Conduct</h3>
+
+									<ul>
+										<li>Harassment, spam, panhandling, threats, and rider disruption are prohibited on all CCTC property.</li>
+									</ul>
+
+								</div>
+
+							</section>
+
+						</div>
+
+						<footer>
+							Cerasus Consolidated Traction Company • Regional Transportation Authority<br>
+							Connecting Cherry Biome Communities Through Rail & Iceway Infrastructure
+						</footer>
+
+					</body>
+				</html>
+            `,
 	};
 
 
