@@ -404,7 +404,88 @@
 								</div>
 
 								<div class="page-url">
-									www.CCTC.Gov
+									www.CCTC.net
+								</div>
+
+							</div>
+								
+
+							<div class="page-card" onclick="parent.location.hash='mooshroom'">
+
+								<div class="page-icon">
+									M
+								</div>
+								
+								<div class="page-name">
+									Mushroom Isles Archipelago
+								</div>
+
+								<div class="page-url">
+									www.Mushroom.Gov
+								</div>
+
+							</div>
+							
+							<div class="page-card" onclick="parent.location.hash='greencross'">
+
+								<div class="page-icon">
+									G
+								</div>
+								
+								<div class="page-name">
+									Green Cross
+								</div>
+
+								<div class="page-url">
+									www.greencross.Gov
+								</div>
+
+							</div>
+							
+							<div class="page-card" onclick="parent.location.hash='herobrine'">
+
+								<div class="page-icon">
+									H
+								</div>
+								
+								<div class="page-name">
+									Disciples of Herobrine
+								</div>
+
+								<div class="page-url">
+									www.Herobrine.xyz
+								</div>
+
+							</div>
+							
+							<div class="page-card" onclick="parent.location.hash='blossomgate'">
+
+								<div class="page-icon">
+									BG
+								</div>
+								
+								<div class="page-name">
+									Blossomgate Exchange
+								</div>
+
+								<div class="page-url">
+									www.blossomgate.net
+								</div>
+
+							</div>
+							
+							<div class="page-card" onclick="parent.location.hash='interbiome'">
+
+								<div class="page-icon">
+									IB
+								</div>
+								
+								<div class="page-name">
+									Inter-Biome Democratic Alliance
+								</div>
+
+								<div class="page-url">
+									www.interbiome.net
 								</div>
 
 							</div>
@@ -695,13 +776,13 @@
 							<div class="section">
 								<h2>Live Projects</h2>
 								<div class="node">
-									<b>S.A.P.M Mk V</b> — Sound Activated Proximity Mines (Ambush Protocol)
+									<b>S.A.P.M Mk V</b> — Sound Activated Proximity Mines (Code name: Ambush)
 								</div>
 								<div class="node">
-									<b>Project Skybreaker</b> — High altitude redstone deployment network
+									<b>M.A.B</b> — Military Air Bomber (Code name: Big Boi Class)
 								</div>
 								<div class="node">
-									<b>M.A.B</b> — Modular Assault Block system (Big Boi Class)
+									<b>Project Skybreaker</b>
 								</div>
 							</div>
 
@@ -709,20 +790,20 @@
 								<h2>Wiring Network Status</h2>
 								<div class="node">Main Grid: <span style="color:#00ff99;">STABLE</span></div>
 								<div class="node">Defense Circuits: <span style="color:#00ff99;">ARMED</span></div>
-								<div class="node">Hidden Traces: <span style="color:#ff5555;">CLASSIFIED</span></div>
+								<div class="node">Project Skybreaker: <span style="color:#ff5555;">CLASSIFIED</span></div>
 								<div class="wire"></div>
 								<div class="node">Signal Integrity: 98.4%</div>
 							</div>
 
 							<div class="section">
 								<h2>Hierarchy Node Map</h2>
-								<div class="node">Intern → Basic wiring access</div>
+								<div class="node">CEO → Root access</div>
+								<div class="node">Archangel → Classified systems</div>
+								<div class="node">Ten Heavenly → Network control</div>
 								<div class="node">Grad 3 → Assembly circuits</div>
 								<div class="node">Grad 2 → System design</div>
 								<div class="node">Grad 1 → Core architecture</div>
-								<div class="node">Archangel → Classified systems</div>
-								<div class="node">Ten Heavenly → Network control</div>
-								<div class="node">CEO → Root access</div>
+								<div class="node">Intern → Basic wiring access</div>
 							</div>
 
 							<div class="section" style="grid-column: span 2;">
@@ -1256,18 +1337,6 @@
 				</body>
 			</html>
 			`,
-			
-			greencross: `
-				<!DOCTYPE html>
-				<html>
-				<head>
-					<style>
-					</style>
-				</head>
-				<body>
-				</body>
-				</html>
-            `,
 			
 			cctc: `
 			<!DOCTYPE html>
@@ -1816,6 +1885,1186 @@
 					</body>
 				</html>
             `,
+			
+			mooshroom: `
+				<!DOCTYPE html>
+				<html lang="en">
+					<head>
+						<style>
+							body {
+								margin: 0;
+								font-family: Georgia, serif;
+								background:
+									linear-gradient(rgba(25,20,20,0.88), rgba(25,20,20,0.92)),
+									url("blocks/Lodestone_top_block.png");
+								background-size: cover;
+								background-attachment: fixed;
+								color: #f5e9e9;
+								overflow-x: hidden;
+							}
+
+							header {
+								width:112%;
+								background:
+									linear-gradient(rgba(120,30,50,0.85), rgba(70,15,25,0.92));
+								padding: 70px 30px;
+								text-align: center;
+								border-bottom: 8px solid #d97b9a;
+								box-shadow: 0 0 25px rgba(0,0,0,0.5);
+							}
+
+							header h1 {
+								margin: 0;
+								font-size: 54px;
+								letter-spacing: 3px;
+								color: #fff;
+								text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+							}
+
+							header p {
+								margin-top: 15px;
+								font-size: 18px;
+								color: #f3cfd8;
+							}
+
+							nav {
+								background: #3f1721;
+								padding: 14px;
+								text-align: center;
+								border-bottom: 3px solid #d97b9a;
+							}
+
+							nav a {
+								color: #ffd6df;
+								text-decoration: none;
+								margin: 0 18px;
+								font-size: 15px;
+								font-weight: bold;
+								transition: 0.2s;
+							}
+
+							nav a:hover {
+								color: white;
+								text-shadow: 0 0 10px pink;
+							}
+
+							.container {
+								max-width: 1100px;
+								margin: auto;
+								padding: 40px 20px;
+							}
+
+							.section {
+								background: rgba(40,25,25,0.88);
+								border: 2px solid #a84865;
+								margin-bottom: 30px;
+								padding: 30px;
+								border-radius: 10px;
+								box-shadow: 0 0 20px rgba(0,0,0,0.35);
+							}
+
+							.section h2 {
+								margin-top: 0;
+								font-size: 30px;
+								color: #ffb8ca;
+								border-bottom: 2px solid #a84865;
+								padding-bottom: 10px;
+							}
+
+							.article {
+								margin-bottom: 24px;
+								padding-left: 18px;
+								border-left: 4px solid #d97b9a;
+							}
+
+							.article h3 {
+								margin-bottom: 8px;
+								color: #ffd6df;
+							}
+
+							.article p {
+								line-height: 1.7;
+								color: #f1e6e6;
+							}
+
+							.footer {
+								text-align: center;
+								padding: 30px;
+								background: #2a1016;
+								border-top: 5px solid #d97b9a;
+								color: #caa;
+								font-size: 14px;
+								width:112%;
+							}
+
+							.banner {
+								background: rgba(255,192,203,0.08);
+								border: 1px solid rgba(255,192,203,0.3);
+								padding: 18px;
+								margin-bottom: 30px;
+								border-radius: 8px;
+								text-align: center;
+								font-size: 18px;
+								color: #ffe5ec;
+							}
+
+							.tag {
+								display: inline-block;
+								background: #7b2942;
+								padding: 6px 12px;
+								border-radius: 4px;
+								margin: 4px;
+								font-size: 13px;
+								border: 1px solid #d97b9a;
+							}
+
+							@media (max-width: 700px) {
+								header h1 {
+									font-size: 38px;
+								}
+
+								.section {
+									padding: 20px;
+								}
+
+								nav a {
+									display: inline-block;
+									margin: 6px 10px;
+								}
+							}
+						</style>
+
+					</head>
+					<body>
+
+					<header>
+						<h1>The Mooshroom Nation</h1>
+						<p>Official Government Portal of the Mushroom Isles Archipelago</p>
+					</header>
+
+
+					<div class="container">
+
+						<div class="banner">
+							Protecting the Mushroom Isles, preserving the Mooshroom way of life, and defending the archipelago since the founding of the Republic.
+							<br><br>
+
+							<span class="tag">Federal Republic</span>
+							<span class="tag">Mooshlism</span>
+							<span class="tag">Protected Archipelago</span>
+							<span class="tag">National Senate</span>
+						</div>
+
+						<div class="section" id="government">
+							<h2>First Part: Forms of Government</h2>
+
+							<div class="article">
+								<h3>Article 1</h3>
+								<p>
+									The Mooshroom Nation is Republican and Federal.
+								</p>
+							</div>
+						</div>
+
+						<div class="section" id="crimes">
+							<h2>Second Part: Crimes</h2>
+
+							<div class="article">
+								<h3>Article 2</h3>
+								<p>
+									Murder is punishable by death and all assets are confiscated for the government.
+								</p>
+							</div>
+
+							<div class="article">
+								<h3>Article 3</h3>
+								<p>
+									The dissemination of political ideas carries a punishment, which will be decided by a judge.
+								</p>
+							</div>
+
+							<div class="article">
+								<h3>Article 4</h3>
+								<p>
+									Slavery and forced labor of villagers are the second most serious crimes. The punishment may vary but it will always be hard punished.
+								</p>
+							</div>
+
+							<div class="article">
+								<h3>Article 5</h3>
+								<p>
+									Citizens must respect one another. Theft, destruction of property, and treason within the nation will be punished.
+								</p>
+							</div>
+
+							<div class="article">
+								<h3>Article 6</h3>
+								<p>
+									Deputies are required to wear pink patriotic symbols when going to the Senate (it can be underwear).
+								</p>
+							</div>
+
+							<div class="article">
+								<h3>Article 7</h3>
+								<p>
+									All citizens must pay a small tax to care for and protect the flora and fauna of the archipelago.
+								</p>
+							</div>
+						</div>
+
+						<div class="section" id="territory">
+							<h2>Third Part: Territorial Rules</h2>
+
+							<div class="article">
+								<h3>Article 8</h3>
+								<p>
+									The lands claimed by Mooshrooms belong to the nation. No one may build on or alter important areas without authorization.
+								</p>
+							</div>
+						</div>
+
+						<div class="section" id="citizens">
+							<h2>Fourth Part: Citizens Rights</h2>
+
+							<div class="article">
+								<h3>Article 9</h3>
+								<p>
+									Any person accepted by the leaders will be considered a citizen of Mooshrooms and will have the right to protection and housing.
+								</p>
+							</div>
+
+							<div class="article">
+								<h3>Article 10</h3>
+								<p>
+									Every citizen must help defend the nation in case of war or invasion, unless they have a disability that prevents them from fighting.
+								</p>
+							</div>
+						</div>
+
+						<div class="section" id="economy">
+							<h2>Fifth Part: Economic Laws</h2>
+
+							<div class="article">
+								<h3>Article 11</h3>
+								<p>
+									Trade within the nation must be fair. Stores and businesses can be established if the government approves it.
+								</p>
+							</div>
+
+							<div class="article">
+								<h3>Article 12</h3>
+								<p>
+									All citizens must pay the required taxes no matter what, or else the authorities are going to proceed with seizure or tax enforcement proceedings.
+								</p>
+							</div>
+						</div>
+
+						<div class="section" id="religion">
+							<h2>Final Part: Religions</h2>
+
+							<div class="article">
+								<h3>Article 13</h3>
+								<p>
+									The main religion is Mooshlism.
+								</p>
+							</div>
+
+							<div class="article">
+								<h3>Article 14</h3>
+								<p>
+									There must be no racism or discrimination between religions.
+								</p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="footer">
+						© Mooshroom Nation Government • Mushroom Isles National Constitution
+					</div>
+
+					</body>
+				</html>
+            `,
+			
+			greencross: `
+				<!DOCTYPE html>
+				<html>
+				<head>
+					<style>
+					</style>
+				</head>
+				<body>
+					<div class="container">
+						<h1>404</h1>
+						<p>Page Not Finished</p>
+						<div class="block">You seem to be lost in the world...</div>
+					</div>
+				</body>
+				</html>
+            `,
+			
+			herobrine: `
+			<!DOCTYPE html>
+			<html>
+				<head>
+					<style>
+						body {
+							margin: 0;
+							font-family: "Courier New", monospace;
+							background-color: #111;
+							background-image:
+								linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),
+								url("blocks/netherrack.png");
+							background-size: 128px;
+							color: #d8d8d8;
+							overflow-x: hidden;
+						}
+
+						header {
+							background:
+								linear-gradient(rgba(40,0,0,0.7), rgba(0,0,0,0.95)),
+								url("blocks/obsidian.png");
+							padding: 80px 30px;
+							text-align: center;
+							border-bottom: 6px solid #7a0000;
+							box-shadow: 0 0 30px black inset;
+							width:112%;
+						}
+
+						header h1 {
+							font-size: 64px;
+							margin: 0;
+							color: white;
+							letter-spacing: 4px;
+							text-shadow:
+								0 0 10px white,
+								0 0 20px #880000;
+						}
+
+						header p {
+							margin-top: 16px;
+							font-size: 18px;
+							color: #bbbbbb;
+						}
+
+						.navbar {
+							display: flex;
+							justify-content: center;
+							gap: 20px;
+							padding: 14px;
+							background: #1b1b1b;
+							border-bottom: 3px solid #4d0000;
+							position: sticky;
+							top: 0;
+							width:112%;
+						}
+
+						.navbar a {
+							color: #cccccc;
+							text-decoration: none;
+							padding: 8px 14px;
+							border: 1px solid #444;
+							background: #202020;
+						}
+
+						.navbar a:hover {
+							background: #500000;
+							color: white;
+						}
+
+						.container {
+							max-width: 1100px;
+							margin: auto;
+							padding: 40px 20px;
+						}
+
+						.panel {
+							background:
+								linear-gradient(rgba(25,25,25,0.95), rgba(10,10,10,0.95)),
+								url("blocks/deepslate.png");
+							background-size: 96px;
+							border: 4px solid #3b3b3b;
+							padding: 25px;
+							margin-bottom: 30px;
+							box-shadow: 0 0 20px rgba(0,0,0,0.8);
+						}
+
+						.panel h2 {
+							margin-top: 0;
+							color: white;
+							border-bottom: 2px solid #7a0000;
+							padding-bottom: 10px;
+							text-shadow: 0 0 8px #660000;
+						}
+
+						.dictation {
+							margin-bottom: 18px;
+							padding: 14px;
+							background: rgba(0,0,0,0.45);
+							border-left: 5px solid #8d0000;
+						}
+
+						.dictation-title {
+							color: white;
+							font-weight: bold;
+							margin-bottom: 8px;
+						}
+
+						.warning {
+							background: #2b0000;
+							border: 2px solid #990000;
+							padding: 16px;
+							color: #ffb3b3;
+							margin-top: 20px;
+						}
+
+						.shrine {
+							display: grid;
+							grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+							gap: 18px;
+							margin-top: 20px;
+						}
+
+						.shrine-card {
+							background: rgba(0,0,0,0.5);
+							border: 2px solid #555;
+							padding: 18px;
+							text-align: center;
+						}
+
+						.shrine-card h3 {
+							color: white;
+							margin-top: 0;
+						}
+
+						.footer {
+							text-align: center;
+							padding: 30px;
+							color: #777;
+							border-top: 3px solid #2b0000;
+							background: #111;
+							margin-top: 50px;
+							width:112%;
+						}
+
+						.glow {
+							color: white;
+							text-shadow:
+								0 0 5px white,
+								0 0 10px #aa0000,
+								0 0 20px #aa0000;
+						}
+					</style>
+				</head>
+
+				<body>
+
+					<header>
+						<h1 class="glow">DISCIPLES OF HEROBRINE</h1>
+						<p>The Chaos Is Truth</p>
+					</header>
+
+					<div class="container">
+
+						<div class="panel">
+							<h2>Welcome Wanderer</h2>
+
+							<p>
+								You have entered sacred ground.
+								The Disciples of Herobrine preserve the old truths abandoned by kingdoms,
+								server rulers, and false prophets.
+							</p>
+
+							<p>
+								We seek not peace, but understanding of the chaos that shapes the world.
+								Those who fear the dark cannot see the stars beyond it.
+							</p>
+
+							<div class="warning">
+								WARNING:
+								Outsiders and crystal followers are watched closely.
+								Trespassers entering holy shrines may be removed by force.
+							</div>
+						</div>
+
+						<div class="panel">
+							<h2>The Seven Dictations</h2>
+
+							<div class="dictation">
+								<div class="dictation-title">1st Dictation</div>
+								Do not hide or run from the chaos for it is the true nature of our world.
+							</div>
+
+							<div class="dictation">
+								<div class="dictation-title">2nd Dictation</div>
+								Notch is true but is blinded. His gardens remain Herobrine's home and a place of sanctity.
+							</div>
+
+							<div class="dictation">
+								<div class="dictation-title">3rd Dictation</div>
+								Iron is the most righteous metal, for it is tried and true.
+							</div>
+
+							<div class="dictation">
+								<div class="dictation-title">4th Dictation</div>
+								The crystals of beyond are false and dishonest.
+								They should never be used against another man unless thou wish to be like the crystal.
+							</div>
+
+							<div class="dictation">
+								<div class="dictation-title">5th Dictation</div>
+								The withering of the soul is the process to going to the gardens of the end.
+								Endless fruit and a thousand stars await.
+							</div>
+
+							<div class="dictation">
+								<div class="dictation-title">6th Dictation</div>
+								A shrine must be in everyone's homeland.
+								Redstone must light it.
+							</div>
+
+							<div class="dictation">
+								<div class="dictation-title">7th Commandment</div>
+								Defend your church and holy grounds as you would your home.
+								Many wish to see us dead, and so you may be called upon to serve.
+							</div>
+						</div>
+
+						<div class="panel">
+							<h2>Approved Shrine Materials</h2>
+
+							<div class="shrine">
+								<div class="shrine-card">
+									<h3>Iron Blocks</h3>
+									<p>The righteous metal.</p>
+								</div>
+
+								<div class="shrine-card">
+									<h3>Redstone Lamps</h3>
+									<p>The sacred light.</p>
+								</div>
+
+								<div class="shrine-card">
+									<h3>Obsidian</h3>
+									<p>Stone of endurance.</p>
+								</div>
+
+								<div class="shrine-card">
+									<h3>Soul Fire</h3>
+									<p>The flame beyond worlds.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel">
+							<h2>Public Notice</h2>
+
+							<p>
+								The northern sanctuaries remain closed after repeated attacks from End Crystal sects.
+								Travel only in groups and report all suspicious beacon structures.
+							</p>
+
+							<p>
+								Recruitment ceremonies occur every blood moon cycle.
+								New disciples are expected to bring iron ingots and a redstone torch.
+							</p>
+						</div>
+
+					</div>
+
+					<div class="footer">
+						DISCIPLES OF HEROBRINE • THE GARDENS AWAIT • VERSION 1.3.7
+					</div>
+
+				</body>
+			</html>
+			`,
+			
+			blossomgate: `
+			<!DOCTYPE html>
+			<html>
+				<head>
+					<title>Blossomgate Exchange</title>
+
+					<style>
+						body {
+							margin: 0;
+							font-family: "Trebuchet MS", sans-serif;
+							background-color: #efe4d0;
+							background-image:
+								linear-gradient(rgba(255,255,255,0.75), rgba(240,230,210,0.88)),
+								url("blocks/sand.png");
+							background-size: 128px;
+							color: #2d2d2d;
+							overflow-x: hidden; 
+						}
+
+						header {
+							background:
+								linear-gradient(rgba(255,192,203,0.35), rgba(30,40,55,0.88)),
+								url("blocks/cherry_planks.png");
+							background-size: cover;
+							background-position: center;
+							color: white;
+							padding: 90px 40px;
+							text-align: center;
+							border-bottom: 8px solid #d98fa4;
+							box-shadow: inset 0 -20px 40px rgba(0,0,0,0.35);
+							width:112%;
+						}
+
+						header h1 {
+							margin: 0;
+							font-size: 64px;
+							letter-spacing: 3px;
+							text-shadow:
+								0 0 10px rgba(255,255,255,0.4),
+								0 0 20px rgba(255,180,200,0.5);
+						}
+
+						header p {
+							margin-top: 18px;
+							font-size: 20px;
+							color: #ffe7ef;
+							width:112%;
+						}
+
+						.navbar {
+							display: flex;
+							justify-content: center;
+							flex-wrap: wrap;
+							gap: 12px;
+							padding: 14px;
+							background: #2c3e50;
+							border-bottom: 4px solid #d98fa4;
+						}
+
+						.navbar a {
+							color: white;
+							text-decoration: none;
+							padding: 10px 16px;
+							background: #3f5870;
+							border: 1px solid rgba(255,255,255,0.12);
+							font-weight: bold;
+						}
+
+						.navbar a:hover {
+							background: #d98fa4;
+							color: #222;
+						}
+
+						.container {
+							max-width: 1200px;
+							margin: auto;
+							padding: 40px 20px;
+						}
+
+						.panel {
+							background:
+								linear-gradient(rgba(255,255,255,0.92), rgba(245,240,235,0.95));
+							border: 4px solid #cbb9a0;
+							padding: 28px;
+							margin-bottom: 30px;
+							box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+						}
+
+						.panel h2 {
+							margin-top: 0;
+							color: #a84d69;
+							border-bottom: 3px solid #d98fa4;
+							padding-bottom: 10px;
+						}
+
+						.hero {
+							font-size: 18px;
+							line-height: 1.8;
+						}
+
+						.location-box {
+							background: #fff3da;
+							border: 2px solid #d7b777;
+							padding: 16px;
+							margin-top: 20px;
+							font-weight: bold;
+						}
+
+						.features {
+							display: grid;
+							grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+							gap: 20px;
+							margin-top: 25px;
+						}
+
+						.feature {
+							background:
+								linear-gradient(rgba(255,255,255,0.9), rgba(240,240,240,0.9)),
+								url("blocks/smooth_sandstone.png");
+							background-size: 96px;
+							border: 3px solid #cbb9a0;
+							padding: 20px;
+						}
+
+						.feature h3 {
+							margin-top: 0;
+							color: #2c3e50;
+						}
+
+						.trade-banner {
+							background:
+								linear-gradient(90deg, #ffe3eb, #fff6d8);
+							border: 3px solid #d98fa4;
+							padding: 24px;
+							text-align: center;
+							font-size: 24px;
+							font-weight: bold;
+							color: #7a2d46;
+							margin-top: 20px;
+						}
+
+						.routes {
+							margin-top: 20px;
+							display: flex;
+							flex-wrap: wrap;
+							gap: 14px;
+						}
+
+						.route {
+							background: #2c3e50;
+							color: white;
+							padding: 12px 16px;
+							font-weight: bold;
+							border-left: 5px solid #d98fa4;
+						}
+
+						.footer {
+							background: #2c3e50;
+							color: #d2d2d2;
+							text-align: center;
+							padding: 30px;
+							border-top: 5px solid #d98fa4;
+							margin-top: 40px;
+							width:112%;
+						}
+
+						.coin {
+							font-size: 82px;
+							margin-bottom: 10px;
+							opacity: 0.9;
+						}
+					</style>
+				</head>
+
+				<body>
+
+					<header>
+
+						<div class="coin">❀</div>
+
+						<h1>BLOSSOMGATE EXCHANGE</h1>
+
+						<p>
+							The Grand Trading Gateway Between Forest and Cherry
+						</p>
+
+					</header>
+
+					<div class="container">
+
+						<div class="panel">
+							<h2>Welcome to Blossomgate</h2>
+
+							<div class="hero">
+								Blossomgate Exchange stands as one of the largest neutral trading cities
+								connecting the Forest and Cherry biomes.
+								Located along the coastal crossing routes,
+								the city serves as a gateway for merchants,
+								travelers,
+								caravans,
+								and diplomatic envoys from across the known world.
+								<br><br>
+								With bustling harbors,
+								open trade markets,
+								and direct transit routes between eastern and western settlements,
+								Blossomgate has become a vital center of commerce and travel.
+							</div>
+
+							<div class="location-box">
+								OFFICIAL LOCATION:
+								1483, 60, -1611
+								• Coastal Beach Border Between Forest and Cherry Biomes
+							</div>
+						</div>
+
+						<div class="panel">
+							<h2>Trade Features</h2>
+
+							<div class="features">
+
+								<div class="feature">
+									<h3>Tax Free Markets</h3>
+
+									<p>
+										All trade conducted within Blossomgate Exchange is exempt from import taxes,
+										export taxes,
+										and regional tariffs.
+									</p>
+								</div>
+
+								<div class="feature">
+									<h3>Biome Merchant Access</h3>
+
+									<p>
+										Trading parties from multiple different biomes regularly arrive through
+										the city gates and harbor districts.
+									</p>
+								</div>
+
+								<div class="feature">
+									<h3>Protected Harbor</h3>
+
+									<p>
+										The Exchange maintains secure dockyards and guarded warehouse districts
+										for safe storage of goods and resources.
+									</p>
+								</div>
+
+								<div class="feature">
+									<h3>Fast Travel Corridors</h3>
+
+									<p>
+										Roads and ferry systems provide easy movement between Forest settlements
+										and Cherry territory.
+									</p>
+								</div>
+
+							</div>
+
+							<div class="trade-banner">
+								ALL TRADE WITHIN BLOSSOMGATE IS FREE OF TAXATION
+							</div>
+						</div>
+
+						<div class="panel">
+							<h2>Primary Trade Routes</h2>
+
+							<div class="routes">
+								<div class="route">Forest Timber Route</div>
+								<div class="route">Cherry Blossom Road</div>
+								<div class="route">Eastern Coastal Ferry</div>
+								<div class="route">Northern Caravan Passage</div>
+								<div class="route">Cross Biome Merchant Trail</div>
+							</div>
+						</div>
+
+						<div class="panel">
+							<h2>Harbor Bulletin</h2>
+
+							<p>
+								The Harbor Authority has announced expanded dock capacity
+								for incoming merchant vessels following increased seasonal trade activity.
+							</p>
+
+							<p>
+								Foreign merchants are reminded that combat within market districts
+								is prohibited under Exchange law.
+							</p>
+						</div>
+
+					</div>
+
+					<div class="footer">
+						BLOSSOMGATE EXCHANGE • FREE TRADE DISTRICT • ESTABLISHED ON THE COASTAL CROSSING
+					</div>
+
+				</body>
+			</html>
+			`,
+			
+			interbiome: `
+			<!DOCTYPE html>
+			<html>
+				<head>
+					<style>
+						body {
+							margin: 0;
+							font-family: "Trebuchet MS", sans-serif;
+							background-color: #d8d2bf;
+							background-image:
+								linear-gradient(rgba(255,255,255,0.82), rgba(220,220,220,0.92))
+							background-size: 128px;
+							color: #222;
+							overflow-x: hidden;
+						}
+
+						header {
+							background:
+								linear-gradient(rgba(40,50,70,0.92), rgba(20,25,35,0.98))
+							color: white;
+							padding: 70px 40px;
+							text-align: center;
+							border-bottom: 8px solid #8f1d1d;
+							box-shadow: inset 0 -10px 30px rgba(0,0,0,0.4);
+							width:112%;
+						}
+
+						header h1 {
+							margin: 0;
+							font-size: 58px;
+							letter-spacing: 3px;
+							text-shadow: 0 0 12px rgba(255,255,255,0.25);
+						}
+
+						header p {
+							margin-top: 18px;
+							font-size: 18px;
+							color: #d0d7e0;
+						}
+
+						.navbar {
+							display: flex;
+							justify-content: center;
+							flex-wrap: wrap;
+							gap: 12px;
+							padding: 14px;
+							background: #2f3542;
+							border-bottom: 4px solid #8f1d1d;
+							width:112%;
+						}
+
+						.navbar a {
+							text-decoration: none;
+							color: white;
+							background: #495469;
+							padding: 10px 16px;
+							border: 1px solid rgba(255,255,255,0.15);
+							font-weight: bold;
+						}
+
+						.navbar a:hover {
+							background: #8f1d1d;
+						}
+
+						.container {
+							max-width: 1200px;
+							margin: auto;
+							padding: 40px 20px;
+						}
+
+						.panel {
+							background: rgba(255,255,255,0.9);
+							border: 4px solid #9a9a9a;
+							padding: 28px;
+							margin-bottom: 30px;
+							box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+						}
+
+						.panel h2 {
+							margin-top: 0;
+							border-bottom: 3px solid #8f1d1d;
+							padding-bottom: 10px;
+							color: #1d2d44;
+						}
+
+						.hero {
+							font-size: 18px;
+							line-height: 1.7;
+						}
+
+						.party-grid {
+							display: grid;
+							grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+							gap: 20px;
+							margin-top: 25px;
+						}
+
+						.party {
+							background:
+								linear-gradient(rgba(240,240,240,0.95), rgba(225,225,225,0.95))
+							background-size: 96px;
+							border: 3px solid #7d7d7d;
+							padding: 20px;
+						}
+
+						.party h3 {
+							margin-top: 0;
+							color: #8f1d1d;
+						}
+
+						.party-title {
+							font-size: 14px;
+							color: #555;
+							margin-bottom: 14px;
+						}
+
+						.values {
+							display: flex;
+							flex-wrap: wrap;
+							gap: 12px;
+							margin-top: 20px;
+						}
+
+						.value {
+							background: #2f3542;
+							color: white;
+							padding: 10px 14px;
+							font-weight: bold;
+							border-left: 4px solid #8f1d1d;
+						}
+
+						.notice {
+							background: #fff2d9;
+							border: 2px solid #c9a95f;
+							padding: 16px;
+							margin-top: 20px;
+						}
+
+						.footer {
+							background: #1d1f24;
+							color: #9ca3af;
+							text-align: center;
+							padding: 30px;
+							border-top: 5px solid #8f1d1d;
+							margin-top: 40px;
+							width:112%;
+						}
+
+						.seal {
+							font-size: 90px;
+							margin-bottom: 10px;
+							opacity: 0.9;
+						}
+					</style>
+				</head>
+
+				<body>
+
+					<header>
+						<div class="seal">✦</div>
+
+						<h1>INTER-BIOME DEMOCRATIC ALLIANCE</h1>
+
+						<p>
+							Unity • Order • Stability • Prosperity Across All Biomes
+						</p>
+					</header>
+
+					<div class="container">
+
+						<div class="panel">
+							<h2>Welcome to the IBDC</h2>
+
+							<div class="hero">
+								The Inter-Biome Democratic Alliance was founded as a coalition
+								of Centre Right biome governments and political organizations
+								dedicated to maintaining regional stability, lawful governance,
+								economic cooperation, and national prosperity across the known biomes.
+								<br><br>
+								The Alliance stands united against disorder, instability,
+								and political extremism while preserving the identity and traditions
+								of all member nations.
+							</div>
+
+							<div class="notice">
+								OFFICIAL NOTICE:
+								The next Inter-Biome Assembly meeting will occur during the coming harvest cycle.
+								Delegates from all member states are expected to attend.
+							</div>
+						</div>
+
+						<div class="panel">
+							<h2>Founding Member Parties</h2>
+
+							<div class="party-grid">
+
+								<div class="party">
+									<h3>Teito no Sakura Kyōtei</h3>
+
+									<div class="party-title">
+										"The Pact of the Cherry Blossoms of the Imperial Capital"
+									</div>
+
+									<p>
+										A Cherrian nationalist party led by Chairman and Brother of the Tenno,
+										Valorian von Tlagarhani.
+									</p>
+
+									<p>
+										The party supports strong government institutions,
+										loyalty to the Tenno,
+										and preservation of Cherrian cultural identity.
+									</p>
+								</div>
+
+								<div class="party">
+									<h3>Mushroom National Union</h3>
+
+									<div class="party-title">
+										Representative Party of the Mooshroom Isles
+									</div>
+
+									<p>
+										Led by Saxon Dixie,
+										the Mushroom National Union advocates for regional autonomy,
+										industrial development,
+										and coordinated defense between island territories.
+									</p>
+								</div>
+
+								<div class="party">
+									<h3>United Plains Party</h3>
+
+									<div class="party-title">
+										Representative Movement of the Central Plains
+									</div>
+
+									<p>
+										Led by Wisdomz,
+										the United Plains Party promotes direct democracy,
+										citizen assemblies,
+										and agricultural development throughout the plains biomes.
+									</p>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="panel">
+							<h2>Alliance Principles</h2>
+
+							<div class="values">
+								<div class="value">Strong Democratic Institutions</div>
+								<div class="value">Biome Sovereignty</div>
+								<div class="value">Economic Cooperation</div>
+								<div class="value">Regional Security</div>
+								<div class="value">Lawful Governance</div>
+								<div class="value">Mutual Prosperity</div>
+							</div>
+						</div>
+
+						<div class="panel">
+							<h2>Department Bulletin</h2>
+
+							<p>
+								The Security Council has announced expanded patrols along disputed biome borders
+								following increased reports of illegal portal crossings and unauthorized militia activity.
+							</p>
+
+							<p>
+								Member governments are encouraged to report hostile movements directly
+								to the Inter-Biome Coordination Office.
+							</p>
+						</div>
+
+					</div>
+
+					<div class="footer">
+						INTER-BIOME DEMOCRATIC ALLIANCE • CENTRAL ADMINISTRATIVE NETWORK • EST. 2026
+					</div>
+
+				</body>
+			</html>
+			`,
 	};
 
 
