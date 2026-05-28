@@ -845,7 +845,44 @@
 						#m29:checked ~ .viewer .m29,
 						#m30:checked ~ .viewer .m30,
 						#m31:checked ~ .viewer .m31,
-						#m3:checked ~ .viewer .m32 {
+						#m32:checked ~ .viewer .m32,
+						#m33:checked ~ .viewer .m33,
+						#m34:checked ~ .viewer .m34,
+						#m35:checked ~ .viewer .m35,
+						#m36:checked ~ .viewer .m36,
+						#m37:checked ~ .viewer .m37,
+						#m38:checked ~ .viewer .m38,
+						#m39:checked ~ .viewer .m39,
+						#m20:checked ~ .viewer .m40,
+						#m41:checked ~ .viewer .m41,
+						#m42:checked ~ .viewer .m42,
+						#m43:checked ~ .viewer .m43,
+						#m44:checked ~ .viewer .m44,
+						#m45:checked ~ .viewer .m45,
+						#m46:checked ~ .viewer .m46,
+						#m47:checked ~ .viewer .m47,
+						#m48:checked ~ .viewer .m48,
+						#m49:checked ~ .viewer .m49,
+						#m20:checked ~ .viewer .m50,
+						#m51:checked ~ .viewer .m51,
+						#m52:checked ~ .viewer .m52,
+						#m53:checked ~ .viewer .m53,
+						#m54:checked ~ .viewer .m54,
+						#m55:checked ~ .viewer .m55,
+						#m56:checked ~ .viewer .m56,
+						#m57:checked ~ .viewer .m57,
+						#m58:checked ~ .viewer .m58,
+						#m59:checked ~ .viewer .m59,
+						#m20:checked ~ .viewer .m60,
+						#m61:checked ~ .viewer .m61,
+						#m62:checked ~ .viewer .m62,
+						#m63:checked ~ .viewer .m63,
+						#m64:checked ~ .viewer .m64,
+						#m65:checked ~ .viewer .m65,
+						#m66:checked ~ .viewer .m66,
+						#m67:checked ~ .viewer .m67,
+						#m68:checked ~ .viewer .m68,
+						#m69:checked ~ .viewer .m69 {
 							display: block;
 						}
 
@@ -895,8 +932,36 @@
 					<input type="radio" name="mail" id="m28">
 					<input type="radio" name="mail" id="m29">
 					<input type="radio" name="mail" id="m30">
-					<input type="radio" name="mail" id="m31">
-					<input type="radio" name="mail" id="m32">
+					<input type="radio" name="mail" id="m40">
+					<input type="radio" name="mail" id="m41">
+					<input type="radio" name="mail" id="m42">
+					<input type="radio" name="mail" id="m43">
+					<input type="radio" name="mail" id="m44">
+					<input type="radio" name="mail" id="m45">
+					<input type="radio" name="mail" id="m46">
+					<input type="radio" name="mail" id="m47">
+					<input type="radio" name="mail" id="m48">
+					<input type="radio" name="mail" id="m49">
+					<input type="radio" name="mail" id="m50">
+					<input type="radio" name="mail" id="m51">
+					<input type="radio" name="mail" id="m52">
+					<input type="radio" name="mail" id="m53">
+					<input type="radio" name="mail" id="m54">
+					<input type="radio" name="mail" id="m55">
+					<input type="radio" name="mail" id="m56">
+					<input type="radio" name="mail" id="m57">
+					<input type="radio" name="mail" id="m58">
+					<input type="radio" name="mail" id="m59">
+					<input type="radio" name="mail" id="m60">
+					<input type="radio" name="mail" id="m61">
+					<input type="radio" name="mail" id="m62">
+					<input type="radio" name="mail" id="m63">
+					<input type="radio" name="mail" id="m64">
+					<input type="radio" name="mail" id="m65">
+					<input type="radio" name="mail" id="m66">
+					<input type="radio" name="mail" id="m67">
+					<input type="radio" name="mail" id="m68">
+					<input type="radio" name="mail" id="m69">
 
 					<div class="inbox">
 						<label class="mail" for="m1">
@@ -919,7 +984,42 @@
 							<div class="mail-sub">Weekly Sylven</div>
 						</label>
 						
-						<label class="mail" for="m30">
+						<label class="mail" for="m53">
+							<div class="mail-title">The Daily Cherry Bomb No. 7</div>
+							<div class="mail-sub">Cherry Bomb</div>
+						</label>
+						
+						<label class="mail" for="m54">
+							<div class="mail-title">The Daily Cherry Bomb No. 6</div>
+							<div class="mail-sub">Cherry Bomb</div>
+						</label>
+						
+						<label class="mail" for="m55">
+							<div class="mail-title">The Daily Cherry Bomb No. 5</div>
+							<div class="mail-sub">Cherry Bomb</div>
+						</label>
+						
+						<label class="mail" for="m56">
+							<div class="mail-title">The Daily Cherry Bomb No. 4</div>
+							<div class="mail-sub">Cherry Bomb</div>
+						</label>
+						
+						<label class="mail" for="m57">
+							<div class="mail-title">The Daily Cherry Bomb No. 3</div>
+							<div class="mail-sub">Cherry Bomb</div>
+						</label>
+						
+						<label class="mail" for="m58">
+							<div class="mail-title">The Daily Cherry Bomb No. 2</div>
+							<div class="mail-sub">Cherry Bomb</div>
+						</label>
+						
+						<label class="mail" for="m59">
+							<div class="mail-title">The Daily Cherry Bomb No. 1</div>
+							<div class="mail-sub">Cherry Bomb</div>
+						</label>
+						
+						<label class="mail" for="m60">
 							<div class="mail-title">Security Alert</div>
 							<div class="mail-sub">System</div>
 						</label>
@@ -931,10 +1031,12 @@
 							<p>Select a message to view its contents.</p>
 						</div>
 
+
 						<div class="viewer-panel m1">
 							<h2>Welcome to Overnet Mail</h2>
 							<p>This is your first message. The system is now active across all chunks.</p>
 						</div>
+
 
 						<div class="viewer-panel m2">
 							<h2>Iron Co Update</h2>
@@ -942,6 +1044,12 @@
 							<p>New mining regulations were previously implemented, and automated extraction has been restricted in all controlled zones.</p>
 							<p>Only activities conducted within approved guidelines are recognized by official policy. Any operations outside these guidelines are not sanctioned and will not be considered part of authorized company activity.</p>
 						</div>
+						
+
+
+
+
+						
 						
 						<div class="viewer-panel m3">
 							<h2>The International 5/26/26</h2>
@@ -957,6 +1065,12 @@
 							</p>
 						</div>
 						
+						
+						
+						
+						
+						
+						
 						<div class="viewer-panel m4">
 							<h2>The Weekly Sylven Week 0</h2>
 
@@ -966,7 +1080,74 @@
 							</div>
 						</div>
 
-						<div class="viewer-panel m30">
+
+
+
+
+						<div class="viewer-panel m53">
+							<h2>The Daily Cherry Bomb No. 7</h2>
+
+							<div style="display: flex; gap: 10px; margin-top: 10px;">
+								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_7.png" style="width: 80%; height: auto; object-fit: cover;">
+								The Daily Cherry Bomb newspaper edition number 7 covers: The Green Cross.
+							</div>
+						</div>
+						
+						<div class="viewer-panel m54">
+							<h2>The Daily Cherry Bomb No. 6</h2>
+
+							<div style="display: flex; gap: 10px; margin-top: 10px;">
+								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_6.png" style="width: 80%; height: auto; object-fit: cover;">
+								The Daily Cherry Bomb newspaper edition number 6 covers: The Blue Cross.
+							</div>
+						</div>
+						
+						<div class="viewer-panel m55">
+							<h2>The Daily Cherry Bomb No. 5</h2>
+
+							<div style="display: flex; gap: 10px; margin-top: 10px;">
+								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_5.png" style="width: 80%; height: auto; object-fit: cover;">
+								The Daily Cherry Bomb newspaper edition number 5 covers: The alliance forged with the Taiga biome.
+							</div>
+						</div>
+						
+						<div class="viewer-panel m56">
+							<h2>The Daily Cherry Bomb No. 4</h2>
+
+							<div style="display: flex; gap: 10px; margin-top: 10px;">
+								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_4.png" style="width: 80%; height: auto; object-fit: cover;">
+								The Daily Cherry Bomb newspaper edition number 4 covers: the ownership transfer to The Daily Emeralds team.
+							</div>
+						</div>
+						
+						<div class="viewer-panel m57">
+							<h2>The Daily Cherry Bomb No. 3</h2>
+
+							<div style="display: flex; gap: 10px; margin-top: 10px;">
+								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_3.png" style="width: 80%; height: auto; object-fit: cover;">
+								The Daily Cherry Bomb newspaper edition number 3 covers: The upcoming elections.
+							</div>
+						</div>
+						
+						<div class="viewer-panel m58">
+							<h2>The Daily Cherry Bomb No. 2</h2>
+
+							<div style="display: flex; gap: 10px; margin-top: 10px;">
+								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_2.png" style="width: 80%; height: auto; object-fit: cover;">
+								The Daily Cherry Bomb newspaper edition number 2 covers: The Constitution.
+							</div>
+						</div>
+						
+						<div class="viewer-panel m59">
+							<h2>The Daily Cherry Bomb No. 1</h2>
+
+							<div style="display: flex; gap: 10px; margin-top: 10px;">
+								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_1.png" style="width: 80%; height: auto; object-fit: cover;">
+								The Daily Cherry Bomb newspaper edition number 1 covers: The Cherry Schism.
+							</div>
+						</div>
+						
+						<div class="viewer-panel m60">
 							<h2>Security Alert</h2>
 							<p>Unusual activity detected. All personnel are advised to remain alert.</p>
 						</div>
