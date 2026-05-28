@@ -205,19 +205,33 @@
 			<html>
 				<head>
 					<style>
+						
 						body {
 							font-family: Arial, sans-serif;
 							background: #0f1117;
 							color: #ffffff;
 							margin: 0;
-							padding: 40px;
+
 							display: flex;
 							justify-content: center;
+							align-items: center;
+							min-height: 100vh;
+							text-align: center;
 						}
 
 						.home-container {
 							width: 100%;
 							max-width: 1000px;
+
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+						}
+
+						.home-header {
+							display: flex;
+							flex-direction: column;
+							align-items: center;
 						}
 
 						.home-title {
@@ -234,8 +248,11 @@
 
 						.page-grid {
 							display: grid;
-							grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+							grid-template-columns: repeat(auto-fit, 180px);
 							gap: 18px;
+
+							width: 100%;
+							justify-content: center;
 						}
 
 						.page-card {
@@ -298,12 +315,14 @@
 
 					<div class="home-container">
 
-						<div class="home-title">
-							New Tab
-						</div>
+						<div class="home-header">
+							<div class="home-title">
+								New Tab
+							</div>
 
-						<div class="home-subtitle">
-							Frequently visited pages
+							<div class="home-subtitle">
+								Frequently visited pages
+							</div>
 						</div>
 
 						<div class="page-grid">
@@ -353,6 +372,23 @@
 								<div class="page-url">
 									www.m-mail.com
 								</div>
+								
+
+							<div class="page-card" onclick="parent.location.hash='AngelElectronics'">
+
+								<div class="page-icon">
+									AE
+								</div>
+
+								<div class="page-name">
+									AngelElectronics
+								</div>
+
+								<div class="page-url">
+									www.AngelElectronics.com
+								</div>
+
+							</div>
 
 							</div>
 
@@ -383,57 +419,61 @@
 						}
 
 						header {
-							background: #1c1c22;
-							padding: 20px;
-							border-bottom: 2px solid #333;
-							text-align: center;
+						  background: #1c1c22;
+						  padding: 20px;
+						  border-bottom: 2px solid #333;
+						  text-align: center;
+
+						  width: 125%;
+						  box-sizing: border-box;
 						}
 
 						header h1 {
-						margin: 0;
-						font-size: 28px;
-						color: #f2b705;
+							margin: 0;
+							font-size: 28px;
+							color: #f2b705;
+							text-align: center;
 						}
 
 						header p {
-						margin: 5px 0 0;
-						color: #aaa;
+							margin: 5px 0 0;
+							color: #aaa;
 						}
 
 						.container {
-						padding: 20px;
-						max-width: 900px;
-						margin: auto;
+							padding: 20px;
+							max-width: 900px;
+							margin: auto;
 						}
 
 						.card {
-						background: #1a1a1f;
-						padding: 15px;
-						margin-bottom: 15px;
-						border-left: 4px solid #f2b705;
+							background: #1a1a1f;
+							padding: 15px;
+							margin-bottom: 15px;
+							border-left: 4px solid #f2b705;
 						}
 
 						.card h2 {
-						margin-top: 0;
-						color: #fff;
+							margin-top: 0;
+							color: #fff;
 						}
 
 						.tag {
-						display: inline-block;
-						background: #333;
-						padding: 3px 8px;
-						font-size: 12px;
-						margin-right: 5px;
-						border-radius: 4px;
-						color: #bbb;
+							display: inline-block;
+							background: #333;
+							padding: 3px 8px;
+							font-size: 12px;
+							margin-right: 5px;
+							border-radius: 4px;
+							color: #bbb;
 						}
 
 						footer {
-						text-align: center;
-						padding: 20px;
-						color: #666;
-						border-top: 1px solid #222;
-						margin-top: 20px;
+							text-align: center;
+							padding: 20px;
+							color: #666;
+							border-top: 1px solid #222;
+							margin-top: 20px;
 						}
 					</style>
 				</head>
@@ -505,6 +545,187 @@
 				</body>
 			</html>
 			`,
+		AngelElectronics: `
+			<!DOCTYPE html>
+			<html>
+				<head>
+					<style>
+						body {
+							margin: 0;
+							padding: 0;
+							background-color: #0b0f0d;
+							background-image:
+								linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+								repeating-linear-gradient(90deg, #111 0px, #111 2px, #0b0f0d 2px, #0b0f0d 40px),
+								repeating-linear-gradient(0deg, #111 0px, #111 2px, #0b0f0d 2px, #0b0f0d 40px);
+							color: #c8ffe1;
+							font-family: "Courier New", monospace;
+							display: flex;
+							justify-content: center;
+							align-items: flex-start;
+							min-height: 100vh;
+						}
+
+						.panel {
+							margin-top: 40px;
+							width: 900px;
+							background: rgba(0, 0, 0, 0.75);
+							border: 2px solid #00ff99;
+							box-shadow: 0 0 25px rgba(0,255,153,0.15);
+						}
+
+						.header {
+							padding: 20px;
+							border-bottom: 2px solid #00ff99;
+							background: linear-gradient(90deg, rgba(0,255,153,0.15), transparent);
+						}
+
+						.header h1 {
+							margin: 0;
+							font-size: 28px;
+							color: #00ff99;
+							letter-spacing: 2px;
+						}
+
+						.header p {
+							margin: 5px 0 0 0;
+							color: #9fffd5;
+							font-size: 13px;
+						}
+
+						.grid {
+							display: grid;
+							grid-template-columns: 1fr 1fr;
+							gap: 0;
+						}
+
+						.section {
+							padding: 18px;
+							border-right: 1px solid #123;
+							border-bottom: 1px solid #123;
+						}
+
+						.section h2 {
+							margin: 0 0 10px 0;
+							font-size: 14px;
+							color: #00ff99;
+							text-transform: uppercase;
+							letter-spacing: 1px;
+						}
+
+						.node {
+							background: rgba(0,255,153,0.05);
+							border: 1px solid rgba(0,255,153,0.2);
+							padding: 8px;
+							margin: 6px 0;
+							font-size: 13px;
+						}
+
+						.tag {
+							display: inline-block;
+							padding: 2px 6px;
+							margin-right: 5px;
+							font-size: 11px;
+							color: #0b0f0d;
+							background: #00ff99;
+						}
+
+						.wire {
+							height: 2px;
+							background: linear-gradient(90deg, transparent, #00ff99, transparent);
+							margin: 10px 0;
+						}
+
+						.footer {
+							padding: 12px;
+							font-size: 11px;
+							color: #6affc2;
+							border-top: 1px solid #123;
+							text-align: center;
+						}
+
+						.status {
+							float: right;
+							color: #00ff99;
+							font-size: 12px;
+						}
+					</style>
+				</head>
+
+				<body>
+					<div class="panel">
+						
+						<div class="header">
+							<h1>Angel Electronics <span class="status">ONLINE // POWER: STABLE</span></h1>
+							<p>Redstone Wiring Division | The Forest of Rakau Network Node</p>
+						</div>
+
+						<div class="grid">
+
+							<div class="section">
+								<h2>System Overview</h2>
+								<div class="node">
+									<span class="tag">CORE</span> High efficiency redstone circuitry manufacturing
+								</div>
+								<div class="node">
+									<span class="tag">FIELD</span> Tactical wiring systems for client installations
+								</div>
+								<div class="node">
+									<span class="tag">AUTO</span> Self-triggered mechanical and trap systems
+								</div>
+							</div>
+
+							<div class="section">
+								<h2>Live Projects</h2>
+								<div class="node">
+									<b>S.A.P.M Mk V</b> — Sound Activated Proximity Mines (Ambush Protocol)
+								</div>
+								<div class="node">
+									<b>Project Skybreaker</b> — High altitude redstone deployment network
+								</div>
+								<div class="node">
+									<b>M.A.B</b> — Modular Assault Block system (Big Boi Class)
+								</div>
+							</div>
+
+							<div class="section">
+								<h2>Wiring Network Status</h2>
+								<div class="node">Main Grid: <span style="color:#00ff99;">STABLE</span></div>
+								<div class="node">Defense Circuits: <span style="color:#00ff99;">ARMED</span></div>
+								<div class="node">Hidden Traces: <span style="color:#ff5555;">CLASSIFIED</span></div>
+								<div class="wire"></div>
+								<div class="node">Signal Integrity: 98.4%</div>
+							</div>
+
+							<div class="section">
+								<h2>Hierarchy Node Map</h2>
+								<div class="node">Intern → Basic wiring access</div>
+								<div class="node">Grad 3 → Assembly circuits</div>
+								<div class="node">Grad 2 → System design</div>
+								<div class="node">Grad 1 → Core architecture</div>
+								<div class="node">Archangel → Classified systems</div>
+								<div class="node">Ten Heavenly → Network control</div>
+								<div class="node">CEO → Root access</div>
+							</div>
+
+							<div class="section" style="grid-column: span 2;">
+								<h2>Active Engineers</h2>
+								<div class="node">Curious_Angel21 — ROOT / CEO</div>
+								<div class="node">TechmanJ27 — Grad 2 // Circuit Specialist</div>
+								<div class="node">AnonKayla — Grad 2 // Logic Systems</div>
+								<div class="node">Peepz2010 — Intern // Training Node</div>
+							</div>
+
+						</div>
+
+						<div class="footer">
+							ANGEL ELECTRONICS NETWORK // ALL CIRCUITS RUNNING NORMALLY // DO NOT TRACE CLASSIFIED LINES
+						</div>
+
+					</div>
+				</body>
+			</html>
+		`,
 
 		404: `
 			<!DOCTYPE html>
@@ -1710,7 +1931,9 @@
 			}
 		};
 
-		homeBtn.onclick = () => load("home");
+		homeBtn.onclick = () => {
+			window.location.hash = "home";
+		};
 
 		goBtn.onclick = () => load(addressBar.value.trim());
 
