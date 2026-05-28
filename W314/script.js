@@ -372,6 +372,8 @@
 								<div class="page-url">
 									www.m-mail.com
 								</div>
+
+							</div>
 								
 
 							<div class="page-card" onclick="parent.location.hash='AngelElectronics'">
@@ -379,7 +381,7 @@
 								<div class="page-icon">
 									AE
 								</div>
-
+								
 								<div class="page-name">
 									AngelElectronics
 								</div>
@@ -387,8 +389,6 @@
 								<div class="page-url">
 									www.AngelElectronics.com
 								</div>
-
-							</div>
 
 							</div>
 
