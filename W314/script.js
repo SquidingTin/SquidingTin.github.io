@@ -2798,8 +2798,9 @@
 						}
 
 						header {
+							background-color: rgba(128, 128, 128, 0.5);
 							background:
-								linear-gradient(rgba(40,50,70,0.92), rgba(20,25,35,0.98))
+								linear-gradient(rgba(255,255,255,0.75), rgba(240,230,210,0.88))
 							color: white;
 							padding: 70px 40px;
 							text-align: center;
