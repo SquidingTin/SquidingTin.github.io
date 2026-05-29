@@ -322,6 +322,38 @@
 
 						<div class="page-grid">
 
+							<div class="page-card" onclick="parent.location.hash='rakau'">
+
+								<div class="page-icon">
+									R
+								</div>
+
+								<div class="page-name">
+									Rakau
+								</div>
+
+								<div class="page-url">
+									www.Rakau.Gov
+								</div>
+
+							</div>
+
+							<div class="page-card" onclick="parent.location.hash='rakaufaith'">
+
+								<div class="page-icon">
+									RF
+								</div>
+
+								<div class="page-name">
+									Rakau Faith
+								</div>
+
+								<div class="page-url">
+									www.rakaufaith.com
+								</div>
+
+							</div>
+
 							<div class="page-card" onclick="parent.location.hash='ironco'">
 
 								<div class="page-icon">
@@ -2962,6 +2994,635 @@
 					</div>
 
 			`,
+
+rakau: `
+
+
+			<style>
+				body {
+					margin: 0;
+					font-family: Arial, sans-serif;
+					background: #0f1a12;
+					color: #e8f5e9;
+					overflow-x: hidden;
+					width: 100%;
+					background-color: #0f0f12;
+					background-image:
+						linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+						url("blocks/Lodestone_top_block.png");
+					background-repeat: repeat;
+					background-size: 64px 64px;
+				}
+
+				.header {
+					width: 115vw;
+					margin-left: calc(50% - 50vw);
+
+					background:
+						linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+						url("images/forest.png");
+
+					background-size: cover;
+					background-position: center;
+
+					padding: 120px 30px;
+					border-bottom: 4px solid #2e6b4f;
+				}
+				.headercontainer {
+					width: 90%;
+					text-align: center;
+				}
+				.hero h1 {
+					margin: 0;
+					font-size: 64px;
+					color: #ffffff;
+				}
+
+				.hero p {
+					font-size: 20px;
+					color: #d7f0da;
+					margin-top: 15px;
+				}
+
+				.bannerQuote {
+					margin-top: 25px;
+					font-style: italic;
+					color: #9ccc9c;
+					font-size: 18px;
+				}
+
+				.container {
+					padding: 30px;
+					max-width: 1200px;
+					margin: auto;
+				}
+
+				.grid {
+					display: grid;
+					grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+					gap: 20px;
+				}
+
+				.card {
+					background: #15241a;
+					padding: 25px;
+					margin-bottom: 20px;
+					border-left: 4px solid #2e6b4f;
+					border-radius: 10px;
+					box-shadow: 0 0 15px rgba(0,0,0,0.25);
+				}
+
+				.card h2 {
+					margin-top: 0;
+					color: #7ed98a;
+				}
+
+				.card h3 {
+					color: #9ce3a7;
+				}
+
+				.card p {
+					line-height: 1.7;
+					color: #dceedd;
+				}
+
+				.card ul {
+					padding-left: 20px;
+				}
+
+				.card ul li {
+					margin-bottom: 10px;
+				}
+
+				.lawBox {
+					background: #1b2f21;
+					padding: 15px;
+					margin-top: 15px;
+					border-radius: 8px;
+					border: 1px solid #335842;
+				}
+
+				.companyGrid {
+					display: grid;
+					grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+					gap: 15px;
+				}
+
+				.company {
+					background: #1a2d20;
+					padding: 15px;
+					border-radius: 8px;
+					text-align: center;
+					border: 1px solid #335842;
+					cursor: pointer;
+				}
+
+				footer {
+					text-align: center;
+					padding: 25px;
+					background: #0b120d;
+					color: #7fa88a;
+					margin-top: 40px;
+					border-top: 3px solid #2e6b4f;
+					width:112%;
+				}
+
+			</style>
+
+			<div class="header">
+				<div class="headercontainer">
+					<h1>Forest of Rakau</h1>
+
+					<p>
+						Official Administrative Authority of the Forest of Rakau
+					</p>
+
+					<div class="bannerQuote">
+						"Peace through balance. Strength through roots."
+					</div>
+				</div>
+
+			</div>
+
+			<div class="container">
+
+
+				<div class="card" id="about">
+
+					<h2>About the Nation</h2>
+
+					<p>
+						The Forest of Rakau (FRK) is a theocratic council-based nation
+						located within the great forests bordering the Snow and Cherry
+						Grove regions. The nation values sustainability, peace,
+						controlled growth, and coexistence with nature.
+					</p>
+
+					<p>
+						Rakau's central geographic location has made it a growing
+						center of trade, diplomacy, and commerce. Numerous independent
+						companies and guilds have emerged from the forests of Rakau.
+					</p>
+
+					<p>
+						The government is centered around the High Council and the
+						spiritual leadership of the Kaikorero of Rakau.
+					</p>
+
+				</div>
+
+				<!-- HIGH COUNCIL -->
+
+				<div class="grid">
+
+					<div class="card" id="council">
+
+						<h2>High Council</h2>
+
+						<p>
+							The High Council serves as the highest governing authority
+							within Rakau. Each Elder oversees a governmental Ring.
+						</p>
+
+						<ul>
+							<li>
+								<b>LilySelina</b><br>
+								Elder of Architecture
+							</li>
+
+							<li>
+								<b>khstan</b><br>
+								Elder of Defense
+							</li>
+
+							<li>
+								<b>WFP_Headmaster</b><br>
+								Elder of Foreign Affairs
+							</li>
+
+							<li>
+								<b>Sel_</b><br>
+								Elder of Resources
+							</li>
+
+							<li>
+								<b>woof</b><br>
+								Elder of Governance
+							</li>
+						</ul>
+
+					</div>
+
+					<!-- KAIKORERO -->
+
+					<div class="card">
+
+						<h2>Kaikorero of Rakau</h2>
+
+						<p>
+							<b>Mr_twisted9999</b>
+						</p>
+
+						<p>
+							Spiritual representative and ceremonial leader of Rakau.
+							The Kaikorero guides the nation's beliefs, traditions,
+							and harmony with nature.
+						</p>
+
+						<p>
+							Commonly referred to by citizens as the
+							<b>Tree Pope</b>.
+						</p>
+
+					</div>
+
+				</div>
+
+				<!-- GOVERNANCE -->
+
+				<div class="card">
+
+					<h2>Government Structure</h2>
+
+					<p>
+						Rakau operates under a theocratic council system where the
+						High Council governs the nation while the Kaikorero acts as
+						a spiritual and ideological authority.
+					</p>
+
+					<p>
+						A Legate is an appointed administrator responsible for
+						governing towns and settlements within Rakau. Legates are
+						selected directly by the High Council.
+					</p>
+
+				</div>
+
+				<!-- RINGS -->
+
+				<div class="card" id="rings">
+
+					<h2>Rings of Government</h2>
+
+					<div class="grid">
+
+						<div class="lawBox">
+
+							<h3>Ring of Ambassadors</h3>
+
+							<p>
+								Diplomats responsible for alliances, negotiations,
+								treaties, and foreign relations.
+							</p>
+
+						</div>
+
+						<div class="lawBox">
+
+							<h3>Ring of Building</h3>
+
+							<p>
+								Plans and constructs public infrastructure,
+								roads, cities, and housing.
+							</p>
+
+						</div>
+
+						<div class="lawBox">
+
+							<h3>Ring of Defense</h3>
+
+							<p>
+								The military branch of Rakau, commonly known
+								as The Termites.
+							</p>
+
+						</div>
+
+						<div class="lawBox">
+
+							<h3>Ring of Resources</h3>
+
+							<p>
+								Collects, stores, and distributes food,
+								materials, lumber, and ores.
+							</p>
+
+						</div>
+
+						<div class="lawBox">
+
+							<h3>Ring of Order</h3>
+
+							<p>
+								Responsible for law enforcement,
+								justice, and internal stability.
+							</p>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="card" id="laws">
+
+					<h2>Laws of Rakau</h2>
+
+					<div class="lawBox">
+						<b>Murder of citizens is prohibited.</b>
+						<p>
+							Punishable by imprisonment, exile, or death.
+						</p>
+					</div>
+
+					<div class="lawBox">
+						<b>Thievery is prohibited.</b>
+						<p>
+							Theft from the government is considered a severe crime.
+						</p>
+					</div>
+
+					<div class="lawBox">
+						<b>Griefing or sabotage is prohibited.</b>
+						<p>
+							Punishable by imprisonment, exile, or death.
+						</p>
+					</div>
+
+					<div class="lawBox">
+						<b>Mass deforestation requires approval.</b>
+						<p>
+							Forest clearing larger than 7x7 chunks requires approval
+							from the Kaikorero.
+						</p>
+					</div>
+
+					<div class="lawBox">
+						<b>No weapons within the capital.</b>
+						<p>
+							Weapons are confiscated at the gate and returned upon exit.
+						</p>
+					</div>
+
+					<div class="lawBox">
+						<b>Selling saplings outside Rakau is illegal.</b>
+					</div>
+
+					<div class="lawBox">
+						<b>Treason is punishable by exile or death.</b>
+
+						<p>
+							Includes:
+						</p>
+
+						<ul>
+							<li>Usurping power</li>
+							<li>Leaking classified information</li>
+							<li>Attacking Elders or the Kaikorero</li>
+							<li>Serving foreign interests over Rakau</li>
+						</ul>
+
+					</div>
+
+				</div>
+
+				<div class="grid">
+
+					<div class="card">
+
+						<h2>Citizen Benefits</h2>
+
+						<ul>
+							<li>Basic housing provided</li>
+							<li>Food distribution for citizens</li>
+							<li>Protected trade routes</li>
+							<li>Access to national infrastructure</li>
+						</ul>
+
+					</div>
+
+					<div class="card">
+
+						<h2>Religion & Ideology</h2>
+
+						<p>
+							The Faith of Rakau promotes coexistence with nature,
+							sustainability, peace, and responsible use of resources.
+						</p>
+
+						<p>
+							Citizens believe natural resources are gifts that must
+							never be exploited through greed or waste.
+						</p>
+
+					</div>
+
+				</div>
+
+				<div class="card" id="cities">
+
+					<h2>Cities & Villages</h2>
+
+					<div class="grid">
+
+						<div class="lawBox">
+							<h3>Evertea</h3>
+							<p>Sacred Capital of Rakau</p>
+						</div>
+
+						<div class="lawBox">
+							<h3>Arbor City</h3>
+						</div>
+
+						<div class="lawBox">
+							<h3>Ardenne</h3>
+						</div>
+
+						<div class="lawBox">
+							<h3>Driftwood</h3>
+						</div>
+
+						<div class="lawBox">
+							<h3>Sidos</h3>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="card">
+
+					<h2>Economy & Trade</h2>
+
+					<p>
+						Rakau's central position has transformed the nation into
+						a major continental trade hub.
+					</p>
+
+					<p>
+						Timber, food, engineering companies, redstone industries,
+						and diplomatic neutrality have helped fuel economic growth.
+					</p>
+
+				</div>
+
+				<!-- COMPANIES -->
+
+				<div class="card" id="companies">
+
+					<h2>Registered Companies</h2>
+
+					<div class="companyGrid">
+
+						<a class="company" onclick="parent.location.hash='AngelElectronics'">
+							Angel Electronics
+						</a>
+
+						<a class="company" onclick="parent.location.hash='#endx">
+							EndX
+						</a>
+
+						<a class="company" onclick="parent.location.hash='#happyghast">
+							Happy Ghast Inc.
+						</a>
+
+						<a class="company" onclick="parent.location.hash='#hotdogredstone">
+							Hotdog Redstone
+						</a>
+
+						<a class="company" onclick="parent.location.hash='#greenroad">
+							The Greenroad Guild
+						</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<footer>
+				Forest of Rakau Government Portal — Official Administrative Network
+			</footer>
+
+			`,
+	
+			rakaufaith: `
+				<style>
+					body {
+						margin: 0;
+						font-family: Georgia, serif;
+						background: #07140c;
+						color: #d9f7e2;
+						overflow-x: hidden; 
+					}
+
+					header {
+						background: linear-gradient(#0f2a18, #07140c);
+						text-align: center;
+						padding: 60px 20px;
+						border-bottom: 3px solid #2f7a4f;
+						width:112%;
+					}
+
+					header h1 {
+						font-size: 40px;
+						margin: 0;
+					}
+
+					header p {
+						font-style: italic;
+						color: #9edbb8;
+					}
+
+					.container {
+						max-width: 900px;
+						margin: auto;
+						padding: 30px;
+					}
+
+					.section {
+						margin-bottom: 30px;
+						padding: 20px;
+						background: rgba(255,255,255,0.03);
+						border-left: 3px solid #2f7a4f;
+					}
+
+					h2 {
+						color: #a6e3c2;
+					}
+
+					footer {
+						text-align: center;
+						padding: 20px;
+						color: #6fa887;
+						font-size: 12px;
+						width:112%;
+					}
+
+					.quote {
+						font-style: italic;
+						color: #bdebd1;
+					}
+				</style>
+
+				<header>
+					<h1>The Faith of Rakau</h1>
+					<p>A Covenant of Nature, Peace, and Coexistence</p>
+				</header>
+
+				<div class="container">
+
+					<div class="section">
+						<h2>Core Beliefs</h2>
+						<p class="quote">
+							“To live as one with nature is to live in harmony with all things.”
+						</p>
+						<ul>
+							<li>Sustainability — nature is a sacred gift, not a resource to exploit</li>
+							<li>Respect for Sacred Land — shrines and sanctuaries must never be desecrated</li>
+							<li>Coexistence — players and nature must live in balance</li>
+							<li>Peace — conflict is avoided whenever possible</li>
+						</ul>
+					</div>
+
+					<div class="section">
+						<h2>The Kaikorero of Rakau</h2>
+						<p>
+							The Kaikorero is the voice of the forest, often described as the "Tree Pope".
+							They serve as the spiritual link between the people and nature, guiding governance
+							through the will of the forest.
+						</p>
+						<p>
+							Pronunciation: Kairorero (kai'koːɾɛˌɾo), Rakau (RAH-kaw)
+						</p>
+					</div>
+
+					<div class="section">
+						<h2>Sacred Law</h2>
+						<ul>
+							<li>Mass deforestation is forbidden without approval</li>
+							<li>Sacred sites must be protected at all costs</li>
+							<li>Greed that harms nature is condemned by the forest</li>
+							<li>Destruction of the forest brings severe reprisal</li>
+						</ul>
+					</div>
+
+					<div class="section">
+						<h2>Role in Government</h2>
+						<p>
+							The Faith of Rakau is deeply integrated into governance. The Kaikorero
+							influences the High Council, ensuring that laws and actions align with
+							the will of the forest.
+						</p>
+					</div>
+
+				</div>
+
+				<footer>
+					The Faith of Rakau — Walk gently, live in harmony.
+				</footer>
+            `,
 	};
 
 
