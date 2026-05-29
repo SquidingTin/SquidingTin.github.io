@@ -1879,23 +1879,23 @@
 								<div class="quote-grid">
 
 									<div class="quote imageQuote">
-										<img src="images/company/cctc/horse.png">
+										<img src="images/company/CCTC/horse.png">
 									</div>
 
 									<div class="quote imageQuote">
-										<img src="images/company/cctc/boat.png">
+										<img src="images/company/CCTC/boat.png">
 									</div>
 
 									<div class="quote imageQuote">
-										<img src="images/company/cctc/arrow.png">
+										<img src="images/company/CCTC/arrow.png">
 									</div>
 
 									<div class="quote imageQuote">
-										<img src="images/company/cctc/firework.png">
+										<img src="images/company/CCTC/firework.png">
 									</div>
 
 									<div class="quote imageQuote">
-										<img src="images/company/cctc/cart.png">
+										<img src="images/company/CCTC/cart.png">
 									</div>
 
 								</div>
