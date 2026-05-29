@@ -1017,234 +1017,315 @@
 					
 
 
-						<input type="radio" name="mail" id="m1">
-						<input type="radio" name="mail" id="m2">
-						<input type="radio" name="mail" id="m3">
-						<input type="radio" name="mail" id="m4">
-						<input type="radio" name="mail" id="m5">
-						<input type="radio" name="mail" id="m6">
-						<input type="radio" name="mail" id="m7">
-						<input type="radio" name="mail" id="m8">
-						<input type="radio" name="mail" id="m9">
-						<input type="radio" name="mail" id="m10">
-						<input type="radio" name="mail" id="m11">
-						<input type="radio" name="mail" id="m12">
 
-						<div class="inbox">
-							<label class="mail" for="m1">
-								<div class="mail-title">The Bedrock Chronicles 5/28/26</div>
-								<div class="mail-sub">Bedrock Chronicle</div>
-							</label>
 
-							<label class="mail" for="m2">
-								<div class="mail-title">Iron Co Update</div>
-								<div class="mail-sub">Iron Co Company Email</div>
-							</label>
+<input type="radio" name="mail" id="m1">
+<input type="radio" name="mail" id="m2">
+<input type="radio" name="mail" id="m3">
+<input type="radio" name="mail" id="m4">
+<input type="radio" name="mail" id="m5">
+<input type="radio" name="mail" id="m6">
+<input type="radio" name="mail" id="m7">
+<input type="radio" name="mail" id="m8">
+<input type="radio" name="mail" id="m9">
+<input type="radio" name="mail" id="m10">
+<input type="radio" name="mail" id="m11">
+<input type="radio" name="mail" id="m12">
+<input type="radio" name="mail" id="m13">
+<input type="radio" name="mail" id="m14">
+<input type="radio" name="mail" id="m15">
+<input type="radio" name="mail" id="m16">
 
-							<label class="mail" for="m3">
-								<div class="mail-title">The International Volume 3</div>
-								<div class="mail-sub">The International</div>
-							</label>
+<div class="inbox">
+	<label class="mail" for="m1">
+		<div class="mail-title">The Slimery Times No. 7</div>
+		<div class="mail-sub">The Slimery Times</div>
+	</label>
 
-							<label class="mail" for="m4">
-								<div class="mail-title">The International 5/24/26</div>
-								<div class="mail-sub">The International</div>
-							</label>
+	<label class="mail" for="m2">
+		<div class="mail-title">The International Volume 3</div>
+		<div class="mail-sub">The International</div>
+	</label>
 
-							<label class="mail" for="m5">
-								<div class="mail-title">The Weekly Sylven W0</div>
-								<div class="mail-sub">Weekly Sylven</div>
-							</label>
+	<label class="mail" for="m3">
+		<div class="mail-title">The Bedrock Chronicles 5/29/26</div>
+		<div class="mail-sub">Bedrock Chronicle</div>
+	</label>
 
-							<label class="mail" for="m6">
-								<div class="mail-title">The Daily Cherry Bomb No. 7</div>
-								<div class="mail-sub">Cherry Bomb</div>
-							</label>
+	<label class="mail" for="m4">
+		<div class="mail-title">The Weekly Sylven W0 pt2</div>
+		<div class="mail-sub">Weekly Sylven</div>
+	</label>
 
-							<label class="mail" for="m7">
-								<div class="mail-title">The Daily Cherry Bomb No. 6</div>
-								<div class="mail-sub">Cherry Bomb</div>
-							</label>
+	<label class="mail" for="m5">
+		<div class="mail-title">The Bedrock Chronicles 5/28/26</div>
+		<div class="mail-sub">Bedrock Chronicle</div>
+	</label>
 
-							<label class="mail" for="m8">
-								<div class="mail-title">The Daily Cherry Bomb No. 5</div>
-								<div class="mail-sub">Cherry Bomb</div>
-							</label>
+	<label class="mail" for="m6">
+		<div class="mail-title">Iron Co Update</div>
+		<div class="mail-sub">Iron Co Company Email</div>
+	</label>
 
-							<label class="mail" for="m9">
-								<div class="mail-title">The Daily Cherry Bomb No. 4</div>
-								<div class="mail-sub">Cherry Bomb</div>
-							</label>
+	<label class="mail" for="m7">
+		<div class="mail-title">The International Volume 3</div>
+		<div class="mail-sub">The International</div>
+	</label>
 
-							<label class="mail" for="m10">
-								<div class="mail-title">The Daily Cherry Bomb No. 3</div>
-								<div class="mail-sub">Cherry Bomb</div>
-							</label>
+	<label class="mail" for="m8">
+		<div class="mail-title">The International 5/24/26</div>
+		<div class="mail-sub">The International</div>
+	</label>
 
-							<label class="mail" for="m11">
-								<div class="mail-title">The Daily Cherry Bomb No. 2</div>
-								<div class="mail-sub">Cherry Bomb</div>
-							</label>
+	<label class="mail" for="m9">
+		<div class="mail-title">The Weekly Sylven W0</div>
+		<div class="mail-sub">Weekly Sylven</div>
+	</label>
 
-							<label class="mail" for="m12">
-								<div class="mail-title">The Daily Cherry Bomb No. 1</div>
-								<div class="mail-sub">Cherry Bomb</div>
-							</label>
-						</div>
+	<label class="mail" for="m10">
+		<div class="mail-title">The Daily Cherry Bomb No. 7</div>
+		<div class="mail-sub">Cherry Bomb</div>
+	</label>
 
-						<div class="viewer">
-							<div class="viewer-panel default">
-								<h2>Inbox</h2>
-								<p>Select a message to view its contents.</p>
-							</div>
+	<label class="mail" for="m11">
+		<div class="mail-title">The Daily Cherry Bomb No. 6</div>
+		<div class="mail-sub">Cherry Bomb</div>
+	</label>
 
-							<div class="viewer-panel m1">
-								<h2>The Bedrock Chronicles 5-28-26</h2>
+	<label class="mail" for="m12">
+		<div class="mail-title">The Daily Cherry Bomb No. 5</div>
+		<div class="mail-sub">Cherry Bomb</div>
+	</label>
 
-								<div class="mail-images">
-									<img src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-28-26.png" style="width: 33%; height: auto; object-fit: cover;">
-								</div>
+	<label class="mail" for="m13">
+		<div class="mail-title">The Daily Cherry Bomb No. 4</div>
+		<div class="mail-sub">Cherry Bomb</div>
+	</label>
 
-								<div class="mail-content">
-											The Bedrock Chronicles newspaper for 5/28/26 covers them moving their headquarters to the Mesa biome.
-								</div>
-							</div>
+	<label class="mail" for="m14">
+		<div class="mail-title">The Daily Cherry Bomb No. 3</div>
+		<div class="mail-sub">Cherry Bomb</div>
+	</label>
 
-							<div class="viewer-panel m2">
-								<h2>Iron Co Update</h2>
+	<label class="mail" for="m15">
+		<div class="mail-title">The Daily Cherry Bomb No. 2</div>
+		<div class="mail-sub">Cherry Bomb</div>
+	</label>
 
-								<div class="mail-images">
-									
-								</div>
+	<label class="mail" for="m16">
+		<div class="mail-title">The Daily Cherry Bomb No. 1</div>
+		<div class="mail-sub">Cherry Bomb</div>
+	</label>
+</div>
 
-								<div class="mail-content">
-											<p>New mining regulations were previously implemented, and automated extraction has been restricted in all controlled zones.</p><p>Only activities conducted within approved guidelines are recognized by official policy. Any operations outside these guidelines are not sanctioned and will not be considered part of authorized company activity.</p>
-								</div>
-							</div>
+<div class="viewer">
+	<div class="viewer-panel default">
+		<h2>Inbox</h2>
+		<p>Select a message to view its contents.</p>
+	</div>
 
-							<div class="viewer-panel m3">
-								<h2>The International 5/26/26</h2>
+	<div class="viewer-panel m1">
+		<h2>The Slimery Times 5-29-26</h2>
 
-								<div class="mail-images">
-									<img src="images/news/The_International/5_26_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
-							<img src="images/news/The_International/5_26_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
-							<img src="images/news/The_International/5_26_26_3.png" style="width: 33%; height: auto; object-fit: cover;">
-								</div>
+		<div class="mail-images">
+			<img src="images/news/slimetimes/slimetimes_5-29-26_1.png" style="width: 33%; height: auto; object-fit: cover;">
+	<img src="images/news/slimetimes/slimetimes_5-29-26_2.png" style="width: 33%; height: auto; object-fit: cover;">
+	<img src="images/news/slimetimes/slimetimes_5-29-26_3.png" style="width: 33%; height: auto; object-fit: cover;">
+		</div>
 
-								<div class="mail-content">
-											The International newspaper for 5/26/26 covers Rakau Security Measures, Scam PSA, The Blue Cross, Bedrock Nation leaving the DLF deal, and more.
-								</div>
-							</div>
+		<div class="mail-content">
+					The Slimery Times newspaper for 5/29/26 covers info about the New World is opening soon, them hiring writers, their new banner, and more.
+		</div>
+	</div>
 
-							<div class="viewer-panel m4">
-								<h2>The International 5/24/26</h2>
+	<div class="viewer-panel m2">
+		<h2>The International 5/28/26</h2>
 
-								<div class="mail-images">
-									<img src="images/news/The_International/5_24_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
-							<img src="images/news/The_International/5_24_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
-								</div>
+		<div class="mail-images">
+			<img src="images/news/The_International/5_28_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
+	<img src="images/news/The_International/5_28_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
+	<img src="images/news/The_International/5_28_26_3.png" style="width: 33%; height: auto; object-fit: cover;">
+	<img src="images/news/The_International/5_28_26_4.png" style="width: 33%; height: auto; object-fit: cover;">
+		</div>
 
-								<div class="mail-content">
-											The International newspaper edition for 5/24/26 covers the Jungle War, Transportation Updates, Redstone Lab, and more.
-								</div>
-							</div>
+		<div class="mail-content">
+					The International newspaper for 5/28/26 covers The NSO disanding, Taigas elections, a reminder of the new world being open soon and more.
+		</div>
+	</div>
 
-							<div class="viewer-panel m5">
-								<h2>The Weekly Sylven Week 0</h2>
+	<div class="viewer-panel m3">
+		<h2>The Bedrock Chronicles 5-29-26</h2>
 
-								<div class="mail-images">
-									<img src="images/news/Sylven/Weekly_Sylven_W0.png" style="width: 33%; height: auto; object-fit: cover;">
-								</div>
+		<div class="mail-images">
+			<img src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-29-26.png" style="width: 33%; height: auto; object-fit: cover;">
+		</div>
 
-								<div class="mail-content">
-											The Weekly Sylven newspaper edition for week 0 covers the rumbling heard near the Emerald Basin.
-								</div>
-							</div>
+		<div class="mail-content">
+					The Bedrock Chronicles newspaper for 5/29/26 covers the worlds seed has changed, causing massive shifts in community opion, and server instablity.
+		</div>
+	</div>
 
-							<div class="viewer-panel m6">
-								<h2>The Daily Cherry Bomb No. 7</h2>
+	<div class="viewer-panel m4">
+		<h2>The Weekly Sylven 5/27/26</h2>
 
-								<div class="mail-images">
-									<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_7.png" style="width: 33%; height: auto; object-fit: cover;">
-								</div>
+		<div class="mail-images">
+			<img src="images/news/Sylven/Weekly_Sylven_W0-2.png" style="width: 33%; height: auto; object-fit: cover;">
+		</div>
 
-								<div class="mail-content">
-											The Daily Cherry Bomb newspaper edition number 7 covers: The Green Cross.
-								</div>
-							</div>
+		<div class="mail-content">
+					The Weekly Sylven newspaper edition for week 0 reports a major event, causing them to break their weekly standard.
+		</div>
+	</div>
 
-							<div class="viewer-panel m7">
-								<h2>The Daily Cherry Bomb No. 6</h2>
+	<div class="viewer-panel m5">
+		<h2>The Bedrock Chronicles 5-28-26</h2>
 
-								<div class="mail-images">
-									<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_6.png" style="width: 33%; height: auto; object-fit: cover;">
-								</div>
+		<div class="mail-images">
+			<img src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-28-26.png" style="width: 33%; height: auto; object-fit: cover;">
+		</div>
 
-								<div class="mail-content">
-											The Daily Cherry Bomb newspaper edition number 6 covers: The Blue Cross.
-								</div>
-							</div>
+		<div class="mail-content">
+					The Bedrock Chronicles newspaper for 5/28/26 covers them moving their headquarters to the Mesa biome.
+		</div>
+	</div>
 
-							<div class="viewer-panel m8">
-								<h2>The Daily Cherry Bomb No. 5</h2>
+	<div class="viewer-panel m6">
+		<h2>Iron Co Update</h2>
 
-								<div class="mail-images">
-									<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_5.png" style="width: 33%; height: auto; object-fit: cover;">
-								</div>
+		<div class="mail-images">
+			
+		</div>
 
-								<div class="mail-content">
-											The Daily Cherry Bomb newspaper edition number 5 covers: The alliance forged with the Taiga biome.
-								</div>
-							</div>
+		<div class="mail-content">
+					<p>New mining regulations were previously implemented, and automated extraction has been restricted in all controlled zones.</p><p>Only activities conducted within approved guidelines are recognized by official policy. Any operations outside these guidelines are not sanctioned and will not be considered part of authorized company activity.</p>
+		</div>
+	</div>
 
-							<div class="viewer-panel m9">
-								<h2>The Daily Cherry Bomb No. 4</h2>
+	<div class="viewer-panel m7">
+		<h2>The International 5/26/26</h2>
 
-								<div class="mail-images">
-									<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_4.png" style="width: 33%; height: auto; object-fit: cover;">
-								</div>
+		<div class="mail-images">
+			<img src="images/news/The_International/5_26_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
+	<img src="images/news/The_International/5_26_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
+	<img src="images/news/The_International/5_26_26_3.png" style="width: 33%; height: auto; object-fit: cover;">
+		</div>
 
-								<div class="mail-content">
-											The Daily Cherry Bomb newspaper edition number 4 covers: the ownership transfer to The Daily Emeralds team.
-								</div>
-							</div>
+		<div class="mail-content">
+					The International newspaper for 5/26/26 covers Rakau Security Measures, Scam PSA, The Blue Cross, Bedrock Nation leaving the DLF deal, and more.
+		</div>
+	</div>
 
-							<div class="viewer-panel m10">
-								<h2>The Daily Cherry Bomb No. 3</h2>
+	<div class="viewer-panel m8">
+		<h2>The International 5/24/26</h2>
 
-								<div class="mail-images">
-									<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_3.png" style="width: 33%; height: auto; object-fit: cover;">
-								</div>
+		<div class="mail-images">
+			<img src="images/news/The_International/5_24_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
+	<img src="images/news/The_International/5_24_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
+		</div>
 
-								<div class="mail-content">
-											The Daily Cherry Bomb newspaper edition number 3 covers: The upcoming elections.
-								</div>
-							</div>
+		<div class="mail-content">
+					The International newspaper edition for 5/24/26 covers the Jungle War, Transportation Updates, Redstone Lab, and more.
+		</div>
+	</div>
 
-							<div class="viewer-panel m11">
-								<h2>The Daily Cherry Bomb No. 2</h2>
+	<div class="viewer-panel m9">
+		<h2>The Weekly Sylven Week 0</h2>
 
-								<div class="mail-images">
-									<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_2.png" style="width: 33%; height: auto; object-fit: cover;">
-								</div>
+		<div class="mail-images">
+			<img src="images/news/Sylven/Weekly_Sylven_W0.png" style="width: 33%; height: auto; object-fit: cover;">
+		</div>
 
-								<div class="mail-content">
-											The Daily Cherry Bomb newspaper edition number 2 covers: The Constitution.
-								</div>
-							</div>
+		<div class="mail-content">
+					The Weekly Sylven newspaper edition for week 0 covers the rumbling heard near the Emerald Basin.
+		</div>
+	</div>
 
-							<div class="viewer-panel m12">
-								<h2>The Daily Cherry Bomb No. 1</h2>
+	<div class="viewer-panel m10">
+		<h2>The Daily Cherry Bomb No. 7</h2>
 
-								<div class="mail-images">
-									<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_1.png" style="width: 33%; height: auto; object-fit: cover;">
-								</div>
+		<div class="mail-images">
+			<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_7.png" style="width: 33%; height: auto; object-fit: cover;">
+		</div>
 
-								<div class="mail-content">
-											The Daily Cherry Bomb newspaper edition number 1 covers: The Cherry Schism.
-								</div>
-							</div>
-						</div>
+		<div class="mail-content">
+					The Daily Cherry Bomb newspaper edition number 7 covers: The Green Cross.
+		</div>
+	</div>
+
+	<div class="viewer-panel m11">
+		<h2>The Daily Cherry Bomb No. 6</h2>
+
+		<div class="mail-images">
+			<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_6.png" style="width: 33%; height: auto; object-fit: cover;">
+		</div>
+
+		<div class="mail-content">
+					The Daily Cherry Bomb newspaper edition number 6 covers: The Blue Cross.
+		</div>
+	</div>
+
+	<div class="viewer-panel m12">
+		<h2>The Daily Cherry Bomb No. 5</h2>
+
+		<div class="mail-images">
+			<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_5.png" style="width: 33%; height: auto; object-fit: cover;">
+		</div>
+
+		<div class="mail-content">
+					The Daily Cherry Bomb newspaper edition number 5 covers: The alliance forged with the Taiga biome.
+		</div>
+	</div>
+
+	<div class="viewer-panel m13">
+		<h2>The Daily Cherry Bomb No. 4</h2>
+
+		<div class="mail-images">
+			<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_4.png" style="width: 33%; height: auto; object-fit: cover;">
+		</div>
+
+		<div class="mail-content">
+					The Daily Cherry Bomb newspaper edition number 4 covers: the ownership transfer to The Daily Emeralds team.
+		</div>
+	</div>
+
+	<div class="viewer-panel m14">
+		<h2>The Daily Cherry Bomb No. 3</h2>
+
+		<div class="mail-images">
+			<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_3.png" style="width: 33%; height: auto; object-fit: cover;">
+		</div>
+
+		<div class="mail-content">
+					The Daily Cherry Bomb newspaper edition number 3 covers: The upcoming elections.
+		</div>
+	</div>
+
+	<div class="viewer-panel m15">
+		<h2>The Daily Cherry Bomb No. 2</h2>
+
+		<div class="mail-images">
+			<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_2.png" style="width: 33%; height: auto; object-fit: cover;">
+		</div>
+
+		<div class="mail-content">
+					The Daily Cherry Bomb newspaper edition number 2 covers: The Constitution.
+		</div>
+	</div>
+
+	<div class="viewer-panel m16">
+		<h2>The Daily Cherry Bomb No. 1</h2>
+
+		<div class="mail-images">
+			<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_1.png" style="width: 33%; height: auto; object-fit: cover;">
+		</div>
+
+		<div class="mail-content">
+					The Daily Cherry Bomb newspaper edition number 1 covers: The Cherry Schism.
+		</div>
+	</div>
+</div>
+
+
 
 					</div>
 
@@ -1879,23 +1960,23 @@
 								<div class="quote-grid">
 
 									<div class="quote imageQuote">
-										<img src="images/company/CCTC/horse.png">
+										<img src="images/company/cctc/horse.png">
 									</div>
 
 									<div class="quote imageQuote">
-										<img src="images/company/CCTC/boat.png">
+										<img src="images/company/cctc/boat.png">
 									</div>
 
 									<div class="quote imageQuote">
-										<img src="images/company/CCTC/arrow.png">
+										<img src="images/company/cctc/arrow.png">
 									</div>
 
 									<div class="quote imageQuote">
-										<img src="images/company/CCTC/firework.png">
+										<img src="images/company/cctc/firework.png">
 									</div>
 
 									<div class="quote imageQuote">
-										<img src="images/company/CCTC/cart.png">
+										<img src="images/company/cctc/cart.png">
 									</div>
 
 								</div>
