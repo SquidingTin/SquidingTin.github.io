@@ -549,6 +549,11 @@
 						  box-sizing: border-box;
 						}
 
+						.headercontainer {
+							width: 90%;
+							text-align: center;
+						}
+						
 						header h1 {
 							margin: 0;
 							font-size: 28px;
@@ -599,8 +604,10 @@
 					</style>
 
 				<header>
-					<h1>Iron Co News Network</h1>
-					<p>Minecraft Industry & Labor Updates</p>
+					<div class="headercontainer">
+						<h1>Iron Co News Network</h1>
+						<p>Minecraft Industry & Labor Updates</p>
+					<div>
 				</header>
 
 				<div class="container">
@@ -1009,237 +1016,235 @@
 					<input type="radio" name="mail" id="none" checked>
 					
 
-					<input type="radio" name="mail" id="m1">
-					<input type="radio" name="mail" id="m2">
-					<input type="radio" name="mail" id="m3">
-					<input type="radio" name="mail" id="m4">
-					<input type="radio" name="mail" id="m5">
-					<input type="radio" name="mail" id="m6">
-					<input type="radio" name="mail" id="m7">
-					<input type="radio" name="mail" id="m8">
-					<input type="radio" name="mail" id="m9">
-					<input type="radio" name="mail" id="m10">
-					<input type="radio" name="mail" id="m11">
-					<input type="radio" name="mail" id="m12">
-					<input type="radio" name="mail" id="m13">
+
+						<input type="radio" name="mail" id="m1">
+						<input type="radio" name="mail" id="m2">
+						<input type="radio" name="mail" id="m3">
+						<input type="radio" name="mail" id="m4">
+						<input type="radio" name="mail" id="m5">
+						<input type="radio" name="mail" id="m6">
+						<input type="radio" name="mail" id="m7">
+						<input type="radio" name="mail" id="m8">
+						<input type="radio" name="mail" id="m9">
+						<input type="radio" name="mail" id="m10">
+						<input type="radio" name="mail" id="m11">
+						<input type="radio" name="mail" id="m12">
 
 						<div class="inbox">
+							<label class="mail" for="m1">
+								<div class="mail-title">The Bedrock Chronicles 5/28/26</div>
+								<div class="mail-sub">Bedrock Chronicle</div>
+							</label>
 
-						<label class="mail" for="m2">
-							<div class="mail-title">The Bedrock Chronicles 5/28/26</div>
-							<div class="mail-sub">Bedrock Chronicle</div>
-						</label>
+							<label class="mail" for="m2">
+								<div class="mail-title">Iron Co Update</div>
+								<div class="mail-sub">Iron Co Company Email</div>
+							</label>
 
-						<label class="mail" for="m3">
-							<div class="mail-title">Iron Co Update</div>
-							<div class="mail-sub">Iron Co Company Email</div>
-						</label>
+							<label class="mail" for="m3">
+								<div class="mail-title">The International Volume 3</div>
+								<div class="mail-sub">The International</div>
+							</label>
 
-						<label class="mail" for="m4">
-							<div class="mail-title">The International Volume 3</div>
-							<div class="mail-sub">The International</div>
-						</label>
+							<label class="mail" for="m4">
+								<div class="mail-title">The International 5/24/26</div>
+								<div class="mail-sub">The International</div>
+							</label>
 
-						<label class="mail" for="m5">
-							<div class="mail-title">The International 5/24/26</div>
-							<div class="mail-sub">The International</div>
-						</label>
+							<label class="mail" for="m5">
+								<div class="mail-title">The Weekly Sylven W0</div>
+								<div class="mail-sub">Weekly Sylven</div>
+							</label>
 
-						<label class="mail" for="m6">
-							<div class="mail-title">The Weekly Sylven W0</div>
-							<div class="mail-sub">Weekly Sylven</div>
-						</label>
+							<label class="mail" for="m6">
+								<div class="mail-title">The Daily Cherry Bomb No. 7</div>
+								<div class="mail-sub">Cherry Bomb</div>
+							</label>
 
-						<label class="mail" for="m7">
-							<div class="mail-title">The Daily Cherry Bomb No. 7</div>
-							<div class="mail-sub">Cherry Bomb</div>
-						</label>
+							<label class="mail" for="m7">
+								<div class="mail-title">The Daily Cherry Bomb No. 6</div>
+								<div class="mail-sub">Cherry Bomb</div>
+							</label>
 
-						<label class="mail" for="m8">
-							<div class="mail-title">The Daily Cherry Bomb No. 6</div>
-							<div class="mail-sub">Cherry Bomb</div>
-						</label>
+							<label class="mail" for="m8">
+								<div class="mail-title">The Daily Cherry Bomb No. 5</div>
+								<div class="mail-sub">Cherry Bomb</div>
+							</label>
 
-						<label class="mail" for="m9">
-							<div class="mail-title">The Daily Cherry Bomb No. 5</div>
-							<div class="mail-sub">Cherry Bomb</div>
-						</label>
+							<label class="mail" for="m9">
+								<div class="mail-title">The Daily Cherry Bomb No. 4</div>
+								<div class="mail-sub">Cherry Bomb</div>
+							</label>
 
-						<label class="mail" for="m10">
-							<div class="mail-title">The Daily Cherry Bomb No. 4</div>
-							<div class="mail-sub">Cherry Bomb</div>
-						</label>
+							<label class="mail" for="m10">
+								<div class="mail-title">The Daily Cherry Bomb No. 3</div>
+								<div class="mail-sub">Cherry Bomb</div>
+							</label>
 
-						<label class="mail" for="m11">
-							<div class="mail-title">The Daily Cherry Bomb No. 3</div>
-							<div class="mail-sub">Cherry Bomb</div>
-						</label>
+							<label class="mail" for="m11">
+								<div class="mail-title">The Daily Cherry Bomb No. 2</div>
+								<div class="mail-sub">Cherry Bomb</div>
+							</label>
 
-						<label class="mail" for="m12">
-							<div class="mail-title">The Daily Cherry Bomb No. 2</div>
-							<div class="mail-sub">Cherry Bomb</div>
-						</label>
-
-						<label class="mail" for="m13">
-							<div class="mail-title">The Daily Cherry Bomb No. 1</div>
-							<div class="mail-sub">Cherry Bomb</div>
-						</label>
-					</div>
-
-					<div class="viewer">
-						<div class="viewer-panel default">
-							<h2>Inbox</h2>
-							<p>Select a message to view its contents.</p>
+							<label class="mail" for="m12">
+								<div class="mail-title">The Daily Cherry Bomb No. 1</div>
+								<div class="mail-sub">Cherry Bomb</div>
+							</label>
 						</div>
 
-						<div class="viewer-panel m2">
-							<h2>The Bedrock Chronicles 5-28-26</h2>
-
-							<div class="mail-images">
-								<img src="images/bedrock_chronicle/Bedrock_Chronicle_5-28-26.png" style="width: 33%; height: auto; object-fit: cover;">
+						<div class="viewer">
+							<div class="viewer-panel default">
+								<h2>Inbox</h2>
+								<p>Select a message to view its contents.</p>
 							</div>
 
-							<div class="mail-content">
-										The Bedrock Chronicles newspaper for 5/28/26 covers them moving their headquarters to the Mesa biome.
+							<div class="viewer-panel m1">
+								<h2>The Bedrock Chronicles 5-28-26</h2>
+
+								<div class="mail-images">
+									<img src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-28-26.png" style="width: 33%; height: auto; object-fit: cover;">
+								</div>
+
+								<div class="mail-content">
+											The Bedrock Chronicles newspaper for 5/28/26 covers them moving their headquarters to the Mesa biome.
+								</div>
+							</div>
+
+							<div class="viewer-panel m2">
+								<h2>Iron Co Update</h2>
+
+								<div class="mail-images">
+									
+								</div>
+
+								<div class="mail-content">
+											<p>New mining regulations were previously implemented, and automated extraction has been restricted in all controlled zones.</p><p>Only activities conducted within approved guidelines are recognized by official policy. Any operations outside these guidelines are not sanctioned and will not be considered part of authorized company activity.</p>
+								</div>
+							</div>
+
+							<div class="viewer-panel m3">
+								<h2>The International 5/26/26</h2>
+
+								<div class="mail-images">
+									<img src="images/news/The_International/5_26_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
+							<img src="images/news/The_International/5_26_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
+							<img src="images/news/The_International/5_26_26_3.png" style="width: 33%; height: auto; object-fit: cover;">
+								</div>
+
+								<div class="mail-content">
+											The International newspaper for 5/26/26 covers Rakau Security Measures, Scam PSA, The Blue Cross, Bedrock Nation leaving the DLF deal, and more.
+								</div>
+							</div>
+
+							<div class="viewer-panel m4">
+								<h2>The International 5/24/26</h2>
+
+								<div class="mail-images">
+									<img src="images/news/The_International/5_24_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
+							<img src="images/news/The_International/5_24_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
+								</div>
+
+								<div class="mail-content">
+											The International newspaper edition for 5/24/26 covers the Jungle War, Transportation Updates, Redstone Lab, and more.
+								</div>
+							</div>
+
+							<div class="viewer-panel m5">
+								<h2>The Weekly Sylven Week 0</h2>
+
+								<div class="mail-images">
+									<img src="images/news/Sylven/Weekly_Sylven_W0.png" style="width: 33%; height: auto; object-fit: cover;">
+								</div>
+
+								<div class="mail-content">
+											The Weekly Sylven newspaper edition for week 0 covers the rumbling heard near the Emerald Basin.
+								</div>
+							</div>
+
+							<div class="viewer-panel m6">
+								<h2>The Daily Cherry Bomb No. 7</h2>
+
+								<div class="mail-images">
+									<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_7.png" style="width: 33%; height: auto; object-fit: cover;">
+								</div>
+
+								<div class="mail-content">
+											The Daily Cherry Bomb newspaper edition number 7 covers: The Green Cross.
+								</div>
+							</div>
+
+							<div class="viewer-panel m7">
+								<h2>The Daily Cherry Bomb No. 6</h2>
+
+								<div class="mail-images">
+									<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_6.png" style="width: 33%; height: auto; object-fit: cover;">
+								</div>
+
+								<div class="mail-content">
+											The Daily Cherry Bomb newspaper edition number 6 covers: The Blue Cross.
+								</div>
+							</div>
+
+							<div class="viewer-panel m8">
+								<h2>The Daily Cherry Bomb No. 5</h2>
+
+								<div class="mail-images">
+									<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_5.png" style="width: 33%; height: auto; object-fit: cover;">
+								</div>
+
+								<div class="mail-content">
+											The Daily Cherry Bomb newspaper edition number 5 covers: The alliance forged with the Taiga biome.
+								</div>
+							</div>
+
+							<div class="viewer-panel m9">
+								<h2>The Daily Cherry Bomb No. 4</h2>
+
+								<div class="mail-images">
+									<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_4.png" style="width: 33%; height: auto; object-fit: cover;">
+								</div>
+
+								<div class="mail-content">
+											The Daily Cherry Bomb newspaper edition number 4 covers: the ownership transfer to The Daily Emeralds team.
+								</div>
+							</div>
+
+							<div class="viewer-panel m10">
+								<h2>The Daily Cherry Bomb No. 3</h2>
+
+								<div class="mail-images">
+									<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_3.png" style="width: 33%; height: auto; object-fit: cover;">
+								</div>
+
+								<div class="mail-content">
+											The Daily Cherry Bomb newspaper edition number 3 covers: The upcoming elections.
+								</div>
+							</div>
+
+							<div class="viewer-panel m11">
+								<h2>The Daily Cherry Bomb No. 2</h2>
+
+								<div class="mail-images">
+									<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_2.png" style="width: 33%; height: auto; object-fit: cover;">
+								</div>
+
+								<div class="mail-content">
+											The Daily Cherry Bomb newspaper edition number 2 covers: The Constitution.
+								</div>
+							</div>
+
+							<div class="viewer-panel m12">
+								<h2>The Daily Cherry Bomb No. 1</h2>
+
+								<div class="mail-images">
+									<img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_1.png" style="width: 33%; height: auto; object-fit: cover;">
+								</div>
+
+								<div class="mail-content">
+											The Daily Cherry Bomb newspaper edition number 1 covers: The Cherry Schism.
+								</div>
 							</div>
 						</div>
-
-						<div class="viewer-panel m3">
-							<h2>Iron Co Update</h2>
-
-							<div class="mail-images">
-								
-							</div>
-
-							<div class="mail-content">
-										<p>New mining regulations were previously implemented, and automated extraction has been restricted in all controlled zones.</p><p>Only activities conducted within approved guidelines are recognized by official policy. Any operations outside these guidelines are not sanctioned and will not be considered part of authorized company activity.</p>
-							</div>
-						</div>
-
-						<div class="viewer-panel m4">
-							<h2>The International 5/26/26</h2>
-
-							<div class="mail-images">
-								<img src="images/The_International/5_26_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
-						<img src="images/The_International/5_26_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
-						<img src="images/The_International/5_26_26_3.png" style="width: 33%; height: auto; object-fit: cover;">
-							</div>
-
-							<div class="mail-content">
-										The International newspaper for 5/26/26 covers Rakau Security Measures, Scam PSA, The Blue Cross, Bedrock Nation leaving the DLF deal, and more.
-							</div>
-						</div>
-
-						<div class="viewer-panel m5">
-							<h2>The International 5/24/26</h2>
-
-							<div class="mail-images">
-								<img src="images/The_International/5_24_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
-						<img src="images/The_International/5_24_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
-							</div>
-
-							<div class="mail-content">
-										The International newspaper edition for 5/24/26 covers the Jungle War, Transportation Updates, Redstone Lab, and more.
-							</div>
-						</div>
-
-						<div class="viewer-panel m6">
-							<h2>The Weekly Sylven Week 0</h2>
-
-							<div class="mail-images">
-								<img src="images/Sylven/Weekly_Sylven_W0.png" style="width: 33%; height: auto; object-fit: cover;">
-							</div>
-
-							<div class="mail-content">
-										The Weekly Sylven newspaper edition for week 0 covers the rumbling heard near the Emerald Basin.
-							</div>
-						</div>
-
-						<div class="viewer-panel m7">
-							<h2>The Daily Cherry Bomb No. 7</h2>
-
-							<div class="mail-images">
-								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_7.png" style="width: 33%; height: auto; object-fit: cover;">
-							</div>
-
-							<div class="mail-content">
-										The Daily Cherry Bomb newspaper edition number 7 covers: The Green Cross.
-							</div>
-						</div>
-
-						<div class="viewer-panel m8">
-							<h2>The Daily Cherry Bomb No. 6</h2>
-
-							<div class="mail-images">
-								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_6.png" style="width: 33%; height: auto; object-fit: cover;">
-							</div>
-
-							<div class="mail-content">
-										The Daily Cherry Bomb newspaper edition number 6 covers: The Blue Cross.
-							</div>
-						</div>
-
-						<div class="viewer-panel m9">
-							<h2>The Daily Cherry Bomb No. 5</h2>
-
-							<div class="mail-images">
-								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_5.png" style="width: 33%; height: auto; object-fit: cover;">
-							</div>
-
-							<div class="mail-content">
-										The Daily Cherry Bomb newspaper edition number 5 covers: The alliance forged with the Taiga biome.
-							</div>
-						</div>
-
-						<div class="viewer-panel m10">
-							<h2>The Daily Cherry Bomb No. 4</h2>
-
-							<div class="mail-images">
-								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_4.png" style="width: 33%; height: auto; object-fit: cover;">
-							</div>
-
-							<div class="mail-content">
-										The Daily Cherry Bomb newspaper edition number 4 covers: the ownership transfer to The Daily Emeralds team.
-							</div>
-						</div>
-
-						<div class="viewer-panel m11">
-							<h2>The Daily Cherry Bomb No. 3</h2>
-
-							<div class="mail-images">
-								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_3.png" style="width: 33%; height: auto; object-fit: cover;">
-							</div>
-
-							<div class="mail-content">
-										The Daily Cherry Bomb newspaper edition number 3 covers: The upcoming elections.
-							</div>
-						</div>
-
-						<div class="viewer-panel m12">
-							<h2>The Daily Cherry Bomb No. 2</h2>
-
-							<div class="mail-images">
-								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_2.png" style="width: 33%; height: auto; object-fit: cover;">
-							</div>
-
-							<div class="mail-content">
-										The Daily Cherry Bomb newspaper edition number 2 covers: The Constitution.
-							</div>
-						</div>
-
-						<div class="viewer-panel m13">
-							<h2>The Daily Cherry Bomb No. 1</h2>
-
-							<div class="mail-images">
-								<img src="images/Cherry_Bomb/Daily_Cherry-Bomb_1.png" style="width: 33%; height: auto; object-fit: cover;">
-							</div>
-
-							<div class="mail-content">
-										The Daily Cherry Bomb newspaper edition number 1 covers: The Cherry Schism.
-							</div>
-						</div>
-					</div>
-
 
 					</div>
 
@@ -1336,6 +1341,11 @@
 							padding:90px 40px;
 							text-align:center;
 							border-bottom:8px solid #741b2f;
+						}
+								
+						.headercontainer {
+							width: 90%;
+							text-align: center;
 						}
 
 						header h1{
@@ -1519,6 +1529,26 @@
 							text-transform:uppercase;
 							opacity:0.7;
 						}
+						
+						.imageQuote{
+							padding:0;
+							background:#111;
+							overflow:hidden;
+							display:inline-block;
+							height:auto;
+						}
+
+						.imageQuote img{
+							width:100%;
+							height:auto;
+							display:block;
+							object-fit:contain;
+						}
+
+						.imageQuote span{
+							display:block;
+							padding:18px;
+						}
 
 						footer{
 							width:115%;
@@ -1551,30 +1581,52 @@
 						.badge.green{
 							background:#2e7d32;
 						}
+						
+						.progressbar{
+							width:100%;
+							height:22px;
+							background:#ddd;
+							border-radius:999px;
+							overflow:hidden;
+							margin-top:10px;
+						}
 
+						.progressfill{
+							height:100%;
+							background:linear-gradient(90deg,#741b2f,#b03052);
+							width:0%;
+							transition:0.3s;
+						}
 					</style>
 
 
 						<header>
-							<h1>Cerasus Consolidated Traction Company</h1>
-							<p>Regional Rail • Interurbans • Iceways • Cherry Biome Transit Infrastructure</p>
+							<div class="headercontainer">
+								<h1>Cerasus Consolidated Traction Company</h1>
+								<p>Regional Rail • Interurbans • Iceways • Cherry Biome Transit Infrastructure</p>
+							<div>
 						</header>
 
 						<nav>
-							<a>Services</a>
-							<a>Operations</a>
-							<a>Iceways</a>
-							<a>Construction</a>
-							<a>Campaigns</a>
-							<a>Rules</a>
+						
+							<div class="headercontainer">
+								<a>Services</a>
+								<a>Operations</a>
+								<a>Iceways</a>
+								<a>Construction</a>
+								<a>Campaigns</a>
+								<a>Rules</a>
+							</div>
 						</nav>
 
 						<section class="hero">
-							<h2>Rethink Travel</h2>
-							<p>
-								CCTC provides unified transportation throughout the Cherry Biome and beyond using high efficiency rail infrastructure,
-								interurban service, elevated express corridors, and future high speed iceway systems.
-							</p>
+							<div class="headercontainer">
+								<h2>Rethink Travel</h2>
+								<p>
+									CCTC provides unified transportation throughout the Cherry Biome and beyond using high efficiency rail infrastructure,
+									interurban service, elevated express corridors, and future high speed iceway systems.
+								</p>
+							</div>
 						</section>
 
 						<div class="container">
@@ -1620,13 +1672,13 @@
 									<tr>
 										<td>Cherry Biome Railway</td>
 										<td>Mainline Passenger Service</td>
-										<td>Operational</td>
+										<td>Planning</td>
 									</tr>
 
 									<tr>
 										<td>Creeper Farm → Oggys Ville</td>
 										<td>Regional Connector</td>
-										<td>Operational</td>
+										<td>Planning</td>
 									</tr>
 
 									<tr>
@@ -1636,7 +1688,75 @@
 									</tr>
 								</table>
 							</section>
+							
+							<section class="section" id="progress">
+								<h2>Construction Progress</h2>
 
+								<div class="grid">
+
+									<div class="card">
+										<h3>Land Acquisition / Surveying</h3>
+										<div class="progressbar">
+											<div class="progressfill" style="width:0%;"></div>
+										</div>
+										<p>0%</p>
+									</div>
+
+									<div class="card">
+										<h3>Resource Acquisition</h3>
+										<div class="progressbar">
+											<div class="progressfill" style="width:0%;"></div>
+										</div>
+										<p>0%</p>
+									</div>
+
+									<div class="card">
+										<h3>Bridging / Tunneling</h3>
+										<div class="progressbar">
+											<div class="progressfill" style="width:0%;"></div>
+										</div>
+										<p>0%</p>
+									</div>
+
+									<div class="card">
+										<h3>Station Construction</h3>
+										<div class="progressbar">
+											<div class="progressfill" style="width:0%;"></div>
+										</div>
+										<p>0%</p>
+									</div>
+
+									<div class="card">
+										<h3>Track Placing / Redstoning</h3>
+										<div class="progressbar">
+											<div class="progressfill" style="width:0%;"></div>
+										</div>
+										<p>0%</p>
+									</div>
+
+									<div class="card">
+										<h3>Service Testing</h3>
+										<div class="progressbar">
+											<div class="progressfill" style="width:0%;"></div>
+										</div>
+										<p>0%</p>
+									</div>
+
+								</div>
+
+								<table>
+									<tr>
+										<th>Service Pattern</th>
+										<th>Cities Served</th>
+									</tr>
+
+									<tr>
+										<td>N/A</td>
+										<td>N/A</td>
+									</tr>
+								</table>
+
+							</section>
 							<section class="section" id="operations">
 								<h2>Rail Operations</h2>
 
@@ -1758,29 +1878,24 @@
 
 								<div class="quote-grid">
 
-									<div class="quote">
-										No horse? No saddle? No leads?
-										<span>Rethink Travel</span>
+									<div class="quote imageQuote">
+										<img src="images/company/cctc/horse.png">
 									</div>
 
-									<div class="quote">
-										Maybe your next trip should be on an ice boat
-										<span>Rethink Travel</span>
+									<div class="quote imageQuote">
+										<img src="images/company/cctc/boat.png">
 									</div>
 
-									<div class="quote">
-										Faster than a speeding arrow
-										<span>Rethink Travel</span>
+									<div class="quote imageQuote">
+										<img src="images/company/cctc/arrow.png">
 									</div>
 
-									<div class="quote">
-										No firework rockets needed
-										<span>Rethink Travel</span>
+									<div class="quote imageQuote">
+										<img src="images/company/cctc/firework.png">
 									</div>
 
-									<div class="quote">
-										No apples? No problem.
-										<span>Rethink Travel</span>
+									<div class="quote imageQuote">
+										<img src="images/company/cctc/cart.png">
 									</div>
 
 								</div>
@@ -1845,7 +1960,7 @@
 						</div>
 
 						<footer>
-							Cerasus Consolidated Traction Company • Regional Transportation Authority<br>
+							Cerasus Consolidated Traction Company • Regional Transportation Authority • Cherry Biome Railway Company<br>
 							Connecting Cherry Biome Communities Through Rail & Iceway Infrastructure
 						</footer>
 
@@ -2179,6 +2294,11 @@
 							box-shadow: 0 0 30px black inset;
 							width:112%;
 						}
+						
+						.headercontainer {
+							width: 90%;
+							text-align: center;
+						}
 
 						header h1 {
 							font-size: 64px;
@@ -2307,8 +2427,10 @@
 
 
 					<header>
-						<h1 class="glow">DISCIPLES OF HEROBRINE</h1>
-						<p>The Chaos Is Truth</p>
+						<div class="headercontainer">
+							<h1 class="glow">DISCIPLES OF HEROBRINE</h1>
+							<p>The Chaos Is Truth</p>
+						</div>
 					</header>
 
 					<div class="container">
@@ -2451,6 +2573,11 @@
 							border-bottom: 8px solid #d98fa4;
 							box-shadow: inset 0 -20px 40px rgba(0,0,0,0.35);
 							width:112%;
+						}
+						
+						.headercontainer {
+							width: 90%;
+							text-align: center;
 						}
 
 						header h1 {
@@ -2595,14 +2722,15 @@
 
 
 					<header>
+						<div class="headercontainer">
+							<div class="coin">❀</div>
 
-						<div class="coin">❀</div>
+							<h1>BLOSSOMGATE EXCHANGE</h1>
 
-						<h1>BLOSSOMGATE EXCHANGE</h1>
-
-						<p>
-							The Grand Trading Gateway Between Forest and Cherry
-						</p>
+							<p>
+								The Grand Trading Gateway Between Forest and Cherry
+							</p>
+						</div>
 
 					</header>
 
@@ -3170,8 +3298,6 @@ rakau: `
 					</p>
 
 				</div>
-
-				<!-- HIGH COUNCIL -->
 
 				<div class="grid">
 
