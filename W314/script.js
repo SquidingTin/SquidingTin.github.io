@@ -105,7 +105,7 @@
 					children: [
 						{ name: "Minecraft", icon: "icons/minecraft.png", onClick: () => openMinecraft()},
 						{ name: "Kogama", icon: "icons/kogama.png", onClick: () => openMinecraft()},
-						{ name: "Polybius", icon: "icons/w2k_wmp_54.png", onClick: () => log("Polybius")}
+						{ name: "Polybius", icon: "icons/w2k_wmp_54.png", onClick: () => startGlitchScreen()}
 					]
 				}
 			]
@@ -128,7 +128,7 @@
 		{ 
 			name: "Help", 
 			icon: "icons/help.png",
-			onClick: () => log("Help")
+			onClick: () => help()
 		},
 		{ 
 			name: "Run...", 
@@ -3894,14 +3894,22 @@ rakau: `
 	};
 
 
+	const trashFiles = [
+		{ name: "2026-05-09 18.33.42.png", path: "images/2026-05-09_18.33.42.png" },
+		{ name: "2026-05-23 06.49.02.png", path: "images/2026-05-23_06.49.02.png" },
+		//{ name: "Anthem of Rakau.mp3", path: "audio/forest.mp3", type: "audio" }
+	];
+
+	const startMenuContent = document.getElementById("startMenuContent");
+
+	const startButton = document.getElementById("startButton");
+
+	const startMenu = document.getElementById("startMenu");
+	
 
 
 	const taskButtonsContainer = document.querySelector(".task-buttons-container");
 	const windowTaskMap = new WeakMap();
-	/* =========================
-		 WINDOW LAYER SYSTEM
-	========================= */
-
 	const windowLayer = document.getElementById("windowLayer");
 
 	let topZ = 1000;
@@ -3987,10 +3995,6 @@ rakau: `
 		dragTarget = null;
 		activeHandle = null;
 	});
-
-	/* =========================
-		 INIT
-	========================= */
 
 	window.addEventListener("DOMContentLoaded", () => {
 
@@ -4135,8 +4139,33 @@ rakau: `
 	}
 
 	/* =========================
-		 COUNTDOWN SYSTEM
+		 CLOCK
 	========================= */
+
+	function updateClock() {
+
+		const clock = document.getElementById("clock");
+		if (!clock) return;
+
+		const now = new Date();
+
+		const format = localStorage.getItem("clock_format") || "12";
+
+		let hours = now.getHours();
+		const minutes = now.getMinutes().toString().padStart(2, "0");
+
+		if (format === "24") {
+			clock.textContent = hours + ":" + minutes;
+			return;
+		}
+
+		const ampm = hours >= 12 ? "PM" : "AM";
+
+		hours = hours % 12;
+		if (hours === 0) hours = 12;
+
+		clock.textContent = hours + ":" + minutes + " " + ampm;
+	}
 
 	function updateCountdown() {
 
@@ -4210,32 +4239,6 @@ rakau: `
 						: mins + " Minutes remaining";
 			}
 		});
-	}
-
-	/* =========================
-		 CLOCK
-	========================= */
-
-	function updateClock() {
-
-		const clock =
-			document.getElementById("clock");
-
-		if (!clock) return;
-
-		const now = new Date();
-
-		let hours = now.getHours();
-		const minutes =
-			now.getMinutes().toString().padStart(2, "0");
-
-		const ampm = hours >= 12 ? "PM" : "AM";
-
-		hours = hours % 12;
-		if (hours === 0) hours = 12;
-
-		clock.textContent =
-			hours + ":" + minutes + " " + ampm;
 	}
 
 	/* =========================
@@ -4336,6 +4339,35 @@ rakau: `
 			300
 		);
 	}
+	
+	function createDesktopIcons() {
+		const desktopEl = document.querySelector(".desktop");
+		if (!desktopEl) return;
+
+		const iconLayer = document.createElement("div");
+		iconLayer.className = "desktop-icons";
+
+		desktop.forEach(item => {
+
+			const icon = document.createElement("div");
+			icon.className = "desktop-icon";
+
+			icon.innerHTML = `
+				<div class="desktop-icon-img"
+					style="background-image:url('${item.icon}')"></div>
+				<div class="desktop-icon-label">${item.name}</div>
+			`;
+
+			icon.onclick = (e) => {
+				e.stopPropagation();
+				if (item.onClick) item.onClick();
+			};
+
+			iconLayer.appendChild(icon);
+		});
+
+		desktopEl.appendChild(iconLayer);
+	}
 
 	window.openFolder = function(folder) {
 
@@ -4360,10 +4392,6 @@ rakau: `
 			titleEl.textContent = folder.name;
 		}
 	};
-	
-	/* =========================
-		 FILE ROUTER
-	========================= */
 
 	window.openFile = function (file) {
 
@@ -4381,6 +4409,7 @@ rakau: `
 				320
 			);
 		};
+
 	/* =========================
 		 AUDIO PLAYER
 	========================= */
@@ -4487,8 +4516,9 @@ rakau: `
 	/* =========================
 		 START MENU
 	========================= */
-
 	
+	let settingsWindow = null;
+
 	function settings() {
 
 		const optionsHTML = backgrounds.map(bg =>
@@ -4497,29 +4527,79 @@ rakau: `
 
 		const content = `
 			<div style="display:flex; flex-direction:column; gap:10px;">
-				<label><b>Background</b></label>
 
+				<label><b>Background</b></label>
 				<select id="bgSelect" style="padding:4px;">
 					${optionsHTML}
 				</select>
+
+				<label style="margin-top:10px;"><b>Clock format</b></label>
+				<select id="clockSelect" style="padding:4px;">
+					<option value="12">12 Hour (AM/PM)</option>
+					<option value="24">24 Hour</option>
+				</select>
+
 			</div>
 		`;
 
-		const win = createWindow("Settings", content, 300, 150, 300);
+		// reuse existing window
+		if (settingsWindow && document.body.contains(settingsWindow)) {
+
+			const body = settingsWindow.querySelector(".fake-dialog-body, .fake-window-body");
+
+			if (body) {
+				body.innerHTML = content;
+				wireSettings(settingsWindow);
+			}
+
+			return settingsWindow;
+		}
+
+		// create new window
+		const win = createWindow("Settings", content, 300, 200, 300);
+		settingsWindow = win;
+
+		wireSettings(win);
+
+		return win;
+	}
+
+	function wireSettings(win) {
 
 		const select = win.querySelector("#bgSelect");
+		const clockSelect = win.querySelector("#clockSelect");
 
-		const saved = localStorage.getItem("desktop_bg") || "";
-		select.value = saved;
-
-		applyBackground(saved);
+		const savedBg = localStorage.getItem("desktop_bg") || "";
+		select.value = savedBg;
+		applyBackground(savedBg);
 
 		select.addEventListener("change", () => {
 			const value = select.value;
-
 			localStorage.setItem("desktop_bg", value);
 			applyBackground(value);
 		});
+
+		const savedClock = localStorage.getItem("clock_format") || "12";
+		clockSelect.value = savedClock;
+
+		clockSelect.addEventListener("change", () => {
+			localStorage.setItem("clock_format", clockSelect.value);
+			updateClock();
+		});
+
+		const titleBar = win.querySelector(".fake-dialog-titlebar, .fake-window-titlebar");
+		const titleText = titleBar?.querySelector(".title-text");
+
+		if (titleText && !titleText.querySelector("img")) {
+			const icon = document.createElement("img");
+			icon.src = "icons/restrict.png";
+			icon.style.width = "16px";
+			icon.style.height = "16px";
+			icon.style.imageRendering = "pixelated";
+			icon.style.marginRight = "6px";
+
+			titleText.prepend(icon);
+		}
 	}
 
 	function applyBackground(value) {
@@ -4584,49 +4664,6 @@ rakau: `
 		dialog.querySelector("#closeBtn").onclick = closeWindow;
 		dialog.querySelector(".win-btn.close").onclick = closeWindow;
 	}
-	
-
-	function log(input) {
-
-		const content = `
-			Cannot open file:<br><br>
-			'C:\\WIN314\\${input}.exe'
-		`;
-
-		const win = createWindow("Error", content);
-
-		// find title text container (adjust selector to your structure)
-		const titleBar = win.querySelector(".fake-dialog-titlebar, .fake-window-titlebar");
-		const titleText = titleBar?.querySelector(".title-text");
-
-		if (titleText) {
-			const icon = document.createElement("img");
-			icon.src = "icons/restrict.png";
-			icon.style.width = "16px";
-			icon.style.height = "16px";
-			icon.style.imageRendering = "pixelated";
-			icon.style.marginRight = "6px";
-
-			titleText.prepend(icon);
-		}
-
-		const body = win.querySelector(".fake-dialog-body, .fake-window-body");
-
-		const okBtn = document.createElement("div");
-		okBtn.style.textAlign = "right";
-		okBtn.style.marginTop = "10px";
-
-		okBtn.innerHTML = `<button type="button">OK</button>`;
-		okBtn.querySelector("button").onclick = () => win.remove();
-
-		body.appendChild(okBtn);
-
-		return win;
-	}
-	
-	function shutdown() {
-		window.close();
-	}
 
 	function createMenu(items) {
 
@@ -4690,8 +4727,346 @@ rakau: `
 
 
 	/* =========================
+		 Helpers
+	========================= */
+		
+	function shutdown() {
+		window.close();
+	}
+
+	function openLink(input) {
+		window.open(input, "_blank");
+	}
+	
+	function openTrash() {
+
+		let filesHTML = "";
+
+		for (const file of trashFiles) {
+
+			filesHTML += `
+				<div class="file" onclick="window.openFile(${JSON.stringify(file).replace(/"/g, '&quot;')})">
+					<img src="icons/image.png">
+					<div>${file.name}</div>
+				</div>
+			`;
+		}
+
+		createWindow(
+			"Trash",
+			`
+			<div class="file-grid">
+				${filesHTML}
+			</div>
+			`,
+			300
+		);
+	}
+
+	let logWindow = null;
+
+	function log(input) {
+
+		const content = `
+			Cannot open file:<br><br>
+			'C:\\WIN314\\${input}.exe'
+		`;
+
+		// reuse existing window if it still exists
+		if (logWindow && document.body.contains(logWindow)) {
+
+			const body = logWindow.querySelector(".fake-dialog-body, .fake-window-body");
+
+			if (body) {
+
+				// update content (keep structure simple)
+				body.innerHTML = `
+					${content}
+				`;
+
+				// re-add OK button
+				const okBtn = document.createElement("div");
+				okBtn.style.textAlign = "right";
+				okBtn.style.marginTop = "10px";
+
+				okBtn.innerHTML = `<button type="button">OK</button>`;
+				okBtn.querySelector("button").onclick = () => {
+					logWindow.remove();
+					logWindow = null;
+				};
+
+				body.appendChild(okBtn);
+			}
+
+			return logWindow;
+		}
+
+		// create new window
+		const win = createWindow("Error", content);
+		logWindow = win;
+
+		const titleBar = win.querySelector(".fake-dialog-titlebar, .fake-window-titlebar");
+		const titleText = titleBar?.querySelector(".title-text");
+
+		if (titleText) {
+			const icon = document.createElement("img");
+			icon.src = "icons/restrict.png";
+			icon.style.width = "16px";
+			icon.style.height = "16px";
+			icon.style.imageRendering = "pixelated";
+			icon.style.marginRight = "6px";
+
+			titleText.prepend(icon);
+		}
+
+		const body = win.querySelector(".fake-dialog-body, .fake-window-body");
+
+		const okBtn = document.createElement("div");
+		okBtn.style.textAlign = "right";
+		okBtn.style.marginTop = "10px";
+
+		okBtn.innerHTML = `<button type="button">OK</button>`;
+		okBtn.querySelector("button").onclick = () => {
+			win.remove();
+			logWindow = null;
+		};
+
+		body.appendChild(okBtn);
+
+		return win;
+	}
+	
+	let helpWindow = null;
+
+	function help() {
+
+		const messages = [
+			"This system offers no help.",
+			"There is no help for you.",
+			"You are on your own.",
+			"There is nothing here for you.",
+			"Your request has been ignored.",
+			"This feature refuses to respond."
+		];
+
+		const content = `
+			${messages[Math.floor(Math.random() * messages.length)]}
+		`;
+
+		// reuse existing window if it exists and is still in DOM
+		if (helpWindow && document.body.contains(helpWindow)) {
+
+			const body = helpWindow.querySelector(".fake-dialog-body, .fake-window-body");
+
+			if (body) {
+				body.childNodes.forEach(n => {
+					if (n.tagName === "DIV" && n.querySelector("button")) n.remove();
+				});
+
+				const textNode = body.firstChild;
+				if (textNode) textNode.textContent = content.trim();
+
+				// re-add OK button
+				const okBtn = document.createElement("div");
+				okBtn.style.textAlign = "right";
+				okBtn.style.marginTop = "10px";
+
+				okBtn.innerHTML = `<button type="button">OK</button>`;
+				okBtn.querySelector("button").onclick = () => helpWindow.remove();
+
+				body.appendChild(okBtn);
+			}
+
+			return helpWindow;
+		}
+
+		// create new window
+		const win = createWindow("Error", content);
+		helpWindow = win;
+
+		const titleBar = win.querySelector(".fake-dialog-titlebar, .fake-window-titlebar");
+		const titleText = titleBar?.querySelector(".title-text");
+
+		if (titleText) {
+			const icon = document.createElement("img");
+			icon.src = "icons/restrict.png";
+			icon.style.width = "16px";
+			icon.style.height = "16px";
+			icon.style.imageRendering = "pixelated";
+			icon.style.marginRight = "6px";
+
+			titleText.prepend(icon);
+		}
+
+		const body = win.querySelector(".fake-dialog-body, .fake-window-body");
+
+		const okBtn = document.createElement("div");
+		okBtn.style.textAlign = "right";
+		okBtn.style.marginTop = "10px";
+
+		okBtn.innerHTML = `<button type="button">OK</button>`;
+		okBtn.querySelector("button").onclick = () => {
+			win.remove();
+			helpWindow = null;
+		};
+
+		body.appendChild(okBtn);
+
+		return win;
+	}
+
+	function startGlitchScreen() {
+	  // ===== OVERRIDE PAGE =====
+	  document.body.innerHTML = "";
+	  document.body.style.margin = "0";
+	  document.body.style.overflow = "hidden";
+	  document.body.style.cursor = "none";
+
+	  const screen = document.createElement("div");
+	  screen.id = "screen";
+
+	  Object.assign(screen.style, {
+		position: "fixed",
+		inset: "0",
+		width: "100vw",
+		height: "100vh",
+		background: 'url("images/default_desktop.png") center center / cover no-repeat',
+		pointerEvents: "none"
+	  });
+
+	  document.body.appendChild(screen);
+
+	  // ===== DISABLE INPUT =====
+	  function block(e) {
+		e.preventDefault();
+		e.stopPropagation();
+		return false;
+	  }
+
+	  window.addEventListener("mousemove", block, { passive: false });
+	  window.addEventListener("mousedown", block, { passive: false });
+	  window.addEventListener("mouseup", block, { passive: false });
+	  window.addEventListener("keydown", block, { passive: false });
+	  window.addEventListener("keyup", block, { passive: false });
+	  window.addEventListener("wheel", block, { passive: false });
+	  window.addEventListener("contextmenu", block, { passive: false });
+
+	  // ===== SETTINGS =====
+	  const SETTINGS = {
+		tearChance: 0.78,
+		warpChance: 0.20
+	  };
+
+	  const TILE = 32;
+	  const tiles = [];
+
+	  function buildTiles() {
+		const w = window.innerWidth;
+		const h = window.innerHeight;
+
+		const cols = Math.ceil(w / TILE);
+		const rows = Math.ceil(h / TILE);
+
+		for (let y = 0; y < rows; y++) {
+		  for (let x = 0; x < cols; x++) {
+			const tile = document.createElement("div");
+
+			tile.className = "tile";
+
+			Object.assign(tile.style, {
+			  position: "absolute",
+			  width: TILE + "px",
+			  height: TILE + "px",
+			  left: x * TILE + "px",
+			  top: y * TILE + "px",
+			  backgroundImage: 'url("images/default_desktop.png")',
+			  backgroundSize: `${w}px ${h}px`,
+			  backgroundPosition: `-${x * TILE}px -${y * TILE}px`
+			});
+
+			screen.appendChild(tile);
+
+			tiles.push({
+			  el: tile,
+			  homeX: x * TILE,
+			  homeY: y * TILE
+			});
+		  }
+		}
+	  }
+
+	  function glitchBurst() {
+		for (const t of tiles) {
+		  const r = Math.random();
+
+		  if (r < SETTINGS.tearChance) {
+			const x = (Math.random() - 0.5) * 60;
+			const y = (Math.random() - 0.5) * 10;
+
+			t.el.style.transform = `translate(${x}px, ${y}px)`;
+			t.el.style.opacity = 0.7 + Math.random() * 0.3;
+		  }
+
+		  else if (r < SETTINGS.tearChance + SETTINGS.warpChance) {
+			const x = (Math.random() - 0.5) * 160;
+			const y = (Math.random() - 0.5) * 40;
+
+			t.el.style.transform =
+			  `translate(${x}px, ${y}px) skewX(${(Math.random() - 0.5) * 3}deg)`;
+
+			t.el.style.opacity = 0.4 + Math.random() * 0.4;
+		  }
+
+		  else {
+			const cube = document.createElement("div");
+
+			const ox = t.homeX;
+			const oy = t.homeY;
+
+			Object.assign(cube.style, {
+			  position: "absolute",
+			  width: "32px",
+			  height: "32px",
+			  left: ox + "px",
+			  top: oy + "px",
+			  backgroundImage: 'url("background.png")',
+			  backgroundSize: `${window.innerWidth}px ${window.innerHeight}px`,
+			  backgroundPosition: `-${ox}px -${oy}px`,
+			  opacity: 0.7,
+			  transform: `
+				translate(${(Math.random() - 0.5) * 80}px,
+						  ${(Math.random() - 0.5) * 80}px)
+				rotate(${(Math.random() - 0.5) * 10}deg)
+			  `
+			});
+
+			screen.appendChild(cube);
+
+			setTimeout(() => cube.remove(), 180);
+		  }
+		}
+	  }
+
+	  function loop() {
+		glitchBurst();
+		setTimeout(loop, 30 + Math.random() * 200);
+	  }
+
+	  buildTiles();
+	  loop();
+
+	  // ===== AUTO RESET =====
+	  setTimeout(() => {
+		location.reload();
+	  }, 5000);
+	}
+
+	/* =========================
 		 Launcher
 	========================= */
+
+	let minecraftWindow = null;
+
 	function openMinecraft() {
 
 		const username = "Player";
@@ -4699,7 +5074,6 @@ rakau: `
 		let newsHTML = "";
 
 		for (const post of minecraftNews) {
-
 			newsHTML += `
 				<div class="mc-news-post">
 
@@ -4726,9 +5100,7 @@ rakau: `
 			`;
 
 			if (section.links) {
-
 				for (const link of section.links) {
-
 					sidebarHTML += `
 						<a href="${link.url}" target="_blank">
 							${link.name}
@@ -4748,37 +5120,22 @@ rakau: `
 			<div class="mc-launcher">
 
 				<div class="mc-tabs">
-					<div class="mc-tab active">
-						Update Notes
-					</div>
-
-					<div class="mc-tab">
-						Launcher Log
-					</div>
-
-					<div class="mc-tab">
-						Profile Editor
-					</div>
+					<div class="mc-tab active">Update Notes</div>
+					<div class="mc-tab">Launcher Log</div>
+					<div class="mc-tab">Profile Editor</div>
 				</div>
 
 				<div class="mc-main">
 
 					<div class="mc-news">
-
 						<div class="mc-news-content">
-
 							<h1>Minecraft News</h1>
-
 							${newsHTML}
-
 						</div>
-
 					</div>
 
 					<div class="mc-sidebar">
-
 						${sidebarHTML}
-
 					</div>
 
 				</div>
@@ -4786,7 +5143,6 @@ rakau: `
 				<div class="mc-bottom">
 
 					<div class="mc-profile">
-
 						<label>Profile:</label>
 
 						<select>
@@ -4799,31 +5155,16 @@ rakau: `
 							<button>New Profile</button>
 							<button>Edit Profile</button>
 						</div>
-
 					</div>
 
 					<div class="mc-play-area">
-
-						<button class="mc-play-btn">
-							Play
-						</button>
-
+						<button class="mc-play-btn">Play</button>
 					</div>
 
 					<div class="mc-status">
-
-						<div>
-							Welcome, <b>${username}</b>
-						</div>
-
-						<div>
-							Ready to update & play Minecraft
-						</div>
-
-						<button class="mc-switch-user">
-							Switch User
-						</button>
-
+						<div>Welcome, <b>${username}</b></div>
+						<div>Ready to update & play Minecraft</div>
+						<button class="mc-switch-user">Switch User</button>
 					</div>
 
 				</div>
@@ -4831,6 +5172,20 @@ rakau: `
 			</div>
 		`;
 
+		// reuse existing window
+		if (minecraftWindow && document.body.contains(minecraftWindow)) {
+
+			const body = minecraftWindow.querySelector(".fake-dialog-body, .fake-window-body");
+
+			if (body) {
+				body.innerHTML = content;
+				wireMinecraft(minecraftWindow);
+			}
+
+			return minecraftWindow;
+		}
+
+		// create new window
 		const win = createWindow(
 			"Minecraft Launcher",
 			content,
@@ -4839,84 +5194,26 @@ rakau: `
 			880
 		);
 
-		const playBtn =
-			win.querySelector(".mc-play-btn");
+		minecraftWindow = win;
 
-		playBtn.onclick = () => {
+		wireMinecraft(win);
 
-			playBtn.textContent = "Launching...";
-
-			setTimeout(() => {
-				playBtn.textContent = "Play";
-			}, 3000);
-
-			//console.log("[Minecraft] Launch requested");
-		};
+		return win;
 	}
 
-	function openLink(input) {
-		window.open(input, "_blank");
-	}
-	
-	function createDesktopIcons() {
-		const desktopEl = document.querySelector(".desktop");
-		if (!desktopEl) return;
+	function wireMinecraft(win) {
 
-		const iconLayer = document.createElement("div");
-		iconLayer.className = "desktop-icons";
+		const playBtn = win.querySelector(".mc-play-btn");
 
-		desktop.forEach(item => {
+		if (playBtn) {
+			playBtn.onclick = () => {
+				playBtn.textContent = "Launching...";
 
-			const icon = document.createElement("div");
-			icon.className = "desktop-icon";
-
-			icon.innerHTML = `
-				<div class="desktop-icon-img"
-					style="background-image:url('${item.icon}')"></div>
-				<div class="desktop-icon-label">${item.name}</div>
-			`;
-
-			icon.onclick = (e) => {
-				e.stopPropagation();
-				if (item.onClick) item.onClick();
+				setTimeout(() => {
+					playBtn.textContent = "Play";
+				}, 3000);
 			};
-
-			iconLayer.appendChild(icon);
-		});
-
-		desktopEl.appendChild(iconLayer);
-	}
-
-
-	const trashFiles = [
-		{ name: "2026-05-09 18.33.42.png", path: "images/2026-05-09_18.33.42.png" },
-		{ name: "2026-05-23 06.49.02.png", path: "images/2026-05-23_06.49.02.png" },
-		//{ name: "Anthem of Rakau.mp3", path: "audio/forest.mp3", type: "audio" }
-	];
-
-	function openTrash() {
-
-		let filesHTML = "";
-
-		for (const file of trashFiles) {
-
-			filesHTML += `
-				<div class="file" onclick="window.openFile(${JSON.stringify(file).replace(/"/g, '&quot;')})">
-					<img src="icons/image.png">
-					<div>${file.name}</div>
-				</div>
-			`;
 		}
-
-		createWindow(
-			"Trash",
-			`
-			<div class="file-grid">
-				${filesHTML}
-			</div>
-			`,
-			300
-		);
 	}
 
 	/* =========================
@@ -5060,18 +5357,9 @@ rakau: `
 		loadFromHash();
 	}
 
-
-
 	window.addEventListener("DOMContentLoaded", createDesktopIcons);
 
-	const startMenuContent =
-		document.getElementById("startMenuContent");
-
 	startMenuContent.appendChild( createMenu(startMenuData) );
-
-	const startButton = document.getElementById("startButton");
-
-	const startMenu = document.getElementById("startMenu");
 
 	startButton.addEventListener("click", () => {
 		startMenu.classList.toggle("active");
@@ -5085,10 +5373,6 @@ rakau: `
 			startMenu.classList.remove("active");
 		}
 	});
-
-	/* =========================
-		 TIMERS
-	========================= */
 
 	setInterval(updateCountdown, 1000);
 	setInterval(updateClock, 1000);
