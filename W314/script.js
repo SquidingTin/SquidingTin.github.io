@@ -1020,6 +1020,7 @@
 
 
 
+
 <input type="radio" name="mail" id="m1">
 <input type="radio" name="mail" id="m2">
 <input type="radio" name="mail" id="m3">
@@ -1038,94 +1039,100 @@
 <input type="radio" name="mail" id="m16">
 <input type="radio" name="mail" id="m17">
 <input type="radio" name="mail" id="m18">
+<input type="radio" name="mail" id="m19">
 
 <div class="inbox">
 <label class="mail" for="m1">
+    <div class="mail-title">The International Volume 5</div>
+    <div class="mail-sub">The International</div>
+</label>
+
+<label class="mail" for="m2">
     <div class="mail-title">The Slimery Times No. 7</div>
     <div class="mail-sub">The Slimery Times</div>
 </label>
 
-<label class="mail" for="m2">
+<label class="mail" for="m3">
     <div class="mail-title">The International Volume 4</div>
     <div class="mail-sub">The International</div>
 </label>
 
-<label class="mail" for="m3">
+<label class="mail" for="m4">
     <div class="mail-title">The Bedrock Chronicles 5/29/26</div>
     <div class="mail-sub">Bedrock Chronicle</div>
 </label>
 
-<label class="mail" for="m4">
+<label class="mail" for="m5">
     <div class="mail-title">The Weekly Sylven W0 pt2</div>
     <div class="mail-sub">Weekly Sylven</div>
 </label>
 
-<label class="mail" for="m5">
+<label class="mail" for="m6">
     <div class="mail-title">The Bedrock Chronicles 5/28/26</div>
     <div class="mail-sub">Bedrock Chronicle</div>
 </label>
 
-<label class="mail" for="m6">
+<label class="mail" for="m7">
     <div class="mail-title">The Bedrock Chronicles 5/26/26</div>
     <div class="mail-sub">Bedrock Chronicle</div>
 </label>
 
-<label class="mail" for="m7">
+<label class="mail" for="m8">
     <div class="mail-title">Iron Co Update</div>
     <div class="mail-sub">Iron Co Company Email</div>
 </label>
 
-<label class="mail" for="m8">
+<label class="mail" for="m9">
     <div class="mail-title">The International Volume 3</div>
     <div class="mail-sub">The International</div>
 </label>
 
-<label class="mail" for="m9">
+<label class="mail" for="m10">
     <div class="mail-title">The International Volume 2</div>
     <div class="mail-sub">The International</div>
 </label>
 
-<label class="mail" for="m10">
+<label class="mail" for="m11">
     <div class="mail-title">The International Volume 1</div>
     <div class="mail-sub">The International</div>
 </label>
 
-<label class="mail" for="m11">
+<label class="mail" for="m12">
     <div class="mail-title">The Weekly Sylven W0</div>
     <div class="mail-sub">Weekly Sylven</div>
 </label>
 
-<label class="mail" for="m12">
+<label class="mail" for="m13">
     <div class="mail-title">The Daily Cherry Bomb No. 7</div>
     <div class="mail-sub">Cherry Bomb</div>
 </label>
 
-<label class="mail" for="m13">
+<label class="mail" for="m14">
     <div class="mail-title">The Daily Cherry Bomb No. 6</div>
     <div class="mail-sub">Cherry Bomb</div>
 </label>
 
-<label class="mail" for="m14">
+<label class="mail" for="m15">
     <div class="mail-title">The Daily Cherry Bomb No. 5</div>
     <div class="mail-sub">Cherry Bomb</div>
 </label>
 
-<label class="mail" for="m15">
+<label class="mail" for="m16">
     <div class="mail-title">The Daily Cherry Bomb No. 4</div>
     <div class="mail-sub">Cherry Bomb</div>
 </label>
 
-<label class="mail" for="m16">
+<label class="mail" for="m17">
     <div class="mail-title">The Daily Cherry Bomb No. 3</div>
     <div class="mail-sub">Cherry Bomb</div>
 </label>
 
-<label class="mail" for="m17">
+<label class="mail" for="m18">
     <div class="mail-title">The Daily Cherry Bomb No. 2</div>
     <div class="mail-sub">Cherry Bomb</div>
 </label>
 
-<label class="mail" for="m18">
+<label class="mail" for="m19">
     <div class="mail-title">The Daily Cherry Bomb No. 1</div>
     <div class="mail-sub">Cherry Bomb</div>
 </label>
@@ -1138,6 +1145,20 @@
 </div>
 
 <div class="viewer-panel m1">
+    <h2>The International 5/29/26</h2>
+
+    <div class="mail-images">
+        <img src="images/news/The_International/5_29_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
+<img src="images/news/The_International/5_29_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
+<img src="images/news/The_International/5_29_26_3.png" style="width: 33%; height: auto; object-fit: cover;">
+    </div>
+
+    <div class="mail-content">
+                The International newspaper for 5/29/26 covers The Dev and Admin Lacha's removal, the fact NSO never disbanded, the New Worlds structure list, and much more.
+    </div>
+</div>
+
+<div class="viewer-panel m2">
     <h2>The Slimery Times 5-29-26</h2>
 
     <div class="mail-images">
@@ -1151,7 +1172,7 @@
     </div>
 </div>
 
-<div class="viewer-panel m2">
+<div class="viewer-panel m3">
     <h2>The International 5/28/26</h2>
 
     <div class="mail-images">
@@ -1166,7 +1187,7 @@
     </div>
 </div>
 
-<div class="viewer-panel m3">
+<div class="viewer-panel m4">
     <h2>The Bedrock Chronicles 5-29-26</h2>
 
     <div class="mail-images">
@@ -1178,7 +1199,7 @@
     </div>
 </div>
 
-<div class="viewer-panel m4">
+<div class="viewer-panel m5">
     <h2>The Weekly Sylven 5/27/26</h2>
 
     <div class="mail-images">
@@ -1190,7 +1211,7 @@
     </div>
 </div>
 
-<div class="viewer-panel m5">
+<div class="viewer-panel m6">
     <h2>The Bedrock Chronicles 5-28-26</h2>
 
     <div class="mail-images">
@@ -1202,7 +1223,7 @@
     </div>
 </div>
 
-<div class="viewer-panel m6">
+<div class="viewer-panel m7">
     <h2>The Bedrock Chronicles 5-26-26</h2>
 
     <div class="mail-images">
@@ -1214,7 +1235,7 @@
     </div>
 </div>
 
-<div class="viewer-panel m7">
+<div class="viewer-panel m8">
     <h2>Iron Co Update</h2>
 
     <div class="mail-images">
@@ -1226,7 +1247,7 @@
     </div>
 </div>
 
-<div class="viewer-panel m8">
+<div class="viewer-panel m9">
     <h2>The International 5/26/26</h2>
 
     <div class="mail-images">
@@ -1240,7 +1261,7 @@
     </div>
 </div>
 
-<div class="viewer-panel m9">
+<div class="viewer-panel m10">
     <h2>The International 5/25/26</h2>
 
     <div class="mail-images">
@@ -1253,7 +1274,7 @@
     </div>
 </div>
 
-<div class="viewer-panel m10">
+<div class="viewer-panel m11">
     <h2>The International 5/24/26</h2>
 
     <div class="mail-images">
@@ -1266,7 +1287,7 @@
     </div>
 </div>
 
-<div class="viewer-panel m11">
+<div class="viewer-panel m12">
     <h2>The Weekly Sylven Week 0</h2>
 
     <div class="mail-images">
@@ -1278,7 +1299,7 @@
     </div>
 </div>
 
-<div class="viewer-panel m12">
+<div class="viewer-panel m13">
     <h2>The Daily Cherry Bomb No. 7</h2>
 
     <div class="mail-images">
@@ -1290,7 +1311,7 @@
     </div>
 </div>
 
-<div class="viewer-panel m13">
+<div class="viewer-panel m14">
     <h2>The Daily Cherry Bomb No. 6</h2>
 
     <div class="mail-images">
@@ -1302,7 +1323,7 @@
     </div>
 </div>
 
-<div class="viewer-panel m14">
+<div class="viewer-panel m15">
     <h2>The Daily Cherry Bomb No. 5</h2>
 
     <div class="mail-images">
@@ -1314,7 +1335,7 @@
     </div>
 </div>
 
-<div class="viewer-panel m15">
+<div class="viewer-panel m16">
     <h2>The Daily Cherry Bomb No. 4</h2>
 
     <div class="mail-images">
@@ -1326,7 +1347,7 @@
     </div>
 </div>
 
-<div class="viewer-panel m16">
+<div class="viewer-panel m17">
     <h2>The Daily Cherry Bomb No. 3</h2>
 
     <div class="mail-images">
@@ -1338,7 +1359,7 @@
     </div>
 </div>
 
-<div class="viewer-panel m17">
+<div class="viewer-panel m18">
     <h2>The Daily Cherry Bomb No. 2</h2>
 
     <div class="mail-images">
@@ -1350,7 +1371,7 @@
     </div>
 </div>
 
-<div class="viewer-panel m18">
+<div class="viewer-panel m19">
     <h2>The Daily Cherry Bomb No. 1</h2>
 
     <div class="mail-images">
@@ -1362,6 +1383,7 @@
     </div>
 </div>
 </div>
+
 
 
 
