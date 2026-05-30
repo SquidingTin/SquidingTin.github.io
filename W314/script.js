@@ -1149,7 +1149,7 @@
 </div>
 
 <div class="viewer-panel m1">
-    <h2>Email Header</h2>
+    <h2>Who Am I?</h2>
 
     <div class="mail-images">
         
