@@ -1062,7 +1062,7 @@
 </label>
 
 <label class="mail" for="m4">
-    <div class="mail-title">The Bedrock Chronicles 5/1/26</div>
+    <div class="mail-title">The Bedrock Chronicles 6/1/26</div>
     <div class="mail-sub">Bedrock Chronicle</div>
 </label>
 
@@ -1230,7 +1230,7 @@
     </div>
 
     <div class="mail-content">
-                The Bedrock Chronicles newspaper for 5/1/26 covers: todays weather, as finally theres nothing news worthy.
+                The Bedrock Chronicles newspaper for 6/1/26 covers: todays weather, as finally theres nothing news worthy.
     </div>
 </div>
 
