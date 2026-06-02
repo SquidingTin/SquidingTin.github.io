@@ -843,181 +843,431 @@
 		`,
 
 		mail: `
-					<style>
-						body {
-							margin: 0;
-							font-family: "Courier New", monospace;
-							background-color: #3b2f2f;
-							background-image:
-								linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-								url("blocks/Ender_Chest_top_block.png");
-							background-size: 64px 64px;
-
-							color: #fff;
-
-							display: flex;
-							justify-content: center;
-							align-items: center;
-
-							min-height: 100vh;
-							overflow: hidden;
-						}
-
-						.mailbox {
-							width: 90vw;
-							max-width: 1200px;
-							height: 70vh;
-							max-height: 900px;
-
-							background: rgba(0,0,0,0.6);
-							border: 4px solid #2e7d32;
-							box-shadow: 0 0 0 4px #1b1b1b;
-
-							display: flex;
-							overflow: hidden;
-						}
-
-						.inbox {
-							width: 35%;
-							min-width: 180px;
-							max-width: 300px;
-
-							border-right: 3px solid #1b5e20;
-							overflow-y: auto;
-						}
-
-						.viewer {
-							flex: 1;
-							padding: 15px;
-							position: relative;
-							overflow-y: auto;
-						}
-
-						.mail {
-							display: block;
-							padding: 10px;
-							border-bottom: 1px solid #2e7d32;
-							cursor: pointer;
-							background: rgba(0,0,0,0.2);
-						}
-
-						.mail:hover {
-							background: rgba(46,125,50,0.4);
-						}
-
-						.mail-title {
-							font-weight: bold;
-							font-size: 14px;
-						}
-
-						.mail-sub {
-							font-size: 12px;
-							color: #ccc;
-						}
-
-
-						.viewer-panel {
-							display: none;
-						}
-
-						input[type="radio"] {
-							display: none;
-						}
-
-						#none:checked ~ .viewer .default {
-							display: block;
-						}
-
-						/* message 1 */#m1:checked ~ .viewer .m1,
-						#m2:checked ~ .viewer .m2,
-						#m3:checked ~ .viewer .m3,
-						#m4:checked ~ .viewer .m4,
-						#m5:checked ~ .viewer .m5,
-						#m6:checked ~ .viewer .m6,
-						#m7:checked ~ .viewer .m7,
-						#m8:checked ~ .viewer .m8,
-						#m9:checked ~ .viewer .m9,
-						#m10:checked ~ .viewer .m10,
-						#m11:checked ~ .viewer .m11,
-						#m12:checked ~ .viewer .m12,
-						#m13:checked ~ .viewer .m13,
-						#m14:checked ~ .viewer .m14,
-						#m15:checked ~ .viewer .m15,
-						#m16:checked ~ .viewer .m16,
-						#m17:checked ~ .viewer .m17,
-						#m18:checked ~ .viewer .m18,
-						#m19:checked ~ .viewer .m19,
-						#m20:checked ~ .viewer .m20,
-						#m21:checked ~ .viewer .m21,
-						#m22:checked ~ .viewer .m22,
-						#m23:checked ~ .viewer .m23,
-						#m24:checked ~ .viewer .m24,
-						#m25:checked ~ .viewer .m25,
-						#m26:checked ~ .viewer .m26,
-						#m27:checked ~ .viewer .m27,
-						#m28:checked ~ .viewer .m28,
-						#m29:checked ~ .viewer .m29,
-						#m30:checked ~ .viewer .m30,
-						#m31:checked ~ .viewer .m31,
-						#m32:checked ~ .viewer .m32,
-						#m33:checked ~ .viewer .m33,
-						#m34:checked ~ .viewer .m34,
-						#m35:checked ~ .viewer .m35,
-						#m36:checked ~ .viewer .m36,
-						#m37:checked ~ .viewer .m37,
-						#m38:checked ~ .viewer .m38,
-						#m39:checked ~ .viewer .m39,
-						#m20:checked ~ .viewer .m40,
-						#m41:checked ~ .viewer .m41,
-						#m42:checked ~ .viewer .m42,
-						#m43:checked ~ .viewer .m43,
-						#m44:checked ~ .viewer .m44,
-						#m45:checked ~ .viewer .m45,
-						#m46:checked ~ .viewer .m46,
-						#m47:checked ~ .viewer .m47,
-						#m48:checked ~ .viewer .m48,
-						#m49:checked ~ .viewer .m49,
-						#m20:checked ~ .viewer .m50,
-						#m51:checked ~ .viewer .m51,
-						#m52:checked ~ .viewer .m52,
-						#m53:checked ~ .viewer .m53,
-						#m54:checked ~ .viewer .m54,
-						#m55:checked ~ .viewer .m55,
-						#m56:checked ~ .viewer .m56,
-						#m57:checked ~ .viewer .m57,
-						#m58:checked ~ .viewer .m58,
-						#m59:checked ~ .viewer .m59,
-						#m20:checked ~ .viewer .m60,
-						#m61:checked ~ .viewer .m61,
-						#m62:checked ~ .viewer .m62,
-						#m63:checked ~ .viewer .m63,
-						#m64:checked ~ .viewer .m64,
-						#m65:checked ~ .viewer .m65,
-						#m66:checked ~ .viewer .m66,
-						#m67:checked ~ .viewer .m67,
-						#m68:checked ~ .viewer .m68,
-						#m69:checked ~ .viewer .m69 {
-							display: block;
-						}
-
-						h2 {
-							margin-top: 0;
-							color: #ff5555;
-						}
-
-						p {
-							font-size: 14px;
-							color: #e0e0e0;
-						}
-					</style>
-
-				<div class="mailbox">
-
-					<input type="radio" name="mail" id="none" checked>
-					
 
 
 
+<style>
+body {
+    margin: 0;
+    font-family: "Courier New", monospace;
+    background: #3b2f2f;
+    color: white;
+	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("blocks/Ender_Chest_top_block.png");
+	background-size: 64px 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    overflow: hidden;
+}
+
+.mailbox {
+    width: 90vw;
+    height: 80vh;
+    background: rgba(0,0,0,0.6);
+    border: 4px solid #2e7d32;
+
+    display: flex;
+    overflow: hidden;
+
+    align-items: stretch;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/* =======================
+   CATEGORIES
+   ======================= */
+
+.categories {
+    width: 180px;
+    border-right: 3px solid #1b5e20;
+    background: rgba(0,0,0,0.3);
+
+    display: flex;
+    flex-direction: column;
+
+    flex-shrink: 0;
+
+    overflow-y: auto;
+    height: 100%;
+}
+
+.categories label {
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #2e7d32;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.categories label:hover {
+    background: rgba(46,125,50,0.4);
+}
+
+/* ✅ FIXED SUB LABEL PADDING */
+.categories label.sub-label {
+    padding: 5px !important;
+    padding-left: 10px;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.separator {
+    height: 2px;
+    background: #1b5e20;
+    margin: 8px 0;
+}
+
+/* =======================
+   INBOX
+   ======================= */
+
+.inbox {
+    width: 300px;
+    border-right: 3px solid #1b5e20;
+
+    overflow-y: auto;
+    height: 100%;
+    min-height: 0;
+}
+
+.mail {
+    display: block;
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #2e7d32;
+    background: rgba(0,0,0,0.15);
+}
+
+.mail:hover {
+    background: rgba(46,125,50,0.4);
+}
+
+.mail-title {
+    font-weight: bold;
+}
+
+.mail-sub {
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* =======================
+   VIEWER
+   ======================= */
+
+.viewer {
+    flex: 1;
+    padding: 20px;
+
+    overflow-y: auto;
+    min-height: 0;
+}
+
+.viewer-panel {
+    display: none;
+}
+
+h2 {
+    margin-top: 0;
+    color: #ff5555;
+}
+
+/* =======================
+   VIEWER SWITCHING
+   ======================= */
+
+#none:checked ~ .viewer .default {
+    display: block;
+}
+
+
+#m1:checked ~ .viewer .m1 {
+    display: block;
+}
+
+
+#m2:checked ~ .viewer .m2 {
+    display: block;
+}
+
+
+#m3:checked ~ .viewer .m3 {
+    display: block;
+}
+
+
+#m4:checked ~ .viewer .m4 {
+    display: block;
+}
+
+
+#m5:checked ~ .viewer .m5 {
+    display: block;
+}
+
+
+#m6:checked ~ .viewer .m6 {
+    display: block;
+}
+
+
+#m7:checked ~ .viewer .m7 {
+    display: block;
+}
+
+
+#m8:checked ~ .viewer .m8 {
+    display: block;
+}
+
+
+#m9:checked ~ .viewer .m9 {
+    display: block;
+}
+
+
+#m10:checked ~ .viewer .m10 {
+    display: block;
+}
+
+
+#m11:checked ~ .viewer .m11 {
+    display: block;
+}
+
+
+#m12:checked ~ .viewer .m12 {
+    display: block;
+}
+
+
+#m13:checked ~ .viewer .m13 {
+    display: block;
+}
+
+
+#m14:checked ~ .viewer .m14 {
+    display: block;
+}
+
+
+#m15:checked ~ .viewer .m15 {
+    display: block;
+}
+
+
+#m16:checked ~ .viewer .m16 {
+    display: block;
+}
+
+
+#m17:checked ~ .viewer .m17 {
+    display: block;
+}
+
+
+#m18:checked ~ .viewer .m18 {
+    display: block;
+}
+
+
+#m19:checked ~ .viewer .m19 {
+    display: block;
+}
+
+
+#m20:checked ~ .viewer .m20 {
+    display: block;
+}
+
+
+#m21:checked ~ .viewer .m21 {
+    display: block;
+}
+
+
+#m22:checked ~ .viewer .m22 {
+    display: block;
+}
+
+
+#m23:checked ~ .viewer .m23 {
+    display: block;
+}
+
+
+#m24:checked ~ .viewer .m24 {
+    display: block;
+}
+
+
+#m25:checked ~ .viewer .m25 {
+    display: block;
+}
+
+
+#m26:checked ~ .viewer .m26 {
+    display: block;
+}
+
+
+#m27:checked ~ .viewer .m27 {
+    display: block;
+}
+
+
+#m28:checked ~ .viewer .m28 {
+    display: block;
+}
+
+
+#m29:checked ~ .viewer .m29 {
+    display: block;
+}
+
+
+#m30:checked ~ .viewer .m30 {
+    display: block;
+}
+
+
+#m31:checked ~ .viewer .m31 {
+    display: block;
+}
+
+
+#m32:checked ~ .viewer .m32 {
+    display: block;
+}
+
+
+/* =======================
+   CATEGORY FILTERING
+   ======================= */
+
+#cat-all:checked ~ .inbox .mail {
+    display: block;
+}
+
+
+#cat-news:checked ~ .inbox .mail {
+    display: none;
+}
+
+#cat-news:checked ~ .inbox .mail.news {
+    display: block;
+}
+
+
+#cat-updates:checked ~ .inbox .mail {
+    display: none;
+}
+
+#cat-updates:checked ~ .inbox .mail.updates {
+    display: block;
+}
+
+
+#cat-promotional:checked ~ .inbox .mail {
+    display: none;
+}
+
+#cat-promotional:checked ~ .inbox .mail.promotional {
+    display: block;
+}
+
+
+#cat-spam:checked ~ .inbox .mail {
+    display: none;
+}
+
+#cat-spam:checked ~ .inbox .mail.spam {
+    display: block;
+}
+
+
+#cat-trash:checked ~ .inbox .mail {
+    display: none;
+}
+
+#cat-trash:checked ~ .inbox .mail.trash {
+    display: block;
+}
+
+
+/* =======================
+   SUBCATEGORY FILTERING
+   ======================= */
+
+
+#sub-JosBot:checked ~ .inbox .mail:not(.JosBot) {
+    display: none;
+}
+
+
+#sub-Bedrock_Chronicle:checked ~ .inbox .mail:not(.Bedrock_Chronicle) {
+    display: none;
+}
+
+
+#sub-Glacial_Press:checked ~ .inbox .mail:not(.Glacial_Press) {
+    display: none;
+}
+
+
+#sub-International_News_Network:checked ~ .inbox .mail:not(.International_News_Network) {
+    display: none;
+}
+
+
+#sub-The_Slimery_Times:checked ~ .inbox .mail:not(.The_Slimery_Times) {
+    display: none;
+}
+
+
+#sub-Weekly_Sylven:checked ~ .inbox .mail:not(.Weekly_Sylven) {
+    display: none;
+}
+
+
+#sub-Iron_Co_Company_Email:checked ~ .inbox .mail:not(.Iron_Co_Company_Email) {
+    display: none;
+}
+
+
+#sub-Cherry_Bomb:checked ~ .inbox .mail:not(.Cherry_Bomb) {
+    display: none;
+}
+
+</style>
+
+<div class="mailbox">
+
+<input type="radio" name="category" id="cat-all" checked>
+<input type="radio" name="category" id="cat-news">
+<input type="radio" name="category" id="cat-updates">
+<input type="radio" name="category" id="cat-promotional">
+<input type="radio" name="category" id="cat-spam">
+<input type="radio" name="category" id="cat-trash">
+<div class="separator"></div>
+<input type="radio" name="category" id="sub-JosBot">
+<input type="radio" name="category" id="sub-Bedrock_Chronicle">
+<input type="radio" name="category" id="sub-Glacial_Press">
+<input type="radio" name="category" id="sub-International_News_Network">
+<input type="radio" name="category" id="sub-The_Slimery_Times">
+<input type="radio" name="category" id="sub-Weekly_Sylven">
+<input type="radio" name="category" id="sub-Iron_Co_Company_Email">
+<input type="radio" name="category" id="sub-Cherry_Bomb">
+
+<input type="radio" name="mail" id="none" checked>
 <input type="radio" name="mail" id="m1">
 <input type="radio" name="mail" id="m2">
 <input type="radio" name="mail" id="m3">
@@ -1044,478 +1294,599 @@
 <input type="radio" name="mail" id="m24">
 <input type="radio" name="mail" id="m25">
 <input type="radio" name="mail" id="m26">
+<input type="radio" name="mail" id="m27">
+<input type="radio" name="mail" id="m28">
+<input type="radio" name="mail" id="m29">
+<input type="radio" name="mail" id="m30">
+<input type="radio" name="mail" id="m31">
+<input type="radio" name="mail" id="m32">
+
+<div class="categories">
+    <label for="cat-all">All Mail</label>
+    <label for="cat-news">News</label>
+    <label for="cat-updates">Updates</label>
+    <label for="cat-promotional">Promotional</label>
+    <label for="cat-spam">Spam</label>
+    <label for="cat-trash">Trash</label>
+    <div class="separator"></div>
+    <label class="sub-label" for="sub-JosBot">JosBot</label>
+    <label class="sub-label" for="sub-Bedrock_Chronicle">Bedrock Chronicle</label>
+    <label class="sub-label" for="sub-Glacial_Press">Glacial Press</label>
+    <label class="sub-label" for="sub-International_News_Network">International News Network</label>
+    <label class="sub-label" for="sub-The_Slimery_Times">The Slimery Times</label>
+    <label class="sub-label" for="sub-Weekly_Sylven">Weekly Sylven</label>
+    <label class="sub-label" for="sub-Iron_Co_Company_Email">Iron Co Company Email</label>
+    <label class="sub-label" for="sub-Cherry_Bomb">Cherry Bomb</label>
+</div>
 
 <div class="inbox">
-<label class="mail" for="m1">
-    <div class="mail-title">Who am I?</div>
-    <div class="mail-sub">JosBot</div>
-</label>
+    <label class="mail updates JosBot" for="m1">
+        <div class="mail-title">Who am I? [PINNED]</div>
+        <div class="mail-sub">JosBot</div>
+    </label>
 
-<label class="mail" for="m2">
-    <div class="mail-title">Glacial Press No. 6</div>
-    <div class="mail-sub">Glacial Press</div>
-</label>
+    <label class="mail news Bedrock_Chronicle" for="m2">
+        <div class="mail-title">The Bedrock Chronicles 6/2/26</div>
+        <div class="mail-sub">Bedrock Chronicle</div>
+    </label>
 
-<label class="mail" for="m3">
-    <div class="mail-title">The International Volume 6</div>
-    <div class="mail-sub">International News Network</div>
-</label>
+    <label class="mail news Glacial_Press" for="m3">
+        <div class="mail-title">Glacial Press No. 7</div>
+        <div class="mail-sub">Glacial Press</div>
+    </label>
 
-<label class="mail" for="m4">
-    <div class="mail-title">The Bedrock Chronicles 6/1/26</div>
-    <div class="mail-sub">Bedrock Chronicle</div>
-</label>
+    <label class="mail news International_News_Network" for="m4">
+        <div class="mail-title">The International Volume 6</div>
+        <div class="mail-sub">International News Network</div>
+    </label>
 
-<label class="mail" for="m5">
-    <div class="mail-title">The Bedrock Chronicles 5/31/26</div>
-    <div class="mail-sub">Bedrock Chronicle</div>
-</label>
+    <label class="mail news Bedrock_Chronicle" for="m5">
+        <div class="mail-title">The Bedrock Chronicles 6/1/26</div>
+        <div class="mail-sub">Bedrock Chronicle</div>
+    </label>
 
-<label class="mail" for="m6">
-    <div class="mail-title">The Bedrock Chronicles 5/30/26</div>
-    <div class="mail-sub">Bedrock Chronicle</div>
-</label>
+    <label class="mail news Bedrock_Chronicle" for="m6">
+        <div class="mail-title">The Bedrock Chronicles 5/31/26</div>
+        <div class="mail-sub">Bedrock Chronicle</div>
+    </label>
 
-<label class="mail" for="m7">
-    <div class="mail-title">The International Volume 5</div>
-    <div class="mail-sub">International News Network</div>
-</label>
+    <label class="mail news Bedrock_Chronicle" for="m7">
+        <div class="mail-title">The Bedrock Chronicles 5/30/26</div>
+        <div class="mail-sub">Bedrock Chronicle</div>
+    </label>
 
-<label class="mail" for="m8">
-    <div class="mail-title">The Slimery Times No. 7</div>
-    <div class="mail-sub">The Slimery Times</div>
-</label>
+    <label class="mail news International_News_Network" for="m8">
+        <div class="mail-title">The International Volume 5</div>
+        <div class="mail-sub">International News Network</div>
+    </label>
 
-<label class="mail" for="m9">
-    <div class="mail-title">The Bedrock Chronicles 5/29/26</div>
-    <div class="mail-sub">Bedrock Chronicle</div>
-</label>
+    <label class="mail news The_Slimery_Times" for="m9">
+        <div class="mail-title">The Slimery Times No. 7</div>
+        <div class="mail-sub">The Slimery Times</div>
+    </label>
 
-<label class="mail" for="m10">
-    <div class="mail-title">The International Volume 4</div>
-    <div class="mail-sub">International News Network</div>
-</label>
+    <label class="mail news Bedrock_Chronicle" for="m10">
+        <div class="mail-title">The Bedrock Chronicles 5/29/26</div>
+        <div class="mail-sub">Bedrock Chronicle</div>
+    </label>
 
-<label class="mail" for="m11">
-    <div class="mail-title">The Bedrock Chronicles 5/28/26</div>
-    <div class="mail-sub">Bedrock Chronicle</div>
-</label>
+    <label class="mail news International_News_Network" for="m11">
+        <div class="mail-title">The International Volume 4</div>
+        <div class="mail-sub">International News Network</div>
+    </label>
 
-<label class="mail" for="m12">
-    <div class="mail-title">The Weekly Sylven W0 pt2</div>
-    <div class="mail-sub">Weekly Sylven</div>
-</label>
+    <label class="mail news Bedrock_Chronicle" for="m12">
+        <div class="mail-title">The Bedrock Chronicles 5/28/26</div>
+        <div class="mail-sub">Bedrock Chronicle</div>
+    </label>
 
-<label class="mail" for="m13">
-    <div class="mail-title">The Bedrock Chronicles 5/26/26</div>
-    <div class="mail-sub">Bedrock Chronicle</div>
-</label>
+    <label class="mail news Weekly_Sylven" for="m13">
+        <div class="mail-title">The Weekly Sylven W0 pt2</div>
+        <div class="mail-sub">Weekly Sylven</div>
+    </label>
 
-<label class="mail" for="m14">
-    <div class="mail-title">Iron Co Update</div>
-    <div class="mail-sub">Iron Co Company Email</div>
-</label>
+    <label class="mail news Bedrock_Chronicle" for="m14">
+        <div class="mail-title">The Bedrock Chronicles 5/26/26</div>
+        <div class="mail-sub">Bedrock Chronicle</div>
+    </label>
 
-<label class="mail" for="m15">
-    <div class="mail-title">The International Volume 3</div>
-    <div class="mail-sub">International News Network</div>
-</label>
+    <label class="mail promotional Iron_Co_Company_Email" for="m15">
+        <div class="mail-title">Iron Co Update</div>
+        <div class="mail-sub">Iron Co Company Email</div>
+    </label>
 
-<label class="mail" for="m16">
-    <div class="mail-title">The Weekly Sylven W0</div>
-    <div class="mail-sub">Weekly Sylven</div>
-</label>
+    <label class="mail news International_News_Network" for="m16">
+        <div class="mail-title">The International Volume 3</div>
+        <div class="mail-sub">International News Network</div>
+    </label>
 
-<label class="mail" for="m17">
-    <div class="mail-title">The International Volume 2</div>
-    <div class="mail-sub">International News Network</div>
-</label>
+    <label class="mail news Weekly_Sylven" for="m17">
+        <div class="mail-title">The Weekly Sylven W0</div>
+        <div class="mail-sub">Weekly Sylven</div>
+    </label>
 
-<label class="mail" for="m18">
-    <div class="mail-title">The International Volume 1</div>
-    <div class="mail-sub">International News Network</div>
-</label>
+    <label class="mail news International_News_Network" for="m18">
+        <div class="mail-title">The International Volume 2</div>
+        <div class="mail-sub">International News Network</div>
+    </label>
 
-<label class="mail" for="m19">
-    <div class="mail-title">The Daily Cherry Bomb No. 7</div>
-    <div class="mail-sub">Cherry Bomb</div>
-</label>
+    <label class="mail news International_News_Network" for="m19">
+        <div class="mail-title">The International Volume 1</div>
+        <div class="mail-sub">International News Network</div>
+    </label>
 
-<label class="mail" for="m20">
-    <div class="mail-title">The Daily Cherry Bomb No. 6</div>
-    <div class="mail-sub">Cherry Bomb</div>
-</label>
+    <label class="mail news Glacial_Press" for="m20">
+        <div class="mail-title">Glacial Press No. 6</div>
+        <div class="mail-sub">Glacial Press</div>
+    </label>
 
-<label class="mail" for="m21">
-    <div class="mail-title">Glacial Press No. 4</div>
-    <div class="mail-sub">Glacial Press</div>
-</label>
+    <label class="mail news Cherry_Bomb" for="m21">
+        <div class="mail-title">The Daily Cherry Bomb No. 7</div>
+        <div class="mail-sub">Cherry Bomb</div>
+    </label>
 
-<label class="mail" for="m22">
-    <div class="mail-title">The Daily Cherry Bomb No. 5</div>
-    <div class="mail-sub">Cherry Bomb</div>
-</label>
+    <label class="mail news Glacial_Press" for="m22">
+        <div class="mail-title">Glacial Press No. 5</div>
+        <div class="mail-sub">Glacial Press</div>
+    </label>
 
-<label class="mail" for="m23">
-    <div class="mail-title">The Daily Cherry Bomb No. 4</div>
-    <div class="mail-sub">Cherry Bomb</div>
-</label>
+    <label class="mail news Cherry_Bomb" for="m23">
+        <div class="mail-title">The Daily Cherry Bomb No. 6</div>
+        <div class="mail-sub">Cherry Bomb</div>
+    </label>
 
-<label class="mail" for="m24">
-    <div class="mail-title">The Daily Cherry Bomb No. 3</div>
-    <div class="mail-sub">Cherry Bomb</div>
-</label>
+    <label class="mail news Glacial_Press" for="m24">
+        <div class="mail-title">Glacial Press No. 4</div>
+        <div class="mail-sub">Glacial Press</div>
+    </label>
 
-<label class="mail" for="m25">
-    <div class="mail-title">The Daily Cherry Bomb No. 2</div>
-    <div class="mail-sub">Cherry Bomb</div>
-</label>
+    <label class="mail news Cherry_Bomb" for="m25">
+        <div class="mail-title">The Daily Cherry Bomb No. 5</div>
+        <div class="mail-sub">Cherry Bomb</div>
+    </label>
 
-<label class="mail" for="m26">
-    <div class="mail-title">The Daily Cherry Bomb No. 1</div>
-    <div class="mail-sub">Cherry Bomb</div>
-</label>
+    <label class="mail news Glacial_Press" for="m26">
+        <div class="mail-title">Glacial Press No. 3</div>
+        <div class="mail-sub">Glacial Press</div>
+    </label>
+
+    <label class="mail news Cherry_Bomb" for="m27">
+        <div class="mail-title">The Daily Cherry Bomb No. 4</div>
+        <div class="mail-sub">Cherry Bomb</div>
+    </label>
+
+    <label class="mail news Cherry_Bomb" for="m28">
+        <div class="mail-title">The Daily Cherry Bomb No. 3</div>
+        <div class="mail-sub">Cherry Bomb</div>
+    </label>
+
+    <label class="mail news Glacial_Press" for="m29">
+        <div class="mail-title">Glacial Press No. 2</div>
+        <div class="mail-sub">Glacial Press</div>
+    </label>
+
+    <label class="mail news Cherry_Bomb" for="m30">
+        <div class="mail-title">The Daily Cherry Bomb No. 2</div>
+        <div class="mail-sub">Cherry Bomb</div>
+    </label>
+
+    <label class="mail news Glacial_Press" for="m31">
+        <div class="mail-title">Glacial Press No. 1</div>
+        <div class="mail-sub">Glacial Press</div>
+    </label>
+
+    <label class="mail news Cherry_Bomb" for="m32">
+        <div class="mail-title">The Daily Cherry Bomb No. 1</div>
+        <div class="mail-sub">Cherry Bomb</div>
+    </label>
 </div>
 
 <div class="viewer">
-<div class="viewer-panel default">
-    <h2>Inbox</h2>
-    <p>Select a message to view its contents.</p>
-</div>
+    <div class="viewer-panel default">
+        <h2>Inbox</h2>
+        <p>Select a message.</p>
+    </div>
 
-<div class="viewer-panel m1">
-    <h2>Who am I?</h2>
+    <div class="viewer-panel m1">
+        <h2>Who am I?</h2>
 
-    <div class="mail-images">
+        <div class="mail-images">
         
+        </div>
+
+        <div class="mail-content">
+            Hey everyone, I'm Jos, the new lead developer and co-owner of the Emerald SMP. I'm taking over development alongside Emerald and stepping into a leadership role to help rebuild and improve the server. I’ve been playing Minecraft for about 10 years and building servers for the last 5, with experience working alongside creators like SpeedSilver, Graser, Kiingtong, and Tubbo, as well as organizations like VALORANT and various Minecraft networks.<br><br>Going forward, the server will be going through a restructuring period as I organize and rebuild systems to improve overall quality and player experience. There is no release date yet, as the focus is on creating a high-quality experience from the ground up.<br><br>I’ll be sharing updates here regularly, involving the community in ideas, and opening applications for different roles soon. My goal is to make Emerald SMP not just fun to play, but something the community helps shape. Thanks for your patience while things are being improved.
+        </div>
     </div>
 
-    <div class="mail-content">
-                Hey everyone, I'm Jos, the new lead developer and co-owner of the Emerald SMP. I'm taking over development alongside Emerald and stepping into a leadership role to help rebuild and improve the server. I’ve been playing Minecraft for about 10 years and building servers for the last 5, with experience working alongside creators like SpeedSilver, Graser, Kiingtong, and Tubbo, as well as organizations like VALORANT and various Minecraft networks.<br><br>Going forward, the server will be going through a restructuring period as I organize and rebuild systems to improve overall quality and player experience. There is no release date yet, as the focus is on creating a high-quality experience from the ground up.<br><br>I’ll be sharing updates here regularly, involving the community in ideas, and opening applications for different roles soon. My goal is to make Emerald SMP not just fun to play, but something the community helps shape. Thanks for your patience while things are being improved.
-    </div>
-</div>
+    <div class="viewer-panel m2">
+        <h2>The Bedrock Chronicles 6-2-26</h2>
 
-<div class="viewer-panel m2">
-    <h2>The International 6/06/26</h2>
+        <div class="mail-images">
+            <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_6-2-26.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
 
-    <div class="mail-images">
-        <img src="images/news/Glacial_Press/GPnews7.png" style="width: 33%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="mail-content">
-                The Glacial Press for 6/06/26 covers: a new councillor has been elected in the United North, NSO goes to war, and 2 UN Cititzens have been banished for 3 months.<br><br>(The creator is Windows 3.14 suspects the date to be an error correct date would be:  6/02/26)
-    </div>
-</div>
-
-<div class="viewer-panel m3">
-    <h2>The International 6/01/26</h2>
-
-    <div class="mail-images">
-        <img src="images/news/The_International/6_01_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
-<img src="images/news/The_International/6_01_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
-<img src="images/news/The_International/6_01_26_3.png" style="width: 33%; height: auto; object-fit: cover;">
-<img src="images/news/The_International/6_01_26_4.png" style="width: 33%; height: auto; object-fit: cover;">
+        <div class="mail-content">
+            The Bedrock Chronicles newspaper for 6/2/26 covers: The opening of the Bedrock Nation courts.
+        </div>
     </div>
 
-    <div class="mail-content">
-                The International newspaper for 6/01/26 covers: Savanna and Mesa biomes join a resource pack, Rakau's first banishment was their ambassador, Reminder that "TECHNOBLADE NEVER DIES", and finally Happy pride month to all!
-    </div>
-</div>
+    <div class="viewer-panel m3">
+        <h2>The International 6/01/26</h2>
 
-<div class="viewer-panel m4">
-    <h2>The Bedrock Chronicles 6-1-26</h2>
+        <div class="mail-images">
+            <img src="images/news/Glacial_Press/GPnews7.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
 
-    <div class="mail-images">
-        <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_6-1-26.png" style="width: 33%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="mail-content">
-                The Bedrock Chronicles newspaper for 6/1/26 covers: todays weather, as finally theres nothing news worthy.
-    </div>
-</div>
-
-<div class="viewer-panel m5">
-    <h2>The Bedrock Chronicles 5-31-26</h2>
-
-    <div class="mail-images">
-        <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-31-26.png" style="width: 33%; height: auto; object-fit: cover;">
+        <div class="mail-content">
+            The Glacial Press for 6/01/26 covers: A new councillor beening elected in the United North, NSO goes to war, and 2 UN Cititzens have been banished for 3 months.
+        </div>
     </div>
 
-    <div class="mail-content">
-                The Bedrock Chronicles newspaper for 5/31/26 covers: Notchville and Bedrock Nation agree to no conflict for the time being.
-    </div>
-</div>
+    <div class="viewer-panel m4">
+        <h2>The International 6/01/26</h2>
 
-<div class="viewer-panel m6">
-    <h2>The Bedrock Chronicles 5-30-26</h2>
+        <div class="mail-images">
+            <img src="images/news/The_International/6_01_26_1.png" style="width:33%; height:auto; object-fit:cover;">
+    <img src="images/news/The_International/6_01_26_2.png" style="width:33%; height:auto; object-fit:cover;">
+    <img src="images/news/The_International/6_01_26_3.png" style="width:33%; height:auto; object-fit:cover;">
+    <img src="images/news/The_International/6_01_26_4.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
 
-    <div class="mail-images">
-        <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-30-26.png" style="width: 33%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="mail-content">
-                The Bedrock Chronicles newspaper for 5/30/26 covers: the growing instablity across the biomes and their threats on Notchville.
-    </div>
-</div>
-
-<div class="viewer-panel m7">
-    <h2>The International 5/29/26</h2>
-
-    <div class="mail-images">
-        <img src="images/news/The_International/5_29_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
-<img src="images/news/The_International/5_29_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
-<img src="images/news/The_International/5_29_26_3.png" style="width: 33%; height: auto; object-fit: cover;">
+        <div class="mail-content">
+            The International newspaper for 6/01/26 covers: Savanna and Mesa biomes join a resource pack, Rakau's first banishment was their ambassador, Reminder that 'TECHNOBLADE NEVER DIES', and finally Happy pride month to all!
+        </div>
     </div>
 
-    <div class="mail-content">
-                The International newspaper for 5/29/26 covers: The Dev and Admin Lacha's removal, the fact NSO never disbanded, the New Worlds structure list, and much more.
-    </div>
-</div>
+    <div class="viewer-panel m5">
+        <h2>The Bedrock Chronicles 6-1-26</h2>
 
-<div class="viewer-panel m8">
-    <h2>The Slimery Times 5-29-26</h2>
+        <div class="mail-images">
+            <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_6-1-26.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
 
-    <div class="mail-images">
-        <img src="images/news/slimetimes/slimetimes_5-29-26_1.png" style="width: 33%; height: auto; object-fit: cover;">
-<img src="images/news/slimetimes/slimetimes_5-29-26_2.png" style="width: 33%; height: auto; object-fit: cover;">
-<img src="images/news/slimetimes/slimetimes_5-29-26_3.png" style="width: 33%; height: auto; object-fit: cover;">
+        <div class="mail-content">
+            The Bedrock Chronicles newspaper for 6/1/26 covers: todays weather, as finally theres nothing news worthy.
+        </div>
     </div>
 
-    <div class="mail-content">
-                The Slimery Times newspaper for 5/29/26 covers: info about the New World is opening soon, them hiring writers, their new banner, and more.
-    </div>
-</div>
+    <div class="viewer-panel m6">
+        <h2>The Bedrock Chronicles 5-31-26</h2>
 
-<div class="viewer-panel m9">
-    <h2>The Bedrock Chronicles 5-29-26</h2>
+        <div class="mail-images">
+            <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-31-26.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
 
-    <div class="mail-images">
-        <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-29-26.png" style="width: 33%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="mail-content">
-                The Bedrock Chronicles newspaper for 5/29/26 covers: the worlds seed has changed, causing massive shifts in community opion, and server instablity.
-    </div>
-</div>
-
-<div class="viewer-panel m10">
-    <h2>The International 5/28/26</h2>
-
-    <div class="mail-images">
-        <img src="images/news/The_International/5_28_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
-<img src="images/news/The_International/5_28_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
-<img src="images/news/The_International/5_28_26_3.png" style="width: 33%; height: auto; object-fit: cover;">
-<img src="images/news/The_International/5_28_26_4.png" style="width: 33%; height: auto; object-fit: cover;">
+        <div class="mail-content">
+            The Bedrock Chronicles newspaper for 5/31/26 covers: Notchville and Bedrock Nation agree to no conflict for the time being.
+        </div>
     </div>
 
-    <div class="mail-content">
-                The International newspaper for 5/28/26 covers: The NSO disanding, Taigas elections, a reminder of the new world being open soon and more.
-    </div>
-</div>
+    <div class="viewer-panel m7">
+        <h2>The Bedrock Chronicles 5-30-26</h2>
 
-<div class="viewer-panel m11">
-    <h2>The Bedrock Chronicles 5-28-26</h2>
+        <div class="mail-images">
+            <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-30-26.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
 
-    <div class="mail-images">
-        <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-28-26.png" style="width: 33%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="mail-content">
-                The Bedrock Chronicles newspaper for 5/28/26 covers: them moving their headquarters to the Mesa biome.
-    </div>
-</div>
-
-<div class="viewer-panel m12">
-    <h2>The Weekly Sylven 5/27/26</h2>
-
-    <div class="mail-images">
-        <img src="images/news/Sylven/Weekly_Sylven_W0-2.png" style="width: 33%; height: auto; object-fit: cover;">
+        <div class="mail-content">
+            The Bedrock Chronicles newspaper for 5/30/26 covers: the growing instablity across the biomes and their threats on Notchville.
+        </div>
     </div>
 
-    <div class="mail-content">
-                The Weekly Sylven newspaper for 5/27/26 reports a major event, causing them to break their weekly standard.
+    <div class="viewer-panel m8">
+        <h2>The International 5/29/26</h2>
+
+        <div class="mail-images">
+            <img src="images/news/The_International/5_29_26_1.png" style="width:33%; height:auto; object-fit:cover;">
+    <img src="images/news/The_International/5_29_26_2.png" style="width:33%; height:auto; object-fit:cover;">
+    <img src="images/news/The_International/5_29_26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The International newspaper for 5/29/26 covers: The Dev and Admin Lacha's removal, the fact NSO never disbanded, the New Worlds structure list, and much more.
+        </div>
     </div>
-</div>
 
-<div class="viewer-panel m13">
-    <h2>The Bedrock Chronicles 5-26-26</h2>
+    <div class="viewer-panel m9">
+        <h2>The Slimery Times 5-29-26</h2>
 
-    <div class="mail-images">
-        <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-26-26.png" style="width: 33%; height: auto; object-fit: cover;">
+        <div class="mail-images">
+            <img src="images/news/slimetimes/slimetimes_5-29-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+    <img src="images/news/slimetimes/slimetimes_5-29-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+    <img src="images/news/slimetimes/slimetimes_5-29-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Slimery Times newspaper for 5/29/26 covers: info about the New World is opening soon, them hiring writers, their new banner, and more.
+        </div>
     </div>
 
-    <div class="mail-content">
-                The Bedrock Chronicles newspaper for 5/26/26 covers: a the alliance between the Mesa biome and DLF ending.
+    <div class="viewer-panel m10">
+        <h2>The Bedrock Chronicles 5-29-26</h2>
+
+        <div class="mail-images">
+            <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-29-26.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Bedrock Chronicles newspaper for 5/29/26 covers: the worlds seed has changed, causing massive shifts in community opion, and server instablity.
+        </div>
     </div>
-</div>
 
-<div class="viewer-panel m14">
-    <h2>Iron Co Update</h2>
+    <div class="viewer-panel m11">
+        <h2>The International 5/28/26</h2>
 
-    <div class="mail-images">
+        <div class="mail-images">
+            <img src="images/news/The_International/5_28_26_1.png" style="width:33%; height:auto; object-fit:cover;">
+    <img src="images/news/The_International/5_28_26_2.png" style="width:33%; height:auto; object-fit:cover;">
+    <img src="images/news/The_International/5_28_26_3.png" style="width:33%; height:auto; object-fit:cover;">
+    <img src="images/news/The_International/5_28_26_4.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The International newspaper for 5/28/26 covers: The NSO disanding, Taigas elections, a reminder of the new world being open soon and more.
+        </div>
+    </div>
+
+    <div class="viewer-panel m12">
+        <h2>The Bedrock Chronicles 5-28-26</h2>
+
+        <div class="mail-images">
+            <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-28-26.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Bedrock Chronicles newspaper for 5/28/26 covers: them moving their headquarters to the Mesa biome.
+        </div>
+    </div>
+
+    <div class="viewer-panel m13">
+        <h2>The Weekly Sylven 5/27/26</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Sylven/Weekly_Sylven_W0-2.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Weekly Sylven newspaper for 5/27/26 reports a major event, causing them to break their weekly standard.
+        </div>
+    </div>
+
+    <div class="viewer-panel m14">
+        <h2>The Bedrock Chronicles 5-26-26</h2>
+
+        <div class="mail-images">
+            <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-26-26.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Bedrock Chronicles newspaper for 5/26/26 covers: a the alliance between the Mesa biome and DLF ending.
+        </div>
+    </div>
+
+    <div class="viewer-panel m15">
+        <h2>Iron Co Update</h2>
+
+        <div class="mail-images">
         
+        </div>
+
+        <div class="mail-content">
+            <p>New mining regulations were previously implemented, and automated extraction has been restricted in all controlled zones.</p><p>Only activities conducted within approved guidelines are recognized by official policy. Any operations outside these guidelines are not sanctioned and will not be considered part of authorized company activity.</p>
+        </div>
     </div>
 
-    <div class="mail-content">
-                <p>New mining regulations were previously implemented, and automated extraction has been restricted in all controlled zones.</p><p>Only activities conducted within approved guidelines are recognized by official policy. Any operations outside these guidelines are not sanctioned and will not be considered part of authorized company activity.</p>
+    <div class="viewer-panel m16">
+        <h2>The International 5/26/26</h2>
+
+        <div class="mail-images">
+            <img src="images/news/The_International/5_26_26_1.png" style="width:33%; height:auto; object-fit:cover;">
+    <img src="images/news/The_International/5_26_26_2.png" style="width:33%; height:auto; object-fit:cover;">
+    <img src="images/news/The_International/5_26_26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The International newspaper for 5/26/26 covers: Rakau Security Measures, Scam PSA, The Blue Cross, Bedrock Nation leaving the DLF deal, and more.
+        </div>
+    </div>
+
+    <div class="viewer-panel m17">
+        <h2>The Weekly Sylven Week 0</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Sylven/Weekly_Sylven_W0.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Weekly Sylven newspaper for 5/26/26s: the rumbling heard near the Emerald Basin.
+        </div>
+    </div>
+
+    <div class="viewer-panel m18">
+        <h2>The International 5/25/26</h2>
+
+        <div class="mail-images">
+            <img src="images/news/The_International/5_25_26_1.png" style="width:33%; height:auto; object-fit:cover;">
+    <img src="images/news/The_International/5_25_26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The International newspaper edition for 5/25/26 covers: the pact signed by the Desert biome and the NSO, a PSA about lag, Cherry biomes elections, and more.
+        </div>
+    </div>
+
+    <div class="viewer-panel m19">
+        <h2>The International 5/24/26</h2>
+
+        <div class="mail-images">
+            <img src="images/news/The_International/5_24_26_1.png" style="width:33%; height:auto; object-fit:cover;">
+    <img src="images/news/The_International/5_24_26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The International newspaper edition for 5/24/26 covers: the Jungle War, Transportation Updates, Redstone Lab, and more.
+        </div>
+    </div>
+
+    <div class="viewer-panel m20">
+        <h2>The International 5/23/26</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Glacial_Press/GPnews6.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Glacial Press for 5/23/26 covers: The growing discourse in the desert.
+        </div>
+    </div>
+
+    <div class="viewer-panel m21">
+        <h2>The Daily Cherry Bomb No. 7</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_7.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Daily Cherry Bomb newspaper for 5/22/26 covers: The Green Cross.
+        </div>
+    </div>
+
+    <div class="viewer-panel m22">
+        <h2>The International 5/22/26</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Glacial_Press/GPnews05.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Glacial Press for 5/22/26 covers: Terriory disputes with the Taiga biome and the Snow biome.
+        </div>
+    </div>
+
+    <div class="viewer-panel m23">
+        <h2>The Daily Cherry Bomb No. 6</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_6.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Daily Cherry Bomb newspaper for 5/21/26 covers: The Blue Cross.
+        </div>
+    </div>
+
+    <div class="viewer-panel m24">
+        <h2>The International 5/20/26</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Glacial_Press/GPnews4.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Glacial Press for 5/20/26 covers: nationless terrorists recent threats against the UN Goverment and its citizens.
+        </div>
+    </div>
+
+    <div class="viewer-panel m25">
+        <h2>The Daily Cherry Bomb No. 5</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_5.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Daily Cherry Bomb newspaper for 5/19/26 covers: The alliance forged with the Taiga biome.
+        </div>
+    </div>
+
+    <div class="viewer-panel m26">
+        <h2>The International 5/19/26</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Glacial_Press/GPnews3.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Glacial Press for 5/19/26 covers: The mysterious group only known as The Conglomerate.
+        </div>
+    </div>
+
+    <div class="viewer-panel m27">
+        <h2>The Daily Cherry Bomb No. 4</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_4.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Daily Cherry Bomb newspaper for 5/19/26 covers: the ownership transfer to The Daily Emeralds team.
+        </div>
+    </div>
+
+    <div class="viewer-panel m28">
+        <h2>The Daily Cherry Bomb No. 3</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_3.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Daily Cherry Bomb newspaper for 5/18/26 covers: The upcoming elections.
+        </div>
+    </div>
+
+    <div class="viewer-panel m29">
+        <h2>The International 5/18/26</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Glacial_Press/GPnews2.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Glacial Press for 5/18/26 covers: The trial held about the UN leaks.
+        </div>
+    </div>
+
+    <div class="viewer-panel m30">
+        <h2>The Daily Cherry Bomb No. 2</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_2.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Daily Cherry Bomb newspaper newspaper for 5/17/26 covers: The Constitution.
+        </div>
+    </div>
+
+    <div class="viewer-panel m31">
+        <h2>The International 5/17/26</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Glacial_Press/GPnews1.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Glacial Press for 5/17/26 covers: The Cherry nation blaming the UN for recent discourse.
+        </div>
+    </div>
+
+    <div class="viewer-panel m32">
+        <h2>The Daily Cherry Bomb No. 1</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_1.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Daily Cherry Bomb newspaper newspaper for 5/05/26 covers: The Cherry Schism.
+        </div>
     </div>
 </div>
 
-<div class="viewer-panel m15">
-    <h2>The International 5/26/26</h2>
-
-    <div class="mail-images">
-        <img src="images/news/The_International/5_26_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
-<img src="images/news/The_International/5_26_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
-<img src="images/news/The_International/5_26_26_3.png" style="width: 33%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="mail-content">
-                The International newspaper for 5/26/26 covers: Rakau Security Measures, Scam PSA, The Blue Cross, Bedrock Nation leaving the DLF deal, and more.
-    </div>
 </div>
-
-<div class="viewer-panel m16">
-    <h2>The Weekly Sylven Week 0</h2>
-
-    <div class="mail-images">
-        <img src="images/news/Sylven/Weekly_Sylven_W0.png" style="width: 33%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="mail-content">
-                The Weekly Sylven newspaper for 5/26/26s: the rumbling heard near the Emerald Basin.
-    </div>
-</div>
-
-<div class="viewer-panel m17">
-    <h2>The International 5/25/26</h2>
-
-    <div class="mail-images">
-        <img src="images/news/The_International/5_25_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
-<img src="images/news/The_International/5_25_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="mail-content">
-                The International newspaper edition for 5/25/26 covers: the pact signed by the Desert biome and the NSO, a PSA about lag, Cherry biomes elections, and more.
-    </div>
-</div>
-
-<div class="viewer-panel m18">
-    <h2>The International 5/24/26</h2>
-
-    <div class="mail-images">
-        <img src="images/news/The_International/5_24_26_1.png" style="width: 33%; height: auto; object-fit: cover;">
-<img src="images/news/The_International/5_24_26_2.png" style="width: 33%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="mail-content">
-                The International newspaper edition for 5/24/26 covers: the Jungle War, Transportation Updates, Redstone Lab, and more.
-    </div>
-</div>
-
-<div class="viewer-panel m19">
-    <h2>The Daily Cherry Bomb No. 7</h2>
-
-    <div class="mail-images">
-        <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_7.png" style="width: 33%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="mail-content">
-                The Daily Cherry Bomb newspaper for 5/22/26 covers: The Green Cross.
-    </div>
-</div>
-
-<div class="viewer-panel m20">
-    <h2>The Daily Cherry Bomb No. 6</h2>
-
-    <div class="mail-images">
-        <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_6.png" style="width: 33%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="mail-content">
-                The Daily Cherry Bomb newspaper for 5/21/26 covers: The Blue Cross.
-    </div>
-</div>
-
-<div class="viewer-panel m21">
-    <h2>The International 5/20/26</h2>
-
-    <div class="mail-images">
-        <img src="images/news/Glacial_Press/GPnews4.png" style="width: 33%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="mail-content">
-                The Glacial Press for 5/20/26 covers: nationless terrorists recent threats against the UN Goverment and its citizens.
-    </div>
-</div>
-
-<div class="viewer-panel m22">
-    <h2>The Daily Cherry Bomb No. 5</h2>
-
-    <div class="mail-images">
-        <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_5.png" style="width: 33%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="mail-content">
-                The Daily Cherry Bomb newspaper for 5/19/26 covers: The alliance forged with the Taiga biome.
-    </div>
-</div>
-
-<div class="viewer-panel m23">
-    <h2>The Daily Cherry Bomb No. 4</h2>
-
-    <div class="mail-images">
-        <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_4.png" style="width: 33%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="mail-content">
-                The Daily Cherry Bomb newspaper for 5/19/26  covers: the ownership transfer to The Daily Emeralds team.
-    </div>
-</div>
-
-<div class="viewer-panel m24">
-    <h2>The Daily Cherry Bomb No. 3</h2>
-
-    <div class="mail-images">
-        <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_3.png" style="width: 33%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="mail-content">
-                The Daily Cherry Bomb newspaper for 5/18/26 covers: The upcoming elections.
-    </div>
-</div>
-
-<div class="viewer-panel m25">
-    <h2>The Daily Cherry Bomb No. 2</h2>
-
-    <div class="mail-images">
-        <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_2.png" style="width: 33%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="mail-content">
-                The Daily Cherry Bomb newspaper newspaper for 5/17/26 covers: The Constitution.
-    </div>
-</div>
-
-<div class="viewer-panel m26">
-    <h2>The Daily Cherry Bomb No. 1</h2>
-
-    <div class="mail-images">
-        <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_1.png" style="width: 33%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="mail-content">
-                The Daily Cherry Bomb newspaper newspaper for 5/05/26 covers: The Cherry Schism.
-    </div>
-</div>
-</div>
-
-
-
-
-					</div>
-
-				</div>
 
 		`,
 
