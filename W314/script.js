@@ -852,8 +852,8 @@ body {
     font-family: "Courier New", monospace;
     background: #3b2f2f;
     color: white;
-	background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("blocks/Ender_Chest_top_block.png");
-	background-size: 64px 64px;
+    background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("blocks/Ender_Chest_top_block.png");
+    background-size: 64px 64px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -911,7 +911,7 @@ input[type="radio"] {
     background: rgba(46,125,50,0.4);
 }
 
-/* ✅ FIXED SUB LABEL PADDING */
+/* sub labels */
 .categories label.sub-label {
     padding: 5px !important;
     padding-left: 10px;
@@ -1213,16 +1213,6 @@ h2 {
    ======================= */
 
 
-#sub-JosBot:checked ~ .inbox .mail:not(.JosBot) {
-    display: none;
-}
-
-
-#sub-Squid:checked ~ .inbox .mail:not(.Squid) {
-    display: none;
-}
-
-
 #sub-Bedrock_Chronicle:checked ~ .inbox .mail:not(.Bedrock_Chronicle) {
     display: none;
 }
@@ -1238,17 +1228,7 @@ h2 {
 }
 
 
-#sub-The_Slimery_Times:checked ~ .inbox .mail:not(.The_Slimery_Times) {
-    display: none;
-}
-
-
 #sub-Weekly_Sylven:checked ~ .inbox .mail:not(.Weekly_Sylven) {
-    display: none;
-}
-
-
-#sub-Iron_Co_Company_Email:checked ~ .inbox .mail:not(.Iron_Co_Company_Email) {
     display: none;
 }
 
@@ -1267,14 +1247,10 @@ h2 {
 <input type="radio" name="category" id="cat-promotional">
 <input type="radio" name="category" id="cat-spam">
 <input type="radio" name="category" id="cat-trash">
-<input type="radio" name="category" id="sub-JosBot">
-<input type="radio" name="category" id="sub-Squid">
 <input type="radio" name="category" id="sub-Bedrock_Chronicle">
 <input type="radio" name="category" id="sub-Glacial_Press">
 <input type="radio" name="category" id="sub-International_News_Network">
-<input type="radio" name="category" id="sub-The_Slimery_Times">
 <input type="radio" name="category" id="sub-Weekly_Sylven">
-<input type="radio" name="category" id="sub-Iron_Co_Company_Email">
 <input type="radio" name="category" id="sub-Cherry_Bomb">
 
 <input type="radio" name="mail" id="none" checked>
@@ -1319,14 +1295,10 @@ h2 {
     <label for="cat-promotional">Promotional</label>
     <label for="cat-spam">Spam</label>
     <label for="cat-trash">Trash</label>
-    <label class="sub-label" for="sub-JosBot">JosBot</label>
-    <label class="sub-label" for="sub-Squid">Squid</label>
     <label class="sub-label" for="sub-Bedrock_Chronicle">Bedrock Chronicle</label>
     <label class="sub-label" for="sub-Glacial_Press">Glacial Press</label>
     <label class="sub-label" for="sub-International_News_Network">International News Network</label>
-    <label class="sub-label" for="sub-The_Slimery_Times">The Slimery Times</label>
     <label class="sub-label" for="sub-Weekly_Sylven">Weekly Sylven</label>
-    <label class="sub-label" for="sub-Iron_Co_Company_Email">Iron Co Company Email</label>
     <label class="sub-label" for="sub-Cherry_Bomb">Cherry Bomb</label>
 </div>
 
