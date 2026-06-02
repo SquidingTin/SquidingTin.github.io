@@ -1257,7 +1257,6 @@ h2 {
 <input type="radio" name="category" id="cat-promotional">
 <input type="radio" name="category" id="cat-spam">
 <input type="radio" name="category" id="cat-trash">
-<div class="separator"></div>
 <input type="radio" name="category" id="sub-JosBot">
 <input type="radio" name="category" id="sub-Bedrock_Chronicle">
 <input type="radio" name="category" id="sub-Glacial_Press">
@@ -1308,7 +1307,6 @@ h2 {
     <label for="cat-promotional">Promotional</label>
     <label for="cat-spam">Spam</label>
     <label for="cat-trash">Trash</label>
-    <div class="separator"></div>
     <label class="sub-label" for="sub-JosBot">JosBot</label>
     <label class="sub-label" for="sub-Bedrock_Chronicle">Bedrock Chronicle</label>
     <label class="sub-label" for="sub-Glacial_Press">Glacial Press</label>
