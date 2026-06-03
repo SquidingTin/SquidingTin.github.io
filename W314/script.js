@@ -2517,23 +2517,23 @@ h2 {
 								<div class="quote-grid">
 
 									<div class="quote imageQuote">
-										<img src="images/company/cctc/horse.png">
+										<img src="images/company/CCTC/horse.png">
 									</div>
 
 									<div class="quote imageQuote">
-										<img src="images/company/cctc/boat.png">
+										<img src="images/company/CCTC/boat.png">
 									</div>
 
 									<div class="quote imageQuote">
-										<img src="images/company/cctc/arrow.png">
+										<img src="images/company/CCTC/arrow.png">
 									</div>
 
 									<div class="quote imageQuote">
-										<img src="images/company/cctc/firework.png">
+										<img src="images/company/CCTC/firework.png">
 									</div>
 
 									<div class="quote imageQuote">
-										<img src="images/company/cctc/cart.png">
+										<img src="images/company/CCTC/cart.png">
 									</div>
 
 								</div>
@@ -4243,20 +4243,24 @@ rakau: `
 							Angel Electronics
 						</a>
 
-						<a class="company" onclick="parent.location.hash='#endx">
+						<a class="company" onclick="parent.location.hash='endx">
 							EndX
 						</a>
 
-						<a class="company" onclick="parent.location.hash='#happyghast">
+						<a class="company" onclick="parent.location.hash='happyghast">
 							Happy Ghast Inc.
 						</a>
 
-						<a class="company" onclick="parent.location.hash='#hotdogredstone">
+						<a class="company" onclick="parent.location.hash='hotdogredstone">
 							Hotdog Redstone
 						</a>
 
-						<a class="company" onclick="parent.location.hash='#greenroad">
+						<a class="company" onclick="parent.location.hash='greenroad">
 							The Greenroad Guild
+						</a>
+
+						<a class="company" onclick="parent.location.hash='mail'">
+							OverNet Mail
 						</a>
 
 					</div>
