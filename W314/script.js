@@ -16,11 +16,14 @@
 		{ name: "New Spawn City.png", path: "images/newspawncity.png", type: "image" },
 		{ name: "New Spawn City 2.png", path: "images/newspawncity2.png", type: "image" },
 		{ name: "Mesa.png", path: "images/mesa.png", type: "image" },
-		{ name: "Forest.png", path: "images/forest.png", type: "image" },
+		{ name: "Taiga.png", path: "images/forest.png", type: "image" },
 		{ name: "Mountains.png", path: "images/mountains.png", type: "image" },
 		{ name: "Dark Forest.png", path: "images/darkforest.png", type: "image" },
 		{ name: "Plains.png", path: "images/plains.png", type: "image" },
 		{ name: "Cherry Grove.png", path: "images/cherrygrove.png", type: "image" },
+		
+		{ name: "Map V2.png", path: "images/Map_V2_Combo.png", type: "image" },
+		{ name: "New Spawn Map V2.png", path: "images/newspawncity_map.png", type: "image" },
 
 		{ name: "Anthem of Rakau.mp3", path: "audio/forest.mp3", type: "audio" }
 	];
@@ -124,7 +127,7 @@
 		{ name: "None", value: "" },
 		{ name: "New Spawn City", value: "images/newspawncity.png" },
 		{ name: "Mesa", value: "images/mesa.png" },
-		{ name: "Forest", value: "images/forest.png" },
+		{ name: "Taiga", value: "images/forest.png" },
 		{ name: "Mountains", value: "images/mountains.png" },
 		{ name: "Dark Forest", value: "images/darkforest.png" },
 		{ name: "Plains", value: "images/plains.png" },
