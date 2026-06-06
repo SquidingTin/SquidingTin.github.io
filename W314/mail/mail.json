@@ -1,111 +1,501 @@
 [
-  {
-    "title": "The Bedrock Chronicles 5/28/26",
-    "sub": "Bedrock Chronicle",
-    "viewerTitle": "The Bedrock Chronicles 5-28-26",
-    "images": [
-      "images/bedrock_chronicle/Bedrock_Chronicle_5-28-26.png"
-    ],
-    "content": "The Bedrock Chronicles newspaper for 5/28/26 covers them moving their headquarters to the Mesa biome."
-  },
-  {
-    "title": "Iron Co Update",
-    "sub": "Iron Co Company Email",
-    "viewerTitle": "Iron Co Update",
-    "content": "<p>New mining regulations were previously implemented, and automated extraction has been restricted in all controlled zones.</p><p>Only activities conducted within approved guidelines are recognized by official policy. Any operations outside these guidelines are not sanctioned and will not be considered part of authorized company activity.</p>"
-  },
-  {
-    "title": "The International Volume 3",
-    "sub": "The International",
-    "viewerTitle": "The International 5/26/26",
-    "images": [
-      "images/The_International/5_26_26_1.png",
-      "images/The_International/5_26_26_2.png",
-      "images/The_International/5_26_26_3.png"
-    ],
-    "content": "The International newspaper for 5/26/26 covers Rakau Security Measures, Scam PSA, The Blue Cross, Bedrock Nation leaving the DLF deal, and more."
-  },
-  {
-    "title": "The International 5/24/26",
-    "sub": "The International",
-    "viewerTitle": "The International 5/24/26",
-    "images": [
-      "images/The_International/5_24_26_1.png",
-      "images/The_International/5_24_26_2.png"
-    ],
-    "content": "The International newspaper edition for 5/24/26 covers the Jungle War, Transportation Updates, Redstone Lab, and more."
-  },
-  {
-    "title": "The Weekly Sylven W0",
-    "sub": "Weekly Sylven",
-    "viewerTitle": "The Weekly Sylven Week 0",
-    "images": [
-      "images/Sylven/Weekly_Sylven_W0.png"
-    ],
-    "content": "The Weekly Sylven newspaper edition for week 0 covers the rumbling heard near the Emerald Basin."
-  },
-  {
-    "title": "The Daily Cherry Bomb No. 7",
-    "sub": "Cherry Bomb",
-    "viewerTitle": "The Daily Cherry Bomb No. 7",
-    "images": [
-      "images/Cherry_Bomb/Daily_Cherry-Bomb_7.png"
-    ],
-    "content": "The Daily Cherry Bomb newspaper edition number 7 covers: The Green Cross."
-  },
-  {
-    "title": "The Daily Cherry Bomb No. 6",
-    "sub": "Cherry Bomb",
-    "viewerTitle": "The Daily Cherry Bomb No. 6",
-    "images": [
-      "images/Cherry_Bomb/Daily_Cherry-Bomb_6.png"
-    ],
-    "content": "The Daily Cherry Bomb newspaper edition number 6 covers: The Blue Cross."
-  },
-  {
-    "title": "The Daily Cherry Bomb No. 5",
-    "sub": "Cherry Bomb",
-    "viewerTitle": "The Daily Cherry Bomb No. 5",
-    "images": [
-      "images/Cherry_Bomb/Daily_Cherry-Bomb_5.png"
-    ],
-    "content": "The Daily Cherry Bomb newspaper edition number 5 covers: The alliance forged with the Taiga biome."
-  },
-  {
-    "title": "The Daily Cherry Bomb No. 4",
-    "sub": "Cherry Bomb",
-    "viewerTitle": "The Daily Cherry Bomb No. 4",
-    "images": [
-      "images/Cherry_Bomb/Daily_Cherry-Bomb_4.png"
-    ],
-    "content": "The Daily Cherry Bomb newspaper edition number 4 covers: the ownership transfer to The Daily Emeralds team."
-  },
-  {
-    "title": "The Daily Cherry Bomb No. 3",
-    "sub": "Cherry Bomb",
-    "viewerTitle": "The Daily Cherry Bomb No. 3",
-    "images": [
-      "images/Cherry_Bomb/Daily_Cherry-Bomb_3.png"
-    ],
-    "content": "The Daily Cherry Bomb newspaper edition number 3 covers: The upcoming elections."
-  },
-  {
-    "id": "m58",
-    "title": "The Daily Cherry Bomb No. 2",
-    "sub": "Cherry Bomb",
-    "viewerTitle": "The Daily Cherry Bomb No. 2",
-    "images": [
-      "images/Cherry_Bomb/Daily_Cherry-Bomb_2.png"
-    ],
-    "content": "The Daily Cherry Bomb newspaper edition number 2 covers: The Constitution."
-  },
-  {
-    "title": "The Daily Cherry Bomb No. 1",
-    "sub": "Cherry Bomb",
-    "viewerTitle": "The Daily Cherry Bomb No. 1",
-    "images": [
-      "images/Cherry_Bomb/Daily_Cherry-Bomb_1.png"
-    ],
-    "content": "The Daily Cherry Bomb newspaper edition number 1 covers: The Cherry Schism."
-  }
+	{
+		"category": "updates",
+		"title": "Welcome To The OverNet [PINNED]",
+		"sub": "Squid",
+		"viewerTitle": "Welcome [USER]",
+		"content": "Hello, and welcome to the OverNet.<br>I am Squid, I am a resident of Rakau nation and this is my personal project for the Daily Emerald SMP and its news. This project is meant to look like Windows 95 though not a 1-1 recreation.<br><br>If you have a suggestion, find a bug, or anything else, my contact is squid6245 on discord, <br>or just ping the user with [W 3.14] in their name."
+	},
+	{
+		"category": "updates",
+		"title": "Welcome To The OverNet [PINNED]",
+		"sub": "Lucifela",
+		"viewerTitle": "Future plans for the SMP",
+		"content": "I'd like to set some things straight regarding the recent reaction of the future plans for this SMP:<br><br>First of all, not all of what was said has been decided upon-- this means that the details of what happens can change immensely, as we want this server to be player-run, but we also do not want players to delete their server in anger, causing a loss of weeks worth of work. We have seen and understood your concerns on why we wish to move forward with the plan to take ownership of the servers. <br><br>With over 11,000 members and counting, we want to ensure everyone has a fun and peaceful experience. We don't want anyone to be uncomfortable within their nation. We recognize that this seems like a huge overreach of power but it is something that must be done. Due to an uncountable number of reports from players regarding others in different nation servers, whether it's harassment to outright illegal articles, the abuse of moderation in order to suppress others, and more, we want the owners of the servers to transfer ownership.<br><br>What does this mean for you?<br> We do not want to take power away from the people, however we wish to ensure that the players can moderate effectively and without abuse. The installment of of Daily Emerald SMP staff members for moderation of the nations is something that is still being talked about and may not happen at all. I'd like to iterate that if this does happen, we'll prioritize moderators to be from the same biome. They will also not have full admin access, but instead, permissions to manage the players in order to remove, warn, or mute, them for any rule broken.<br><br>As mentioned in some sources, we plan to reform the staff team to be one of high standards and versatility."
+	},
+	{
+		"category": "news",
+		"title": "Mesa Times 6/5/2026",
+		"sub": "Mesa Times",
+		"viewerTitle": "Mesa Times 6-5-2026",
+		"images": [
+			"images/news/Mesa_Times/6-5-26_1.png",
+			"images/news/Mesa_Times/6-5-26_2.png",
+			"images/news/Mesa_Times/6-5-26_3.png",
+			"images/news/Mesa_Times/6-5-26_4.png",
+			"images/news/Mesa_Times/6-5-26_5.png"
+		],
+		"content": "The Mesa Times newspaper for 6/5/2026 covers: An exclusive interview with The chief diplomat of the dark forests United Provinces and Lucifela One of the administrators for the Emerald SMP, Mushroom biome infigting, The aftermath of the plains biomes collapse, and much much more."
+	},
+	{
+		"category": "news",
+		"title": "Mesa Times 6/5/2026",
+		"sub": "Mesa Times",
+		"viewerTitle": "Mesa Times 6-5-2026",
+		"content": "Polls are now being introduced, with more development underway as groups begin using public voting to guide future decisions.<br><br>The Mooshroom Islands are currently in a state of unrest following the deletion of their Discord server. This occurred after the Discord owner, had a crash out after losing two elections, and delete their nations discord server. As a result, the Mooshroom Islands remain in a state of unrest as of now.<br><br>The Jungle biome is planning a military reformation and expansion. Lazy a cabinet member and their server owner, has resigned today. An election will be held to decide the next leader. It is currently unknown if the Council of Ministers will remain active as a group.<br><br>Mesa’s Port Duncan administration has been fully transferred to the second in command, Olaf.<br><br>Advertisements (extended to tomorrow):<br>Savanna National Vanguard<br>Global Logistics Company<br>New Piglin Cartel<br>Eternal Trade Coalition<br><br>More updates and interviews will follow tomorrow."
+	},
+	{
+		"category": "news",
+		"title": "Mesa Times 6/4/2026",
+		"sub": "Mesa Times",
+		"viewerTitle": "Mesa Times 6-4-2026",
+		"images": [
+			"images/news/Mesa_Times/6-4-26_1.png",
+			"images/news/Mesa_Times/6-4-26_2.png",
+			"images/news/Mesa_Times/6-4-26_3.png",
+			"images/news/Mesa_Times/6-4-26_4.png"
+		],
+		"content": "The Mesa Times newspaper for 6/4/2026 covers: Progress of the maps creation, the Blossomgate Scandal caused by the Cherry Biome, Mesa's stance of the Snow biome, and loads more."
+	},
+	{
+		"category": "news",
+		"title": "Mesa Times 6/3/2026",
+		"sub": "Mesa Times",
+		"viewerTitle": "Mesa Times 6-3-2026",
+		"images": [
+			"images/news/Mesa_Times/6-3-26_1.png",
+			"images/news/Mesa_Times/6-3-26_2.png",
+			"images/news/Mesa_Times/6-3-26_3.png"
+		],
+		"content": "The Mesa Times newspaper for 6/3/2026 covers: The resizing of the map from 16k to 18k, and more."
+	},
+	{
+		"category": "news",
+		"title": "The Bedrock Chronicles 6/2/26",
+		"sub": "Bedrock Chronicle",
+		"viewerTitle": "The Bedrock Chronicles 6-2-26",
+		"images": [
+			"images/news/bedrock_chronicle/Bedrock_Chronicle_6-2-26.png"
+		],
+		"content": "The Bedrock Chronicles newspaper for 6/2/26 covers: The opening of the Bedrock Nation courts."
+	},
+	{
+		"category": "news",
+		"title": "Mesa Times 6/2/2026",
+		"sub": "Mesa Times",
+		"viewerTitle": "Mesa Times 6-2-2026",
+		"images": [
+			"images/news/Mesa_Times/6-2-26_1.png",
+			"images/news/Mesa_Times/6-2-26_2.png",
+			"images/news/Mesa_Times/6-2-26_3.png"
+		],
+		"content": "The Mesa Times newspaper for 6/2/2026 covers: The scandal in the plains biome, the Jungle biomes in distress, and more."
+	},
+	{
+		"category": "news",
+		"title": "Cactus News Networks 6/1/2026",
+		"sub": "Cactus News Networks",
+		"viewerTitle": "Cactus News 6-1-2026",
+		"images": [
+			"images/news/Cactus_News/6-1-26_1.png"
+		],
+		"content": "The Cactus News newspaper for 6/1/2026 covers: The Desert nations public confrence, their addition to the wiki, and more."
+	},
+	{
+		"category": "news",
+		"title": "Glacial Press No. 7",
+		"sub": "Glacial Press",
+		"viewerTitle": "The International 6/01/26",
+		"images": [
+			"images/news/Glacial_Press/GPnews7.png"
+		],
+		"content": "The Glacial Press for 6/01/26 covers: A new councillor beening elected in the United North, NSO goes to war, and 2 UN Cititzens have been banished for 3 months."
+	},
+	{
+		"category": "news",
+		"title": "The International Volume 6",
+		"sub": "International News Network",
+		"viewerTitle": "The International 6/01/26",
+		"images": [
+			"images/news/The_International/6_01_26_1.png",
+			"images/news/The_International/6_01_26_2.png",
+			"images/news/The_International/6_01_26_3.png",
+			"images/news/The_International/6_01_26_4.png"
+		],
+		"content": "The International newspaper for 6/01/26 covers: Savanna and Mesa biomes join a resource pack, Rakau's first banishment was their ambassador, Reminder that 'TECHNOBLADE NEVER DIES', and finally Happy pride month to all!"
+	},
+	{
+		"category": "news",
+		"title": "The Bedrock Chronicles 6/1/26",
+		"sub": "Bedrock Chronicle",
+		"viewerTitle": "The Bedrock Chronicles 6-1-26",
+		"images": [
+			"images/news/bedrock_chronicle/Bedrock_Chronicle_6-1-26.png"
+		],
+		"content": "The Bedrock Chronicles newspaper for 6/1/26 covers: todays weather, as finally theres nothing news worthy."
+	},
+	{
+		"category": "news",
+		"title": "The Bedrock Chronicles 5/31/26",
+		"sub": "Bedrock Chronicle",
+		"viewerTitle": "The Bedrock Chronicles 5-31-26",
+		"images": [
+			"images/news/bedrock_chronicle/Bedrock_Chronicle_5-31-26.png"
+		],
+		"content": "The Bedrock Chronicles newspaper for 5/31/26 covers: Notchville and Bedrock Nation agree to no conflict for the time being."
+	},
+	{
+		"category": "updates",
+		"title": "Who am I?",
+		"sub": "JosBot",
+		"viewerTitle": "Who am I?",
+		"content": "Hey everyone, I'm Jos, the new lead developer and co-owner of the Emerald SMP. I'm taking over development alongside Emerald and stepping into a leadership role to help rebuild and improve the server. I’ve been playing Minecraft for about 10 years and building servers for the last 5, with experience working alongside creators like SpeedSilver, Graser, Kiingtong, and Tubbo, as well as organizations like VALORANT and various Minecraft networks.<br><br>Going forward, the server will be going through a restructuring period as I organize and rebuild systems to improve overall quality and player experience. There is no release date yet, as the focus is on creating a high-quality experience from the ground up.<br><br>I’ll be sharing updates here regularly, involving the community in ideas, and opening applications for different roles soon. My goal is to make Emerald SMP not just fun to play, but something the community helps shape. Thanks for your patience while things are being improved."
+	},
+	{
+		"category": "news",
+		"title": "The Bedrock Chronicles 5/30/26",
+		"sub": "Bedrock Chronicle",
+		"viewerTitle": "The Bedrock Chronicles 5-30-26",
+		"images": [
+			"images/news/bedrock_chronicle/Bedrock_Chronicle_5-30-26.png"
+		],
+		"content": "The Bedrock Chronicles newspaper for 5/30/26 covers: the growing instablity across the biomes and their threats on Notchville."
+	},
+	{
+		"category": "news",
+		"title": "The International Volume 5",
+		"sub": "International News Network",
+		"viewerTitle": "The International 5/29/26",
+		"images": [
+			"images/news/The_International/5_29_26_1.png",
+			"images/news/The_International/5_29_26_2.png",
+			"images/news/The_International/5_29_26_3.png"
+		],
+		"content": "The International newspaper for 5/29/26 covers: The Dev and Admin Lacha's removal, the fact NSO never disbanded, the New Worlds structure list, and much more."
+	},
+	{
+		"category": "news",
+		"title": "The Slimery Times No. 7",
+		"sub": "The Slimery Times",
+		"viewerTitle": "The Slimery Times 5-29-26",
+		"images": [
+			"images/news/slimetimes/slimetimes_5-29-26_1.png",
+			"images/news/slimetimes/slimetimes_5-29-26_2.png",
+			"images/news/slimetimes/slimetimes_5-29-26_3.png"
+		],
+		"content": "The Slimery Times newspaper for 5/29/26 covers: info about the New World is opening soon, them hiring writers, their new banner, and more."
+	},
+	{
+		"category": "news",
+		"title": "The Bedrock Chronicles 5/29/26",
+		"sub": "Bedrock Chronicle",
+		"viewerTitle": "The Bedrock Chronicles 5-29-26",
+		"images": [
+			"images/news/bedrock_chronicle/Bedrock_Chronicle_5-29-26.png"
+		],
+		"content": "The Bedrock Chronicles newspaper for 5/29/26 covers: the worlds seed has changed, causing massive shifts in community opion, and server instablity."
+	},
+	{
+		"category": "news",
+		"title": "The International Volume 4",
+		"sub": "International News Network",
+		"viewerTitle": "The International 5/28/26",
+		"images": [
+			"images/news/The_International/5_28_26_1.png",
+			"images/news/The_International/5_28_26_2.png",
+			"images/news/The_International/5_28_26_3.png",
+			"images/news/The_International/5_28_26_4.png"
+		],
+		"content": "The International newspaper for 5/28/26 covers: The NSO disanding, Taigas elections, a reminder of the new world being open soon and more."
+	},
+	{
+		"category": "news",
+		"title": "Mesa Times 5/28/2026",
+		"sub": "Mesa Times",
+		"viewerTitle": "Mesa Times 5-28-2026",
+		"images": [
+			"images/news/Mesa_Times/5-28-26_1.png",
+			"images/news/Mesa_Times/5-28-26_2.png",
+			"images/news/Mesa_Times/5-28-26_3.png",
+			"images/news/Mesa_Times/5-28-26_4.png"
+		],
+		"content": "The Mesa Times newspaper for 5/28/2026 covers: The RSI, The world opening in 2 days, and more."
+	},
+	{
+		"category": "news",
+		"title": "The Bedrock Chronicles 5/28/26",
+		"sub": "Bedrock Chronicle",
+		"viewerTitle": "The Bedrock Chronicles 5-28-26",
+		"images": [
+			"images/news/bedrock_chronicle/Bedrock_Chronicle_5-28-26.png"
+		],
+		"content": "The Bedrock Chronicles newspaper for 5/28/26 covers: them moving their headquarters to the Mesa biome."
+	},
+	{
+		"category": "news",
+		"title": "The Weekly Sylven W0 pt2",
+		"sub": "Weekly Sylven",
+		"viewerTitle": "The Weekly Sylven 5/27/26",
+		"images": [
+			"images/news/Sylven/Weekly_Sylven_W0-2.png"
+		],
+		"content": "The Weekly Sylven newspaper for 5/27/26 reports a major event, causing them to break their weekly standard."
+	},
+	{
+		"category": "news",
+		"title": "The Bedrock Chronicles 5/26/26",
+		"sub": "Bedrock Chronicle",
+		"viewerTitle": "The Bedrock Chronicles 5-26-26",
+		"images": [
+			"images/news/bedrock_chronicle/Bedrock_Chronicle_5-26-26.png"
+		],
+		"content": "The Bedrock Chronicles newspaper for 5/26/26 covers: a the alliance between the Mesa biome and DLF ending."
+	},
+	{
+		"category": "promotional",
+		"title": "Iron Co Update",
+		"sub": "Iron Co Company Email",
+		"viewerTitle": "Iron Co Update",
+		"content": "<p>New mining regulations were previously implemented, and automated extraction has been restricted in all controlled zones.</p><p>Only activities conducted within approved guidelines are recognized by official policy. Any operations outside these guidelines are not sanctioned and will not be considered part of authorized company activity.</p>"
+	},
+	{
+		"category": "news",
+		"title": "The International Volume 3",
+		"sub": "International News Network",
+		"viewerTitle": "The International 5/26/26",
+		"images": [
+			"images/news/The_International/5_26_26_1.png",
+			"images/news/The_International/5_26_26_2.png",
+			"images/news/The_International/5_26_26_3.png"
+		],
+		"content": "The International newspaper for 5/26/26 covers: Rakau Security Measures, Scam PSA, The Blue Cross, Bedrock Nation leaving the DLF deal, and more."
+	},
+	{
+		"category": "news",
+		"title": "The Weekly Sylven W0",
+		"sub": "Weekly Sylven",
+		"viewerTitle": "The Weekly Sylven Week 0",
+		"images": [
+			"images/news/Sylven/Weekly_Sylven_W0.png"
+		],
+		"content": "The Weekly Sylven newspaper for 5/26/26s: the rumbling heard near the Emerald Basin."
+	},
+	{
+		"category": "news",
+		"title": "Mesa Times 5/25/2026",
+		"sub": "Mesa Times",
+		"viewerTitle": "Mesa Times 5-25-2026",
+		"images": [
+			"images/news/Mesa_Times/5-25-26_1.png",
+			"images/news/Mesa_Times/5-25-26_2.png"
+		],
+		"content": "The Mesa Times newspaper for 5/25/2026 covers: The possible Bedrock Nation merging with the Mesa biome."
+	},
+	{
+		"category": "news",
+		"title": "The International Volume 2",
+		"sub": "International News Network",
+		"viewerTitle": "The International 5/25/26",
+		"images": [
+			"images/news/The_International/5_25_26_1.png",
+			"images/news/The_International/5_25_26_2.png"
+		],
+		"content": "The International newspaper edition for 5/25/26 covers: the pact signed by the Desert biome and the NSO, a PSA about lag, Cherry biomes elections, and more."
+	},
+	{
+		"category": "news",
+		"title": "The International Volume 1",
+		"sub": "International News Network",
+		"viewerTitle": "The International 5/24/26",
+		"images": [
+			"images/news/The_International/5_24_26_1.png",
+			"images/news/The_International/5_24_26_2.png"
+		],
+		"content": "The International newspaper edition for 5/24/26 covers: the Jungle War, Transportation Updates, Redstone Lab, and more."
+	},
+	{
+		"category": "news",
+		"title": "Glacial Press No. 6",
+		"sub": "Glacial Press",
+		"viewerTitle": "The International 5/23/26",
+		"images": [
+			"images/news/Glacial_Press/GPnews6.png"
+		],
+		"content": "The Glacial Press for 5/23/26 covers: The growing discourse in the desert."
+	},
+	{
+		"category": "news",
+		"title": "Mesa Times 5/23/2026",
+		"sub": "Mesa Times",
+		"viewerTitle": "Mesa Times 5-23-2026",
+		"images": [
+			"images/news/Mesa_Times/5-23-26_1.png",
+			"images/news/Mesa_Times/5-23-26_2.png",
+			"images/news/Mesa_Times/5-23-26_3.png",
+			"images/news/Mesa_Times/5-23-26_4.png",
+			"images/news/Mesa_Times/5-23-26_5.png",
+			"images/news/Mesa_Times/5-23-26_6.png",
+			"images/news/Mesa_Times/5-23-26_7.png"
+		],
+		"content": "The Mesa Times newspaper for 5/23/2026 covers: The question left in the last news letter 'What is the pig cartel'."
+	},
+	{
+		"category": "news",
+		"title": "The Daily Cherry Bomb No. 7",
+		"sub": "Cherry Bomb",
+		"viewerTitle": "The Daily Cherry Bomb No. 7",
+		"images": [
+			"images/news/Cherry_Bomb/Daily_Cherry-Bomb_7.png"
+		],
+		"content": "The Daily Cherry Bomb newspaper for 5/22/26 covers: The Green Cross."
+	},
+	{
+		"category": "news",
+		"title": "Mesa Times 5/22/2026",
+		"sub": "Mesa Times",
+		"viewerTitle": "Mesa Times 5-22-2026",
+		"images": [
+			"images/news/Mesa_Times/5-22-26_1.png",
+			"images/news/Mesa_Times/5-22-26_2.png",
+			"images/news/Mesa_Times/5-22-26_3.png",
+			"images/news/Mesa_Times/5-22-26_4.png",
+			"images/news/Mesa_Times/5-22-26_5.png",
+			"images/news/Mesa_Times/5-22-26_6.png"
+		],
+		"content": "The Mesa Times newspaper for 5/22/2026 covers: The snow front conflict , and the pig cartel."
+	},
+	{
+		"category": "news",
+		"title": "Glacial Press No. 5",
+		"sub": "Glacial Press",
+		"viewerTitle": "The International 5/22/26",
+		"images": [
+			"images/news/Glacial_Press/GPnews05.png"
+		],
+		"content": "The Glacial Press for 5/22/26 covers: Terriory disputes with the Taiga biome and the Snow biome."
+	},
+	{
+		"category": "news",
+		"title": "The Daily Cherry Bomb No. 6",
+		"sub": "Cherry Bomb",
+		"viewerTitle": "The Daily Cherry Bomb No. 6",
+		"images": [
+			"images/news/Cherry_Bomb/Daily_Cherry-Bomb_6.png"
+		],
+		"content": "The Daily Cherry Bomb newspaper for 5/21/26 covers: The Blue Cross."
+	},
+	{
+		"category": "news",
+		"title": "Mesa Times 5/20/2026",
+		"sub": "Mesa Times",
+		"viewerTitle": "Mesa Times 5-20-2026",
+		"images": [
+			"images/news/Mesa_Times/5-20-26_1.png",
+			"images/news/Mesa_Times/5-20-26_2.png",
+			"images/news/Mesa_Times/5-20-26_3.png",
+			"images/news/Mesa_Times/5-20-26_4.png"
+		],
+		"content": "The Mesa Times newspaper for 5/20/2026 covers: The terror in the Mesa biome."
+	},
+	{
+		"category": "news",
+		"title": "Glacial Press No. 4",
+		"sub": "Glacial Press",
+		"viewerTitle": "The International 5/20/26",
+		"images": [
+			"images/news/Glacial_Press/GPnews4.png"
+		],
+		"content": "The Glacial Press for 5/20/26 covers: nationless terrorists recent threats against the UN Goverment and its citizens."
+	},
+	{
+		"category": "news",
+		"title": "The Daily Cherry Bomb No. 5",
+		"sub": "Cherry Bomb",
+		"viewerTitle": "The Daily Cherry Bomb No. 5",
+		"images": [
+			"images/news/Cherry_Bomb/Daily_Cherry-Bomb_5.png"
+		],
+		"content": "The Daily Cherry Bomb newspaper for 5/19/26 covers: The alliance forged with the Taiga biome."
+	},
+	{
+		"category": "news",
+		"title": "Glacial Press No. 3",
+		"sub": "Glacial Press",
+		"viewerTitle": "The International 5/19/26",
+		"images": [
+			"images/news/Glacial_Press/GPnews3.png"
+		],
+		"content": "The Glacial Press for 5/19/26 covers: The mysterious group only known as The Conglomerate."
+	},
+	{
+		"category": "news",
+		"title": "Mesa Times 5/19/2026",
+		"sub": "Mesa Times",
+		"viewerTitle": "Mesa Times 5-19-2026",
+		"images": [
+			"images/news/Mesa_Times/5-19-26_1.png",
+			"images/news/Mesa_Times/5-19-26_2.png"
+		],
+		"content": "The Mesa Times newspaper for 5/19/2026 covers: The growing hate towards the Snow biome."
+	},
+	{
+		"category": "news",
+		"title": "The Daily Cherry Bomb No. 4",
+		"sub": "Cherry Bomb",
+		"viewerTitle": "The Daily Cherry Bomb No. 4",
+		"images": [
+			"images/news/Cherry_Bomb/Daily_Cherry-Bomb_4.png"
+		],
+		"content": "The Daily Cherry Bomb newspaper for 5/19/26 covers: the ownership transfer to The Daily Emeralds team."
+	},
+	{
+		"category": "news",
+		"title": "The Daily Cherry Bomb No. 3",
+		"sub": "Cherry Bomb",
+		"viewerTitle": "The Daily Cherry Bomb No. 3",
+		"images": [
+			"images/news/Cherry_Bomb/Daily_Cherry-Bomb_3.png"
+		],
+		"content": "The Daily Cherry Bomb newspaper for 5/18/26 covers: The upcoming elections."
+	},
+	{
+		"category": "news",
+		"title": "Mesa Times 5/18/2026",
+		"sub": "Mesa Times",
+		"viewerTitle": "Mesa Times 5-18-2026",
+		"images": [
+			"images/news/Mesa_Times/5-18-26.png"
+		],
+		"content": "The Mesa Times newspaper for 5/18/2026 covers: Who they are."
+	},
+	{
+		"category": "news",
+		"title": "Glacial Press No. 2",
+		"sub": "Glacial Press",
+		"viewerTitle": "The International 5/18/26",
+		"images": [
+			"images/news/Glacial_Press/GPnews2.png"
+		],
+		"content": "The Glacial Press for 5/18/26 covers: The trial held about the UN leaks."
+	},
+	{
+		"category": "news",
+		"title": "The Daily Cherry Bomb No. 2",
+		"sub": "Cherry Bomb",
+		"viewerTitle": "The Daily Cherry Bomb No. 2",
+		"images": [
+			"images/news/Cherry_Bomb/Daily_Cherry-Bomb_2.png"
+		],
+		"content": "The Daily Cherry Bomb newspaper newspaper for 5/17/26 covers: The Constitution."
+	},
+	{
+		"category": "news",
+		"title": "Glacial Press No. 1",
+		"sub": "Glacial Press",
+		"viewerTitle": "The International 5/17/26",
+		"images": [
+			"images/news/Glacial_Press/GPnews1.png"
+		],
+		"content": "The Glacial Press for 5/17/26 covers: The Cherry nation blaming the UN for recent discourse."
+	},
+	{
+		"category": "news",
+		"title": "The Daily Cherry Bomb No. 1",
+		"sub": "Cherry Bomb",
+		"viewerTitle": "The Daily Cherry Bomb No. 1",
+		"images": [
+			"images/news/Cherry_Bomb/Daily_Cherry-Bomb_1.png"
+		],
+		"content": "The Daily Cherry Bomb newspaper newspaper for 5/05/26 covers: The Cherry Schism."
+	}
 ]
