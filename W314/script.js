@@ -3923,7 +3923,7 @@ h2 {
     </label>
 
     <label class="mail updates Lucifela" for="m2">
-        <div class="mail-title">Welcome To The OverNet [PINNED]</div>
+        <div class="mail-title">Future Plans</div>
         <div class="mail-sub">Lucifela</div>
     </label>
 
