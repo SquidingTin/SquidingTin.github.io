@@ -3369,7 +3369,6 @@ rakau: `
 
 
 
-
 <style>
 body {
     margin: 0;
@@ -3743,6 +3742,11 @@ h2 {
 }
 
 
+#m47:checked ~ .viewer .m47 {
+    display: block;
+}
+
+
 /* =======================
    CATEGORY FILTERING
    ======================= */
@@ -3895,6 +3899,7 @@ h2 {
 <input type="radio" name="mail" id="m44">
 <input type="radio" name="mail" id="m45">
 <input type="radio" name="mail" id="m46">
+<input type="radio" name="mail" id="m47">
 
 <div class="categories">
     <label for="cat-all">All Mail</label>
@@ -3917,9 +3922,9 @@ h2 {
         <div class="mail-sub">Squid</div>
     </label>
 
-    <label class="mail news Mesa_Times" for="m2">
-        <div class="mail-title">Mesa Times 6/5/2026</div>
-        <div class="mail-sub">Mesa Times</div>
+    <label class="mail updates Lucifela" for="m2">
+        <div class="mail-title">Welcome To The OverNet [PINNED]</div>
+        <div class="mail-sub">Lucifela</div>
     </label>
 
     <label class="mail news Mesa_Times" for="m3">
@@ -3928,216 +3933,221 @@ h2 {
     </label>
 
     <label class="mail news Mesa_Times" for="m4">
-        <div class="mail-title">Mesa Times 6/4/2026</div>
+        <div class="mail-title">Mesa Times 6/5/2026</div>
         <div class="mail-sub">Mesa Times</div>
     </label>
 
     <label class="mail news Mesa_Times" for="m5">
+        <div class="mail-title">Mesa Times 6/4/2026</div>
+        <div class="mail-sub">Mesa Times</div>
+    </label>
+
+    <label class="mail news Mesa_Times" for="m6">
         <div class="mail-title">Mesa Times 6/3/2026</div>
         <div class="mail-sub">Mesa Times</div>
     </label>
 
-    <label class="mail news Bedrock_Chronicle" for="m6">
+    <label class="mail news Bedrock_Chronicle" for="m7">
         <div class="mail-title">The Bedrock Chronicles 6/2/26</div>
         <div class="mail-sub">Bedrock Chronicle</div>
     </label>
 
-    <label class="mail news Mesa_Times" for="m7">
+    <label class="mail news Mesa_Times" for="m8">
         <div class="mail-title">Mesa Times 6/2/2026</div>
         <div class="mail-sub">Mesa Times</div>
     </label>
 
-    <label class="mail news Cactus_News_Networks" for="m8">
+    <label class="mail news Cactus_News_Networks" for="m9">
         <div class="mail-title">Cactus News Networks 6/1/2026</div>
         <div class="mail-sub">Cactus News Networks</div>
     </label>
 
-    <label class="mail news Glacial_Press" for="m9">
+    <label class="mail news Glacial_Press" for="m10">
         <div class="mail-title">Glacial Press No. 7</div>
         <div class="mail-sub">Glacial Press</div>
     </label>
 
-    <label class="mail news International_News_Network" for="m10">
+    <label class="mail news International_News_Network" for="m11">
         <div class="mail-title">The International Volume 6</div>
         <div class="mail-sub">International News Network</div>
     </label>
 
-    <label class="mail news Bedrock_Chronicle" for="m11">
+    <label class="mail news Bedrock_Chronicle" for="m12">
         <div class="mail-title">The Bedrock Chronicles 6/1/26</div>
         <div class="mail-sub">Bedrock Chronicle</div>
     </label>
 
-    <label class="mail news Bedrock_Chronicle" for="m12">
+    <label class="mail news Bedrock_Chronicle" for="m13">
         <div class="mail-title">The Bedrock Chronicles 5/31/26</div>
         <div class="mail-sub">Bedrock Chronicle</div>
     </label>
 
-    <label class="mail updates JosBot" for="m13">
+    <label class="mail updates JosBot" for="m14">
         <div class="mail-title">Who am I?</div>
         <div class="mail-sub">JosBot</div>
     </label>
 
-    <label class="mail news Bedrock_Chronicle" for="m14">
+    <label class="mail news Bedrock_Chronicle" for="m15">
         <div class="mail-title">The Bedrock Chronicles 5/30/26</div>
         <div class="mail-sub">Bedrock Chronicle</div>
     </label>
 
-    <label class="mail news International_News_Network" for="m15">
+    <label class="mail news International_News_Network" for="m16">
         <div class="mail-title">The International Volume 5</div>
         <div class="mail-sub">International News Network</div>
     </label>
 
-    <label class="mail news The_Slimery_Times" for="m16">
+    <label class="mail news The_Slimery_Times" for="m17">
         <div class="mail-title">The Slimery Times No. 7</div>
         <div class="mail-sub">The Slimery Times</div>
     </label>
 
-    <label class="mail news Bedrock_Chronicle" for="m17">
+    <label class="mail news Bedrock_Chronicle" for="m18">
         <div class="mail-title">The Bedrock Chronicles 5/29/26</div>
         <div class="mail-sub">Bedrock Chronicle</div>
     </label>
 
-    <label class="mail news International_News_Network" for="m18">
+    <label class="mail news International_News_Network" for="m19">
         <div class="mail-title">The International Volume 4</div>
         <div class="mail-sub">International News Network</div>
     </label>
 
-    <label class="mail news Mesa_Times" for="m19">
+    <label class="mail news Mesa_Times" for="m20">
         <div class="mail-title">Mesa Times 5/28/2026</div>
         <div class="mail-sub">Mesa Times</div>
     </label>
 
-    <label class="mail news Bedrock_Chronicle" for="m20">
+    <label class="mail news Bedrock_Chronicle" for="m21">
         <div class="mail-title">The Bedrock Chronicles 5/28/26</div>
         <div class="mail-sub">Bedrock Chronicle</div>
     </label>
 
-    <label class="mail news Weekly_Sylven" for="m21">
+    <label class="mail news Weekly_Sylven" for="m22">
         <div class="mail-title">The Weekly Sylven W0 pt2</div>
         <div class="mail-sub">Weekly Sylven</div>
     </label>
 
-    <label class="mail news Bedrock_Chronicle" for="m22">
+    <label class="mail news Bedrock_Chronicle" for="m23">
         <div class="mail-title">The Bedrock Chronicles 5/26/26</div>
         <div class="mail-sub">Bedrock Chronicle</div>
     </label>
 
-    <label class="mail promotional Iron_Co_Company_Email" for="m23">
+    <label class="mail promotional Iron_Co_Company_Email" for="m24">
         <div class="mail-title">Iron Co Update</div>
         <div class="mail-sub">Iron Co Company Email</div>
     </label>
 
-    <label class="mail news International_News_Network" for="m24">
+    <label class="mail news International_News_Network" for="m25">
         <div class="mail-title">The International Volume 3</div>
         <div class="mail-sub">International News Network</div>
     </label>
 
-    <label class="mail news Weekly_Sylven" for="m25">
+    <label class="mail news Weekly_Sylven" for="m26">
         <div class="mail-title">The Weekly Sylven W0</div>
         <div class="mail-sub">Weekly Sylven</div>
     </label>
 
-    <label class="mail news Mesa_Times" for="m26">
+    <label class="mail news Mesa_Times" for="m27">
         <div class="mail-title">Mesa Times 5/25/2026</div>
         <div class="mail-sub">Mesa Times</div>
     </label>
 
-    <label class="mail news International_News_Network" for="m27">
+    <label class="mail news International_News_Network" for="m28">
         <div class="mail-title">The International Volume 2</div>
         <div class="mail-sub">International News Network</div>
     </label>
 
-    <label class="mail news International_News_Network" for="m28">
+    <label class="mail news International_News_Network" for="m29">
         <div class="mail-title">The International Volume 1</div>
         <div class="mail-sub">International News Network</div>
     </label>
 
-    <label class="mail news Glacial_Press" for="m29">
+    <label class="mail news Glacial_Press" for="m30">
         <div class="mail-title">Glacial Press No. 6</div>
         <div class="mail-sub">Glacial Press</div>
     </label>
 
-    <label class="mail news Mesa_Times" for="m30">
+    <label class="mail news Mesa_Times" for="m31">
         <div class="mail-title">Mesa Times 5/23/2026</div>
         <div class="mail-sub">Mesa Times</div>
     </label>
 
-    <label class="mail news Cherry_Bomb" for="m31">
+    <label class="mail news Cherry_Bomb" for="m32">
         <div class="mail-title">The Daily Cherry Bomb No. 7</div>
         <div class="mail-sub">Cherry Bomb</div>
     </label>
 
-    <label class="mail news Mesa_Times" for="m32">
+    <label class="mail news Mesa_Times" for="m33">
         <div class="mail-title">Mesa Times 5/22/2026</div>
         <div class="mail-sub">Mesa Times</div>
     </label>
 
-    <label class="mail news Glacial_Press" for="m33">
+    <label class="mail news Glacial_Press" for="m34">
         <div class="mail-title">Glacial Press No. 5</div>
         <div class="mail-sub">Glacial Press</div>
     </label>
 
-    <label class="mail news Cherry_Bomb" for="m34">
+    <label class="mail news Cherry_Bomb" for="m35">
         <div class="mail-title">The Daily Cherry Bomb No. 6</div>
         <div class="mail-sub">Cherry Bomb</div>
     </label>
 
-    <label class="mail news Mesa_Times" for="m35">
+    <label class="mail news Mesa_Times" for="m36">
         <div class="mail-title">Mesa Times 5/20/2026</div>
         <div class="mail-sub">Mesa Times</div>
     </label>
 
-    <label class="mail news Glacial_Press" for="m36">
+    <label class="mail news Glacial_Press" for="m37">
         <div class="mail-title">Glacial Press No. 4</div>
         <div class="mail-sub">Glacial Press</div>
     </label>
 
-    <label class="mail news Cherry_Bomb" for="m37">
+    <label class="mail news Cherry_Bomb" for="m38">
         <div class="mail-title">The Daily Cherry Bomb No. 5</div>
         <div class="mail-sub">Cherry Bomb</div>
     </label>
 
-    <label class="mail news Glacial_Press" for="m38">
+    <label class="mail news Glacial_Press" for="m39">
         <div class="mail-title">Glacial Press No. 3</div>
         <div class="mail-sub">Glacial Press</div>
     </label>
 
-    <label class="mail news Mesa_Times" for="m39">
+    <label class="mail news Mesa_Times" for="m40">
         <div class="mail-title">Mesa Times 5/19/2026</div>
         <div class="mail-sub">Mesa Times</div>
     </label>
 
-    <label class="mail news Cherry_Bomb" for="m40">
+    <label class="mail news Cherry_Bomb" for="m41">
         <div class="mail-title">The Daily Cherry Bomb No. 4</div>
         <div class="mail-sub">Cherry Bomb</div>
     </label>
 
-    <label class="mail news Cherry_Bomb" for="m41">
+    <label class="mail news Cherry_Bomb" for="m42">
         <div class="mail-title">The Daily Cherry Bomb No. 3</div>
         <div class="mail-sub">Cherry Bomb</div>
     </label>
 
-    <label class="mail news Mesa_Times" for="m42">
+    <label class="mail news Mesa_Times" for="m43">
         <div class="mail-title">Mesa Times 5/18/2026</div>
         <div class="mail-sub">Mesa Times</div>
     </label>
 
-    <label class="mail news Glacial_Press" for="m43">
+    <label class="mail news Glacial_Press" for="m44">
         <div class="mail-title">Glacial Press No. 2</div>
         <div class="mail-sub">Glacial Press</div>
     </label>
 
-    <label class="mail news Cherry_Bomb" for="m44">
+    <label class="mail news Cherry_Bomb" for="m45">
         <div class="mail-title">The Daily Cherry Bomb No. 2</div>
         <div class="mail-sub">Cherry Bomb</div>
     </label>
 
-    <label class="mail news Glacial_Press" for="m45">
+    <label class="mail news Glacial_Press" for="m46">
         <div class="mail-title">Glacial Press No. 1</div>
         <div class="mail-sub">Glacial Press</div>
     </label>
 
-    <label class="mail news Cherry_Bomb" for="m46">
+    <label class="mail news Cherry_Bomb" for="m47">
         <div class="mail-title">The Daily Cherry Bomb No. 1</div>
         <div class="mail-sub">Cherry Bomb</div>
     </label>
@@ -4162,6 +4172,18 @@ h2 {
     </div>
 
     <div class="viewer-panel m2">
+        <h2>Future plans for the SMP</h2>
+
+        <div class="mail-images">
+        
+        </div>
+
+        <div class="mail-content">
+            I'd like to set some things straight regarding the recent reaction of the future plans for this SMP:<br><br>First of all, not all of what was said has been decided upon-- this means that the details of what happens can change immensely, as we want this server to be player-run, but we also do not want players to delete their server in anger, causing a loss of weeks worth of work. We have seen and understood your concerns on why we wish to move forward with the plan to take ownership of the servers. <br><br>With over 11,000 members and counting, we want to ensure everyone has a fun and peaceful experience. We don't want anyone to be uncomfortable within their nation. We recognize that this seems like a huge overreach of power but it is something that must be done. Due to an uncountable number of reports from players regarding others in different nation servers, whether it's harassment to outright illegal articles, the abuse of moderation in order to suppress others, and more, we want the owners of the servers to transfer ownership.<br><br>What does this mean for you?<br> We do not want to take power away from the people, however we wish to ensure that the players can moderate effectively and without abuse. The installment of of Daily Emerald SMP staff members for moderation of the nations is something that is still being talked about and may not happen at all. I'd like to iterate that if this does happen, we'll prioritize moderators to be from the same biome. They will also not have full admin access, but instead, permissions to manage the players in order to remove, warn, or mute, them for any rule broken.<br><br>As mentioned in some sources, we plan to reform the staff team to be one of high standards and versatility.
+        </div>
+    </div>
+
+    <div class="viewer-panel m3">
         <h2>Mesa Times 6-5-2026</h2>
 
         <div class="mail-images">
@@ -4177,7 +4199,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m3">
+    <div class="viewer-panel m4">
         <h2>Mesa Times 6-5-2026</h2>
 
         <div class="mail-images">
@@ -4189,7 +4211,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m4">
+    <div class="viewer-panel m5">
         <h2>Mesa Times 6-4-2026</h2>
 
         <div class="mail-images">
@@ -4204,7 +4226,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m5">
+    <div class="viewer-panel m6">
         <h2>Mesa Times 6-3-2026</h2>
 
         <div class="mail-images">
@@ -4218,7 +4240,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m6">
+    <div class="viewer-panel m7">
         <h2>The Bedrock Chronicles 6-2-26</h2>
 
         <div class="mail-images">
@@ -4230,7 +4252,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m7">
+    <div class="viewer-panel m8">
         <h2>Mesa Times 6-2-2026</h2>
 
         <div class="mail-images">
@@ -4244,7 +4266,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m8">
+    <div class="viewer-panel m9">
         <h2>Cactus News 6-1-2026</h2>
 
         <div class="mail-images">
@@ -4256,7 +4278,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m9">
+    <div class="viewer-panel m10">
         <h2>The International 6/01/26</h2>
 
         <div class="mail-images">
@@ -4268,7 +4290,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m10">
+    <div class="viewer-panel m11">
         <h2>The International 6/01/26</h2>
 
         <div class="mail-images">
@@ -4283,7 +4305,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m11">
+    <div class="viewer-panel m12">
         <h2>The Bedrock Chronicles 6-1-26</h2>
 
         <div class="mail-images">
@@ -4295,7 +4317,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m12">
+    <div class="viewer-panel m13">
         <h2>The Bedrock Chronicles 5-31-26</h2>
 
         <div class="mail-images">
@@ -4307,7 +4329,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m13">
+    <div class="viewer-panel m14">
         <h2>Who am I?</h2>
 
         <div class="mail-images">
@@ -4319,7 +4341,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m14">
+    <div class="viewer-panel m15">
         <h2>The Bedrock Chronicles 5-30-26</h2>
 
         <div class="mail-images">
@@ -4331,7 +4353,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m15">
+    <div class="viewer-panel m16">
         <h2>The International 5/29/26</h2>
 
         <div class="mail-images">
@@ -4345,7 +4367,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m16">
+    <div class="viewer-panel m17">
         <h2>The Slimery Times 5-29-26</h2>
 
         <div class="mail-images">
@@ -4359,7 +4381,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m17">
+    <div class="viewer-panel m18">
         <h2>The Bedrock Chronicles 5-29-26</h2>
 
         <div class="mail-images">
@@ -4371,7 +4393,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m18">
+    <div class="viewer-panel m19">
         <h2>The International 5/28/26</h2>
 
         <div class="mail-images">
@@ -4386,7 +4408,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m19">
+    <div class="viewer-panel m20">
         <h2>Mesa Times 5-28-2026</h2>
 
         <div class="mail-images">
@@ -4401,7 +4423,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m20">
+    <div class="viewer-panel m21">
         <h2>The Bedrock Chronicles 5-28-26</h2>
 
         <div class="mail-images">
@@ -4413,7 +4435,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m21">
+    <div class="viewer-panel m22">
         <h2>The Weekly Sylven 5/27/26</h2>
 
         <div class="mail-images">
@@ -4425,7 +4447,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m22">
+    <div class="viewer-panel m23">
         <h2>The Bedrock Chronicles 5-26-26</h2>
 
         <div class="mail-images">
@@ -4437,7 +4459,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m23">
+    <div class="viewer-panel m24">
         <h2>Iron Co Update</h2>
 
         <div class="mail-images">
@@ -4449,7 +4471,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m24">
+    <div class="viewer-panel m25">
         <h2>The International 5/26/26</h2>
 
         <div class="mail-images">
@@ -4463,7 +4485,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m25">
+    <div class="viewer-panel m26">
         <h2>The Weekly Sylven Week 0</h2>
 
         <div class="mail-images">
@@ -4475,7 +4497,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m26">
+    <div class="viewer-panel m27">
         <h2>Mesa Times 5-25-2026</h2>
 
         <div class="mail-images">
@@ -4488,7 +4510,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m27">
+    <div class="viewer-panel m28">
         <h2>The International 5/25/26</h2>
 
         <div class="mail-images">
@@ -4501,7 +4523,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m28">
+    <div class="viewer-panel m29">
         <h2>The International 5/24/26</h2>
 
         <div class="mail-images">
@@ -4514,7 +4536,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m29">
+    <div class="viewer-panel m30">
         <h2>The International 5/23/26</h2>
 
         <div class="mail-images">
@@ -4526,7 +4548,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m30">
+    <div class="viewer-panel m31">
         <h2>Mesa Times 5-23-2026</h2>
 
         <div class="mail-images">
@@ -4544,7 +4566,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m31">
+    <div class="viewer-panel m32">
         <h2>The Daily Cherry Bomb No. 7</h2>
 
         <div class="mail-images">
@@ -4556,7 +4578,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m32">
+    <div class="viewer-panel m33">
         <h2>Mesa Times 5-22-2026</h2>
 
         <div class="mail-images">
@@ -4573,7 +4595,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m33">
+    <div class="viewer-panel m34">
         <h2>The International 5/22/26</h2>
 
         <div class="mail-images">
@@ -4585,7 +4607,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m34">
+    <div class="viewer-panel m35">
         <h2>The Daily Cherry Bomb No. 6</h2>
 
         <div class="mail-images">
@@ -4597,7 +4619,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m35">
+    <div class="viewer-panel m36">
         <h2>Mesa Times 5-20-2026</h2>
 
         <div class="mail-images">
@@ -4612,7 +4634,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m36">
+    <div class="viewer-panel m37">
         <h2>The International 5/20/26</h2>
 
         <div class="mail-images">
@@ -4624,7 +4646,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m37">
+    <div class="viewer-panel m38">
         <h2>The Daily Cherry Bomb No. 5</h2>
 
         <div class="mail-images">
@@ -4636,7 +4658,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m38">
+    <div class="viewer-panel m39">
         <h2>The International 5/19/26</h2>
 
         <div class="mail-images">
@@ -4648,7 +4670,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m39">
+    <div class="viewer-panel m40">
         <h2>Mesa Times 5-19-2026</h2>
 
         <div class="mail-images">
@@ -4661,7 +4683,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m40">
+    <div class="viewer-panel m41">
         <h2>The Daily Cherry Bomb No. 4</h2>
 
         <div class="mail-images">
@@ -4673,7 +4695,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m41">
+    <div class="viewer-panel m42">
         <h2>The Daily Cherry Bomb No. 3</h2>
 
         <div class="mail-images">
@@ -4685,7 +4707,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m42">
+    <div class="viewer-panel m43">
         <h2>Mesa Times 5-18-2026</h2>
 
         <div class="mail-images">
@@ -4697,7 +4719,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m43">
+    <div class="viewer-panel m44">
         <h2>The International 5/18/26</h2>
 
         <div class="mail-images">
@@ -4709,7 +4731,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m44">
+    <div class="viewer-panel m45">
         <h2>The Daily Cherry Bomb No. 2</h2>
 
         <div class="mail-images">
@@ -4721,7 +4743,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m45">
+    <div class="viewer-panel m46">
         <h2>The International 5/17/26</h2>
 
         <div class="mail-images">
@@ -4733,7 +4755,7 @@ h2 {
         </div>
     </div>
 
-    <div class="viewer-panel m46">
+    <div class="viewer-panel m47">
         <h2>The Daily Cherry Bomb No. 1</h2>
 
         <div class="mail-images">
