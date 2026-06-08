@@ -13,14 +13,18 @@
 				{ name: "Blossomgate Propaganda.png", path: "images/Official_propaganda_for_Blossomgate.png", type: "image" },
 			]
 		},
-		{ name: "New Spawn City.png", path: "images/newspawncity.png", type: "image" },
-		{ name: "New Spawn City 2.png", path: "images/newspawncity2.png", type: "image" },
 		{ name: "Mesa.png", path: "images/mesa.png", type: "image" },
 		{ name: "Taiga.png", path: "images/forest.png", type: "image" },
 		{ name: "Mountains.png", path: "images/mountains.png", type: "image" },
 		{ name: "Dark Forest.png", path: "images/darkforest.png", type: "image" },
 		{ name: "Plains.png", path: "images/plains.png", type: "image" },
 		{ name: "Cherry Grove.png", path: "images/cherrygrove.png", type: "image" },
+		
+		{ name: "Spawn Factory.png", path: "images/New_newspawncity1.png", type: "image" },
+		{ name: "Spawn Tower.png", path: "images/New_newspawncity2.png", type: "image" },
+		{ name: "Spawn Market.png", path: "images/New_newspawncity3.png", type: "image" },
+		{ name: "Spawn Arcade.png", path: "images/New_newspawncity4.png", type: "image" },
+		
 		
 		{ name: "Map V2.png", path: "images/Map_V2_Combo.png", type: "image" },
 		{ name: "New Spawn Map V2.png", path: "images/newspawncity_map.png", type: "image" },
@@ -3366,7 +3370,6 @@ rakau: `
 
 
 
-
 <style>
 body {
     margin: 0;
@@ -3456,7 +3459,12 @@ input[type="radio"] {
 
 h2 { color: #ff5555; margin-top: 0; }
 
-/* VIEW SWITCH */
+/* TRASH */
+.mail.trash {
+    opacity: 0.6;
+    font-style: italic;
+}
+/* DEFAULT VIEW */
 #none:checked ~ .viewer .default { display: block; }
 
 
@@ -3795,7 +3803,44 @@ h2 { color: #ff5555; margin-top: 0; }
 }
 
 
-#cat-all:checked ~ .inbox .mail { display: block; }
+#m68:checked ~ .viewer .m68 {
+    display: block;
+}
+
+
+#m69:checked ~ .viewer .m69 {
+    display: block;
+}
+
+
+#m70:checked ~ .viewer .m70 {
+    display: block;
+}
+
+
+#m71:checked ~ .viewer .m71 {
+    display: block;
+}
+
+
+#m72:checked ~ .viewer .m72 {
+    display: block;
+}
+
+
+#m73:checked ~ .viewer .m73 {
+    display: block;
+}
+
+
+#m74:checked ~ .viewer .m74 {
+    display: block;
+}
+
+
+#cat-all:checked ~ .inbox .mail {
+    display: block;
+}
 
 
 #cat-news:checked ~ .inbox .mail {
@@ -3980,6 +4025,13 @@ h2 { color: #ff5555; margin-top: 0; }
 <input type="radio" name="mail" id="m65">
 <input type="radio" name="mail" id="m66">
 <input type="radio" name="mail" id="m67">
+<input type="radio" name="mail" id="m68">
+<input type="radio" name="mail" id="m69">
+<input type="radio" name="mail" id="m70">
+<input type="radio" name="mail" id="m71">
+<input type="radio" name="mail" id="m72">
+<input type="radio" name="mail" id="m73">
+<input type="radio" name="mail" id="m74">
 
 <div class="categories">
     <label for="cat-all">All Mail</label>
@@ -4281,57 +4333,92 @@ h2 { color: #ff5555; margin-top: 0; }
         <div class="mail-sub">Mesa Times</div>
     </label>
 
-    <label class="mail news Cactus_News" for="m57">
+    <label class="mail trash Icy_News" for="m57">
+        <div class="mail-title">Icy News 5/18/2026</div>
+        <div class="mail-sub">Icy News</div>
+    </label>
+
+    <label class="mail news Cactus_News" for="m58">
         <div class="mail-title">Cactus News 5/18/2026</div>
         <div class="mail-sub">Cactus News</div>
     </label>
 
-    <label class="mail news Glacial_Press" for="m58">
+    <label class="mail news Glacial_Press" for="m59">
         <div class="mail-title">Glacial Press No. 2</div>
         <div class="mail-sub">Glacial Press</div>
     </label>
 
-    <label class="mail news Cherry_Bomb" for="m59">
+    <label class="mail news Cherry_Bomb" for="m60">
         <div class="mail-title">The Daily Cherry Bomb No. 2</div>
         <div class="mail-sub">Cherry Bomb</div>
     </label>
 
-    <label class="mail news Cactus_News" for="m60">
+    <label class="mail news Cactus_News" for="m61">
         <div class="mail-title">Cactus News 5/17/2026</div>
         <div class="mail-sub">Cactus News</div>
     </label>
 
-    <label class="mail news Glacial_Press" for="m61">
+    <label class="mail news Glacial_Press" for="m62">
         <div class="mail-title">Glacial Press No. 1</div>
         <div class="mail-sub">Glacial Press</div>
     </label>
 
-    <label class="mail news Cactus_News" for="m62">
+    <label class="mail trash Icy_News" for="m63">
+        <div class="mail-title">Icy News 5/17/2026</div>
+        <div class="mail-sub">Icy News</div>
+    </label>
+
+    <label class="mail news Cactus_News" for="m64">
         <div class="mail-title">Cactus News 5/16/2026</div>
         <div class="mail-sub">Cactus News</div>
     </label>
 
-    <label class="mail news Mushroom_Times" for="m63">
+    <label class="mail trash Icy_News" for="m65">
+        <div class="mail-title">Icy News 5/16/2026</div>
+        <div class="mail-sub">Icy News</div>
+    </label>
+
+    <label class="mail news Mushroom_Times" for="m66">
         <div class="mail-title">Mushroom Times 5/15/2026</div>
         <div class="mail-sub">Mushroom Times</div>
     </label>
 
-    <label class="mail news Mushroom_Times" for="m64">
+    <label class="mail trash Icy_News" for="m67">
+        <div class="mail-title">Icy News 5/15/2026</div>
+        <div class="mail-sub">Icy News</div>
+    </label>
+
+    <label class="mail trash Icy_News" for="m68">
+        <div class="mail-title">Icy News 5/14/2026</div>
+        <div class="mail-sub">Icy News</div>
+    </label>
+
+    <label class="mail news Mushroom_Times" for="m69">
         <div class="mail-title">Mushroom Times 5/13/2026</div>
         <div class="mail-sub">Mushroom Times</div>
     </label>
 
-    <label class="mail news Mushroom_Times" for="m65">
+    <label class="mail trash Icy_News" for="m70">
+        <div class="mail-title">Icy News 5/13/2026</div>
+        <div class="mail-sub">Icy News</div>
+    </label>
+
+    <label class="mail news Mushroom_Times" for="m71">
         <div class="mail-title">Mushroom Times 5/12/2026</div>
         <div class="mail-sub">Mushroom Times</div>
     </label>
 
-    <label class="mail news Mushroom_Times" for="m66">
+    <label class="mail trash Icy_News" for="m72">
+        <div class="mail-title">Icy News 5/12/2026</div>
+        <div class="mail-sub">Icy News</div>
+    </label>
+
+    <label class="mail news Mushroom_Times" for="m73">
         <div class="mail-title">Mushroom Times 5/11/2025</div>
         <div class="mail-sub">Mushroom Times</div>
     </label>
 
-    <label class="mail news Cherry_Bomb" for="m67">
+    <label class="mail news Cherry_Bomb" for="m74">
         <div class="mail-title">The Daily Cherry Bomb No. 1</div>
         <div class="mail-sub">Cherry Bomb</div>
     </label>
@@ -5069,6 +5156,18 @@ h2 { color: #ff5555; margin-top: 0; }
     </div>
 
     <div class="viewer-panel m57">
+        <h2>Icy News 5-18-2026</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Icy_News/5-18-26.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Icy News newspaper for 5/18/2026 covers: The Jungle biomes regime changes.
+        </div>
+    </div>
+
+    <div class="viewer-panel m58">
         <h2>Cactus News 5-18-2026</h2>
 
         <div class="mail-images">
@@ -5081,7 +5180,7 @@ h2 { color: #ff5555; margin-top: 0; }
         </div>
     </div>
 
-    <div class="viewer-panel m58">
+    <div class="viewer-panel m59">
         <h2>The Glacial Press 5/18/26</h2>
 
         <div class="mail-images">
@@ -5093,7 +5192,7 @@ h2 { color: #ff5555; margin-top: 0; }
         </div>
     </div>
 
-    <div class="viewer-panel m59">
+    <div class="viewer-panel m60">
         <h2>The Daily Cherry Bomb No. 2</h2>
 
         <div class="mail-images">
@@ -5105,7 +5204,7 @@ h2 { color: #ff5555; margin-top: 0; }
         </div>
     </div>
 
-    <div class="viewer-panel m60">
+    <div class="viewer-panel m61">
         <h2>Cactus News 5-17-2026</h2>
 
         <div class="mail-images">
@@ -5117,7 +5216,7 @@ h2 { color: #ff5555; margin-top: 0; }
         </div>
     </div>
 
-    <div class="viewer-panel m61">
+    <div class="viewer-panel m62">
         <h2>The Glacial Press 5/17/26</h2>
 
         <div class="mail-images">
@@ -5129,7 +5228,19 @@ h2 { color: #ff5555; margin-top: 0; }
         </div>
     </div>
 
-    <div class="viewer-panel m62">
+    <div class="viewer-panel m63">
+        <h2>Icy News 5-17-2026</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Icy_News/5-17-26.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Icy News newspaper for 5/17/2026 covers: Laws and Nations.
+        </div>
+    </div>
+
+    <div class="viewer-panel m64">
         <h2>Cactus News 5-16-2026</h2>
 
         <div class="mail-images">
@@ -5141,7 +5252,19 @@ h2 { color: #ff5555; margin-top: 0; }
         </div>
     </div>
 
-    <div class="viewer-panel m63">
+    <div class="viewer-panel m65">
+        <h2>Icy News 5-16-2026</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Icy_News/5-16-26.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Icy News newspaper for 5/16/2026 covers: Variedy was found guilty.
+        </div>
+    </div>
+
+    <div class="viewer-panel m66">
         <h2>Mushroom Times 5-15-2026</h2>
 
         <div class="mail-images">
@@ -5153,7 +5276,31 @@ h2 { color: #ff5555; margin-top: 0; }
         </div>
     </div>
 
-    <div class="viewer-panel m64">
+    <div class="viewer-panel m67">
+        <h2>Icy News 5-15-2026</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Icy_News/5-15-26.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Icy News newspaper for 5/15/2026 covers: The nations laws.
+        </div>
+    </div>
+
+    <div class="viewer-panel m68">
+        <h2>Icy News 5-14-2026</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Icy_News/5-14-26.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Icy News newspaper for 5/14/2026 covers: The growth of Apercube Science.
+        </div>
+    </div>
+
+    <div class="viewer-panel m69">
         <h2>Mushroom Times 5-13-2026</h2>
 
         <div class="mail-images">
@@ -5165,7 +5312,19 @@ h2 { color: #ff5555; margin-top: 0; }
         </div>
     </div>
 
-    <div class="viewer-panel m65">
+    <div class="viewer-panel m70">
+        <h2>Icy News 5-13-2026</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Icy_News/5-13-26.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Icy News newspaper for 5/13/2026 covers: The council cutting ties with the United Biomes.
+        </div>
+    </div>
+
+    <div class="viewer-panel m71">
         <h2>Mushroom Times 5-12-2026</h2>
 
         <div class="mail-images">
@@ -5177,7 +5336,19 @@ h2 { color: #ff5555; margin-top: 0; }
         </div>
     </div>
 
-    <div class="viewer-panel m66">
+    <div class="viewer-panel m72">
+        <h2>Icy News 5-12-2026</h2>
+
+        <div class="mail-images">
+            <img src="images/news/Icy_News/5-12-26.png" style="width:33%; height:auto; object-fit:cover;">
+        </div>
+
+        <div class="mail-content">
+            The Icy News newspaper for 5/12/2026 covers: A council has been elected.
+        </div>
+    </div>
+
+    <div class="viewer-panel m73">
         <h2>Mushroom Times 5-11-2025</h2>
 
         <div class="mail-images">
@@ -5189,7 +5360,7 @@ h2 { color: #ff5555; margin-top: 0; }
         </div>
     </div>
 
-    <div class="viewer-panel m67">
+    <div class="viewer-panel m74">
         <h2>The Daily Cherry Bomb No. 1</h2>
 
         <div class="mail-images">
@@ -5213,6 +5384,9 @@ h2 { color: #ff5555; margin-top: 0; }
 		{ name: "2026-05-09 18.33.42.png", path: "images/2026-05-09_18.33.42.png" },
 		{ name: "2026-05-23 06.49.02.png", path: "images/2026-05-23_06.49.02.png" },
 		{ name: "World Map.png", path: "images/map.png"},
+		{ name: "New Spawn City.png", path: "images/newspawncity.png", type: "image" },
+		{ name: "New Spawn City 2.png", path: "images/newspawncity2.png", type: "image" },
+		
 		//{ name: "Anthem of Rakau.mp3", path: "audio/forest.mp3", type: "audio" }
 	];
 
