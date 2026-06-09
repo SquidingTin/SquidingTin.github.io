@@ -4,11 +4,75 @@
 		"title": "Welcome To The OverNet [PINNED]",
 		"sub": "Squid",
 		"viewerTitle": "Welcome [USER]",
-		"content": "Hello, and welcome to the OverNet.<br>I am Squid, I am a resident of Rakau nation and this is my personal project for the Daily Emerald SMP and its news. This project is meant to look like Windows 95 though not a 1-1 recreation.<br><br>If you have a suggestion, find a bug, or anything else, my contact is squid6245 on discord, <br>or just ping the user with [W 3.14] in their name."
+		"content": "Hello, and welcome to the OverNet.<br>I am Squid, I am a resident of Rakau nation and this is my personal project for the Daily Emerald SMP and its news. This project is meant to look like Windows 95 though not a 1-1 recreation.<br><br>If you have a suggestion, find a bug, or anything else, my contact is squid6245 on discord."
+	},
+	{
+		"category": "news",
+		"title": "The International Volume 7",
+		"sub": "International News Network",
+		"viewerTitle": "The International 6/08/26",
+		"images": [
+			"images/news/The_International/6_08_26_1.jpg",
+			"images/news/The_International/6_08_26_2.jpg",
+			"images/news/The_International/6_08_26_3.jpg",
+			"images/news/The_International/6_08_26_4.jpg"
+		],
+		"content": "The International newspaper for 6/08/26 covers: Admin interference, The trident, New Spawn City images, The 2026 Overworld Cup, and much more"
+	},
+	{
+		"category": "news",
+		"title": "Glacial Press No. 8",
+		"sub": "Glacial Press",
+		"viewerTitle": "The Glacial Press 6/8/26",
+		"images": [
+			"images/news/Glacial_Press/GPnews_June_7.png"
+		],
+		"content": "The Glacial Press for 6/8/26 covers: The supreme courts 5 new judges."
+	},
+	{
+		"category": "news",
+		"title": "The Great Sylven W3",
+		"sub": "Great Sylven",
+		"viewerTitle": "The Great Sylven 6/7/26",
+		"images": [
+			"images/news/Sylven/Great_Sylven_W3.png"
+		],
+		"content": "The Great Sylven newspaper for 6/7/26 covers: An increasing reports of anomalous activities."
+	},
+	{
+		"category": "news",
+		"title": "Cactus News Networks 6/7/2026",
+		"sub": "Cactus News Networks",
+		"viewerTitle": "Cactus News 6-7-2026",
+		"images": [
+			"images/news/Cactus_News/6-7-26_1.png",
+			"images/news/Cactus_News/6-7-26_2.png"
+		],
+		"content": "The Cactus News newspaper for 6/7/2026 covers: The Overworld cups annoucment, the annoucment made by President Fox of the Desert nation, and more."
+	},
+	{
+		"category": "news",
+		"title": "The Bedrock Chronicle 6/7/2026",
+		"sub": "Bedrock Chronicle",
+		"viewerTitle": "The Bedrock Chronicle 6-7-2026",
+		"images": [
+			"images/news/bedrock_chronicle/Bedrock_Chronicle_6-7-26.png"
+		],
+		"content": "The Bedrock Chronicle newspaper for 6/7/2026 covers: The unification in sports, and the feelings towrads these types of events."
+	},
+	{
+		"category": "news",
+		"title": "Mesa Times 6/7/2026",
+		"sub": "Mesa Times",
+		"viewerTitle": "Mesa Times 6-7-2026",
+		"images": [
+			"images/news/Mesa_Times/6-7-26_1.png"
+		],
+		"content": "The Mesa Times newspaper for 6/7/2026 covers: The new images of the Mesa and Desert biomes and that the diplomats will be speaking soon, along with that we have a link to the Swamp biomes Constitution.<br><br>[Swamp biomes Constitution https://docs.google.com/document/d/1rMS74x-2K58fspE9P-3Dl4liCiUNFgey_rHfD6Eccdo]"
 	},
 	{
 		"category": "updates",
-		"title": "Welcome To The OverNet [PINNED]",
+		"title": "Future Plans",
 		"sub": "Lucifela",
 		"viewerTitle": "Future plans for the SMP",
 		"content": "I'd like to set some things straight regarding the recent reaction of the future plans for this SMP:<br><br>First of all, not all of what was said has been decided upon-- this means that the details of what happens can change immensely, as we want this server to be player-run, but we also do not want players to delete their server in anger, causing a loss of weeks worth of work. We have seen and understood your concerns on why we wish to move forward with the plan to take ownership of the servers. <br><br>With over 11,000 members and counting, we want to ensure everyone has a fun and peaceful experience. We don't want anyone to be uncomfortable within their nation. We recognize that this seems like a huge overreach of power but it is something that must be done. Due to an uncountable number of reports from players regarding others in different nation servers, whether it's harassment to outright illegal articles, the abuse of moderation in order to suppress others, and more, we want the owners of the servers to transfer ownership.<br><br>What does this mean for you?<br> We do not want to take power away from the people, however we wish to ensure that the players can moderate effectively and without abuse. The installment of of Daily Emerald SMP staff members for moderation of the nations is something that is still being talked about and may not happen at all. I'd like to iterate that if this does happen, we'll prioritize moderators to be from the same biome. They will also not have full admin access, but instead, permissions to manage the players in order to remove, warn, or mute, them for any rule broken.<br><br>As mentioned in some sources, we plan to reform the staff team to be one of high standards and versatility."
@@ -29,10 +93,33 @@
 	},
 	{
 		"category": "news",
+		"title": "The Bedrock Chronicle 6/5/2026",
+		"sub": "Bedrock Chronicle",
+		"viewerTitle": "The Bedrock Chronicle 6-5-2026",
+		"images": [
+			"images/news/bedrock_chronicle/Bedrock_Chronicle_6-5-26.png"
+		],
+		"content": "The Bedrock Chronicle newspaper for 6/5/2026 covers: The reveal of more of the map, and the host of the server opening soon."
+	},
+	{
+		"category": "news",
 		"title": "Mesa Times 6/5/2026",
 		"sub": "Mesa Times",
 		"viewerTitle": "Mesa Times 6-5-2026",
 		"content": "Polls are now being introduced, with more development underway as groups begin using public voting to guide future decisions.<br><br>The Mooshroom Islands are currently in a state of unrest following the deletion of their Discord server. This occurred after the Discord owner, had a crash out after losing two elections, and delete their nations discord server. As a result, the Mooshroom Islands remain in a state of unrest as of now.<br><br>The Jungle biome is planning a military reformation and expansion. Lazy a cabinet member and their server owner, has resigned today. An election will be held to decide the next leader. It is currently unknown if the Council of Ministers will remain active as a group.<br><br>Mesa’s Port Duncan administration has been fully transferred to the second in command, Olaf.<br><br>Advertisements (extended to tomorrow):<br>Savanna National Vanguard<br>Global Logistics Company<br>New Piglin Cartel<br>Eternal Trade Coalition<br><br>More updates and interviews will follow tomorrow."
+	},
+	{
+		"category": "news",
+		"title": "Mushroom Times 6/4/2026",
+		"sub": "Mushroom Times",
+		"viewerTitle": "Mushroom Times 6-4-2026",
+		"images": [
+			"images/news/MushroomTimes/6-4-26.png",
+			"images/news/MushroomTimes/6-4-26_2.png",
+			"images/news/MushroomTimes/6-4-26_3.png",
+			"images/news/MushroomTimes/6-4-26_4.png"
+		],
+		"content": "The Mushroom Times newspaper for 6/4/2026 covers: Their Discord server being nuked, Admin abuse, Pride month, Mens Health Awarness, and so much more."
 	},
 	{
 		"category": "news",
@@ -46,6 +133,16 @@
 			"images/news/Mesa_Times/6-4-26_4.png"
 		],
 		"content": "The Mesa Times newspaper for 6/4/2026 covers: Progress of the maps creation, the Blossomgate Scandal caused by the Cherry Biome, Mesa's stance of the Snow biome, and loads more."
+	},
+	{
+		"category": "news",
+		"title": "The Bedrock Chronicle 6/4/2026",
+		"sub": "Bedrock Chronicle",
+		"viewerTitle": "The Bedrock Chronicle 6-4-2026",
+		"images": [
+			"images/news/bedrock_chronicle/Bedrock_Chronicle_6-4-26.png"
+		],
+		"content": "The Bedrock Chronicle newspaper for 6/4/2026 covers: The Bedrock issue, and Lucifelas words."
 	},
 	{
 		"category": "news",
@@ -95,7 +192,7 @@
 		"category": "news",
 		"title": "Glacial Press No. 7",
 		"sub": "Glacial Press",
-		"viewerTitle": "The International 6/01/26",
+		"viewerTitle": "The Glacial Press 6/01/26",
 		"images": [
 			"images/news/Glacial_Press/GPnews7.png"
 		],
@@ -223,13 +320,13 @@
 	},
 	{
 		"category": "news",
-		"title": "The Weekly Sylven W0 pt2",
-		"sub": "Weekly Sylven",
-		"viewerTitle": "The Weekly Sylven 5/27/26",
+		"title": "The Great Sylven W2",
+		"sub": "Great Sylven",
+		"viewerTitle": "The Great Sylven 5/27/26",
 		"images": [
 			"images/news/Sylven/Weekly_Sylven_W0-2.png"
 		],
-		"content": "The Weekly Sylven newspaper for 5/27/26 reports a major event, causing them to break their weekly standard."
+		"content": "The Great Sylven newspaper for 5/27/26 covers: The change of the map, and the slintering of many groups."
 	},
 	{
 		"category": "news",
@@ -262,13 +359,13 @@
 	},
 	{
 		"category": "news",
-		"title": "The Weekly Sylven W0",
-		"sub": "Weekly Sylven",
-		"viewerTitle": "The Weekly Sylven Week 0",
+		"title": "The Great Sylven W1",
+		"sub": "Great Sylven",
+		"viewerTitle": "The Great Sylven Week 1",
 		"images": [
 			"images/news/Sylven/Weekly_Sylven_W0.png"
 		],
-		"content": "The Weekly Sylven newspaper for 5/26/26s: the rumbling heard near the Emerald Basin."
+		"content": "The Great Sylven newspaper for 5/26/26 covers: The rumbling heard near the Emerald Basin."
 	},
 	{
 		"category": "news",
@@ -307,11 +404,24 @@
 		"category": "news",
 		"title": "Glacial Press No. 6",
 		"sub": "Glacial Press",
-		"viewerTitle": "The International 5/23/26",
+		"viewerTitle": "The Glacial Press 5/23/26",
 		"images": [
 			"images/news/Glacial_Press/GPnews6.png"
 		],
 		"content": "The Glacial Press for 5/23/26 covers: The growing discourse in the desert."
+	},
+	{
+		"category": "news",
+		"title": "Slimery Times 5/23/2026",
+		"sub": "Slimery Times",
+		"viewerTitle": "Slimery Times 5-23-2026",
+		"images": [
+			"images/news/slimetimes/5-23-26.png",
+			"images/news/slimetimes/5-23-26_2.png",
+			"images/news/slimetimes/5-23-26_3.png",
+			"images/news/slimetimes/5-23-26_4.png"
+		],
+		"content": "The Slimery Times newspaper for 5/23/2026 covers: Ratifying their constituion happens today, An interview with Bonanza, and much more."
 	},
 	{
 		"category": "news",
@@ -356,9 +466,21 @@
 	},
 	{
 		"category": "news",
+		"title": "Slimery Times 5/22/2026",
+		"sub": "Slimery Times",
+		"viewerTitle": "Slimery Times 5-22-2026",
+		"images": [
+			"images/news/slimetimes/5-22-26.png",
+			"images/news/slimetimes/5-22-26_2.png",
+			"images/news/slimetimes/5-22-26_3.png"
+		],
+		"content": "The Slimery Times newspaper for 5/22/2026 covers: Ancient Discoveries, The final 3, and more."
+	},
+	{
+		"category": "news",
 		"title": "Glacial Press No. 5",
 		"sub": "Glacial Press",
-		"viewerTitle": "The International 5/22/26",
+		"viewerTitle": "The Glacial Press 5/22/26",
 		"images": [
 			"images/news/Glacial_Press/GPnews05.png"
 		],
@@ -376,6 +498,26 @@
 	},
 	{
 		"category": "news",
+		"title": "Slimery Times 5/21/2026",
+		"sub": "Slimery Times",
+		"viewerTitle": "Slimery Times 5-21-2026",
+		"images": [
+			"images/news/slimetimes/5-21-26.png"
+		],
+		"content": "The Slimery Times newspaper for 5/21/2026 covers: Doctrine being postponed, Recognised towns, and more."
+	},
+	{
+		"category": "news",
+		"title": "Cactus News 5/21/2026",
+		"sub": "Cactus News",
+		"viewerTitle": "Cactus News 5-21-2026",
+		"images": [
+			"images/news/Cactus_News/5-21-26.png"
+		],
+		"content": "The Cactus News newspaper for 5/21/2026 covers: The acronym compromise between Cherry and Cactus News Network, and the listing for new key positions being posted."
+	},
+	{
+		"category": "news",
 		"title": "Mesa Times 5/20/2026",
 		"sub": "Mesa Times",
 		"viewerTitle": "Mesa Times 5-20-2026",
@@ -389,9 +531,29 @@
 	},
 	{
 		"category": "news",
+		"title": "Slimery Times 5/20/2026",
+		"sub": "Slimery Times",
+		"viewerTitle": "Slimery Times 5-20-2026",
+		"images": [
+			"images/news/slimetimes/5-20-26.png"
+		],
+		"content": "The Slimery Times newspaper for 5/20/2026 covers: The landslide victor for the leader of the swamp, Burger Mans apology, and more."
+	},
+	{
+		"category": "news",
+		"title": "Cactus News 5/20/2026",
+		"sub": "Cactus News",
+		"viewerTitle": "Cactus News 5-20-2026",
+		"images": [
+			"images/news/Cactus_News/5-20-26_2.png"
+		],
+		"content": "The Cactus News newspaper for 5/20/2026 covers: The National Hud Overhual."
+	},
+	{
+		"category": "news",
 		"title": "Glacial Press No. 4",
 		"sub": "Glacial Press",
-		"viewerTitle": "The International 5/20/26",
+		"viewerTitle": "The Glacial Press 5/20/26",
 		"images": [
 			"images/news/Glacial_Press/GPnews4.png"
 		],
@@ -411,11 +573,31 @@
 		"category": "news",
 		"title": "Glacial Press No. 3",
 		"sub": "Glacial Press",
-		"viewerTitle": "The International 5/19/26",
+		"viewerTitle": "The Glacial Press 5/19/26",
 		"images": [
 			"images/news/Glacial_Press/GPnews3.png"
 		],
 		"content": "The Glacial Press for 5/19/26 covers: The mysterious group only known as The Conglomerate."
+	},
+	{
+		"category": "news",
+		"title": "Slimery Times 5/19/2026",
+		"sub": "Slimery Times",
+		"viewerTitle": "Slimery Times 5-19-2026",
+		"images": [
+			"images/news/slimetimes/5-19-26.png"
+		],
+		"content": "The Slimery Times newspaper for 5/19/2026 covers: The reasons to visit the swamp, their hopes for the nation, and more."
+	},
+	{
+		"category": "news",
+		"title": "Cactus News 5/19/2026",
+		"sub": "Cactus News",
+		"viewerTitle": "Cactus News 5-19-2026",
+		"images": [
+			"images/news/Cactus_News/5-19-26.png"
+		],
+		"content": "The Cactus News newspaper for 5/19/2026 covers: The alleged terrorist tied to the Swamp nation, The legalization of Dried Kelp, and much more."
 	},
 	{
 		"category": "news",
@@ -459,10 +641,31 @@
 		"content": "The Mesa Times newspaper for 5/18/2026 covers: Who they are."
 	},
 	{
+		"category": "trash",
+		"title": "Icy News 5/18/2026",
+		"sub": "Icy News",
+		"viewerTitle": "Icy News 5-18-2026",
+		"images": [
+			"images/news/Icy_News/5-18-26.png"
+		],
+		"content": "The Icy News newspaper for 5/18/2026 covers: The Jungle biomes regime changes."
+	},
+	{
+		"category": "news",
+		"title": "Cactus News 5/18/2026",
+		"sub": "Cactus News",
+		"viewerTitle": "Cactus News 5-18-2026",
+		"images": [
+			"images/news/Cactus_News/5-18-26.png",
+			"images/news/Cactus_News/5-18-26_2.png"
+		],
+		"content": "The Cactus News newspaper for 5/18/2026 covers: The server delay, VP of Cactus disputing CNN claims, and more."
+	},
+	{
 		"category": "news",
 		"title": "Glacial Press No. 2",
 		"sub": "Glacial Press",
-		"viewerTitle": "The International 5/18/26",
+		"viewerTitle": "The Glacial Press 5/18/26",
 		"images": [
 			"images/news/Glacial_Press/GPnews2.png"
 		],
@@ -480,13 +683,133 @@
 	},
 	{
 		"category": "news",
+		"title": "Cactus News 5/17/2026",
+		"sub": "Cactus News",
+		"viewerTitle": "Cactus News 5-17-2026",
+		"images": [
+			"images/news/Cactus_News/5-17-26.png"
+		],
+		"content": "The Cactus News newspaper for 5/17/2026 covers: The close call for the Desert nation, and the mass migration thats expected."
+	},
+	{
+		"category": "news",
 		"title": "Glacial Press No. 1",
 		"sub": "Glacial Press",
-		"viewerTitle": "The International 5/17/26",
+		"viewerTitle": "The Glacial Press 5/17/26",
 		"images": [
 			"images/news/Glacial_Press/GPnews1.png"
 		],
 		"content": "The Glacial Press for 5/17/26 covers: The Cherry nation blaming the UN for recent discourse."
+	},
+	{
+		"category": "trash",
+		"title": "Icy News 5/17/2026",
+		"sub": "Icy News",
+		"viewerTitle": "Icy News 5-17-2026",
+		"images": [
+			"images/news/Icy_News/5-17-26.png"
+		],
+		"content": "The Icy News newspaper for 5/17/2026 covers: Laws and Nations."
+	},
+	{
+		"category": "news",
+		"title": "Cactus News 5/16/2026",
+		"sub": "Cactus News",
+		"viewerTitle": "Cactus News 5-16-2026",
+		"images": [
+			"images/news/Cactus_News/5-16-26.png"
+		],
+		"content": "The Cactus News newspaper for 5/16/2026 covers: The Deset Nation name vote results, and the Larping of a user going too far."
+	},
+	{
+		"category": "trash",
+		"title": "Icy News 5/16/2026",
+		"sub": "Icy News",
+		"viewerTitle": "Icy News 5-16-2026",
+		"images": [
+			"images/news/Icy_News/5-16-26.png"
+		],
+		"content": "The Icy News newspaper for 5/16/2026 covers: Variedy was found guilty."
+	},
+	{
+		"category": "news",
+		"title": "Mushroom Times 5/15/2026",
+		"sub": "Mushroom Times",
+		"viewerTitle": "Mushroom Times 5-15-2026",
+		"images": [
+			"images/news/MushroomTimes/5-15-26.png"
+		],
+		"content": "The Mushroom Times newspaper for 5/15/2026 covers: A Mushroom leader was fired for calling a chatbot a Cl*nker, the growing frustration to the the server delays, and more."
+	},
+	{
+		"category": "trash",
+		"title": "Icy News 5/15/2026",
+		"sub": "Icy News",
+		"viewerTitle": "Icy News 5-15-2026",
+		"images": [
+			"images/news/Icy_News/5-15-26.png"
+		],
+		"content": "The Icy News newspaper for 5/15/2026 covers: The nations laws."
+	},
+	{
+		"category": "trash",
+		"title": "Icy News 5/14/2026",
+		"sub": "Icy News",
+		"viewerTitle": "Icy News 5-14-2026",
+		"images": [
+			"images/news/Icy_News/5-14-26.png"
+		],
+		"content": "The Icy News newspaper for 5/14/2026 covers: The growth of Apercube Science."
+	},
+	{
+		"category": "news",
+		"title": "Mushroom Times 5/13/2026",
+		"sub": "Mushroom Times",
+		"viewerTitle": "Mushroom Times 5-13-2026",
+		"images": [
+			"images/news/MushroomTimes/5-13-26.png"
+		],
+		"content": "The Mushroom Times newspaper for 5/13/2026 covers: The Minecraft News Network getting caught making racist remarks."
+	},
+	{
+		"category": "trash",
+		"title": "Icy News 5/13/2026",
+		"sub": "Icy News",
+		"viewerTitle": "Icy News 5-13-2026",
+		"images": [
+			"images/news/Icy_News/5-13-26.png"
+		],
+		"content": "The Icy News newspaper for 5/13/2026 covers: The council cutting ties with the United Biomes."
+	},
+	{
+		"category": "news",
+		"title": "Mushroom Times 5/12/2026",
+		"sub": "Mushroom Times",
+		"viewerTitle": "Mushroom Times 5-12-2026",
+		"images": [
+			"images/news/MushroomTimes/5-12-26.png"
+		],
+		"content": "The Mushroom Times newspaper for 5/12/2026 covers: The new President and Vice President has been selected, A user caught spreading propaganda, and more."
+	},
+	{
+		"category": "trash",
+		"title": "Icy News 5/12/2026",
+		"sub": "Icy News",
+		"viewerTitle": "Icy News 5-12-2026",
+		"images": [
+			"images/news/Icy_News/5-12-26.png"
+		],
+		"content": "The Icy News newspaper for 5/12/2026 covers: A council has been elected."
+	},
+	{
+		"category": "news",
+		"title": "Mushroom Times 5/11/2025",
+		"sub": "Mushroom Times",
+		"viewerTitle": "Mushroom Times 5-11-2025",
+		"images": [
+			"images/news/MushroomTimes/5-11-25.png"
+		],
+		"content": "The Mushroom Times newspaper for 5/11/2025 covers: The main 3 candidates for the presidentail campaign, and more."
 	},
 	{
 		"category": "news",

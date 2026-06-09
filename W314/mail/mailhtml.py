@@ -29,15 +29,46 @@ def load_mails():
 
 
 # =========================
-# SUBCATEGORIES
+# LINK PARSER
+# =========================
+
+def parse_custom_links(text):
+    result = []
+    i = 0
+
+    while i < len(text):
+        if text[i] == "[":
+            end = text.find("]", i)
+            if end != -1:
+                segment = text[i + 1:end]
+
+                last_space = segment.rfind(" ")
+                if last_space != -1:
+                    link_text = segment[:last_space]
+                    url = segment[last_space + 1:]
+
+                    result.append(f'<a href="{url}">{link_text}</a>')
+                    i = end + 1
+                    continue
+
+        result.append(text[i])
+        i += 1
+
+    return "".join(result)
+
+
+# =========================
+# SUBCATEGORIES (IGNORE TRASH)
 # =========================
 
 def extract_subcategories(mails):
     counts = defaultdict(int)
     order = []
 
-    # count occurrences + preserve order
     for m in mails:
+        if m.get("category") == "trash":
+            continue
+
         sub = m.get("sub")
         if sub:
             safe = sub.replace(" ", "_")
@@ -45,10 +76,7 @@ def extract_subcategories(mails):
             if safe not in order:
                 order.append(safe)
 
-    # only keep subs that appear more than once
-    subs = [s for s in order if counts[s] > 1]
-
-    return subs
+    return [s for s in order if counts[s] > 1]
 
 
 # =========================
@@ -141,6 +169,8 @@ def generate_viewer(mails):
                 for img in m["images"]
             )
 
+        content = parse_custom_links(m["content"].strip())
+
         panels.append(f"""
 <div class="viewer-panel {m['id']}">
     <h2>{m.get("viewerTitle", m["title"])}</h2>
@@ -150,7 +180,7 @@ def generate_viewer(mails):
     </div>
 
     <div class="mail-content">
-{indent(m["content"].strip(), "        ")}
+{indent(content, "        ")}
     </div>
 </div>
 """.strip())
@@ -178,7 +208,6 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-
     overflow: hidden;
 }
 
@@ -187,10 +216,8 @@ body {
     height: 80vh;
     background: rgba(0,0,0,0.6);
     border: 4px solid #2e7d32;
-
     display: flex;
     overflow: hidden;
-
     align-items: stretch;
 }
 
@@ -198,20 +225,13 @@ input[type="radio"] {
     display: none;
 }
 
-/* =======================
-   CATEGORIES
-   ======================= */
-
+/* CATEGORIES */
 .categories {
     width: 180px;
     border-right: 3px solid #1b5e20;
     background: rgba(0,0,0,0.3);
-
     display: flex;
     flex-direction: column;
-
-    flex-shrink: 0;
-
     overflow-y: auto;
     height: 100%;
 }
@@ -220,42 +240,23 @@ input[type="radio"] {
     padding: 15px;
     cursor: pointer;
     border-bottom: 1px solid #2e7d32;
-
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
 }
 
 .categories label:hover {
     background: rgba(46,125,50,0.4);
 }
 
-/* sub labels */
 .categories label.sub-label {
     padding: 5px !important;
     padding-left: 10px;
     font-size: 13px;
-    opacity: 0.9;
 }
 
-.separator {
-    height: 2px;
-    background: #1b5e20;
-    margin: 8px 0;
-}
-
-/* =======================
-   INBOX
-   ======================= */
-
+/* INBOX */
 .inbox {
     width: 300px;
     border-right: 3px solid #1b5e20;
-
     overflow-y: auto;
-    height: 100%;
-    min-height: 0;
 }
 
 .mail {
@@ -270,43 +271,27 @@ input[type="radio"] {
     background: rgba(46,125,50,0.4);
 }
 
-.mail-title {
-    font-weight: bold;
-}
+.mail-title { font-weight: bold; }
+.mail-sub { color: #ccc; font-size: 14px; }
 
-.mail-sub {
-    color: #ccc;
-    font-size: 14px;
-}
-
-/* =======================
-   VIEWER
-   ======================= */
-
+/* VIEWER */
 .viewer {
     flex: 1;
     padding: 20px;
-
     overflow-y: auto;
-    min-height: 0;
 }
 
-.viewer-panel {
-    display: none;
-}
+.viewer-panel { display: none; }
 
-h2 {
-    margin-top: 0;
-    color: #ff5555;
-}
+h2 { color: #ff5555; margin-top: 0; }
 
-/* =======================
-   VIEWER SWITCHING
-   ======================= */
-
-#none:checked ~ .viewer .default {
-    display: block;
+/* TRASH */
+.mail.trash {
+    opacity: 0.6;
+    font-style: italic;
 }
+/* DEFAULT VIEW */
+#none:checked ~ .viewer .default { display: block; }
 """)
 
     for m in mails:
@@ -317,10 +302,6 @@ h2 {
 """)
 
     css.append("""
-/* =======================
-   CATEGORY FILTERING
-   ======================= */
-
 #cat-all:checked ~ .inbox .mail {
     display: block;
 }
@@ -341,12 +322,6 @@ h2 {
 """)
 
     if subs:
-        css.append("""
-/* =======================
-   SUBCATEGORY FILTERING
-   ======================= */
-""")
-
         for sub in subs:
             css.append(f"""
 #sub-{sub}:checked ~ .inbox .mail:not(.{sub}) {{
@@ -371,7 +346,6 @@ def build_html(mails):
 <div class="mailbox">
 
 {generate_category_inputs(subs)}
-
 {generate_mail_inputs(mails)}
 
 <div class="categories">
@@ -396,13 +370,25 @@ def build_html(mails):
 
 def main():
     mails = load_mails()
+    html = build_html(mails).strip()
 
-    html = build_html(mails)
+    js_output = f"""const mail = {{
+\thtml: `
+<!DOCTYPE html>
+<html>
+<head>
+{indent(html, "    ")}
+</head>
+<body>
+</body>
+</html>
+`
+}};"""
 
-    with open("mail_output.html", "w", encoding="utf-8") as f:
-        f.write(html)
+    with open("mail_output.js", "w", encoding="utf-8") as f:
+        f.write(js_output)
 
-    print(f"Generated {len(mails)} mails.")
+    print(f"Generated {len(mails)} mails into mail_output.js")
 
 
 if __name__ == "__main__":
