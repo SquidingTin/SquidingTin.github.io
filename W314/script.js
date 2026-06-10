@@ -4522,7 +4522,7 @@ const mail = {
             </div>
 
             <div class="mail-content">
-                The Mesa Times newspaper for 6/7/2026 covers: The post Lacha made on the Emerald SMP Subreddit, and The Responce from Josbot. <i>This is an important edition and I implore you to read it in full.</i>
+                The Mesa Times newspaper for 6/7/2026 covers: The post Lacha made on the Emerald SMP Subreddit, and The Responce from Josbot. <i>This is an important edition and I implore you to read it in full.</i><br><br><a href="https://www.reddit.com/r/TheDailyEmerald/comments/1u1uwx5/comment/oqtzdab/">Reddit Post</a>
             </div>
         </div>
 
