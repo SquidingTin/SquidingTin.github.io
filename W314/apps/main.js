@@ -1,5 +1,6 @@
 import { openMinecraft } from "./minecraft.js";
 import { openMinesweeper } from "./games.js";
+import { startGlitchScreen } from "./games.js";
 
 (function () {
 
