@@ -277,3 +277,4 @@
 
 
 export { openMinesweeper };
+export { startGlitchScreen };
