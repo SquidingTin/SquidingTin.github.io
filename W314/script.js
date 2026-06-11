@@ -4150,7 +4150,7 @@ const mail = {
     }
 
 
-    #sub-Cactus_News_Networks:checked ~ .inbox .mail:not(.Cactus_News_Networks) {
+    #sub-Cactus_News:checked ~ .inbox .mail:not(.Cactus_News) {
         display: none;
     }
 
@@ -4174,11 +4174,6 @@ const mail = {
         display: none;
     }
 
-
-    #sub-Cactus_News:checked ~ .inbox .mail:not(.Cactus_News) {
-        display: none;
-    }
-
     </style>
 
     <div class="mailbox">
@@ -4193,12 +4188,11 @@ const mail = {
     <input type="radio" name="category" id="sub-International_News_Network">
     <input type="radio" name="category" id="sub-Glacial_Press">
     <input type="radio" name="category" id="sub-Great_Sylven">
-    <input type="radio" name="category" id="sub-Cactus_News_Networks">
+    <input type="radio" name="category" id="sub-Cactus_News">
     <input type="radio" name="category" id="sub-Bedrock_Chronicle">
     <input type="radio" name="category" id="sub-Mushroom_Times">
     <input type="radio" name="category" id="sub-Slimery_Times">
     <input type="radio" name="category" id="sub-Cherry_Bomb">
-    <input type="radio" name="category" id="sub-Cactus_News">
     <input type="radio" name="mail" id="none" checked>
     <input type="radio" name="mail" id="m1">
     <input type="radio" name="mail" id="m2">
@@ -4292,12 +4286,11 @@ const mail = {
         <label class="sub-label" for="sub-International_News_Network">International News Network</label>
         <label class="sub-label" for="sub-Glacial_Press">Glacial Press</label>
         <label class="sub-label" for="sub-Great_Sylven">Great Sylven</label>
-        <label class="sub-label" for="sub-Cactus_News_Networks">Cactus News Networks</label>
+        <label class="sub-label" for="sub-Cactus_News">Cactus News</label>
         <label class="sub-label" for="sub-Bedrock_Chronicle">Bedrock Chronicle</label>
         <label class="sub-label" for="sub-Mushroom_Times">Mushroom Times</label>
         <label class="sub-label" for="sub-Slimery_Times">Slimery Times</label>
         <label class="sub-label" for="sub-Cherry_Bomb">Cherry Bomb</label>
-        <label class="sub-label" for="sub-Cactus_News">Cactus News</label>
     </div>
 
     <div class="inbox">
@@ -4331,9 +4324,9 @@ const mail = {
             <div class="mail-sub">Great Sylven</div>
         </label>
 
-        <label class="mail news Cactus_News_Networks" for="m7">
-            <div class="mail-title">Cactus News Networks 6/7/2026</div>
-            <div class="mail-sub">Cactus News Networks</div>
+        <label class="mail news Cactus_News" for="m7">
+            <div class="mail-title">Cactus News 6/7/2026</div>
+            <div class="mail-sub">Cactus News</div>
         </label>
 
         <label class="mail news Bedrock_Chronicle" for="m8">
@@ -4396,9 +4389,9 @@ const mail = {
             <div class="mail-sub">Mesa Times</div>
         </label>
 
-        <label class="mail news Cactus_News_Networks" for="m20">
-            <div class="mail-title">Cactus News Networks 6/1/2026</div>
-            <div class="mail-sub">Cactus News Networks</div>
+        <label class="mail news Cactus_News" for="m20">
+            <div class="mail-title">Cactus News 6/1/2026</div>
+            <div class="mail-sub">Cactus News</div>
         </label>
 
         <label class="mail news Glacial_Press" for="m21">
