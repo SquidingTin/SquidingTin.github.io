@@ -3520,6 +3520,14 @@ rakau: `
 						width: 25%;
 						border-radius: 3px;
 					}
+					/* ================= FOOTER ================= */
+					footer {
+						padding: 40px;
+						text-align: center;
+						opacity: 0.6;
+						border-top: 1px solid #222;
+						width:112%;
+					}
 				</style>
 				<input type="checkbox" id="secret-toggle">
 
@@ -3569,6 +3577,15 @@ rakau: `
 						</p>
 					</div>
 				</section>
+				
+				<footer>
+					ENDX Aerospace • <a href="https://www.youtube.com/@Robietexture"
+						 target="_blank"
+						 rel="noopener noreferrer"
+						 style="text-decoration: none; color: inherit;">
+						Offical YouCube Channel
+						</a>
+				</footer>
 			`
 	};
 
