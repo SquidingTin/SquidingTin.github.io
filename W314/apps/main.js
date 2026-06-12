@@ -132,7 +132,6 @@ import { settings } from "./settings.js";
 		}
 	];
 
-
 	const pages = {
 		home: `
 					<style>
@@ -3342,7 +3341,7 @@ rakau: `
 				<style>
 					body {
 						margin: 0;
-						background-image: url("images/company/EndX/sky.png");
+						background-image: url("images/company/EndX/Sky.png");
 						background-repeat: repeat;
 						font-family: Arial, Helvetica, sans-serif;
 						color: white;
