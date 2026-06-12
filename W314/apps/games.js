@@ -275,6 +275,151 @@
 		startNewGame();
 	}
 
+	function startGlitchScreen() {
+		// ===== OVERRIDE PAGE =====
+		document.body.innerHTML = "";
+		document.body.style.margin = "0";
+		document.body.style.overflow = "hidden";
+		document.body.style.cursor = "none";
+
+		const screen = document.createElement("div");
+		screen.id = "screen";
+
+		Object.assign(screen.style, {
+		position: "fixed",
+		inset: "0",
+		width: "100vw",
+		height: "100vh",
+		background: 'url("images/default_desktop.png") center center / cover no-repeat',
+		pointerEvents: "none"
+		});
+
+		document.body.appendChild(screen);
+
+		// ===== DISABLE INPUT =====
+		function block(e) {
+		e.preventDefault();
+		e.stopPropagation();
+		return false;
+		}
+
+		window.addEventListener("mousemove", block, { passive: false });
+		window.addEventListener("mousedown", block, { passive: false });
+		window.addEventListener("mouseup", block, { passive: false });
+		window.addEventListener("keydown", block, { passive: false });
+		window.addEventListener("keyup", block, { passive: false });
+		window.addEventListener("wheel", block, { passive: false });
+		window.addEventListener("contextmenu", block, { passive: false });
+
+		// ===== SETTINGS =====
+		const SETTINGS = {
+		tearChance: 0.78,
+		warpChance: 0.20
+		};
+
+		const TILE = 32;
+		const tiles = [];
+
+		function buildTiles() {
+		const w = window.innerWidth;
+		const h = window.innerHeight;
+
+		const cols = Math.ceil(w / TILE);
+		const rows = Math.ceil(h / TILE);
+
+		for (let y = 0; y < rows; y++) {
+			for (let x = 0; x < cols; x++) {
+			const tile = document.createElement("div");
+
+			tile.className = "tile";
+
+			Object.assign(tile.style, {
+				position: "absolute",
+				width: TILE + "px",
+				height: TILE + "px",
+				left: x * TILE + "px",
+				top: y * TILE + "px",
+				backgroundImage: 'url("images/default_desktop.png")',
+				backgroundSize: `${w}px ${h}px`,
+				backgroundPosition: `-${x * TILE}px -${y * TILE}px`
+			});
+
+			screen.appendChild(tile);
+
+			tiles.push({
+				el: tile,
+				homeX: x * TILE,
+				homeY: y * TILE
+			});
+			}
+		}
+		}
+
+		function glitchBurst() {
+		for (const t of tiles) {
+			const r = Math.random();
+
+			if (r < SETTINGS.tearChance) {
+			const x = (Math.random() - 0.5) * 60;
+			const y = (Math.random() - 0.5) * 10;
+
+			t.el.style.transform = `translate(${x}px, ${y}px)`;
+			t.el.style.opacity = 0.7 + Math.random() * 0.3;
+			}
+
+			else if (r < SETTINGS.tearChance + SETTINGS.warpChance) {
+			const x = (Math.random() - 0.5) * 160;
+			const y = (Math.random() - 0.5) * 40;
+
+			t.el.style.transform =
+				`translate(${x}px, ${y}px) skewX(${(Math.random() - 0.5) * 3}deg)`;
+
+			t.el.style.opacity = 0.4 + Math.random() * 0.4;
+			}
+
+			else {
+			const cube = document.createElement("div");
+
+			const ox = t.homeX;
+			const oy = t.homeY;
+
+			Object.assign(cube.style, {
+				position: "absolute",
+				width: "32px",
+				height: "32px",
+				left: ox + "px",
+				top: oy + "px",
+				backgroundSize: `${window.innerWidth}px ${window.innerHeight}px`,
+				backgroundPosition: `-${ox}px -${oy}px`,
+				opacity: 0.7,
+				transform: `
+				translate(${(Math.random() - 0.5) * 80}px,
+							${(Math.random() - 0.5) * 80}px)
+				rotate(${(Math.random() - 0.5) * 10}deg)
+				`
+			});
+
+			screen.appendChild(cube);
+
+			setTimeout(() => cube.remove(), 180);
+			}
+		}
+		}
+
+		function loop() {
+		glitchBurst();
+		setTimeout(loop, 30 + Math.random() * 200);
+		}
+
+		buildTiles();
+		loop();
+
+		// ===== AUTO RESET =====
+		setTimeout(() => {
+		location.reload();
+		}, 5000);
+	}
+
 
 export { openMinesweeper };
 export { startGlitchScreen };
