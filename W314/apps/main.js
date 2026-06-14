@@ -23,7 +23,7 @@ import { settings } from "./settings.js";
 		{ 
 			name: "Discord", 
 			icon: "icons/discord.png",
-			onClick: () => openLink("https://discord.gg/EYcBYPXhq5")
+			onClick: () => openLink("https://discord.gg/ZAJxUUKMVm")
 		},
 		{
 			name: "Documents", 
