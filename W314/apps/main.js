@@ -4709,16 +4709,16 @@ const mail = {
         </div>
 
         <div class="viewer-panel m2">
-            <h2>The International 6/14/26</h2>
+            <h2>The International 6/13/26</h2>
 
             <div class="mail-images">
-                <img src="images/news/The_International/6_14_26_1.jpg" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/6_14_26_2.jpg" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/6_14_26_3.jpg" style="width:33%; height:auto; object-fit:cover;">
+                <img src="images/news/The_International/6_13_26_1.jpg" style="width:33%; height:auto; object-fit:cover;">
+        <img src="images/news/The_International/6_13_26_2.jpg" style="width:33%; height:auto; object-fit:cover;">
+        <img src="images/news/The_International/6_13_26_3.jpg" style="width:33%; height:auto; object-fit:cover;">
             </div>
 
             <div class="mail-content">
-                The International newspaper for 6/14/26 covers: The Vanguard terrorists, The end of the Blossomgate drama, The Family System, and much more.
+                The International newspaper for 6/13/26 covers: The Vanguard terrorists, The end of the Blossomgate drama, The Family System, and much more.
             </div>
         </div>
 
