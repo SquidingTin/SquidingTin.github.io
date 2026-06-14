@@ -4280,7 +4280,7 @@ const mail = {
         </label>
 
         <label class="mail news International_News_Network" for="m2">
-            <div class="mail-title">The International Volume 7</div>
+            <div class="mail-title">The International Volume 8</div>
             <div class="mail-sub">International News Network</div>
         </label>
 
