@@ -4372,17 +4372,17 @@ const mail = {
         </label>
 
         <label class="mail news Acorn" for="m2">
-            <div class="mail-title">Acorn</div>
+            <div class="mail-title">Acorn 6/14/26</div>
             <div class="mail-sub">Acorn</div>
         </label>
 
         <label class="mail news bedrock_chronicle" for="m3">
-            <div class="mail-title">bedrock chronicle</div>
+            <div class="mail-title">bedrock chronicle 6/14/26</div>
             <div class="mail-sub">bedrock chronicle</div>
         </label>
 
         <label class="mail news Fatui" for="m4">
-            <div class="mail-title">Fatui</div>
+            <div class="mail-title">Fatui 6/14/26</div>
             <div class="mail-sub">Fatui</div>
         </label>
 
@@ -4407,7 +4407,7 @@ const mail = {
         </label>
 
         <label class="mail news Acorn" for="m9">
-            <div class="mail-title">Acorn</div>
+            <div class="mail-title">Acorn 6/11/26</div>
             <div class="mail-sub">Acorn</div>
         </label>
 
@@ -4497,7 +4497,7 @@ const mail = {
         </label>
 
         <label class="mail news Cactus_News" for="m27">
-            <div class="mail-title">Cactus News</div>
+            <div class="mail-title">Cactus News 6/02/26</div>
             <div class="mail-sub">Cactus News</div>
         </label>
 
@@ -4532,7 +4532,7 @@ const mail = {
         </label>
 
         <label class="mail news Cactus_News" for="m34">
-            <div class="mail-title">Cactus News</div>
+            <div class="mail-title">Cactus News 5/30/26</div>
             <div class="mail-sub">Cactus News</div>
         </label>
 
@@ -4552,7 +4552,7 @@ const mail = {
         </label>
 
         <label class="mail news Cactus_News" for="m38">
-            <div class="mail-title">Cactus News</div>
+            <div class="mail-title">Cactus News 5/29/26</div>
             <div class="mail-sub">Cactus News</div>
         </label>
 
@@ -4607,7 +4607,7 @@ const mail = {
         </label>
 
         <label class="mail news Cactus_News" for="m49">
-            <div class="mail-title">Cactus News</div>
+            <div class="mail-title">Cactus News 5/25/26</div>
             <div class="mail-sub">Cactus News</div>
         </label>
 
@@ -4637,7 +4637,7 @@ const mail = {
         </label>
 
         <label class="mail news Cactus_News" for="m55">
-            <div class="mail-title">Cactus News</div>
+            <div class="mail-title">Cactus News 5/23/26</div>
             <div class="mail-sub">Cactus News</div>
         </label>
 
@@ -4662,7 +4662,7 @@ const mail = {
         </label>
 
         <label class="mail news Cactus_News" for="m60">
-            <div class="mail-title">Cactus News</div>
+            <div class="mail-title">Cactus News 5/22/26</div>
             <div class="mail-sub">Cactus News</div>
         </label>
 
@@ -4752,7 +4752,7 @@ const mail = {
         </label>
 
         <label class="mail news Fatui" for="m78">
-            <div class="mail-title">Fatui</div>
+            <div class="mail-title">Fatui 5/18/26</div>
             <div class="mail-sub">Fatui</div>
         </label>
 
@@ -4787,7 +4787,7 @@ const mail = {
         </label>
 
         <label class="mail news Fatui" for="m85">
-            <div class="mail-title">Fatui</div>
+            <div class="mail-title">Fatui 5/16/26</div>
             <div class="mail-sub">Fatui</div>
         </label>
 
@@ -4812,7 +4812,7 @@ const mail = {
         </label>
 
         <label class="mail news Fatui" for="m90">
-            <div class="mail-title">Fatui</div>
+            <div class="mail-title">Fatui 5/14/26</div>
             <div class="mail-sub">Fatui</div>
         </label>
 
@@ -5720,8 +5720,8 @@ const mail = {
             <h2>Cactus News 5-20-2026</h2>
 
             <div class="mail-images">
-                <img src="images/news/Cactus_News/5-20-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/5-20-26.jpg" style="width:33%; height:auto; object-fit:cover;">
+                <img src="images/news/Cactus_News/5-20-26.jpg" style="width:33%; height:auto; object-fit:cover;">
+        <img src="images/news/Cactus_News/5-20-26_2.png" style="width:33%; height:auto; object-fit:cover;">
             </div>
 
             <div class="mail-content">
