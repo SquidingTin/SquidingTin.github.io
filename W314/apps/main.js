@@ -3632,11 +3632,13 @@ const mail = {
 
     h2 { color: #ff5555; margin-top: 0; }
 
-    /* TRASH */
-    .mail.trash {
+    /* TRASH + SPAM */
+    .mail.trash,
+    .mail.spam {
         opacity: 0.6;
         font-style: italic;
     }
+
     /* DEFAULT VIEW */
     #none:checked ~ .viewer .default { display: block; }
 
@@ -4132,6 +4134,10 @@ const mail = {
 
 
     #cat-all:checked ~ .inbox .mail {
+        display: none;
+    }
+
+    #cat-all:checked ~ .inbox .mail:not(.spam):not(.trash) {
         display: block;
     }
 
@@ -6146,7 +6152,6 @@ const mail = {
 </html>
 `
 };
-
 
 
 	const trashFiles = [
