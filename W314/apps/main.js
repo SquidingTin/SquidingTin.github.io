@@ -4931,7 +4931,7 @@ const mail = {
             </div>
 
             <div class="mail-content">
-                Cherry Bomb newspaper for 6/16/26 covers: PrimalBunion, UI_For_Squid, Roselot, Lord_Unicronus, and SleepyThymeT have decided to release my own server called the <a href="SMP">https://discord.gg/965RjzXf Ouroboros</a>. This was decided due to the fact the Emerald SMP is not in a state where they can produce a product they belive the players deserve.
+                Cherry Bomb newspaper for 6/16/26 covers: PrimalBunion, UI_For_Squid, Roselot, Lord_Unicronus, and SleepyThymeT have decided to release my own server called the <a href="https://discord.gg/965RjzXf">Ouroboros SMP</a>. This was decided due to the fact the Emerald SMP is not in a state where they can produce a product they belive the players deserve.
             </div>
         </div>
 
