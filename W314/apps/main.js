@@ -2897,7 +2897,7 @@ rakau: `
 							</li>
 
 							<li>
-								<b>khstan</b><br>
+								<b></b><br>
 								Elder of Defense
 							</li>
 
