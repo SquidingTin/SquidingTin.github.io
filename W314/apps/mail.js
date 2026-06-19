@@ -2593,7 +2593,7 @@ export const mail = {
             </div>
 
             <div class="mail-content">
-                The Murkland Times covers: The Discord server invasion, The rise of "Shrek-fil-a", and more.
+                The Murkland Times covers: The <a href="Server">https://discord.gg/RsQS6mdNMJ Discord</a> invasion, The rise of "Shrek-fil-a", and more.
             </div>
         </div>
 
