@@ -65,7 +65,7 @@ import { mail } from "./mail.js";
 		{ name: "Spawn Arcade.png", path: "images/New_newspawncity4.png", type: "image" },
 		
 		
-		{ name: "Map V2.png", path: "images/Map_V2_Combo.png", type: "image" },
+		{ name: "Map V3.jpg", path: "images/2026-06-21-14-15-57-ariadne68-minecraft-overworld-day.jpg", type: "image" },
 		{ name: "New Spawn Map V2.png", path: "images/newspawncity_map.png", type: "image" },
 
 		{ name: "Anthem of Rakau.mp3", path: "audio/forest.mp3", type: "audio" }
@@ -3546,6 +3546,7 @@ rakau: `
 		{ name: "New Spawn City.png", path: "images/newspawncity.png", type: "image" },
 		{ name: "New Spawn City 2.png", path: "images/newspawncity2.png", type: "image" },
 		
+		{ name: "Map V2.png", path: "images/Map_V2_Combo.png", type: "image" },
 		//{ name: "Anthem of Rakau.mp3", path: "audio/forest.mp3", type: "audio" }
 	];
 
