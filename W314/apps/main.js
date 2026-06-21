@@ -1,5 +1,6 @@
 import { openMinecraft } from "./minecraft.js";
 import { openMinesweeper } from "./games.js";
+import { openTetris } from "./games.js";
 import { startGlitchScreen } from "./games.js";
 import { settings } from "./settings.js";
 import { mail } from "./mail.js";
@@ -96,7 +97,8 @@ import { mail } from "./mail.js";
 						{ name: "Minecraft", icon: "icons/minecraft.png", onClick: () => openMinecraft()},
 						{ name: "Kogama", icon: "icons/kogama.png", onClick: () => openMinecraft()},
 						{ name: "Polybius", icon: "icons/w2k_wmp_54.png", onClick: () => startGlitchScreen()},
-						{ name: "MineSweeper", icon: "icons/sweeper.png", onClick: () => openMinesweeper()}
+						{ name: "MineSweeper", icon: "icons/sweeper.png", onClick: () => openMinesweeper()},
+						{ name: "Tetris", icon: "icons/tetris.png", onClick: () => openTetris()}
 					]
 				}
 			]
@@ -2897,7 +2899,7 @@ rakau: `
 							</li>
 
 							<li>
-								<b></b><br>
+								<b>NaN</b><br>
 								Elder of Defense
 							</li>
 
