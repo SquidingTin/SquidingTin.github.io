@@ -88,6 +88,30 @@ function wireMinesweeper(win) {
 					flagged: false,
 					count: 0
 				};
+				const cell = cells[y][x];
+
+				btn.onclick = () => {
+
+					if (gameOver) return;
+
+					if (firstClick) {
+						firstClick = false;
+						startGameFromFirstClick(x, y);
+					}
+
+					reveal(x, y);
+				};
+
+				btn.oncontextmenu = (e) => {
+
+					e.preventDefault();
+
+					if (gameOver || cell.revealed) return;
+
+					cell.flagged = !cell.flagged;
+
+					cell.element.textContent = cell.flagged ? "🚩" : "";
+				};
 			}
 		}
 	}
@@ -214,35 +238,6 @@ function wireMinesweeper(win) {
 		calculateCounts();
 	}
 
-	for (let y = 0; y < ROWS; y++) {
-		for (let x = 0; x < COLS; x++) {
-
-			const cell = cells[y][x];
-
-			cell.element.onclick = () => {
-
-				if (gameOver) return;
-
-				if (firstClick) {
-					firstClick = false;
-					startGameFromFirstClick(x, y);
-				}
-
-				reveal(x, y);
-			};
-
-			cell.element.oncontextmenu = (e) => {
-
-				e.preventDefault();
-
-				if (gameOver || cell.revealed) return;
-
-				cell.flagged = !cell.flagged;
-
-				cell.element.textContent = cell.flagged ? "🚩" : "";
-			};
-		}
-	}
 
 	startNewGame();
 }
