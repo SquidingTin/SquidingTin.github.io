@@ -1,326 +1,586 @@
+let minesweeperWindow = null;
 
-	let minesweeperWindow = null;
+let tetrisWindow = null;
 
-	function openMinesweeper() {
+function openMinesweeper() {
 
-		const content = `
-			<div class="minesweeper">
+	const content = `
+		<div class="minesweeper">
+			<div class="mine-status">Ready</div>
+			<div id="mine-board" class="mine-board"></div>
+		</div>
+	`;
 
-				<div class="mine-status">
-					Ready
-				</div>
-
-				<div id="mine-board" class="mine-board"></div>
-
-			</div>
-		`;
-
-		if (
-			minesweeperWindow &&
-			document.body.contains(minesweeperWindow)
-		) {
-
-			bringToFront(minesweeperWindow);
-
-			return minesweeperWindow;
-		}
-
-		const win = createWindow(
-			"Minesweeper",
-			content,
-			200,
-			100,
-			330
-		);
-
-		minesweeperWindow = win;
-
-		const oldClose = win.querySelector(".close");
-
-		oldClose.onclick = () => {
-
-			win.remove();
-
-			const taskBtn = windowTaskMap.get(win);
-
-			if (taskBtn) {
-				taskBtn.remove();
-			}
-
-			if (minesweeperWindow === win) {
-				minesweeperWindow = null;
-			}
-		};
-
-		wireMinesweeper(win);
-
-		return win;
+	if (minesweeperWindow && document.body.contains(minesweeperWindow)) {
+		bringToFront(minesweeperWindow);
+		return minesweeperWindow;
 	}
 
-	function wireMinesweeper(win) {
+	const win = createWindow("Minesweeper", content, 200, 100, 330);
 
-		const ROWS = 9;
-		const COLS = 9;
-		const MINES = 10;
+	minesweeperWindow = win;
 
-		const board = win.querySelector("#mine-board");
-		const status = win.querySelector(".mine-status");
+	const oldClose = win.querySelector(".close");
 
-		let cells = [];
-		let gameOver = false;
-		function renderNumber(n) {
+	oldClose.onclick = () => {
+		win.remove();
 
-			const cls =
-				n === 1 ? "ms-1" :
-				n === 2 ? "ms-2" :
-				n === 3 ? "ms-3" :
-				n === 4 ? "ms-4" :
-				"ms-4";
+		const taskBtn = windowTaskMap.get(win);
+		if (taskBtn) taskBtn.remove();
 
-			return `<span class="ms-num ${cls}">${n}</span>`;
+		if (minesweeperWindow === win) {
+			minesweeperWindow = null;
 		}
-		function startNewGame() {
+	};
 
-			board.innerHTML = "";
+	wireMinesweeper(win);
 
-			cells = [];
-			gameOver = false;
+	return win;
+}
 
-			status.textContent = "Ready";
+function wireMinesweeper(win) {
 
-			for (let y = 0; y < ROWS; y++) {
+	const ROWS = 9;
+	const COLS = 9;
+	const MINES = 10;
 
-				cells[y] = [];
+	const board = win.querySelector("#mine-board");
+	const status = win.querySelector(".mine-status");
 
-				for (let x = 0; x < COLS; x++) {
+	let cells = [];
+	let gameOver = false;
 
-					const btn = document.createElement("button");
+	let firstClick = true;
 
-					btn.className = "mine-cell";
+	function renderNumber(n) {
+		const cls =
+			n === 1 ? "ms-1" :
+			n === 2 ? "ms-2" :
+			n === 3 ? "ms-3" :
+			"ms-4";
 
-					board.appendChild(btn);
+		return `<span class="ms-num ${cls}">${n}</span>`;
+	}
 
-					cells[y][x] = {
-						element: btn,
-						mine: false,
-						revealed: false,
-						flagged: false,
-						count: 0
-					};
-				}
+	function startNewGame() {
+
+		board.innerHTML = "";
+		cells = [];
+		gameOver = false;
+		firstClick = true;
+
+		status.textContent = "Ready";
+
+		for (let y = 0; y < ROWS; y++) {
+			cells[y] = [];
+
+			for (let x = 0; x < COLS; x++) {
+
+				const btn = document.createElement("button");
+				btn.className = "mine-cell";
+
+				board.appendChild(btn);
+
+				cells[y][x] = {
+					element: btn,
+					mine: false,
+					revealed: false,
+					flagged: false,
+					count: 0
+				};
 			}
+		}
+	}
 
-			let placed = 0;
+	function placeMines(safeX, safeY) {
 
-			while (placed < MINES) {
+		const forbidden = new Set();
 
-				const x = Math.floor(Math.random() * COLS);
-				const y = Math.floor(Math.random() * ROWS);
+		for (let oy = -1; oy <= 1; oy++) {
+			for (let ox = -1; ox <= 1; ox++) {
 
-				if (!cells[y][x].mine) {
-
-					cells[y][x].mine = true;
-					placed++;
-				}
-			}
-
-			for (let y = 0; y < ROWS; y++) {
-				for (let x = 0; x < COLS; x++) {
-
-					if (cells[y][x].mine) {
-						continue;
-					}
-
-					let count = 0;
-
-					for (let oy = -1; oy <= 1; oy++) {
-						for (let ox = -1; ox <= 1; ox++) {
-
-							const nx = x + ox;
-							const ny = y + oy;
-
-							if (
-								nx >= 0 &&
-								ny >= 0 &&
-								nx < COLS &&
-								ny < ROWS &&
-								cells[ny][nx].mine
-							) {
-								count++;
-							}
-						}
-					}
-
-					cells[y][x].count = count;
-				}
-			}
-
-			function reveal(x, y) {
+				const nx = safeX + ox;
+				const ny = safeY + oy;
 
 				if (
-					x < 0 ||
-					y < 0 ||
-					x >= COLS ||
-					y >= ROWS
+					nx >= 0 &&
+					ny >= 0 &&
+					nx < COLS &&
+					ny < ROWS
 				) {
-					return;
+					forbidden.add(`${nx},${ny}`);
 				}
+			}
+		}
 
-				const cell = cells[y][x];
+		let placed = 0;
 
-				if (
-					cell.revealed ||
-					cell.flagged
-				) {
-					return;
-				}
+		while (placed < MINES) {
 
-				cell.revealed = true;
+			const x = Math.floor(Math.random() * COLS);
+			const y = Math.floor(Math.random() * ROWS);
 
-				cell.element.disabled = true;
+			if (forbidden.has(`${x},${y}`)) continue;
 
-				if (cell.mine) {
+			if (!cells[y][x].mine) {
+				cells[y][x].mine = true;
+				placed++;
+			}
+		}
+	}
 
-					cell.element.textContent = cell.flagged ? "🚩" : "";
+	function calculateCounts() {
 
-					gameOver = true;
+		for (let y = 0; y < ROWS; y++) {
+			for (let x = 0; x < COLS; x++) {
 
-					status.textContent =
-						"Boom! New game in 5 seconds...";
+				if (cells[y][x].mine) continue;
 
-					for (let yy = 0; yy < ROWS; yy++) {
-						for (let xx = 0; xx < COLS; xx++) {
-
-							if (cells[yy][xx].mine) {
-								cells[yy][xx].element.textContent = "💣";
-							}
-						}
-					}
-
-					setTimeout(() => {
-
-						if (
-							document.body.contains(win)
-						) {
-							startNewGame();
-						}
-
-					}, 5000);
-
-					return;
-				}
-
-				if (cell.count > 0) {
-
-					cell.element.innerHTML = renderNumber(cell.count);
-
-					return;
-				}
+				let count = 0;
 
 				for (let oy = -1; oy <= 1; oy++) {
 					for (let ox = -1; ox <= 1; ox++) {
 
-						if (
-							ox === 0 &&
-							oy === 0
-						) {
-							continue;
-						}
+						const nx = x + ox;
+						const ny = y + oy;
 
-						reveal(
-							x + ox,
-							y + oy
-						);
+						if (
+							nx >= 0 &&
+							ny >= 0 &&
+							nx < COLS &&
+							ny < ROWS &&
+							cells[ny][nx].mine
+						) {
+							count++;
+						}
+					}
+				}
+
+				cells[y][x].count = count;
+			}
+		}
+	}
+
+	function reveal(x, y) {
+
+		if (x < 0 || y < 0 || x >= COLS || y >= ROWS) return;
+
+		const cell = cells[y][x];
+
+		if (cell.revealed || cell.flagged) return;
+
+		cell.revealed = true;
+		cell.element.disabled = true;
+
+		if (cell.mine) {
+
+			cell.element.textContent = "💣";
+			gameOver = true;
+
+			status.textContent = "Boom! New game in 5 seconds...";
+
+			for (let yy = 0; yy < ROWS; yy++) {
+				for (let xx = 0; xx < COLS; xx++) {
+					if (cells[yy][xx].mine) {
+						cells[yy][xx].element.textContent = "💣";
 					}
 				}
 			}
 
-			for (let y = 0; y < ROWS; y++) {
-				for (let x = 0; x < COLS; x++) {
-
-					const cell = cells[y][x];
-
-					cell.element.onclick = () => {
-
-						if (gameOver) {
-							return;
-						}
-
-						reveal(x, y);
-					};
-
-					cell.element.oncontextmenu = e => {
-
-						e.preventDefault();
-
-						if (
-							gameOver ||
-							cell.revealed
-						) {
-							return;
-						}
-
-						cell.flagged =
-							!cell.flagged;
-
-						cell.element.textContent =
-							cell.flagged
-								? "🚩"
-								: "";
-					};
+			setTimeout(() => {
+				if (document.body.contains(win)) {
+					startNewGame();
 				}
+			}, 5000);
+
+			return;
+		}
+
+		if (cell.count > 0) {
+			cell.element.innerHTML = renderNumber(cell.count);
+			return;
+		}
+
+		for (let oy = -1; oy <= 1; oy++) {
+			for (let ox = -1; ox <= 1; ox++) {
+				if (ox === 0 && oy === 0) continue;
+				reveal(x + ox, y + oy);
+			}
+		}
+	}
+
+	function startGameFromFirstClick(x, y) {
+		placeMines(x, y);
+		calculateCounts();
+	}
+
+	for (let y = 0; y < ROWS; y++) {
+		for (let x = 0; x < COLS; x++) {
+
+			const cell = cells[y][x];
+
+			cell.element.onclick = () => {
+
+				if (gameOver) return;
+
+				if (firstClick) {
+					firstClick = false;
+					startGameFromFirstClick(x, y);
+				}
+
+				reveal(x, y);
+			};
+
+			cell.element.oncontextmenu = (e) => {
+
+				e.preventDefault();
+
+				if (gameOver || cell.revealed) return;
+
+				cell.flagged = !cell.flagged;
+
+				cell.element.textContent = cell.flagged ? "🚩" : "";
+			};
+		}
+	}
+
+	startNewGame();
+}
+
+
+
+function openTetris() {
+
+	const content = `
+		<div class="tetris-wrapper">
+
+			<div id="tetris-board" class="tetris-board"></div>
+
+			<div class="tetris-side">
+				<div class="tetris-next">
+					<div class="label">Next</div>
+					<div id="next1" class="mini"></div>
+					<div id="next2" class="mini"></div>
+					<div id="next3" class="mini"></div>
+				</div>
+
+				<div class="tetris-score">
+					<div>Score</div>
+					<div id="score">0</div>
+				</div>
+			</div>
+
+		</div>
+	`;
+
+	if (tetrisWindow && document.body.contains(tetrisWindow)) {
+		bringToFront(tetrisWindow);
+		return tetrisWindow;
+	}
+
+	const win = createWindow("Tetris", content, 200, 100, 320);
+	tetrisWindow = win;
+
+	const oldClose = win.querySelector(".close");
+
+	oldClose.onclick = () => {
+		win.remove();
+		const taskBtn = windowTaskMap.get(win);
+		if (taskBtn) taskBtn.remove();
+		if (tetrisWindow === win) tetrisWindow = null;
+	};
+
+	wireTetris(win);
+	return win;
+}
+
+function wireTetris(win) {
+
+	const COLS = 10;
+	const ROWS = 20;
+
+	const boardEl = win.querySelector("#tetris-board");
+
+	let board = [];
+	let current = null;
+	let pos = { x: 3, y: 0 };
+
+	let score = 0;
+	let gameOver = false;
+
+	let nextQueue = [];
+	let dropTimer = null;
+
+	const SHAPES = [
+		[[1,1,1,1]],
+		[[1,1],[1,1]],
+		[[0,1,0],[1,1,1]],
+		[[1,0,0],[1,1,1]],
+		[[0,0,1],[1,1,1]]
+	];
+
+	function createBoard() {
+		board = Array.from({ length: ROWS }, () =>
+			Array(COLS).fill(0)
+		);
+	}
+
+	function randomPiece() {
+		return SHAPES[Math.floor(Math.random() * SHAPES.length)];
+	}
+
+	function fillQueue() {
+		while (nextQueue.length < 3) {
+			nextQueue.push(randomPiece());
+		}
+	}
+
+	function collides(x, y, piece) {
+		for (let py = 0; py < piece.length; py++) {
+			for (let px = 0; px < piece[py].length; px++) {
+				if (!piece[py][px]) continue;
+
+				let nx = x + px;
+				let ny = y + py;
+
+				if (nx < 0 || nx >= COLS || ny >= ROWS) return true;
+				if (ny >= 0 && board[ny][nx]) return true;
+			}
+		}
+		return false;
+	}
+
+	function spawnPiece() {
+
+		fillQueue();
+
+		current = nextQueue.shift();
+		nextQueue.push(randomPiece());
+
+		pos = { x: 3, y: 0 };
+
+		if (collides(pos.x, pos.y, current)) {
+			gameOver = true;
+			clearInterval(dropTimer);
+		}
+
+		updateSide();
+	}
+
+	function merge() {
+		for (let y = 0; y < current.length; y++) {
+			for (let x = 0; x < current[y].length; x++) {
+				if (!current[y][x]) continue;
+
+				let bx = pos.x + x;
+				let by = pos.y + y;
+
+				if (by >= 0) board[by][bx] = 1;
+			}
+		}
+	}
+
+	function clearLines() {
+
+		let cleared = 0;
+
+		for (let y = ROWS - 1; y >= 0; y--) {
+			if (board[y].every(v => v)) {
+				board.splice(y, 1);
+				board.unshift(Array(COLS).fill(0));
+				y++;
+				cleared++;
 			}
 		}
 
-		startNewGame();
+		if (cleared > 0) {
+			score += [0, 100, 300, 500, 800][cleared] || cleared * 250;
+			document.getElementById("score").textContent = score;
+		}
 	}
 
-	function startGlitchScreen() {
-		// ===== OVERRIDE PAGE =====
-		document.body.innerHTML = "";
-		document.body.style.margin = "0";
-		document.body.style.overflow = "hidden";
-		document.body.style.cursor = "none";
+	function rotate(piece) {
+		return piece[0].map((_, i) =>
+			piece.map(row => row[i]).reverse()
+		);
+	}
 
-		const screen = document.createElement("div");
-		screen.id = "screen";
+	function move(dx, dy) {
+		if (!collides(pos.x + dx, pos.y + dy, current)) {
+			pos.x += dx;
+			pos.y += dy;
+		}
+		draw();
+	}
 
-		Object.assign(screen.style, {
+	function drop() {
+
+		if (gameOver) return;
+
+		if (!collides(pos.x, pos.y + 1, current)) {
+			pos.y++;
+		} else {
+			merge();
+			clearLines();
+			spawnPiece();
+		}
+
+		draw();
+	}
+
+	function rotatePiece() {
+		let r = rotate(current);
+
+		if (!collides(pos.x, pos.y, r)) {
+			current = r;
+		}
+		draw();
+	}
+
+	function draw() {
+
+		boardEl.innerHTML = "";
+
+		for (let y = 0; y < ROWS; y++) {
+			for (let x = 0; x < COLS; x++) {
+
+				let val = board[y][x];
+
+				if (current) {
+					for (let py = 0; py < current.length; py++) {
+						for (let px = 0; px < current[py].length; px++) {
+
+							if (!current[py][px]) continue;
+
+							if (x === pos.x + px && y === pos.y + py) {
+								val = 2;
+							}
+						}
+					}
+				}
+
+				const cell = document.createElement("div");
+				cell.className = "tetris-cell" + (val ? " filled" : "");
+				boardEl.appendChild(cell);
+			}
+		}
+	}
+
+	function drawMini(piece, el) {
+
+		el.innerHTML = "";
+
+		if (!piece) return;
+
+		for (let y = 0; y < 4; y++) {
+			for (let x = 0; x < 4; x++) {
+
+				const val = piece[y]?.[x] ? 1 : 0;
+
+				const cell = document.createElement("div");
+				cell.className = "mini-cell" + (val ? " filled" : "");
+				el.appendChild(cell);
+			}
+		}
+	}
+	
+	function updateSide() {
+
+		fillQueue();
+
+		drawMini(nextQueue[0], win.querySelector("#next1"));
+		drawMini(nextQueue[1], win.querySelector("#next2"));
+		drawMini(nextQueue[2], win.querySelector("#next3"));
+
+		win.querySelector("#score").textContent = score;
+	}
+
+	function loop() {
+		drop();
+	}
+
+	function start() {
+		createBoard();
+
+		fillQueue();
+		spawnPiece();
+
+		draw();
+		updateSide();
+
+		dropTimer = setInterval(loop, 500);
+	}
+
+	window.addEventListener("keydown", (e) => {
+
+		if (!document.body.contains(win)) return;
+		if (gameOver) return;
+
+		switch (e.key) {
+			case "ArrowLeft":
+				move(-1, 0);
+				break;
+			case "ArrowRight":
+				move(1, 0);
+				break;
+			case "ArrowDown":
+				drop();
+				break;
+			case "ArrowUp":
+				rotatePiece();
+				break;
+		}
+	});
+
+	start();
+}
+
+function startGlitchScreen() {
+	// ===== OVERRIDE PAGE =====
+	document.body.innerHTML = "";
+	document.body.style.margin = "0";
+	document.body.style.overflow = "hidden";
+	document.body.style.cursor = "none";
+
+	const screen = document.createElement("div");
+	screen.id = "screen";
+
+	Object.assign(screen.style, {
 		position: "fixed",
 		inset: "0",
 		width: "100vw",
 		height: "100vh",
 		background: 'url("images/default_desktop.png") center center / cover no-repeat',
 		pointerEvents: "none"
-		});
+	});
 
-		document.body.appendChild(screen);
+	document.body.appendChild(screen);
 
-		// ===== DISABLE INPUT =====
-		function block(e) {
+	// ===== DISABLE INPUT =====
+	function block(e) {
 		e.preventDefault();
 		e.stopPropagation();
 		return false;
-		}
+	}
 
-		window.addEventListener("mousemove", block, { passive: false });
-		window.addEventListener("mousedown", block, { passive: false });
-		window.addEventListener("mouseup", block, { passive: false });
-		window.addEventListener("keydown", block, { passive: false });
-		window.addEventListener("keyup", block, { passive: false });
-		window.addEventListener("wheel", block, { passive: false });
-		window.addEventListener("contextmenu", block, { passive: false });
+	window.addEventListener("mousemove", block, { passive: false });
+	window.addEventListener("mousedown", block, { passive: false });
+	window.addEventListener("mouseup", block, { passive: false });
+	window.addEventListener("keydown", block, { passive: false });
+	window.addEventListener("keyup", block, { passive: false });
+	window.addEventListener("wheel", block, { passive: false });
+	window.addEventListener("contextmenu", block, { passive: false });
 
-		// ===== SETTINGS =====
-		const SETTINGS = {
+	// ===== SETTINGS =====
+	const SETTINGS = {
 		tearChance: 0.78,
 		warpChance: 0.20
-		};
+	};
 
-		const TILE = 32;
-		const tiles = [];
+	const TILE = 32;
+	const tiles = [];
 
-		function buildTiles() {
+	function buildTiles() {
 		const w = window.innerWidth;
 		const h = window.innerHeight;
 
@@ -353,9 +613,9 @@
 			});
 			}
 		}
-		}
+	}
 
-		function glitchBurst() {
+	function glitchBurst() {
 		for (const t of tiles) {
 			const r = Math.random();
 
@@ -404,22 +664,21 @@
 			setTimeout(() => cube.remove(), 180);
 			}
 		}
-		}
+	}
 
-		function loop() {
+	function loop() {
 		glitchBurst();
 		setTimeout(loop, 30 + Math.random() * 200);
-		}
-
-		buildTiles();
-		loop();
-
-		// ===== AUTO RESET =====
-		setTimeout(() => {
-		location.reload();
-		}, 5000);
 	}
+
+	buildTiles();
+	loop();
+
+	// ===== AUTO RESET =====
+	setTimeout(() => {location.reload();}, 5000);
+}
 
 
 export { openMinesweeper };
+export { openTetris };
 export { startGlitchScreen };
