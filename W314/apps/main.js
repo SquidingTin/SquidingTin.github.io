@@ -3555,8 +3555,18 @@ rakau: `
 
 	const startMenu = document.getElementById("startMenu");
 	
+	function handleStartupHash() {
 
+		const hash = window.location.hash.replace("#", "").trim();
 
+		if (!hash) return;
+
+		if (hash.startsWith("open-")) {
+			openInternet(hash.substring(5), true);
+		}
+	}
+	
+	
 	const taskButtonsContainer = document.querySelector(".task-buttons-container");
 	const windowTaskMap = new WeakMap();
 	const windowLayer = document.getElementById("windowLayer");
@@ -4369,7 +4379,7 @@ rakau: `
 		 Websites
 	========================= */
 
-	function openInternet() {
+	function openInternet(initialPage = "home", maximized = false) {
 
 		let history = ["home"];
 		let index = 0;
@@ -4396,6 +4406,25 @@ rakau: `
 		const win = createWindow("OverNet", content, 200, 120, size, size);
 		win.style.height = "600px";
 
+		// -----------------------------
+		// AUTO MAXIMIZE
+		// -----------------------------
+		if (maximized) {
+
+			win.dataset.maximized = "1";
+
+			win.dataset.old = JSON.stringify({
+				left: win.style.left,
+				top: win.style.top,
+				width: win.style.width
+			});
+
+			win.style.left = "0px";
+			win.style.top = "0px";
+			win.style.width = "100%";
+			win.style.height = "97%";
+		}
+
 		const body = win.querySelector(".browser-body");
 
 		const backBtn = win.querySelector(".backBtn");
@@ -4411,12 +4440,10 @@ rakau: `
 
 			body.innerHTML = "";
 
-			const isMaximized = win.dataset.maximized === "1";
-			const scale = isMaximized ? 1 : 0.9;
+			const scale = win.dataset.maximized === "1" ? 1 : 0.9;
 
 			let html = pages[pageKey] || pages["404"];
 
-			// MAIL OVERRIDE (only exception)
 			if (pageKey === "mail") {
 				html = mail.html;
 			}
@@ -4472,7 +4499,7 @@ rakau: `
 		}
 
 		// -----------------------------
-		// NAV BUTTONS
+		// NAV
 		// -----------------------------
 		backBtn.onclick = () => {
 			if (index > 0) {
@@ -4490,10 +4517,7 @@ rakau: `
 			}
 		};
 
-		homeBtn.onclick = () => {
-			window.location.hash = "home";
-		};
-
+		homeBtn.onclick = () => load("home");
 		goBtn.onclick = () => load(addressBar.value.trim());
 
 		addressBar.addEventListener("keydown", (e) => {
@@ -4502,13 +4526,28 @@ rakau: `
 			}
 		});
 
+
 		// -----------------------------
 		// HASH ROUTING
 		// -----------------------------
 		function loadFromHash() {
 
-			const hash = window.location.hash.replace("#", "").trim();
+			let hash = window.location.hash.replace("#", "").trim();
 
+			// -------------------------
+			// HANDLE open- PREFIX
+			// -------------------------
+			if (hash.startsWith("open-")) {
+
+				hash = hash.substring(5);
+
+				// replace URL so open- is "consumed"
+				window.location.hash = hash;
+			}
+
+			// -------------------------
+			// MAIL SPECIAL CASE
+			// -------------------------
 			if (hash === "mail") {
 				history = ["mail"];
 				index = 0;
@@ -4517,6 +4556,9 @@ rakau: `
 				return;
 			}
 
+			// -------------------------
+			// NORMAL PAGE ROUTING
+			// -------------------------
 			if (hash && pages[hash]) {
 				history = [hash];
 				index = 0;
@@ -4536,7 +4578,6 @@ rakau: `
 	}
 
 
-
 	startMenuContent.appendChild( createMenu(startMenuData) );
 
 	startButton.addEventListener("click", () => {
@@ -4554,4 +4595,5 @@ rakau: `
 	
 
 
+handleStartupHash();
 })();
