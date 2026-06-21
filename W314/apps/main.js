@@ -2914,7 +2914,7 @@ rakau: `
 							</li>
 
 							<li>
-								<b>woof</b><br>
+								<b>NaN</b><br>
 								Elder of Governance
 							</li>
 						</ul>
