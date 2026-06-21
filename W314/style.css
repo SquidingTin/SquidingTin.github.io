@@ -634,7 +634,7 @@ body {
 
 	flex: 1;
 	min-height: 0;
-	overflow: hidden;
+	overflow: auto;
 }
 
 /* =========================
@@ -1004,6 +1004,74 @@ iframe {
 .ms-2 { color: green; }
 .ms-3 { color: red; }
 .ms-4 { color: black; }
+
+
+.tetris-wrapper {
+	display: flex;
+	gap: 10px;
+	align-items: flex-start;
+	position: relative;
+	z-index: 2;
+	overflow: visible;
+}
+
+.tetris-side {
+	width: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	position: relative;
+	z-index: 3;
+	
+	transform: scale(1.5);
+	transform-origin: top left;
+}
+.mini-cell {
+	width: 8px;
+	height: 8px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+	background: transparent;
+}
+
+.mini {
+	display: grid;
+	grid-template-columns: repeat(4, 8px);
+	grid-template-rows: repeat(4, 8px);
+	gap: 0.5px;
+
+	width: fit-content;
+	height: fit-content;
+
+	border: 1px solid #404040;
+	outline: 1px solid #ffffff;
+
+	padding: 2px;
+	background: #c0c0c0;
+}
+
+.mini-cell.filled {
+	background: orange !important;
+}
+
+
+.tetris-board {
+	display: grid;
+	grid-template-columns: repeat(10, 16px);
+	grid-template-rows: repeat(20, 16px);
+}
+
+.tetris-cell {
+	width: 16px;
+	height: 16px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.tetris-cell.filled {
+	background: orange;
+}
+
+
 /* =========================
    RESPONSIVE
 ========================= */
