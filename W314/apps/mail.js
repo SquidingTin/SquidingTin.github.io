@@ -1675,7 +1675,7 @@ export const mail = {
 
     
         <div class="mail-content">
-            Norvaskr has departed from the Daily Emerald due to him losing confidence with the DE team. This mainly happened due to the constent drama, poor leadership, the lack of transparency, and the constent delays due to devs leaving just to be replaced again. They also made a fact to mention that "The Daily Emerald" is profit first rather then community first. Their whole statement can be viewed here: <a href="https://github.com/SquidingTin/SquidingTin.github.io/raw/refs/heads/main/W314/images/custom/squid/updates/Norvaskr%20Resignation.docx">Norvaskr Resignation.docx</a>.
+            Norvaskr of the Dark Forest nations O-5 council and cheif diplomat has departed from the Daily Emerald due to him losing confidence with the DE team. This mainly happened due to the constent drama, poor leadership, the lack of transparency, and the constent delays due to devs leaving just to be replaced again. They also made a fact to mention that "The Daily Emerald" is profit first rather then community first. Their whole statement can be viewed here: <a href="https://github.com/SquidingTin/SquidingTin.github.io/raw/refs/heads/main/W314/images/custom/squid/updates/Norvaskr%20Resignation.docx">Norvaskr Resignation.docx</a>.
         </div>
 
         </div>
