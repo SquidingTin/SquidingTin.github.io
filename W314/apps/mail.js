@@ -1049,12 +1049,12 @@ export const mail = {
         </label>
 
         <label class="mail news" for="m2">
-            <div class="mail-title">News Roundup</div>
+            <div class="mail-title">News Roundup 7-8-26</div>
             <div class="mail-sub">Squid</div>
         </label>
 
         <label class="mail news" for="m3">
-            <div class="mail-title">JosBot Leaving?</div>
+            <div class="mail-title">News Roundup 7-6-26</div>
             <div class="mail-sub">Squid</div>
         </label>
 
@@ -1064,7 +1064,7 @@ export const mail = {
         </label>
 
         <label class="mail news" for="m5">
-            <div class="mail-title">JosBot Leaving?</div>
+            <div class="mail-title">News Roundup 6-23-26</div>
             <div class="mail-sub">Squid</div>
         </label>
 
@@ -1671,21 +1671,21 @@ export const mail = {
         </div>
 
         <div class="viewer-panel m2">
-            <h2>Norvaskr Resignation</h2>
+            <h2>Surveyors Report</h2>
 
     
         <div class="mail-content">
-            Norvaskr of the Dark Forest nations O-5 council and chief diplomat has departed from the Daily Emerald due to him losing confidence with the DE team. This mainly happened due to the constent drama, poor leadership, the lack of transparency, and the constent delays due to devs leaving just to be replaced again. They also made a fact to mention that "The Daily Emerald" is profit first rather then community first. Their whole statement can be viewed here: <a href="https://github.com/SquidingTin/SquidingTin.github.io/raw/refs/heads/main/W314/images/custom/squid/updates/Norvaskr%20Resignation.docx">Norvaskr Resignation.docx</a>.
+            Reports from surveyors indicate that the server's world has expanded to 18,000 x 18,000 blocks, with extensive terrain and biome renovations documented across nearly every region.<br><br>Residents of the "Garden of Notch" will find familiar sights gone, as the former Birch Forest has been rebuilt into a Meadow. Elsewhere, the "Plains Biome" has pushed its coastline farther outward, while long-standing issues in the "Savanna Biome" have been addressed with schematic fixes and a corrected river. Travelers venturing east will discover the "Cherry Biome" has expanded with a new island, smoother mountains, and winding streams, while the "Mushroom Biome" has been rebuilt from the ground up with an additional island and the removal of Sweet Berry bushes.<br><br>Farther north, the "Snow Biome" has undergone a complete renovation, now featuring every snow biome, ice caves, ice spikes, and improved terrain. Foresters are also reporting major changes, with the "Forest Biome" becoming denser through extensive terrain improvements, renovated Birch Forests, new coves, additional islands, and a Flower Forest. The nearby "Taiga Biome" has been smoothed and had its ferns restored, while the "Jungle Biome" has expanded with three new islands and improved rivers.<br><br>The southern regions have not been overlooked either, as the "Desert Biome" now features custom caves, corrected vegetation, and a new oasis-like region, while the "Mesa Biome" has gained a custom Eroded Badlands, canyon, caves, a renovated Madagascar, and Salt Flats. In the "Dark Oak Biome", new rivers have been carved through the landscape and the Pale Garden has received additional fixes. Even the seas have changed, with improved ocean terrain, a newly discovered trench, and underwater volcanoes now reported beneath the waves.
         </div>
 
         </div>
 
         <div class="viewer-panel m3">
-            <h2>News Roundup</h2>
+            <h2>Norvaskr Resignation</h2>
 
     
         <div class="mail-content">
-            Reports indicate that JosBot is no longer working for The Daily Emerald. However, this information was mistakenly released earlier than intended, as the announcement was originally planned for the end of this week. Do note: His departure has nothing to do with TDE itself, the reasons stated for their departure are personal rather than professional. The Daily Emerald team has recognized that relying on a single developer is not sustainable in the long term and will likely move toward a development team rather than a solo developer model. It should also be noted that Jos is not attempting to leave the project without support. While information regarding a replacement is not yet available, efforts are being made to ensure a smooth transition.
+            Norvaskr of the Dark Forest nations O-5 council and chief diplomat has departed from the Daily Emerald due to him losing confidence with the DE team. This mainly happened due to the constent drama, poor leadership, the lack of transparency, and the constent delays due to devs leaving just to be replaced again. They also made a fact to mention that "The Daily Emerald" is profit first rather then community first. Their whole statement can be viewed here: <a href="https://github.com/SquidingTin/SquidingTin.github.io/raw/refs/heads/main/W314/images/custom/squid/updates/Norvaskr%20Resignation.docx">Norvaskr Resignation.docx</a>.
         </div>
 
         </div>
@@ -1706,7 +1706,7 @@ export const mail = {
         </div>
 
         <div class="viewer-panel m5">
-            <h2>News Roundup</h2>
+            <h2>JosBot Leaving?</h2>
 
     
         <div class="mail-content">
@@ -1746,7 +1746,7 @@ export const mail = {
         </div>
 
         <div class="viewer-panel m8">
-            <h2>News Roundup</h2>
+            <h2>News Roundup 6-21-26</h2>
 
     
         <div class="mail-content">
