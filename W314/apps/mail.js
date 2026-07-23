@@ -1764,7 +1764,7 @@ export const mail = {
 
     
         <div class="mail-content">
-            Hello, and welcome to the OverNet.<br>I am Squid, I am a resident of Rakau nation and this is my personal project for the Daily Emerald SMP and it's news. This project is meant to look like Windows 95 though not a 1-1 recreation.<br><br>If you have a suggestion, find a bug, or anything else, my contact is squid6245 on discord.<br><br>information about the mail system:<br>Current there are 131 E-mails in the system<br>The mail used to be very hard to update as it was in the main.js, though that was later moved to mail.js<br>Images within the mail could actually be put in any location, though that was only really used in the ARX email.
+            Hello, and welcome to the OverNet.<br>I am Squid, I am a resident of Rakau nation and this is my personal project for the Daily Emerald SMP and it's news. This project is meant to look like Windows 95 though not a 1-1 recreation.<br><br>If you have a suggestion, find a bug, or anything else, my contact is squid6245 on discord.
         </div>
 
         </div>
@@ -1774,7 +1774,7 @@ export const mail = {
 
     
         <div class="mail-content">
-            Hello users of Windows 3.14, as you already know DE-SMP has offically ended, while ill try to keep the mail online i am frankly burnt out a bit. This is not to say i plan on leaving this project to die, more then likely ill keep posting mailing updates as i see them. Though i won't be going out of my way to collect more mail from other nations or make new websites for companies.
+            Hello users of Windows 3.14, as you already know DE-SMP has offically ended, while ill try to keep the mail online i am frankly burnt out a bit. This is not to say i plan on leaving this project to die, more then likely ill keep posting mailing updates as i see them. Though i won't be going out of my way to collect more mail from other nations or make new websites for companies.<br><br>Information  about the mail system:<br>Current there are 131 E-mails in the system<br>The mail used to be very hard to update as it was in the main.js, though that was later moved to mail.js<br>Images within the mail could actually be put in any location, though that was only really used in the ARX email.
         </div>
 
         </div>
