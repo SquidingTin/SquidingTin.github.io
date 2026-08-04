@@ -8,12 +8,12 @@ import { updateClock } from "./clock.js";
 		{ name: "Taiga", value: "images/documents/backgrounds/Taiga.png" },
 		{ name: "Dark Forest", value: "images/documents/backgrounds/Dark.png" },
 		{ name: "Plains", value: "images/documents/backgrounds/Plains.png" },
-		{ name: "Cherry Grove", value: "images/documents/backgrounds/Cherry.png" }
+		{ name: "Cherry Grove", value: "images/documents/backgrounds/Cherry.png" },
 		{ name: "Desert", value: "images/documents/backgrounds/Desert.png" },
 		{ name: "Forest", value: "images/documents/backgrounds/Forest.png" },
 		{ name: "Jungle", value: "images/documents/backgrounds/Jungle.png" },
 		{ name: "Snow", value: "images/documents/backgrounds/Snow.png" },
-		{ name: "Swamp", value: "images/documents/backgrounds/Swamp.png" },
+		{ name: "Swamp", value: "images/documents/backgrounds/Swamp.png" }
 	];
 	
 	let settingsWindow = null;
