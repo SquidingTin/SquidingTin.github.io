@@ -53,21 +53,21 @@ import { pages } from "./pages.js";
 				{ name: "Blossomgate Propaganda.png", path: "images/Official_propaganda_for_Blossomgate.png", type: "image" },
 			]
 		},
-		{ name: "Mesa.png", path: "images/mesa.png", type: "image" },
-		{ name: "Taiga.png", path: "images/forest.png", type: "image" },
-		{ name: "Mountains.png", path: "images/mountains.png", type: "image" },
-		{ name: "Dark Forest.png", path: "images/darkforest.png", type: "image" },
-		{ name: "Plains.png", path: "images/plains.png", type: "image" },
-		{ name: "Cherry Grove.png", path: "images/cherrygrove.png", type: "image" },
+		{ name: "Old Mesa.png", path: "images/documents/Mesa_Old.png", type: "image" },
+		{ name: "Old Taiga.png", path: "images/documents/Forest_Old.png", type: "image" },
+		{ name: "Old Mountains.png", path: "images/documents/Mountains_Old.png", type: "image" },
+		{ name: "Old Dark Forest.png", path: "images/documents/Darkforest_Old.png", type: "image" },
+		{ name: "Old Plains.png", path: "images/documents/Plains_Old.png", type: "image" },
+		{ name: "Old Cherry Grove.png", path: "images/documents/Cherrygrove_Old.png", type: "image" },
 		
-		{ name: "Spawn Factory.png", path: "images/New_newspawncity1.png", type: "image" },
-		{ name: "Spawn Tower.png", path: "images/New_newspawncity2.png", type: "image" },
-		{ name: "Spawn Market.png", path: "images/New_newspawncity3.png", type: "image" },
-		{ name: "Spawn Arcade.png", path: "images/New_newspawncity4.png", type: "image" },
+		{ name: "Spawn Factory.png", path: "images/documents/New_newspawncity1.png", type: "image" },
+		{ name: "Spawn Tower.png", path: "images/documents/New_newspawncity2.png", type: "image" },
+		{ name: "Spawn Market.png", path: "images/documents/New_newspawncity3.png", type: "image" },
+		{ name: "Spawn Arcade.png", path: "images/documents/New_newspawncity4.png", type: "image" },
 		
 		
-		{ name: "Map V3.jpg", path: "images/2026-06-21-14-15-57-ariadne68-minecraft-overworld-day.jpg", type: "image" },
-		{ name: "New Spawn Map V2.png", path: "images/newspawncity_map.png", type: "image" },
+		{ name: "Map V3.jpg", path: "images/documents/2026-06-21-14-15-57-ariadne68-minecraft-overworld-day.jpg", type: "image" },
+		{ name: "New Spawn Map V2.png", path: "images/documents/newspawncity_map.png", type: "image" },
 
 		{ name: "Anthem of Rakau.mp3", path: "audio/forest.mp3", type: "audio" }
 	];
@@ -137,13 +137,13 @@ import { pages } from "./pages.js";
 	];
 
 	const trashFiles = [
-		{ name: "2026-05-09 18.33.42.png", path: "images/2026-05-09_18.33.42.png" },
-		{ name: "2026-05-23 06.49.02.png", path: "images/2026-05-23_06.49.02.png" },
-		{ name: "World Map.png", path: "images/map.png"},
-		{ name: "New Spawn City.png", path: "images/newspawncity.png", type: "image" },
-		{ name: "New Spawn City 2.png", path: "images/newspawncity2.png", type: "image" },
+		{ name: "2026-05-09 18.33.42.png", path: "images/documents/2026-05-09_18.33.42.png" },
+		{ name: "2026-05-23 06.49.02.png", path: "images/documents/2026-05-23_06.49.02.png" },
+		{ name: "World Map.png", path: "images/documents/map.png"},
+		{ name: "New Spawn City.png", path: "images/documents/newspawncity.png", type: "image" },
+		{ name: "New Spawn City 2.png", path: "images/documents/newspawncity2.png", type: "image" },
 		
-		{ name: "Map V2.png", path: "images/Map_V2_Combo.png", type: "image" },
+		{ name: "Map V2.png", path: "images/documents/Map_V2_Combo.png", type: "image" },
 		//{ name: "Anthem of Rakau.mp3", path: "audio/forest.mp3", type: "audio" }
 	];
 
@@ -845,11 +845,11 @@ import { pages } from "./pages.js";
 				okBtn.style.marginTop = "10px";
 
 				//okBtn.innerHTML = `<button type="button">OK</button>`;
-				okBtn.querySelector("button").onclick = () => {
+
+				okBtn.onclick = () => {
 					logWindow.remove();
 					logWindow = null;
 				};
-
 				body.appendChild(okBtn);
 			}
 
