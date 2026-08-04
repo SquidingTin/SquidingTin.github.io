@@ -2,13 +2,18 @@
 import { updateClock } from "./clock.js";
 	const backgrounds = [
 		{ name: "None", value: "" },
-		{ name: "New Spawn City", value: "images/newspawncity.png" },
-		{ name: "Mesa", value: "images/mesa.png" },
-		{ name: "Taiga", value: "images/forest.png" },
-		{ name: "Mountains", value: "images/mountains.png" },
-		{ name: "Dark Forest", value: "images/darkforest.png" },
-		{ name: "Plains", value: "images/plains.png" },
-		{ name: "Cherry Grove", value: "images/cherrygrove.png" }
+		{ name: "New Spawn City", value: "images/documents/backgrounds/newspawncity.png" },
+		
+		{ name: "Mesa", value: "images/documents/backgrounds/Mesa.png" },
+		{ name: "Taiga", value: "images/documents/backgrounds/Taiga.png" },
+		{ name: "Dark Forest", value: "images/documents/backgrounds/Dark.png" },
+		{ name: "Plains", value: "images/documents/backgrounds/Plains.png" },
+		{ name: "Cherry Grove", value: "images/documents/backgrounds/Cherry.png" }
+		{ name: "Desert", value: "images/documents/backgrounds/Desert.png" },
+		{ name: "Forest", value: "images/documents/backgrounds/Forest.png" },
+		{ name: "Jungle", value: "images/documents/backgrounds/Jungle.png" },
+		{ name: "Snow", value: "images/documents/backgrounds/Snow.png" },
+		{ name: "Swamp", value: "images/documents/backgrounds/Swamp.png" },
 	];
 	
 	let settingsWindow = null;
