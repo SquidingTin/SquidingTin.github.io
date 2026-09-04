@@ -33,8 +33,8 @@
 			if (dialogText) {
 				dialogText.textContent =
 					progress < 1
-						? "Restoring world from backup..."
-						: "Backup Restored";
+						? "Restoring world..."
+						: "World restored";
 			}
 
 			const percent = Math.floor(progress * 100);
