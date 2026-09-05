@@ -1034,7 +1034,7 @@ export const mail = {
     }
 
 
-    #sub-The_International:checked ~ .inbox .mail:not(.The_International) {
+    #sub-International_News_Network:checked ~ .inbox .mail:not(.International_News_Network) {
         display: none;
     }
 
@@ -1079,11 +1079,6 @@ export const mail = {
     }
 
 
-    #sub-International_News_Network:checked ~ .inbox .mail:not(.International_News_Network) {
-        display: none;
-    }
-
-
     #sub-Glacial_Press:checked ~ .inbox .mail:not(.Glacial_Press) {
         display: none;
     }
@@ -1110,7 +1105,7 @@ export const mail = {
     <input type="radio" name="category" id="cat-trash">
     <input type="radio" name="category" id="sub-The_Daily_Spruce">
     <input type="radio" name="category" id="sub-Icy_News">
-    <input type="radio" name="category" id="sub-The_International">
+    <input type="radio" name="category" id="sub-International_News_Network">
     <input type="radio" name="category" id="sub-Slime_Times">
     <input type="radio" name="category" id="sub-Mushroom_Times">
     <input type="radio" name="category" id="sub-Cactus_News">
@@ -1119,7 +1114,6 @@ export const mail = {
     <input type="radio" name="category" id="sub-Mesa_Times">
     <input type="radio" name="category" id="sub-Murkland_Times">
     <input type="radio" name="category" id="sub-Fatui">
-    <input type="radio" name="category" id="sub-International_News_Network">
     <input type="radio" name="category" id="sub-Glacial_Press">
     <input type="radio" name="category" id="sub-Great_Sylven">
     <input type="radio" name="category" id="sub-Bedrock_Chronicle">
@@ -1299,7 +1293,7 @@ export const mail = {
         <label for="cat-trash">Trash</label>
         <label class="sub-label" for="sub-The_Daily_Spruce">The Daily Spruce</label>
         <label class="sub-label" for="sub-Icy_News">Icy News</label>
-        <label class="sub-label" for="sub-The_International">The International</label>
+        <label class="sub-label" for="sub-International_News_Network">International News Network</label>
         <label class="sub-label" for="sub-Slime_Times">Slime Times</label>
         <label class="sub-label" for="sub-Mushroom_Times">Mushroom Times</label>
         <label class="sub-label" for="sub-Cactus_News">Cactus News</label>
@@ -1308,7 +1302,6 @@ export const mail = {
         <label class="sub-label" for="sub-Mesa_Times">Mesa Times</label>
         <label class="sub-label" for="sub-Murkland_Times">Murkland Times</label>
         <label class="sub-label" for="sub-Fatui">Fatui</label>
-        <label class="sub-label" for="sub-International_News_Network">International News Network</label>
         <label class="sub-label" for="sub-Glacial_Press">Glacial Press</label>
         <label class="sub-label" for="sub-Great_Sylven">Great Sylven</label>
         <label class="sub-label" for="sub-Bedrock_Chronicle">Bedrock Chronicle</label>
@@ -1340,9 +1333,9 @@ export const mail = {
             <div class="mail-sub">The Daily Spruce</div>
         </label>
 
-        <label class="mail news The_International" for="m6">
+        <label class="mail news International_News_Network" for="m6">
             <div class="mail-title">The International 6/24/26</div>
-            <div class="mail-sub">The International</div>
+            <div class="mail-sub">International News Network</div>
         </label>
 
         <label class="mail news Icy_News" for="m7">
@@ -1365,9 +1358,9 @@ export const mail = {
             <div class="mail-sub">The Daily Spruce</div>
         </label>
 
-        <label class="mail news The_International" for="m11">
+        <label class="mail news International_News_Network" for="m11">
             <div class="mail-title">The International 8/20/26</div>
-            <div class="mail-sub">The International</div>
+            <div class="mail-sub">International News Network</div>
         </label>
 
         <label class="mail news The_Daily_Spruce" for="m12">
