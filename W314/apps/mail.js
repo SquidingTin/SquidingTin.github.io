@@ -2267,14 +2267,14 @@ export const mail = {
             <h2>The International 6/24/26</h2>
 
     
-        <div class="mail-images top">
+        <div class="mail-content">
+            The International newspaper for 6/24/26 covers: UN ciczen caught after a killing spree, A planned release date has been released, Working airport transportation revealed, The Green Cross dissolves, and much more.
+        </div>
+
+        <div class="mail-images bottom">
             <img src="images/news/The_International/8_24_26_1.jpg" style="width:33%; height:auto; object-fit:cover;">
         <img src="images/news/The_International/8_24_26_2.jpg" style="width:33%; height:auto; object-fit:cover;">
         <img src="images/news/The_International/8_24_26_3.jpg" style="width:33%; height:auto; object-fit:cover;">
-        </div>
-
-        <div class="mail-content">
-            The International newspaper for 6/24/26 covers: UN ciczen caught after a killing spree, A planned release date has been released, Working airport transportation revealed, The Green Cross dissolves, and much more.
         </div>
 
         </div>
@@ -2344,14 +2344,14 @@ export const mail = {
             <h2>The International 8/20/26</h2>
 
     
-        <div class="mail-images top">
+        <div class="mail-content">
+            The International newspaper for 8/20/26 covers: The rebirth of the Mesa Biome, An interview with Clarito, An interview with Tiny New England, Hub sneak peak, and much more.
+        </div>
+
+        <div class="mail-images bottom">
             <img src="images/news/The_International/8_20_26_1.jpg" style="width:33%; height:auto; object-fit:cover;">
         <img src="images/news/The_International/8_20_26_2.jpg" style="width:33%; height:auto; object-fit:cover;">
         <img src="images/news/The_International/8_20_26_3.jpg" style="width:33%; height:auto; object-fit:cover;">
-        </div>
-
-        <div class="mail-content">
-            The International newspaper for 8/20/26 covers: The rebirth of the Mesa Biome, An interview with Clarito, An interview with Tiny New England, Hub sneak peak, and much more.
         </div>
 
         </div>
