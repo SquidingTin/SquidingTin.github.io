@@ -173,22 +173,6 @@ export const pages = {
 
 							</div>
 
-							<div class="page-card" onclick="parent.location.hash='404'">
-
-								<div class="page-icon">
-									TDE
-								</div>
-
-								<div class="page-name">
-									The Daily Emerald
-								</div>
-
-								<div class="page-url">
-									www.DailyEmerald.com
-								</div>
-
-							</div>
-
 							<div class="page-card" onclick="parent.location.hash='mail'">
 
 								<div class="page-icon">
