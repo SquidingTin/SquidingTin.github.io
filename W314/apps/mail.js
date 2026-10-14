@@ -2232,7 +2232,7 @@ export const mail = {
 
     
         <div class="mail-images top">
-            <img src="images/news/Icy_News/10-12-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Icy_News/10-12-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         <div class="mail-content">
@@ -2246,7 +2246,7 @@ export const mail = {
 
     
         <div class="mail-images top">
-            <img src="images/news/Icy_News/10-5-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Icy_News/10-5-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         <div class="mail-content">
@@ -2260,7 +2260,7 @@ export const mail = {
 
     
         <div class="mail-images top">
-            <img src="images/news/Icy_News/9-28-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Icy_News/9-28-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         <div class="mail-content">
@@ -2274,7 +2274,7 @@ export const mail = {
 
     
         <div class="mail-images top">
-            <img src="images/news/Icy_News/9-21-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Icy_News/9-21-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         <div class="mail-content">
@@ -2288,7 +2288,7 @@ export const mail = {
 
     
         <div class="mail-images top">
-            <img src="images/news/Icy_News/9-14-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Icy_News/9-14-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         <div class="mail-content">
@@ -2306,8 +2306,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Icy_News/9-9-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Icy_News/9-9-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Icy_News/9-9-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Icy_News/9-9-26_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2321,7 +2321,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Icy_News/9-8-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Icy_News/9-8-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2335,11 +2335,11 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_9-4-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_9-4-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_9-4-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_9-4-26_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_9-4-26_4.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_9-4-26.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_9-4-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_9-4-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_9-4-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_9-4-26_4.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2353,7 +2353,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Icy_News/9-4-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Icy_News/9-4-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2367,7 +2367,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_8-27-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_8-27-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2381,9 +2381,9 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_8-25-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_8-25-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_8-25-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_8-25-26.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_8-25-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_8-25-26_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2397,9 +2397,9 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/The_International/8_24_26_1.jpg" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/8_24_26_2.jpg" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/8_24_26_3.jpg" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/The_International/8_24_26_1.jpg" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/8_24_26_2.jpg" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/8_24_26_3.jpg" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2413,7 +2413,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Icy_News/8-21-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Icy_News/8-21-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2427,10 +2427,10 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/slimetimes/slimetimes_9-22-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/slimetimes/slimetimes_9-22-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/slimetimes/slimetimes_9-22-26_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/slimetimes/slimetimes_9-22-26_4.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/slimetimes/slimetimes_9-22-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/slimetimes/slimetimes_9-22-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/slimetimes/slimetimes_9-22-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/slimetimes/slimetimes_9-22-26_4.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2444,9 +2444,9 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_8-22-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_8-22-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_8-22-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_8-22-26.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_8-22-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_8-22-26_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2460,7 +2460,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_8-20-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_8-20-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2474,9 +2474,9 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/The_International/8_20_26_1.jpg" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/8_20_26_2.jpg" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/8_20_26_3.jpg" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/The_International/8_20_26_1.jpg" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/8_20_26_2.jpg" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/8_20_26_3.jpg" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2490,7 +2490,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_8-19-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_8-19-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2504,7 +2504,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_8-17-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_8-17-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2518,7 +2518,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_8-16-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_8-16-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2532,7 +2532,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_8-15-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_8-15-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2546,8 +2546,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/slimetimes/slimetimes_8-06-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/slimetimes/slimetimes_8-06-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/slimetimes/slimetimes_8-06-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/slimetimes/slimetimes_8-06-26_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2561,7 +2561,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_8-1-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_8-1-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2585,7 +2585,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Aurora Times/AT-7-23-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Aurora Times/AT-7-23-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2629,10 +2629,10 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cactus_News/07-13-2026_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/07-13-2026_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/07-13-2026_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/07-13-2026_4.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cactus_News/07-13-2026_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Cactus_News/07-13-2026_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Cactus_News/07-13-2026_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Cactus_News/07-13-2026_4.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2646,7 +2646,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Acorn/DailyAcorn712.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Acorn/DailyAcorn712.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2660,7 +2660,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_10.jpg" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_10.jpg" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2684,7 +2684,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_7-9-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_7-9-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2708,7 +2708,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_7-7-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_7-7-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2732,7 +2732,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_7-4-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_7-4-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2746,7 +2746,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_7-3-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_7-3-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2760,7 +2760,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_7-1-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_7-1-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2774,7 +2774,7 @@ export const mail = {
                 If you have been checking or even just taking a peek at the propaganda channel in the Daily Emerald Discord, you may have noticed us:<br><br>ARX Industries is a company focused on selling a wide range of items at reasonable prices. We currently have many members ready to supply food, gear, blocks, happy ghasts, and more!<br><br>We are also hiring people to help us expand and better serve the community.
             </div>
             <div class="mail-images right">
-                <img src="images/custom/fenixzian10/ARX/ARX_Industries.png" style="width:100%; height:auto; object-fit:cover;">
+                <img data-src="images/custom/fenixzian10/ARX/ARX_Industries.png" style="width:100%; height:auto; object-fit:cover;">
             </div>
         </div>
 
@@ -2799,7 +2799,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Acorn/DailyAcorn622.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Acorn/DailyAcorn622.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2813,9 +2813,9 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Mesa_Times/6-22-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-22-26_02.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-22-26_03.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Mesa_Times/6-22-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-22-26_02.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-22-26_03.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2829,7 +2829,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/documents/2026-06-21-14-15-57-ariadne68-minecraft-overworld-day.jpg" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/documents/2026-06-21-14-15-57-ariadne68-minecraft-overworld-day.jpg" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2853,10 +2853,10 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Mesa_Times/6-19-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-19-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-19-26_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-19-26_4.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Mesa_Times/6-19-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-19-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-19-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-19-26_4.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2870,7 +2870,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_6-18-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/bedrock_chronicle/Bedrock_Chronicle_6-18-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2884,7 +2884,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/custom/squid/updates/GTA6.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/custom/squid/updates/GTA6.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2898,10 +2898,10 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cactus_News/06-18-2026_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/06-18-2026_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/06-18-2026_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/06-18-2026_4.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cactus_News/06-18-2026_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Cactus_News/06-18-2026_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Cactus_News/06-18-2026_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Cactus_News/06-18-2026_4.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2915,9 +2915,9 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Murk/E9_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Murk/E9_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Murk/E9_1.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Murk/E9_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Murk/E9_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Murk/E9_1.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2931,7 +2931,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Icy_News/6-17-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Icy_News/6-17-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2945,7 +2945,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_9.jpg" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_9.jpg" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2959,9 +2959,9 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/custom/squid/updates/6_16_26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/custom/squid/updates/6_16_26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/custom/squid/updates/6_16_26_3.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/custom/squid/updates/6_16_26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/custom/squid/updates/6_16_26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/custom/squid/updates/6_16_26_3.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2975,7 +2975,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/custom/spam/spamcan/06-15-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/custom/spam/spamcan/06-15-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -2989,8 +2989,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Acorn/DailyAcorn615pt1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Acorn/DailyAcorn615pt2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Acorn/DailyAcorn615pt1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Acorn/DailyAcorn615pt2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3004,7 +3004,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Acorn/DailyAcorn614.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Acorn/DailyAcorn614.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3018,7 +3018,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Murk/E8.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Murk/E8.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3032,7 +3032,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_6-14-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/bedrock_chronicle/Bedrock_Chronicle_6-14-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3046,8 +3046,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Fatui/Fatui_2026-06-14.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Fatui/Fatui_2026-06-14_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Fatui/Fatui_2026-06-14.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Fatui/Fatui_2026-06-14_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3061,9 +3061,9 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/The_International/6_13_26_1.jpg" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/6_13_26_2.jpg" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/6_13_26_3.jpg" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/The_International/6_13_26_1.jpg" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/6_13_26_2.jpg" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/6_13_26_3.jpg" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3077,10 +3077,10 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cactus_News/6-13-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/6-13-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/6-13-26_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/6-13-26_4.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cactus_News/6-13-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Cactus_News/6-13-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Cactus_News/6-13-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Cactus_News/6-13-26_4.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3094,8 +3094,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Mesa_Times/6-12-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-12-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Mesa_Times/6-12-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-12-26_1.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3109,9 +3109,9 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_6-12-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_6-29-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_6-29-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_6-12-26.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_6-29-26.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_6-29-26_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3125,7 +3125,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Murk/E7.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Murk/E7.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3139,12 +3139,12 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Mesa_Times/6-11-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-11-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-11-26_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-11-26_4.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-11-26_5.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-11-26_6.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Mesa_Times/6-11-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-11-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-11-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-11-26_4.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-11-26_5.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-11-26_6.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3158,7 +3158,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Acorn/THE_DAILY_ACORN_3.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Acorn/THE_DAILY_ACORN_3.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3172,8 +3172,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_6-10-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_6-10-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_6-10-26.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_6-10-26_1.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3187,17 +3187,17 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Mesa_Times/6-10-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-10-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-10-26_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-10-26_4.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-10-26_5.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-10-26_6.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-10-26_7.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-10-26_8.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-10-26_9.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-10-26_10.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-10-26_11.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Mesa_Times/6-10-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-10-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-10-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-10-26_4.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-10-26_5.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-10-26_6.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-10-26_7.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-10-26_8.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-10-26_9.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-10-26_10.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-10-26_11.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3211,10 +3211,10 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/The_International/6_08_26_1.jpg" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/6_08_26_2.jpg" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/6_08_26_3.jpg" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/6_08_26_4.jpg" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/The_International/6_08_26_1.jpg" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/6_08_26_2.jpg" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/6_08_26_3.jpg" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/6_08_26_4.jpg" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3228,7 +3228,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Glacial_Press/GPnews_June_7.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Glacial_Press/GPnews_June_7.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3242,7 +3242,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Murk/E6.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Murk/E6.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3256,7 +3256,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Sylven/Great_Sylven_W3.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Sylven/Great_Sylven_W3.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3270,8 +3270,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cactus_News/6-7-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/6-7-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cactus_News/6-7-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Cactus_News/6-7-26_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3285,7 +3285,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_6-7-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/bedrock_chronicle/Bedrock_Chronicle_6-7-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3299,7 +3299,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Mesa_Times/6-7-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Mesa_Times/6-7-26_1.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3313,7 +3313,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_6-6-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_6-6-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3337,11 +3337,11 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Mesa_Times/6-5-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-5-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-5-26_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-5-26_4.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-5-26_5.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Mesa_Times/6-5-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-5-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-5-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-5-26_4.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-5-26_5.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3355,7 +3355,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_6-5-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/bedrock_chronicle/Bedrock_Chronicle_6-5-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3369,10 +3369,10 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_6-5-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_6-5-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_6-5-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_6-29-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_6-5-26.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_6-5-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_6-5-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_6-29-26_1.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3396,10 +3396,10 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/MushroomTimes/6-4-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/MushroomTimes/6-4-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/MushroomTimes/6-4-26_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/MushroomTimes/6-4-26_4.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/MushroomTimes/6-4-26.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/MushroomTimes/6-4-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/MushroomTimes/6-4-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/MushroomTimes/6-4-26_4.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3413,10 +3413,10 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Mesa_Times/6-4-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-4-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-4-26_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-4-26_4.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Mesa_Times/6-4-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-4-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-4-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-4-26_4.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3430,7 +3430,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_6-4-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/bedrock_chronicle/Bedrock_Chronicle_6-4-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3444,9 +3444,9 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Mesa_Times/6-3-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-3-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-3-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Mesa_Times/6-3-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-3-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-3-26_3.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3460,7 +3460,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_6-2-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/bedrock_chronicle/Bedrock_Chronicle_6-2-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3474,9 +3474,9 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Mesa_Times/6-2-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-2-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/6-2-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Mesa_Times/6-2-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-2-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/6-2-26_3.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3490,7 +3490,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cactus_News/6-02-26_1.jpg" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cactus_News/6-02-26_1.jpg" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3504,7 +3504,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Murk/E5.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Murk/E5.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3518,8 +3518,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cactus_News/6-1-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/6-01-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cactus_News/6-1-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Cactus_News/6-01-26_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3533,7 +3533,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Glacial_Press/GPnews7.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Glacial_Press/GPnews7.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3547,10 +3547,10 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/The_International/6_01_26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/6_01_26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/6_01_26_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/6_01_26_4.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/The_International/6_01_26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/6_01_26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/6_01_26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/6_01_26_4.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3564,7 +3564,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_6-1-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/bedrock_chronicle/Bedrock_Chronicle_6-1-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3578,7 +3578,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-31-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-31-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3602,8 +3602,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cactus_News/5-30-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/5-30-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cactus_News/5-30-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Cactus_News/5-30-26_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3617,7 +3617,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-30-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-30-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3631,9 +3631,9 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/The_International/5_29_26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/5_29_26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/5_29_26_3.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/The_International/5_29_26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/5_29_26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/5_29_26_3.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3647,9 +3647,9 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/slimetimes/slimetimes_5-29-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/slimetimes/slimetimes_5-29-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/slimetimes/slimetimes_5-29-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/slimetimes/slimetimes_5-29-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/slimetimes/slimetimes_5-29-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/slimetimes/slimetimes_5-29-26_3.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3663,9 +3663,9 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cactus_News/5-29-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/5-29-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/5-29-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cactus_News/5-29-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Cactus_News/5-29-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Cactus_News/5-29-26_3.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3679,7 +3679,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-29-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-29-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3693,9 +3693,9 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_5-30-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_5-30-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_5-30-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-30-26.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-30-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-30-26_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3709,10 +3709,10 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/The_International/5_28_26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/5_28_26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/5_28_26_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/5_28_26_4.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/The_International/5_28_26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/5_28_26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/5_28_26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/5_28_26_4.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3726,10 +3726,10 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Mesa_Times/5-28-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/5-28-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/5-28-26_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/5-28-26_4.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Mesa_Times/5-28-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/5-28-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/5-28-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/5-28-26_4.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3743,8 +3743,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_5-28-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_5-28-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-28-26.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-28-26_1.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3758,7 +3758,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-28-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-28-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3772,7 +3772,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Sylven/Great_Sylven_W2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Sylven/Great_Sylven_W2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3786,7 +3786,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-26-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/bedrock_chronicle/Bedrock_Chronicle_5-26-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3810,9 +3810,9 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/The_International/5_26_26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/5_26_26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/5_26_26_3.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/The_International/5_26_26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/5_26_26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/5_26_26_3.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3826,7 +3826,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Sylven/Great_Sylven_W1.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Sylven/Great_Sylven_W1.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3840,9 +3840,9 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_5-26-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_5-26-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_5-26-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-26-26.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-26-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-26-26_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3856,7 +3856,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Sylven/Great_Sylven_W1.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Sylven/Great_Sylven_W1.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3870,8 +3870,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Mesa_Times/5-25-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/5-25-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Mesa_Times/5-25-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/5-25-26_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3885,8 +3885,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cactus_News/5-25-26_1.jpg" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/5-25-26_2.jpg" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cactus_News/5-25-26_1.jpg" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Cactus_News/5-25-26_2.jpg" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3900,8 +3900,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_5-25-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_5-25-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-25-26.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-25-26_1.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3915,8 +3915,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/The_International/5_25_26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/5_25_26_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/The_International/5_25_26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/5_25_26_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3930,8 +3930,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/The_International/5_24_26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/The_International/5_24_26_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/The_International/5_24_26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/The_International/5_24_26_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3945,7 +3945,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Glacial_Press/GPnews6.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Glacial_Press/GPnews6.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3959,10 +3959,10 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/slimetimes/5-23-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/slimetimes/5-23-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/slimetimes/5-23-26_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/slimetimes/5-23-26_4.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/slimetimes/5-23-26.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/slimetimes/5-23-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/slimetimes/5-23-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/slimetimes/5-23-26_4.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3976,13 +3976,13 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Mesa_Times/5-23-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/5-23-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/5-23-26_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/5-23-26_4.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/5-23-26_5.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/5-23-26_6.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/5-23-26_7.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Mesa_Times/5-23-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/5-23-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/5-23-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/5-23-26_4.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/5-23-26_5.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/5-23-26_6.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/5-23-26_7.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -3996,8 +3996,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cactus_News/5-23-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/5-23-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cactus_News/5-23-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Cactus_News/5-23-26_1.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4011,9 +4011,9 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_5-23-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_5-23-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_5-23-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-23-26.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-23-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-23-26_3.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4027,7 +4027,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_7.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_7.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4041,7 +4041,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Murk/E4.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Murk/E4.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4055,12 +4055,12 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Mesa_Times/5-22-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/5-22-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/5-22-26_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/5-22-26_4.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/5-22-26_5.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/5-22-26_6.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Mesa_Times/5-22-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/5-22-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/5-22-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/5-22-26_4.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/5-22-26_5.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/5-22-26_6.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4074,9 +4074,9 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/slimetimes/5-22-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/slimetimes/5-22-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/slimetimes/5-22-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/slimetimes/5-22-26.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/slimetimes/5-22-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/slimetimes/5-22-26_3.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4090,7 +4090,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Murk/E3.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Murk/E3.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4104,7 +4104,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Glacial_Press/GPnews05.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Glacial_Press/GPnews05.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4118,7 +4118,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cactus_News/5-22-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cactus_News/5-22-26_1.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4132,12 +4132,12 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_5-22-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_5-22-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_5-22-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_5-22-26_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_5-22-26_4.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_5-22-26_5.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-22-26.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-22-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-22-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-22-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-22-26_4.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-22-26_5.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4151,8 +4151,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Murk/E2_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Murk/E2_3.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Murk/E2_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Murk/E2_3.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4166,7 +4166,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_6.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_6.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4180,7 +4180,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/slimetimes/5-21-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/slimetimes/5-21-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4194,10 +4194,10 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_5-21-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_5-21-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_5-21-26_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_5-21-26_4.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-21-26.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-21-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-21-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-21-26_4.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4211,7 +4211,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Murk/E1.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Murk/E1.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4225,7 +4225,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cactus_News/5-21-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cactus_News/5-21-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4239,10 +4239,10 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/TheDailySpruce/the-daily-spruce_5-20-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_5-20-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_5-21-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/TheDailySpruce/the-daily-spruce_5-20-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-20-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-20-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-21-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/TheDailySpruce/the-daily-spruce_5-20-26_3.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4256,10 +4256,10 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Mesa_Times/5-20-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/5-20-26_2.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/5-20-26_3.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/5-20-26_4.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Mesa_Times/5-20-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/5-20-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/5-20-26_3.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/5-20-26_4.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4273,7 +4273,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/slimetimes/5-20-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/slimetimes/5-20-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4287,8 +4287,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cactus_News/5-20-26.jpg" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/5-20-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cactus_News/5-20-26.jpg" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Cactus_News/5-20-26_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4302,7 +4302,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Glacial_Press/GPnews4.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Glacial_Press/GPnews4.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4316,7 +4316,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_5.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_5.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4330,7 +4330,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Glacial_Press/GPnews3.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Glacial_Press/GPnews3.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4344,7 +4344,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/slimetimes/5-19-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/slimetimes/5-19-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4358,8 +4358,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cactus_News/5-19-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/5-20-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cactus_News/5-19-26.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Cactus_News/5-20-26_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4373,8 +4373,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Mesa_Times/5-19-26_1.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Mesa_Times/5-19-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Mesa_Times/5-19-26_1.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Mesa_Times/5-19-26_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4388,7 +4388,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_4.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_4.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4402,7 +4402,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_3.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_3.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4416,7 +4416,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Mesa_Times/5-18-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Mesa_Times/5-18-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4430,7 +4430,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Icy_News/5-18-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Icy_News/5-18-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4444,8 +4444,8 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cactus_News/5-18-26.png" style="width:33%; height:auto; object-fit:cover;">
-        <img src="images/news/Cactus_News/5-18-26_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cactus_News/5-18-26.png" style="width:33%; height:auto; object-fit:cover;">
+        <img data-src="images/news/Cactus_News/5-18-26_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4459,7 +4459,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Fatui/Fatui_news_3.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Fatui/Fatui_news_3.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4473,7 +4473,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Glacial_Press/GPnews2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Glacial_Press/GPnews2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4487,7 +4487,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4501,7 +4501,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cactus_News/5-17-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cactus_News/5-17-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4515,7 +4515,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Glacial_Press/GPnews1.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Glacial_Press/GPnews1.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4529,7 +4529,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Icy_News/5-17-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Icy_News/5-17-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4543,7 +4543,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cactus_News/5-16-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cactus_News/5-16-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4557,7 +4557,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Fatui/Fatui_news_2.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Fatui/Fatui_news_2.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4571,7 +4571,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Icy_News/5-16-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Icy_News/5-16-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4585,7 +4585,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/MushroomTimes/5-15-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/MushroomTimes/5-15-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4599,7 +4599,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Icy_News/5-15-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Icy_News/5-15-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4613,7 +4613,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Icy_News/5-14-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Icy_News/5-14-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4627,7 +4627,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Fatui/Fatui_news_1.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Fatui/Fatui_news_1.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4641,7 +4641,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/MushroomTimes/5-13-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/MushroomTimes/5-13-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4655,7 +4655,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Icy_News/5-13-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Icy_News/5-13-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4669,7 +4669,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/MushroomTimes/5-12-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/MushroomTimes/5-12-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4683,7 +4683,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Icy_News/5-12-26.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Icy_News/5-12-26.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4697,7 +4697,7 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/MushroomTimes/5-11-25.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/MushroomTimes/5-11-25.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
@@ -4711,13 +4711,32 @@ export const mail = {
         </div>
 
         <div class="mail-images bottom">
-            <img src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_1.png" style="width:33%; height:auto; object-fit:cover;">
+            <img data-src="images/news/Cherry_Bomb/Daily_Cherry-Bomb_1.png" style="width:33%; height:auto; object-fit:cover;">
         </div>
 
         </div>
     </div>
 
     </div>
+
+    <script>
+    document.querySelectorAll('input[name="mail"]').forEach(function(input) {
+        input.addEventListener("change", function() {
+            if (input.id === "none") return;
+
+            const panel = document.querySelector(
+                ".viewer-panel." + input.id
+            );
+
+            if (!panel) return;
+
+            panel.querySelectorAll("img[data-src]").forEach(function(img) {
+                img.src = img.dataset.src;
+                img.removeAttribute("data-src");
+            });
+        });
+    });
+    </script>
 </head>
 <body>
 </body>
