@@ -53,18 +53,12 @@ import { pages } from "./pages.js";
 				{ name: "Blossomgate Propaganda.png", path: "images/company/blossomgate/Official_propaganda_for_Blossomgate.png", type: "image" },
 			]
 		},
-		{
-			name: "Old Map",
-			type: "folder",
-			children:[
-				{ name: "Old Mesa.png", path: "images/documents/Mesa_Old.png", type: "image" },
-				{ name: "Old Taiga.png", path: "images/documents/Forest_Old.png", type: "image" },
-				{ name: "Old Mountains.png", path: "images/documents/Mountains_Old.png", type: "image" },
-				{ name: "Old Dark Forest.png", path: "images/documents/Darkforest_Old.png", type: "image" },
-				{ name: "Old Plains.png", path: "images/documents/Plains_Old.png", type: "image" },
-				{ name: "Old Cherry Grove.png", path: "images/documents/Cherrygrove_Old.png", type: "image" },
-			]
-		},
+		{ name: "Old Mesa.png", path: "images/documents/Mesa_Old.png", type: "image" },
+		{ name: "Old Taiga.png", path: "images/documents/Forest_Old.png", type: "image" },
+		{ name: "Old Mountains.png", path: "images/documents/Mountains_Old.png", type: "image" },
+		{ name: "Old Dark Forest.png", path: "images/documents/Darkforest_Old.png", type: "image" },
+		{ name: "Old Plains.png", path: "images/documents/Plains_Old.png", type: "image" },
+		{ name: "Old Cherry Grove.png", path: "images/documents/Cherrygrove_Old.png", type: "image" },
 		
 		{ name: "Spawn Factory.png", path: "images/documents/New_newspawncity1.png", type: "image" },
 		{ name: "Spawn Tower.png", path: "images/documents/New_newspawncity2.png", type: "image" },
@@ -1089,7 +1083,6 @@ import { pages } from "./pages.js";
 		// LOAD
 		// -----------------------------
 		function load(page) {
-
 			if (!pages[page] && page !== "mail") {
 				page = "404";
 			}
@@ -1101,7 +1094,13 @@ import { pages } from "./pages.js";
 			addressBar.value = page;
 			render(page);
 		}
-
+		
+		function loadEmailImages(email) {
+			email.querySelectorAll("img[data-src]").forEach(img => {
+				img.src = img.dataset.src;
+				img.removeAttribute("data-src");
+			});
+		}
 		// -----------------------------
 		// NAV
 		// -----------------------------
