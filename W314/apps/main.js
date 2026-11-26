@@ -2,7 +2,7 @@ import { openMinecraft } from "./minecraft.js";
 import { openMinesweeper } from "./games.js";
 import { openTetris } from "./games.js";
 import { startGlitchScreen } from "./games.js";
-import { settings } from "./settings.js";
+import { settings } from "./settings.js"; //need to make it load the cached settings
 import { mail } from "./mail.js";
 import { pages } from "./pages.js";
 
@@ -140,8 +140,8 @@ import { pages } from "./pages.js";
 		{ name: "2026-05-09 18.33.42.png", path: "images/documents/2026-05-09_18.33.42.png" },
 		{ name: "2026-05-23 06.49.02.png", path: "images/documents/2026-05-23_06.49.02.png" },
 		{ name: "World Map.png", path: "images/documents/map.png"},
-		{ name: "New Spawn City.png", path: "images/documents/newspawncity.png", type: "image" },
-		{ name: "New Spawn City 2.png", path: "images/documents/newspawncity2.png", type: "image" },
+		//{ name: "New Spawn City.png", path: "images/documents/newspawncity.png", type: "image" },
+		{ name: "New Spawn City.png", path: "images/documents/newspawncity2.png", type: "image" },
 		
 		{ name: "Map V2.png", path: "images/documents/Map_V2_Combo.png", type: "image" },
 		//{ name: "Anthem of Rakau.mp3", path: "audio/forest.mp3", type: "audio" }
