@@ -114,4 +114,16 @@ import { updateClock } from "./clock.js";
 		}
 	}
 
+	function restoreBackground() {
+		const savedBg = localStorage.getItem("desktop_bg") || "";
+		applyBackground(savedBg);
+	}
+
+	// set the last selected background on boot
+	if (document.readyState === "loading") {
+		document.addEventListener("DOMContentLoaded", restoreBackground, { once: true });
+	} else {
+		restoreBackground();
+	}
+
 export { settings };
